@@ -1,0 +1,19 @@
+source("UnitRootNormality.R")
+
+all.data = read.table("all.txt")
+all.data.state = all.data[,4]
+states.names = read.csv("state_names.csv")
+adf.test.results = 0
+
+for (i in 1:length(state.names)){
+	current.state.name = state.names[i]
+	current.state.data = subset(all.data,all.data[,1]==current.state.name)[,4]
+	n = length(current.state.data)
+	current.state.data.sreturn = (current.state.data[2:n]-current.state.data[1:n-1])/current.state.data[1:n-1]
+	
+	current.state.results = unit.root.test(current.state.data.sreturn)
+
+	adf.test.results = rbind(adf.test.results,append(state.names[i],current.state.results))	
+}
+
+adf.test.results 

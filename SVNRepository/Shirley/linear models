@@ -1,0 +1,269 @@
+setwd("C:/Users/Shirley Lu/Shirley/MEng/Project/SVNRepository/Code/Development/initial_analysis_r_code/")
+
+source("C:/Users/Shirley Lu/Shirley/MEng/Project/SVNRepository//Code/Development/source_functions/get.sd.data.R")
+source("C:/Users/Shirley Lu/Shirley/MEng/Project/SVNRepository//Code/Development/source_functions/get.sreturn.R")
+source("C:/Users/Shirley Lu/Shirley/MEng/Project/SVNRepository//Code/Development/source_functions/convert_data_freq.R")
+
+
+housing_data_code = c("housing_price_index")
+supply_demand_data_code_vector=c("median_income")
+
+supply_demand_data_code_vector=c(
+"median_income",
+"30_year_current_coupon",
+"30_year_commitment_rate",
+"mortgage_originations",
+"unemployment_rate",
+"primary_interest_rate",
+"population_size",
+"population_growth",
+"median_house_median_income",
+"building_permits")
+
+
+begin_month=1
+begin_year=1984
+state = "AL"
+end_month = 12
+end_year = 2007
+
+sd_data_vector = NULL
+state_data = get.sd.data(housing_data_code,state,begin_month,begin_year,end_month,end_year)$interpolated_data
+
+i=1
+for (i in 1:length(supply_demand_data_code_vector)){
+	if(length(sd_data_vector)==0){
+		sd_data_vector_temp = as.numeric(as.matrix(get.sd.data(supply_demand_data_code_vector[i],state,begin_month,begin_year,end_month,end_year)$interpolated_data))
+		#sd_data_vector_temp = sd_data_vector_temp[dim(sd_data_vector_temp)[2]]
+		sd_data_vector_temp = as.data.frame(sd_data_vector_temp)
+		names(sd_data_vector_temp)=supply_demand_data_code_vector[i]
+		sd_data_vector = sd_data_vector_temp
+	}else{
+		sd_data_vector_temp = as.numeric(as.matrix(get.sd.data(supply_demand_data_code_vector[i],state,begin_month,begin_year,end_month,end_year)$interpolated_data))
+		#sd_data_vector_temp = sd_data_vector_temp[dim(sd_data_vector_temp)[2]]
+		sd_data_vector_temp = as.data.frame(sd_data_vector_temp)
+
+		names(sd_data_vector_temp)=supply_demand_data_code_vector[i]
+		sd_data_vector = cbind(sd_data_vector,sd_data_vector_temp)
+	}
+}
+
+
+
+## Median Income
+setwd("C:/Users/Shirley Lu/Shirley/MEng/Project/SVNRepository/Shirley/Data/")
+begin_month=1
+begin_year=1985
+state = "AL"
+end_month = 1
+end_year = 2007
+
+state_data = get.sd.data(housing_data_code,state,begin_month,begin_year,end_month,end_year)$interpolated_data
+median_income = read.table("C:/Users/Shirley Lu/Shirley/MEng/Project/SVNRepository/Shirley/Data/AL median income 1984-2007.txt")[,1]
+
+#sd_data_vector_temp = as.numeric(as.matrix(get.sd.data(median_income,state,begin_month,begin_year,end_month,end_year)$interpolated_data))
+
+monthly_median_income = convert_data_freq(median_income,"annual","linear")
+length(monthly_median_income)
+length(state_data)
+monthly_median_income = monthly_median_income[1:length(state_data)]
+
+summary(lm(monthly_median_income~state_data))		# original 
+plot(state_data,monthly_median_income)
+
+par(mfrow=c(1,2))
+plot.ts(state_data)
+plot.ts(monthly_median_income)
+
+summary(lm(get.sreturn(monthly_median_income)~get.sreturn(state_data)))		# simple returns
+plot(get.sreturn(state_data),get.sreturn(monthly_median_income))
+par(mfrow=c(1,2))
+plot.ts(get.sreturn(state_data))
+plot.ts(get.sreturn(monthly_median_income))
+
+ccf(get.sreturn(state_data),get.sreturn(monthly_median_income))
+
+##-------------------------------------------------------------------------------
+
+## 30 year current coupon
+# ran the code from Tim's code first
+
+cc = get.sreturn(sd_data_vector[,1])	 #simple returns
+state_data = get.sreturn(state_data)
+
+length(state_data)
+length(cc)
+summary(lm(cc~state_data))
+
+par(mfrow=c(1,3))
+plot.ts(state_data)
+plot.ts(cc)
+plot(state_data,cc)
+
+ccf(state_data,cc)
+
+## 30 year committment rate
+# ran the code from Tim's code first
+
+cr = get.sreturn(sd_data_vector[,2])	 #simple returns
+state_data = get.sd.data(housing_data_code,state,begin_month,begin_year,end_month,end_year)$interpolated_data
+state_data = get.sreturn(state_data)
+
+length(state_data)
+length(cr)
+summary(lm(cr~state_data))
+
+par(mfrow=c(1,3))
+plot.ts(state_data)
+plot.ts(cr)
+plot(state_data,cr)
+
+
+## Unemployment rate
+# ran the code from Tim's code first
+
+ur = get.sreturn(sd_data_vector[,3])	 #simple returns
+state_data = get.sd.data(housing_data_code,state,begin_month,begin_year,end_month,end_year)$interpolated_data
+state_data = get.sreturn(state_data)
+
+length(state_data)
+length(ur)
+summary(lm(ur~state_data))
+
+par(mfrow=c(1,3))
+plot.ts(state_data)
+plot.ts(ur)
+plot(state_data,ur)
+
+
+## Population size
+# ran the code from Tim's code first
+
+ur = get.sreturn(sd_data_vector[,4])	 #simple returns
+state_data = get.sd.data(housing_data_code,state,begin_month,begin_year,end_month,end_year)$interpolated_data
+state_data = get.sreturn(state_data)
+
+length(state_data)
+length(ur)
+summary(lm(ur~state_data))
+
+par(mfrow=c(1,3))
+plot.ts(state_data)
+plot.ts(ur)
+plot(state_data,ur)
+
+
+## Median house median income
+# ran the code from Tim's code first
+
+ur = get.sreturn(sd_data_vector[,5])	 #simple returns
+state_data = get.sd.data(housing_data_code,state,begin_month,begin_year,end_month,end_year)$interpolated_data
+state_data = get.sreturn(state_data)
+
+length(state_data)
+length(ur)
+summary(lm(ur~state_data))
+
+par(mfrow=c(1,3))
+plot.ts(state_data)
+plot.ts(ur)
+plot(state_data,ur)
+
+##-----------------------------------------------------------------------------
+
+
+## Building permits
+
+bp = read.table("C:/Users/Shirley Lu/Shirley/MEng/Project/SVNRepository/Shirley/Data/AL bp.txt")[,1]
+setwd("C:/Users/Shirley Lu/Shirley/MEng/Project/SVNRepository/Shirley/Data/")
+begin_month=1
+begin_year=1995
+state = "AL"
+end_month = 12
+end_year = 2008
+
+state_data = get.sd.data(housing_data_code,state,begin_month,begin_year,end_month,end_year)$interpolated_data
+
+length(state_data)
+length(bp)
+
+bp = bp[1:length(state_data)]
+
+summary(lm(get.sreturn(bp)~get.sreturn(state_data)))
+par(mfrow=c(1,3))
+plot.ts(get.sreturn(state_data))
+plot.ts(get.sreturn(bp))
+plot(get.sreturn(state_data),get.sreturn(bp))
+
+
+## Population growth
+# ran the code from Tim's code first
+
+ps = get.sreturn(sd_data_vector[,4])	 #simple returns
+pg = get.sreturn(ps)
+
+length(state_data)
+length(pg)
+
+state_data = state_data[1:length(pg)]
+
+summary(lm(pg~state_data))
+
+par(mfrow=c(1,3))
+plot.ts(state_data)
+plot.ts(pg)
+plot(state_data,pg)
+
+
+## Mortgage originations
+mo = read.table("C:/Users/Shirley Lu/Shirley/MEng/Project/SVNRepository/Shirley/Data/mo qtr.txt")[,1]
+mo_mo = convert_data_freq(mo,"quarter","linear")
+mo_mo_sr = get.sreturn(mo_mo)	#simple returns of monthly mortgage originations
+
+begin_month=1
+begin_year=1990
+state = "AL"
+end_month = 12
+end_year = 2008
+
+state_data = get.sd.data(housing_data_code,state,begin_month,begin_year,end_month,end_year)$interpolated_data
+state_data = get.sreturn(state_data)
+state_data = state_data[1:length(mo_mo_sr)]
+
+length(state_data)
+length(mo_mo_sr)
+
+summary(lm(mo_mo_sr~state_data))
+par(mfrow=c(1,3))
+plot.ts(state_data)
+plot.ts(mo_mo_sr)
+plot(state_data,mo_mo_sr)
+
+
+## Primary Interest Rate
+pir2 = read.table("C:/Users/Shirley Lu/Shirley/MEng/Project/SVNRepository/Shirley/Data/pir 2.txt")[,1]
+pir_sr = get.sreturn(pir2)
+
+
+begin_month=1
+begin_year=1999
+state = "AL"
+end_month = 12
+end_year = 2008
+
+state_data = NULL
+state_data = get.sd.data(housing_data_code,state,begin_month,begin_year,end_month,end_year)$interpolated_data
+state_data = get.sreturn(state_data)
+
+length(state_data)
+length(pir_sr)
+
+summary(lm(pir_sr~state_data))
+par(mfrow=c(1,3))
+plot.ts(state_data)
+plot.ts(pir_sr)
+plot(state_data,pir_sr)
+
+
+
+

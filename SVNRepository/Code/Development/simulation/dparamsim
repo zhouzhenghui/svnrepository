@@ -1,0 +1,90 @@
+source("../source_functions/fractional.diff.est.sim.R")
+destvector =NULL
+	
+all.data = read.table("../../../Data/States/all.txt")
+all.data.state = all.data[,1]
+states = read.csv("../../../Data/States/states.csv")
+
+all.data.state = all.data[,1]
+state.names = as.matrix(states$State)
+state.ar.orders = as.matrix(states$AR.order)
+state.ma.orders = as.matrix(states$MA.order)
+state.d.orders = as.matrix(states$d)
+state.alpha.orders = as.matrix(states$m.order)
+state.beta.orders = as.matrix(states$s.order)
+#########################################
+###########Set test parameters here######
+#lag to use in all Box Jenkin's tests
+lags.to.use = 12;
+#adjust d.o.f. (TRUE/FALSE)
+adjust.dof = TRUE;
+#significance of tests
+alpha = 0.05;
+##############################
+destvector  = NULL
+for (i in 1:length(as.matrix(state.names))){
+	current.state.name = as.matrix(state.names)[i]
+	current.state.data = subset(all.data,all.data[,1]==current.state.name)[,4]
+	current.state.data.diff = diff(current.state.data)
+	data =  current.state.data.diff 
+	state.name = current.state.name
+	arma.order = c(state.ar.orders[i],0,state.ma.orders[i])
+	d = fdGPH(data);
+	d.est = d$d;
+	d.ase = d$sd.as;
+	if(d.est < 0.5){
+	
+	current.state.diffseries = diffseries(data,d.est);
+	current.state.arfima = arima(current.state.diffseries, order = arma.order);
+	ma.coeffs = as.numeric(current.state.arfima$coef[which(substr(names(current.state.arfima$coef),1,2)=="ma")]);
+	ar.coeffs = as.numeric(current.state.arfima$coef[which(substr(names(current.state.arfima$coef),1,2)=="ar")]);
+	
+	d.samplen.est.vec =NULL;
+	d.samplen.ase.vec =NULL;
+	d.largern.est.vec =NULL;
+	d.largern.ase.vec =NULL;
+
+	##MC sim for n=sample length
+	data.length= length(data);
+	for (k in 1:no.of.sims){
+		#sim.data = as.numeric(armaSim(model = list(ar = ar.coeffs, ma =ma.coeffs, d = d.est), n =data.length, n.start = 1));
+		sim.data = as.numeric(armaSim(model = list(d = d.est), n =data.length, n.start = 0.2*data.length));
+		#sim.data = as.numeric(armaSim(model = list(ar = ifelse(length(ar.coeffs)==0,0,ar.coeffs), ma = ifelse(length(ma.coeffs)==0,0,ma.coeffs), d = d.est), n =data.length, n.start = 1));
+		#sim.data = as.numeric(armaSim(model = list(d = d.est), n =data.length, n.start = 1));
+
+		d = fdGPH(sim.data);
+		d.largern.est.vec = c(d.samplen.est.vec,d$d);
+		d.samplen.ase.vec =c(d.samplen.ase.vec,d$sd.as);
+	}
+	d.samplen.est=mean(d.samplen.est.vec);
+	d.samplen.ase=sd(d.samplen.est.vec);
+
+	data.length=largerN
+	for (k in 1:no.of.sims){
+		#sim.data = as.numeric(armaSim(model = list(ar = ar.coeffs, ma = ma.coeffs, d = d.est), n =data.length, n.start = 0.2*data.length));
+		sim.data = as.numeric(armaSim(model = list(d = d.est), n =data.length, n.start = 0.2*data.length));
+		d = fdGPH(sim.data);
+		d.largern.est.vec = c(d.largern.est.vec,d$d);
+		d.largern.ase.vec =c(d.largern.ase.vec,d$sd.as);
+	}
+	d.largern.est=mean(d.largern.est.vec);
+	d.largern.ase=sd(d.largern.est.vec);
+
+
+	
+	if(include.model){
+		model = paste(state.name,"-ARFIMA(",arma.order[1],",",round(d.est,2),",",arma.order[3],")",sep="")	;
+	}else{
+		model = state.name;
+	}
+
+	destvector = rbind(destvector ,c(model,d.est,d.ase,d.samplen.est,d.samplen.ase,d.largern.est,d.largern.ase))
+	}
+}
+destvector
+sink("destvector.txt")
+	print(destvector)
+sink()
+
+plot(d.largern.est.vec), type = "o")
+plot(d.samplen.est.vec, type = "l")

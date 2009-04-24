@@ -1,0 +1,8 @@
+data = read.csv("ResidualTemp.csv")
+
+library(forecast)
+?auto.arima
+
+data = as.ts(data)
+model = auto.arima(data)
+predict(model, 18)

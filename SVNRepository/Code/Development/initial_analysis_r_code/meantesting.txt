@@ -1,0 +1,570 @@
+[1] "DE"
+$coef
+   intercept 
+0.0003147870 
+
+$se
+  intercept 
+0.006592096 
+
+$t.stat
+ intercept 
+0.04775219 
+
+$fitmodel
+   intercept 
+0.0003147870 
+
+$invertible
+Invertible Model? 
+             TRUE 
+
+$mean.good
+Mean Equation Adequate? 
+                  FALSE 
+
+$vol.good
+ARCH Effect? 
+        TRUE 
+
+$Box.mean.p.value
+Resid Box Test P-Val 
+        2.209344e-14 
+
+$Box.mean.stat
+Resid Box Test Stat 
+            91.8043 
+
+$Box.mean.dof.adj
+Resid Box Test DOF Used 
+                     12 
+
+$Box.vol.pval
+Resid^2 Box Test P-Val 
+           6.28207e-08 
+
+$Box.vol.stat
+Resid^2 Box Test Stat 
+             57.55206 
+
+$Box.vol.dof.adj
+Resid^2 Box Test DOF Used 
+                       12 
+
+$sigma2
+Sigma^2 of residual series 
+               0.005778608 
+
+[1] "AK"
+$coef
+ intercept 
+0.01251558 
+
+$se
+  intercept 
+0.003972235 
+
+$t.stat
+intercept 
+ 3.150765 
+
+$fitmodel
+ intercept 
+0.01251558 
+
+$invertible
+Invertible Model? 
+             TRUE 
+
+$mean.good
+Mean Equation Adequate? 
+                  FALSE 
+
+$vol.good
+ARCH Effect? 
+        TRUE 
+
+$Box.mean.p.value
+Resid Box Test P-Val 
+          0.04877385 
+
+$Box.mean.stat
+Resid Box Test Stat 
+           21.11132 
+
+$Box.mean.dof.adj
+Resid Box Test DOF Used 
+                     12 
+
+$Box.vol.pval
+Resid^2 Box Test P-Val 
+          7.712418e-06 
+
+$Box.vol.stat
+Resid^2 Box Test Stat 
+             45.73314 
+
+$Box.vol.dof.adj
+Resid^2 Box Test DOF Used 
+                       12 
+
+$sigma2
+Sigma^2 of residual series 
+               0.002113338 
+
+[1] "AL"
+$coef
+        ar1         ma1   intercept 
+-0.53886642  0.00000000  0.01110528 
+
+$se
+         ar1          ma1    intercept 
+0.0753105947 0.0000000000 0.0009821083 
+
+$t.stat
+      ar1       ma1 intercept 
+-7.155254 -1.979564 11.307594 
+
+$fitmodel
+        ar1         ma1   intercept 
+-0.53886642  0.00000000  0.01110528 
+
+$invertible
+Invertible Model? 
+             TRUE 
+
+$mean.good
+Mean Equation Adequate? 
+                   TRUE 
+
+$vol.good
+ARCH Effect? 
+        TRUE 
+
+$Box.mean.p.value
+Resid Box Test P-Val 
+           0.2547364 
+
+$Box.mean.stat
+Resid Box Test Stat 
+           12.47154 
+
+$Box.mean.dof.adj
+Resid Box Test DOF Used 
+                     10 
+
+$Box.vol.pval
+Resid^2 Box Test P-Val 
+          1.383338e-13 
+
+$Box.vol.stat
+Resid^2 Box Test Stat 
+             87.68479 
+
+$Box.vol.dof.adj
+Resid^2 Box Test DOF Used 
+                       12 
+
+$sigma2
+Sigma^2 of residual series 
+              0.0003020394 
+
+[1] "AR"
+$coef
+        ar1         ma1   intercept 
+-0.96695366  0.68594945  0.01067131 
+
+$se
+        ar1         ma1   intercept 
+0.043917222 0.083142483 0.001467573 
+
+$t.stat
+       ar1        ma1  intercept 
+-22.017642   8.250288   7.271400 
+
+$fitmodel
+        ar1         ma1   intercept 
+-0.96695366  0.68594945  0.01067131 
+
+$invertible
+Invertible Model? 
+             TRUE 
+
+$mean.good
+Mean Equation Adequate? 
+                  FALSE 
+
+$vol.good
+ARCH Effect? 
+        TRUE 
+
+$Box.mean.p.value
+Resid Box Test P-Val 
+         0.003912615 
+
+$Box.mean.stat
+Resid Box Test Stat 
+           25.87456 
+
+$Box.mean.dof.adj
+Resid Box Test DOF Used 
+                     10 
+
+$Box.vol.pval
+Resid^2 Box Test P-Val 
+          4.457834e-10 
+
+$Box.vol.stat
+Resid^2 Box Test Stat 
+             69.23198 
+
+$Box.vol.dof.adj
+Resid^2 Box Test DOF Used 
+                       12 
+
+$sigma2
+Sigma^2 of residual series 
+              0.0003907766 
+
+[1] "AZ"
+$coef
+       ar1        ar2        ar3  intercept 
+-0.6901759 -0.6654254 -0.2044416  0.0000000 
+
+$se
+       ar1        ar2        ar3  intercept 
+0.08800914 0.08991797 0.08807999 0.00000000 
+
+$t.stat
+      ar1       ar2       ar3 intercept 
+-7.842093 -7.400360 -2.321090 -1.979564 
+
+$fitmodel
+       ar1        ar2        ar3  intercept 
+-0.6901759 -0.6654254 -0.2044416  0.0000000 
+
+$invertible
+Invertible Model? 
+             TRUE 
+
+$mean.good
+Mean Equation Adequate? 
+                   TRUE 
+
+$vol.good
+ARCH Effect? 
+        TRUE 
+
+$Box.mean.p.value
+Resid Box Test P-Val 
+           0.4814165 
+
+$Box.mean.stat
+Resid Box Test Stat 
+           8.533329 
+
+$Box.mean.dof.adj
+Resid Box Test DOF Used 
+                      9 
+
+$Box.vol.pval
+Resid^2 Box Test P-Val 
+           0.003190016 
+
+$Box.vol.stat
+Resid^2 Box Test Stat 
+             29.61497 
+
+$Box.vol.dof.adj
+Resid^2 Box Test DOF Used 
+                       12 
+
+$sigma2
+Sigma^2 of residual series 
+              0.0005972178 
+
+[1] "CA"
+$coef
+       ar1  intercept 
+-0.1278261  0.0000000 
+
+$se
+       ar1  intercept 
+0.08598376 0.00000000 
+
+$t.stat
+      ar1 intercept 
+-1.486631 -1.979564 
+
+$fitmodel
+       ar1  intercept 
+-0.1278261  0.0000000 
+
+$invertible
+Invertible Model? 
+             TRUE 
+
+$mean.good
+Mean Equation Adequate? 
+                   TRUE 
+
+$vol.good
+ARCH Effect? 
+        TRUE 
+
+$Box.mean.p.value
+Resid Box Test P-Val 
+           0.1600116 
+
+$Box.mean.stat
+Resid Box Test Stat 
+           15.51745 
+
+$Box.mean.dof.adj
+Resid Box Test DOF Used 
+                     11 
+
+$Box.vol.pval
+Resid^2 Box Test P-Val 
+            0.02068632 
+
+$Box.vol.stat
+Resid^2 Box Test Stat 
+             23.94622 
+
+$Box.vol.dof.adj
+Resid^2 Box Test DOF Used 
+                       12 
+
+$sigma2
+Sigma^2 of residual series 
+              0.0001700264 
+
+[1] "CO"
+$coef
+      ma1 intercept 
+-0.741153  0.000000 
+
+$se
+       ma1  intercept 
+0.05632787 0.00000000 
+
+$t.stat
+       ma1  intercept 
+-13.157838  -1.979564 
+
+$fitmodel
+      ma1 intercept 
+-0.741153  0.000000 
+
+$invertible
+Invertible Model? 
+             TRUE 
+
+$mean.good
+Mean Equation Adequate? 
+                  FALSE 
+
+$vol.good
+ARCH Effect? 
+        TRUE 
+
+$Box.mean.p.value
+Resid Box Test P-Val 
+          0.01690976 
+
+$Box.mean.stat
+Resid Box Test Stat 
+           23.13614 
+
+$Box.mean.dof.adj
+Resid Box Test DOF Used 
+                     11 
+
+$Box.vol.pval
+Resid^2 Box Test P-Val 
+          3.379598e-05 
+
+$Box.vol.stat
+Resid^2 Box Test Stat 
+             41.96224 
+
+$Box.vol.dof.adj
+Resid^2 Box Test DOF Used 
+                       12 
+
+$sigma2
+Sigma^2 of residual series 
+              0.0002188418 
+
+[1] "CT"
+$coef
+       ma1  intercept 
+-0.9999995  0.0000000 
+
+$se
+       ma1  intercept 
+0.01913029 0.00000000 
+
+$t.stat
+       ma1  intercept 
+-52.273101  -1.979564 
+
+$fitmodel
+       ma1  intercept 
+-0.9999995  0.0000000 
+
+$invertible
+Invertible Model? 
+             TRUE 
+
+$mean.good
+Mean Equation Adequate? 
+                  FALSE 
+
+$vol.good
+ARCH Effect? 
+        TRUE 
+
+$Box.mean.p.value
+Resid Box Test P-Val 
+        1.255329e-12 
+
+$Box.mean.stat
+Resid Box Test Stat 
+           80.36323 
+
+$Box.mean.dof.adj
+Resid Box Test DOF Used 
+                     11 
+
+$Box.vol.pval
+Resid^2 Box Test P-Val 
+                     0 
+
+$Box.vol.stat
+Resid^2 Box Test Stat 
+             132.7922 
+
+$Box.vol.dof.adj
+Resid^2 Box Test DOF Used 
+                       12 
+
+$sigma2
+Sigma^2 of residual series 
+               0.000747142 
+
+[1] "DC"
+$coef
+       ar1  intercept 
+-0.7976774  0.0000000 
+
+$se
+       ar1  intercept 
+0.05098948 0.00000000 
+
+$t.stat
+       ar1  intercept 
+-15.643959  -1.979564 
+
+$fitmodel
+       ar1  intercept 
+-0.7976774  0.0000000 
+
+$invertible
+Invertible Model? 
+             TRUE 
+
+$mean.good
+Mean Equation Adequate? 
+                  FALSE 
+
+$vol.good
+ARCH Effect? 
+        TRUE 
+
+$Box.mean.p.value
+Resid Box Test P-Val 
+        2.933494e-07 
+
+$Box.mean.stat
+Resid Box Test Stat 
+           51.82445 
+
+$Box.mean.dof.adj
+Resid Box Test DOF Used 
+                     11 
+
+$Box.vol.pval
+Resid^2 Box Test P-Val 
+          4.163336e-14 
+
+$Box.vol.stat
+Resid^2 Box Test Stat 
+              90.3851 
+
+$Box.vol.dof.adj
+Resid^2 Box Test DOF Used 
+                       12 
+
+$sigma2
+Sigma^2 of residual series 
+               0.001839544 
+
+[1] "DE"
+$coef
+   intercept 
+0.0003147870 
+
+$se
+  intercept 
+0.006592096 
+
+$t.stat
+ intercept 
+0.04775219 
+
+$fitmodel
+   intercept 
+0.0003147870 
+
+$invertible
+Invertible Model? 
+             TRUE 
+
+$mean.good
+Mean Equation Adequate? 
+                  FALSE 
+
+$vol.good
+ARCH Effect? 
+        TRUE 
+
+$Box.mean.p.value
+Resid Box Test P-Val 
+        2.209344e-14 
+
+$Box.mean.stat
+Resid Box Test Stat 
+            91.8043 
+
+$Box.mean.dof.adj
+Resid Box Test DOF Used 
+                     12 
+
+$Box.vol.pval
+Resid^2 Box Test P-Val 
+           6.28207e-08 
+
+$Box.vol.stat
+Resid^2 Box Test Stat 
+             57.55206 
+
+$Box.vol.dof.adj
+Resid^2 Box Test DOF Used 
+                       12 
+
+$sigma2
+Sigma^2 of residual series 
+               0.005778608 
+

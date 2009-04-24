@@ -1,0 +1,16 @@
+Variable,Metric,Data Source - Dr. Thurston's Recommendation,Data Source -What We Used,Supply/Demand,Level,Frequency,Range,Code,File,Status
+Income,Median Income,Bureau Of Labor Statistics,Census Bureau,D,State,Yearly,1984-2009,median_income,mi.csv,Completed
+Cost Of Credit,30 Year Current Coupon,Fannie/Freddie,Fannie/Freddie,D,National,Monthly,1984-2009,thirty_year_current_coupon,30ycc.csv,Completed
+Cost Of Credit / Secondary Interest Rate,30 Year Commitment Rate,Fannie/Freddie,Fannie/Freddie,D,National,Monthly,1987-2009,ty_cr,30ycr.csv,Completed
+Availability Of Credit,Mortgage Originations,MBAA.org,MBAA.org,D,National,Quarterly,1990-2009,mort_orig,mo.csv,Completed
+Unemployment Rate,Unemployment Rate,Bureau Of Labor Statistics,Bureau Of Labor Statistics,D,State,Monthly,1976-2009,unemp_rate,ur.csv,Completed
+Primary Interest Rate,Interest Rate,Fannie/Freddie,BankRate,D,National,Monthly,1998-2009,primary_interest_rate,pir.csv,Completed
+Population Size,Population Size,Census Bureau,Census Bureau,D,State,Yearly,1970-2009,pop_size,ps.csv,Completed
+Population Growth,Population Growth,Census Bureau,Census Bureau,D,State,Yearly,1970-2009,population_growth,pg.csv,Completed
+Housing Affordability,Median House Price/Median Income,Census Bureau,Census Bureau,D,National,Yearly,1984-2009,median_house_median_income,mpmi.csv,Completed
+Housing Affordability,Delta Away From MHP/MI,,,D,,Yearly,,delta_from_median_house_median_income,dmpmi.csv,Use long term average?
+Foreclosures,Foreclosures,realtytrac.com,realtytrac.com,S,,Yearly,,foreclosures,f.csv,No historical data freely available
+Housing Stock,Available Housing Stock,Use Multiple Listing Services,huduser.org,S,National,Yearly,1970-1995,housing_stock,hs.csv,"Ends at 1995, could not get historical data from MLS"
+Housing Stock,Inventory Turnover,Monthly Stock/Sale,Monthly Stock/Sale,S,,Yearly,,inventory_turnover,it.csv,Couldn't find Monthly Stock/ Sale
+Housing Stock,Building Permits Issuance,www.nahb.org,Census Bureau,S,State,Monthly,1995-2009,building_permits,bp.csv,Completed
+HPI,HPI,OFHEO,OFHEO,NA,State,Quarterly,1975-2009,housing_price_index,hpi.csv,Comleted

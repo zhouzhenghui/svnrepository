@@ -1,0 +1,1439 @@
+[1] "test for  AK"
+                     descriptors                 V2
+1        intercept - c statistic  0.709594834165683
+2            intercept - c p-val               0.99
+3    no intercept - nc statistic -0.726502747973481
+4        no intercept - nc p-val  0.965895587978558
+5 intercept trend - ct statistic   2.78181185311714
+6      intercept trend- ct p-val               0.99
+                     descriptors                V2
+1        intercept - c statistic -10.3379573681550
+2            intercept - c p-val              0.01
+3    no intercept - nc statistic -10.4327969406380
+4        no intercept - nc p-val              0.01
+5 intercept trend - ct statistic -9.53684468281238
+6      intercept trend- ct p-val              0.01
+ Q(12) P-value df
+  15.5   0.078  9
+ Q(12) P-value df
+  15.5   0.078  9
+ Q(12) P-value df
+ 24.33   0.004  9
+ Q(12) P-value df
+ 24.33   0.004  9
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 0.335979675591552"
+[1] "test for  AL"
+                     descriptors                V2
+1        intercept - c statistic  2.30401987513847
+2            intercept - c p-val              0.99
+3    no intercept - nc statistic 0.598254623319672
+4        no intercept - nc p-val              0.99
+5 intercept trend - ct statistic  3.58954111686762
+6      intercept trend- ct p-val              0.99
+                     descriptors                 V2
+1        intercept - c statistic  -3.14723912171093
+2            intercept - c p-val 0.0264659722686019
+3    no intercept - nc statistic  -3.89310203488948
+4        no intercept - nc p-val 0.0166227078513899
+5 intercept trend - ct statistic  -1.59670474911737
+6      intercept trend- ct p-val  0.104938725380919
+ Q(12) P-value df
+ 24.72   0.006 10
+ Q(12) P-value df
+ 24.72   0.006 10
+ Q(12) P-value df
+ 27.82   0.002 10
+ Q(12) P-value df
+ 27.82   0.002 10
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 0.603879357305769"
+[1] "test for  AR"
+                     descriptors                V2
+1        intercept - c statistic 0.845775680407894
+2            intercept - c p-val              0.99
+3    no intercept - nc statistic -1.27252360979210
+4        no intercept - nc p-val 0.879094449615046
+5 intercept trend - ct statistic  2.34121858518859
+6      intercept trend- ct p-val              0.99
+                     descriptors                 V2
+1        intercept - c statistic  -2.98805176397445
+2            intercept - c p-val 0.0409060446322159
+3    no intercept - nc statistic  -3.15077521814458
+4        no intercept - nc p-val 0.0991374636425708
+5 intercept trend - ct statistic  -1.91140093706525
+6      intercept trend- ct p-val 0.0557133012040775
+ Q(12) P-value df
+ 16.92   0.076 10
+ Q(12) P-value df
+ 16.92   0.076 10
+ Q(12) P-value df
+  7.77   0.651 10
+ Q(12) P-value df
+  7.77   0.651 10
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= -0.0686183236450745"
+[1] "test for  AZ"
+                     descriptors                 V2
+1        intercept - c statistic  -3.38728021260328
+2            intercept - c p-val 0.0149805151359823
+3    no intercept - nc statistic  -4.78302282189737
+4        no intercept - nc p-val               0.01
+5 intercept trend - ct statistic  -1.68876236792682
+6      intercept trend- ct p-val 0.0886751330546563
+                     descriptors                 V2
+1        intercept - c statistic  -1.92833790293211
+2            intercept - c p-val  0.340786763209896
+3    no intercept - nc statistic  -1.59183847360703
+4        no intercept - nc p-val  0.746256223933853
+5 intercept trend - ct statistic  -1.99158159962627
+6      intercept trend- ct p-val 0.0463879777947995
+ Q(12) P-value df
+  7.83    0.45  8
+ Q(12) P-value df
+  7.83    0.45  8
+ Q(12) P-value df
+ 29.39       0  8
+ Q(12) P-value df
+ 29.39       0  8
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 0.378653505350851"
+[1] "test for  CA"
+                     descriptors                 V2
+1        intercept - c statistic  -3.49161261837714
+2            intercept - c p-val 0.0103154135264592
+3    no intercept - nc statistic  -5.35353491598722
+4        no intercept - nc p-val               0.01
+5 intercept trend - ct statistic  -2.27692607261731
+6      intercept trend- ct p-val 0.0233566220016968
+                     descriptors                 V2
+1        intercept - c statistic  0.142875419000421
+2            intercept - c p-val  0.965844332277487
+3    no intercept - nc statistic  0.598797957965355
+4        no intercept - nc p-val               0.99
+5 intercept trend - ct statistic -0.290133882569357
+6      intercept trend- ct p-val  0.521375654957974
+  Q(12) P-value df
+ 285.28       0 12
+  Q(12) P-value df
+ 285.28       0 12
+  Q(12) P-value df
+ 115.03       0 12
+  Q(12) P-value df
+ 115.03       0 12
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 0.508569467683502"
+[1] "test for  CO"
+                     descriptors                 V2
+1        intercept - c statistic  -1.08594099602863
+2            intercept - c p-val  0.653096089960342
+3    no intercept - nc statistic   -2.2779878705009
+4        no intercept - nc p-val  0.460848084927523
+5 intercept trend - ct statistic 0.0223129993750776
+6      intercept trend- ct p-val  0.620981566865895
+                     descriptors                 V2
+1        intercept - c statistic  -2.57557670881826
+2            intercept - c p-val  0.100824280723605
+3    no intercept - nc statistic  -2.29950993835688
+4        no intercept - nc p-val  0.451914344033739
+5 intercept trend - ct statistic  -1.79300037444568
+6      intercept trend- ct p-val 0.0732385472993362
+ Q(12) P-value df
+ 19.98   0.029 10
+ Q(12) P-value df
+ 19.98   0.029 10
+ Q(12) P-value df
+  3.66   0.961 10
+ Q(12) P-value df
+  3.66   0.961 10
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 1.14067669625143"
+[1] "test for  CT"
+                     descriptors                 V2
+1        intercept - c statistic  -1.80846250650467
+2            intercept - c p-val  0.385214420130506
+3    no intercept - nc statistic  -3.43186816767405
+4        no intercept - nc p-val 0.0522664164987693
+5 intercept trend - ct statistic -0.174172152923812
+6      intercept trend- ct p-val  0.558356817129197
+                     descriptors                 V2
+1        intercept - c statistic  -2.64603127827531
+2            intercept - c p-val 0.0889949551168856
+3    no intercept - nc statistic  -2.47163972089441
+4        no intercept - nc p-val    0.3803203822837
+5 intercept trend - ct statistic  -2.37879096446211
+6      intercept trend- ct p-val 0.0190892552629077
+ Q(12) P-value df
+ 11.31   0.334 10
+ Q(12) P-value df
+ 11.31   0.334 10
+ Q(12) P-value df
+  9.96   0.444 10
+ Q(12) P-value df
+  9.96   0.444 10
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 0.680782325735151"
+[1] "test for  DC"
+                     descriptors                 V2
+1        intercept - c statistic  -2.44358689231492
+2            intercept - c p-val  0.149736059204752
+3    no intercept - nc statistic  -3.97999596891219
+4        no intercept - nc p-val 0.0123723801981710
+5 intercept trend - ct statistic  -1.17909668371539
+6      intercept trend- ct p-val  0.238062145960565
+                     descriptors                 V2
+1        intercept - c statistic  -2.08076067686845
+2            intercept - c p-val  0.284276327048494
+3    no intercept - nc statistic  -1.93581843129575
+4        no intercept - nc p-val  0.603184597568578
+5 intercept trend - ct statistic  -1.97064069186082
+6      intercept trend- ct p-val 0.0482070281566351
+ Q(12) P-value df
+  12.1   0.147  8
+ Q(12) P-value df
+  12.1   0.147  8
+ Q(12) P-value df
+ 54.71       0  8
+ Q(12) P-value df
+ 54.71       0  8
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 0.870292641174016"
+[1] "test for  DE"
+                     descriptors                 V2
+1        intercept - c statistic  -0.75035113335739
+2            intercept - c p-val  0.777519199150693
+3    no intercept - nc statistic  -3.76568584427069
+4        no intercept - nc p-val 0.0228186059443444
+5 intercept trend - ct statistic  0.570609786794552
+6      intercept trend- ct p-val    0.7957375150474
+                     descriptors                 V2
+1        intercept - c statistic  -1.83572278765762
+2            intercept - c p-val  0.375123630491198
+3    no intercept - nc statistic  -1.67893262169479
+4        no intercept - nc p-val  0.710031144142752
+5 intercept trend - ct statistic  -1.67327543860484
+6      intercept trend- ct p-val 0.0909598225866134
+  Q(12) P-value df
+ 118.43       0 12
+  Q(12) P-value df
+ 118.43       0 12
+ Q(12) P-value df
+ 66.47       0 12
+ Q(12) P-value df
+ 66.47       0 12
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 0.773440312622165"
+[1] "test for  FL"
+                     descriptors                V2
+1        intercept - c statistic -0.55557621640574
+2            intercept - c p-val 0.849733838074866
+3    no intercept - nc statistic -2.25847716857272
+4        no intercept - nc p-val 0.468964017509963
+5 intercept trend - ct statistic  1.05112476894396
+6      intercept trend- ct p-val 0.919551933498975
+                     descriptors                 V2
+1        intercept - c statistic  -3.63376595238833
+2            intercept - c p-val               0.01
+3    no intercept - nc statistic  -3.41849338171698
+4        no intercept - nc p-val 0.0545177697138374
+5 intercept trend - ct statistic  -3.22350716205227
+6      intercept trend- ct p-val               0.01
+ Q(12) P-value df
+ 34.69       0 10
+ Q(12) P-value df
+ 34.69       0 10
+ Q(12) P-value df
+ 11.47   0.322 10
+ Q(12) P-value df
+ 11.47   0.322 10
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 0.474913290055425"
+[1] "test for  GA"
+                     descriptors                V2
+1        intercept - c statistic   1.4441063675463
+2            intercept - c p-val              0.99
+3    no intercept - nc statistic -1.03669268054122
+4        no intercept - nc p-val  0.92920278841672
+5 intercept trend - ct statistic  3.80935186340419
+6      intercept trend- ct p-val              0.99
+                     descriptors                V2
+1        intercept - c statistic -2.83974004710761
+2            intercept - c p-val 0.057751605305225
+3    no intercept - nc statistic -2.46673479791137
+4        no intercept - nc p-val 0.382360487506967
+5 intercept trend - ct statistic -1.57790116653160
+6      intercept trend- ct p-val 0.110931899113435
+ Q(12) P-value df
+ 17.33   0.067 10
+ Q(12) P-value df
+ 17.33   0.067 10
+ Q(12) P-value df
+ 16.17   0.095 10
+ Q(12) P-value df
+ 16.17   0.095 10
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 0.704376847922498"
+[1] "test for  HI"
+                     descriptors                V2
+1        intercept - c statistic 0.503159299257631
+2            intercept - c p-val 0.984980451707193
+3    no intercept - nc statistic -1.28215492925073
+4        no intercept - nc p-val 0.875088077128093
+5 intercept trend - ct statistic  2.08884893389556
+6      intercept trend- ct p-val              0.99
+                     descriptors                 V2
+1        intercept - c statistic  -3.86716820049439
+2            intercept - c p-val               0.01
+3    no intercept - nc statistic  -3.95502825268809
+4        no intercept - nc p-val 0.0136048609801127
+5 intercept trend - ct statistic  -3.41425001047713
+6      intercept trend- ct p-val               0.01
+ Q(12) P-value df
+ 69.66       0 12
+ Q(12) P-value df
+ 69.66       0 12
+ Q(12) P-value df
+ 27.13   0.007 12
+ Q(12) P-value df
+ 27.13   0.007 12
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 0.688722095310627"
+[1] "test for  IA"
+                     descriptors                 V2
+1        intercept - c statistic   1.56124610051069
+2            intercept - c p-val               0.99
+3    no intercept - nc statistic -0.642923621385692
+4        no intercept - nc p-val  0.973358009995325
+5 intercept trend - ct statistic   4.28483339469606
+6      intercept trend- ct p-val               0.99
+                     descriptors                V2
+1        intercept - c statistic   -7.129978640918
+2            intercept - c p-val              0.01
+3    no intercept - nc statistic -7.49960647888616
+4        no intercept - nc p-val              0.01
+5 intercept trend - ct statistic -4.66579559922152
+6      intercept trend- ct p-val              0.01
+ Q(12) P-value df
+ 33.96   0.001 12
+ Q(12) P-value df
+ 33.96   0.001 12
+ Q(12) P-value df
+  60.8       0 12
+ Q(12) P-value df
+  60.8       0 12
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 0.574865786950262"
+[1] "test for  ID"
+                     descriptors                V2
+1        intercept - c statistic  1.15845244880124
+2            intercept - c p-val              0.99
+3    no intercept - nc statistic -1.10910124626703
+4        no intercept - nc p-val 0.917808238627723
+5 intercept trend - ct statistic  2.38842795538086
+6      intercept trend- ct p-val              0.99
+                     descriptors                 V2
+1        intercept - c statistic  -3.46787473389486
+2            intercept - c p-val 0.0113911769713261
+3    no intercept - nc statistic  -3.69394788331015
+4        no intercept - nc p-val 0.0274720715429831
+5 intercept trend - ct statistic  -2.78708594611037
+6      intercept trend- ct p-val               0.01
+ Q(12) P-value df
+ 63.85       0 12
+ Q(12) P-value df
+ 63.85       0 12
+ Q(12) P-value df
+ 76.85       0 12
+ Q(12) P-value df
+ 76.85       0 12
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 0.75248617262366"
+[1] "test for  IL"
+                     descriptors                 V2
+1        intercept - c statistic  -1.54183038699756
+2            intercept - c p-val  0.484070795156315
+3    no intercept - nc statistic  -3.61304067961501
+4        no intercept - nc p-val 0.0347918066661113
+5 intercept trend - ct statistic -0.521488179572613
+6      intercept trend- ct p-val  0.447658481942328
+                     descriptors                V2
+1        intercept - c statistic -1.77273723098925
+2            intercept - c p-val 0.398475398650757
+3    no intercept - nc statistic -1.28774502323103
+4        no intercept - nc p-val 0.872737850377027
+5 intercept trend - ct statistic -1.56136411908601
+6      intercept trend- ct p-val 0.116202671207646
+ Q(12) P-value df
+  5.58   0.781  9
+ Q(12) P-value df
+  5.58   0.781  9
+ Q(12) P-value df
+  25.4   0.003  9
+ Q(12) P-value df
+  25.4   0.003  9
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 0.718172967222603"
+[1] "test for  IN"
+                     descriptors                 V2
+1        intercept - c statistic -0.138841035793545
+2            intercept - c p-val  0.938228648142647
+3    no intercept - nc statistic  -1.51321149285212
+4        no intercept - nc p-val  0.778974697926185
+5 intercept trend - ct statistic   2.68687409736206
+6      intercept trend- ct p-val               0.99
+                     descriptors                V2
+1        intercept - c statistic -5.68005820196312
+2            intercept - c p-val              0.01
+3    no intercept - nc statistic -5.58864070491175
+4        no intercept - nc p-val              0.01
+5 intercept trend - ct statistic -2.95953625486838
+6      intercept trend- ct p-val              0.01
+ Q(12) P-value df
+ 20.57   0.057 12
+ Q(12) P-value df
+ 20.57   0.057 12
+ Q(12) P-value df
+ 13.08   0.363 12
+ Q(12) P-value df
+ 13.08   0.363 12
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 0.307017120049979"
+[1] "test for  KS"
+                     descriptors                V2
+1        intercept - c statistic -0.59387240308507
+2            intercept - c p-val 0.835535165388962
+3    no intercept - nc statistic -2.19954751546525
+4        no intercept - nc p-val  0.49347718435999
+5 intercept trend - ct statistic 0.812955735238343
+6      intercept trend- ct p-val  0.87297925160319
+                     descriptors                V2
+1        intercept - c statistic -1.83443851749472
+2            intercept - c p-val 0.375599771065077
+3    no intercept - nc statistic -1.68866132983554
+4        no intercept - nc p-val 0.705984681361947
+5 intercept trend - ct statistic -1.23458346600971
+6      intercept trend- ct p-val 0.220355867407262
+ Q(12) P-value df
+  4.89   0.844  9
+ Q(12) P-value df
+  4.89   0.844  9
+ Q(12) P-value df
+ 11.22   0.261  9
+ Q(12) P-value df
+ 11.22   0.261  9
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 0.744191576402614"
+[1] "test for  KY"
+                     descriptors                 V2
+1        intercept - c statistic   2.72926056804331
+2            intercept - c p-val               0.99
+3    no intercept - nc statistic -0.336655530389299
+4        no intercept - nc p-val  0.987785729503041
+5 intercept trend - ct statistic   6.08292821283358
+6      intercept trend- ct p-val               0.99
+                     descriptors                V2
+1        intercept - c statistic    -6.85889876342
+2            intercept - c p-val              0.01
+3    no intercept - nc statistic -7.53846759324378
+4        no intercept - nc p-val              0.01
+5 intercept trend - ct statistic  -3.2742135152527
+6      intercept trend- ct p-val              0.01
+ Q(12) P-value df
+ 20.65   0.037 11
+ Q(12) P-value df
+ 20.65   0.037 11
+ Q(12) P-value df
+ 17.02   0.107 11
+ Q(12) P-value df
+ 17.02   0.107 11
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 0.346754063053533"
+[1] "test for  LA"
+                     descriptors                V2
+1        intercept - c statistic -0.70716719977174
+2            intercept - c p-val 0.793530050137154
+3    no intercept - nc statistic -2.34183298710629
+4        no intercept - nc p-val 0.434290216123286
+5 intercept trend - ct statistic  0.99848875999636
+6      intercept trend- ct p-val 0.912842720937673
+                     descriptors                V2
+1        intercept - c statistic -2.33885280384968
+2            intercept - c p-val 0.188589191269002
+3    no intercept - nc statistic -2.31331020580222
+4        no intercept - nc p-val 0.446174397087566
+5 intercept trend - ct statistic -1.85904052935186
+6      intercept trend- ct p-val 0.063463509568997
+ Q(12) P-value df
+ 15.25   0.084  9
+ Q(12) P-value df
+ 15.25   0.084  9
+ Q(12) P-value df
+ 12.45   0.189  9
+ Q(12) P-value df
+ 12.45   0.189  9
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 0.744054007316132"
+[1] "test for  MA"
+                     descriptors                 V2
+1        intercept - c statistic  -2.72970730136105
+2            intercept - c p-val 0.0754880696729487
+3    no intercept - nc statistic   -4.2697942313187
+4        no intercept - nc p-val               0.01
+5 intercept trend - ct statistic  -1.68222764961622
+6      intercept trend- ct p-val 0.0896425706253128
+                     descriptors                 V2
+1        intercept - c statistic -0.972376253300955
+2            intercept - c p-val   0.69520761764725
+3    no intercept - nc statistic -0.491873851641922
+4        no intercept - nc p-val  0.980884820086948
+5 intercept trend - ct statistic  -1.09650539858167
+6      intercept trend- ct p-val  0.264364813201063
+ Q(12) P-value df
+ 15.36   0.082  9
+ Q(12) P-value df
+ 15.36   0.082  9
+ Q(12) P-value df
+  64.9       0  9
+ Q(12) P-value df
+  64.9       0  9
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 0.934089035124883"
+[1] "test for  MD"
+                     descriptors                 V2
+1        intercept - c statistic  -2.20065005604320
+2            intercept - c p-val  0.239807184313216
+3    no intercept - nc statistic  -4.95700952506657
+4        no intercept - nc p-val               0.01
+5 intercept trend - ct statistic -0.677906417704992
+6      intercept trend- ct p-val   0.39780406341408
+                     descriptors                 V2
+1        intercept - c statistic  -1.87249492157824
+2            intercept - c p-val  0.361490435970623
+3    no intercept - nc statistic  -1.42807716275209
+4        no intercept - nc p-val  0.814369486221447
+5 intercept trend - ct statistic  -1.87872458468339
+6      intercept trend- ct p-val 0.0605499430604807
+ Q(12) P-value df
+ 10.07    0.26  8
+ Q(12) P-value df
+ 10.07    0.26  8
+ Q(12) P-value df
+ 80.11       0  8
+ Q(12) P-value df
+ 80.11       0  8
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 1.00729691271538"
+[1] "test for  ME"
+                     descriptors                 V2
+1        intercept - c statistic -0.353325153001989
+2            intercept - c p-val  0.909065651785444
+3    no intercept - nc statistic  -2.31895836184482
+4        no intercept - nc p-val  0.443805451257006
+5 intercept trend - ct statistic   1.04534194715658
+6      intercept trend- ct p-val  0.918814830110033
+                     descriptors                V2
+1        intercept - c statistic -1.95813204731709
+2            intercept - c p-val 0.329740644242437
+3    no intercept - nc statistic -2.04309549629319
+4        no intercept - nc p-val 0.558564834649811
+5 intercept trend - ct statistic -1.51883152649326
+6      intercept trend- ct p-val 0.129758876018083
+ Q(12) P-value df
+ 20.22    0.01  8
+ Q(12) P-value df
+ 20.22    0.01  8
+ Q(12) P-value df
+ 41.47       0  8
+ Q(12) P-value df
+ 41.47       0  8
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 0.739182678609849"
+[1] "test for  MI"
+                     descriptors                 V2
+1        intercept - c statistic  -2.41082668541895
+2            intercept - c p-val  0.161882215132317
+3    no intercept - nc statistic  -1.89284144040767
+4        no intercept - nc p-val  0.621058746363976
+5 intercept trend - ct statistic  -1.77370892247557
+6      intercept trend- ct p-val 0.0760991528115526
+                     descriptors                 V2
+1        intercept - c statistic 0.0736465162892183
+2            intercept - c p-val   0.96022145194032
+3    no intercept - nc statistic  0.400151697136563
+4        no intercept - nc p-val               0.99
+5 intercept trend - ct statistic -0.577558487848611
+6      intercept trend- ct p-val  0.429766219012395
+ Q(12) P-value df
+  3.89   0.867  8
+ Q(12) P-value df
+  3.89   0.867  8
+ Q(12) P-value df
+ 26.18   0.001  8
+ Q(12) P-value df
+ 26.18   0.001  8
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 1.28952279074149"
+[1] "test for  MN"
+                     descriptors                 V2
+1        intercept - c statistic  -2.76717106130159
+2            intercept - c p-val 0.0694455277470547
+3    no intercept - nc statistic  -3.80426630171336
+4        no intercept - nc p-val 0.0209380593835558
+5 intercept trend - ct statistic  -1.52364489507767
+6      intercept trend- ct p-val  0.128245982976573
+                     descriptors                 V2
+1        intercept - c statistic -0.231278295709129
+2            intercept - c p-val  0.925655479104251
+3    no intercept - nc statistic  0.888634995658597
+4        no intercept - nc p-val               0.99
+5 intercept trend - ct statistic  -0.76003518363937
+6      intercept trend- ct p-val  0.371606315971515
+  Q(12) P-value df
+ 200.21       0 12
+  Q(12) P-value df
+ 200.21       0 12
+ Q(12) P-value df
+ 38.21       0 12
+ Q(12) P-value df
+ 38.21       0 12
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 1.04154838444144"
+[1] "test for  MO"
+                     descriptors                 V2
+1        intercept - c statistic -0.108506387900473
+2            intercept - c p-val  0.942353192363061
+3    no intercept - nc statistic  -1.88343404200553
+4        no intercept - nc p-val  0.624971973652721
+5 intercept trend - ct statistic   1.36662029704335
+6      intercept trend- ct p-val  0.955508552797404
+                     descriptors                V2
+1        intercept - c statistic -2.59847349778539
+2            intercept - c p-val 0.096665564873325
+3    no intercept - nc statistic -2.32473826324276
+4        no intercept - nc p-val 0.441421123742223
+5 intercept trend - ct statistic -1.61289788577938
+6      intercept trend- ct p-val 0.099896701335202
+ Q(12) P-value df
+  96.9       0 12
+ Q(12) P-value df
+  96.9       0 12
+  Q(12) P-value df
+ 147.04       0 12
+  Q(12) P-value df
+ 147.04       0 12
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 0.628853521239281"
+[1] "test for  MS"
+                     descriptors                V2
+1        intercept - c statistic  2.45562549780677
+2            intercept - c p-val              0.99
+3    no intercept - nc statistic 0.285087292419439
+4        no intercept - nc p-val              0.99
+5 intercept trend - ct statistic  5.94947192420048
+6      intercept trend- ct p-val              0.99
+                     descriptors                V2
+1        intercept - c statistic -13.7381584503264
+2            intercept - c p-val              0.01
+3    no intercept - nc statistic -14.0165065005209
+4        no intercept - nc p-val              0.01
+5 intercept trend - ct statistic -11.9010087217597
+6      intercept trend- ct p-val              0.01
+ Q(12) P-value df
+  17.4   0.135 12
+ Q(12) P-value df
+  17.4   0.135 12
+ Q(12) P-value df
+ 63.85       0 12
+ Q(12) P-value df
+ 63.85       0 12
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 0.248408922255996"
+[1] "test for  MT"
+                     descriptors                V2
+1        intercept - c statistic 0.796950981111856
+2            intercept - c p-val              0.99
+3    no intercept - nc statistic -1.32812876995339
+4        no intercept - nc p-val 0.855964183324992
+5 intercept trend - ct statistic  1.76418968330209
+6      intercept trend- ct p-val 0.979892138710965
+                     descriptors                 V2
+1        intercept - c statistic  -2.80761164115086
+2            intercept - c p-val 0.0629336062659897
+3    no intercept - nc statistic  -3.21582089890060
+4        no intercept - nc p-val 0.0882965168499008
+5 intercept trend - ct statistic  -2.07328255810989
+6      intercept trend- ct p-val 0.0392909522142204
+ Q(12) P-value df
+  65.6       0 12
+ Q(12) P-value df
+  65.6       0 12
+ Q(12) P-value df
+ 78.28       0 12
+ Q(12) P-value df
+ 78.28       0 12
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 1.15469086378190"
+[1] "test for  NC"
+                     descriptors                 V2
+1        intercept - c statistic   2.14455707340064
+2            intercept - c p-val               0.99
+3    no intercept - nc statistic -0.150677837903068
+4        no intercept - nc p-val               0.99
+5 intercept trend - ct statistic   3.98637157036822
+6      intercept trend- ct p-val               0.99
+                     descriptors                 V2
+1        intercept - c statistic  -3.27552963661187
+2            intercept - c p-val 0.0199882462777771
+3    no intercept - nc statistic  -3.83485496708934
+4        no intercept - nc p-val 0.0194612589137747
+5 intercept trend - ct statistic  -1.79857349202486
+6      intercept trend- ct p-val  0.072413633507274
+  Q(12) P-value df
+ 104.01       0 12
+  Q(12) P-value df
+ 104.01       0 12
+ Q(12) P-value df
+ 73.39       0 12
+ Q(12) P-value df
+ 73.39       0 12
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 0.74804001075417"
+[1] "test for  ND"
+                     descriptors                 V2
+1        intercept - c statistic   1.63331240161139
+2            intercept - c p-val               0.99
+3    no intercept - nc statistic -0.117155838206776
+4        no intercept - nc p-val               0.99
+5 intercept trend - ct statistic   3.95998353104544
+6      intercept trend- ct p-val               0.99
+                     descriptors                V2
+1        intercept - c statistic -13.8935392323844
+2            intercept - c p-val              0.01
+3    no intercept - nc statistic -14.0202207541706
+4        no intercept - nc p-val              0.01
+5 intercept trend - ct statistic -12.8934588153160
+6      intercept trend- ct p-val              0.01
+ Q(12) P-value df
+ 43.44       0 12
+ Q(12) P-value df
+ 43.44       0 12
+ Q(12) P-value df
+   123       0 12
+ Q(12) P-value df
+   123       0 12
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 0.176010344195526"
+[1] "test for  NE"
+                     descriptors                 V2
+1        intercept - c statistic   1.22920720297616
+2            intercept - c p-val               0.99
+3    no intercept - nc statistic -0.518089621930879
+4        no intercept - nc p-val  0.979727563179146
+5 intercept trend - ct statistic   6.60025955577535
+6      intercept trend- ct p-val               0.99
+                     descriptors                V2
+1        intercept - c statistic -10.8050133153584
+2            intercept - c p-val              0.01
+3    no intercept - nc statistic -10.8582883013218
+4        no intercept - nc p-val              0.01
+5 intercept trend - ct statistic -7.25152303285894
+6      intercept trend- ct p-val              0.01
+ Q(12) P-value df
+ 24.84   0.016 12
+ Q(12) P-value df
+ 24.84   0.016 12
+ Q(12) P-value df
+ 56.52       0 12
+ Q(12) P-value df
+ 56.52       0 12
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 0.746079978480703"
+[1] "test for  NH"
+                     descriptors                 V2
+1        intercept - c statistic  -2.30380354646704
+2            intercept - c p-val  0.201562054081305
+3    no intercept - nc statistic   -3.5299331257788
+4        no intercept - nc p-val 0.0423342395529886
+5 intercept trend - ct statistic -0.740945156619042
+6      intercept trend- ct p-val   0.37771203507494
+                     descriptors                V2
+1        intercept - c statistic -1.52611388478670
+2            intercept - c p-val  0.48991050707695
+3    no intercept - nc statistic -1.17293329137354
+4        no intercept - nc p-val 0.907751212810959
+5 intercept trend - ct statistic -1.47890886790477
+6      intercept trend- ct p-val 0.142483229353063
+ Q(12) P-value df
+ 192.6       0 12
+ Q(12) P-value df
+ 192.6       0 12
+ Q(12) P-value df
+  15.9   0.196 12
+ Q(12) P-value df
+  15.9   0.196 12
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 0.583133160666523"
+[1] "test for  NJ"
+                     descriptors                V2
+1        intercept - c statistic -2.14577001616652
+2            intercept - c p-val 0.260154477105661
+3    no intercept - nc statistic -4.21526528229289
+4        no intercept - nc p-val              0.01
+5 intercept trend - ct statistic  -0.7932984489072
+6      intercept trend- ct p-val 0.361025726775926
+                     descriptors                 V2
+1        intercept - c statistic  -1.31065745927983
+2            intercept - c p-val  0.569790542485929
+3    no intercept - nc statistic -0.820399715835144
+4        no intercept - nc p-val  0.957500025371862
+5 intercept trend - ct statistic  -1.38665711058297
+6      intercept trend- ct p-val  0.171886179893875
+  Q(12) P-value df
+ 340.83       0 12
+  Q(12) P-value df
+ 340.83       0 12
+ Q(12) P-value df
+ 94.41       0 12
+ Q(12) P-value df
+ 94.41       0 12
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 0.885394090137096"
+[1] "test for  NM"
+                     descriptors                 V2
+1        intercept - c statistic -0.326336775986147
+2            intercept - c p-val  0.912735209936619
+3    no intercept - nc statistic  -3.06145588406553
+4        no intercept - nc p-val  0.134946249002137
+5 intercept trend - ct statistic   1.19270927957291
+6      intercept trend- ct p-val   0.93759890545202
+                     descriptors                 V2
+1        intercept - c statistic  -2.32128668100896
+2            intercept - c p-val  0.195101795899913
+3    no intercept - nc statistic  -2.15306827584090
+4        no intercept - nc p-val  0.512823842844586
+5 intercept trend - ct statistic  -1.79760566497403
+6      intercept trend- ct p-val 0.0725568879552938
+ Q(12) P-value df
+  16.5   0.057  9
+ Q(12) P-value df
+  16.5   0.057  9
+ Q(12) P-value df
+ 36.88       0  9
+ Q(12) P-value df
+ 36.88       0  9
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 0.673754099123357"
+[1] "test for  NV"
+                     descriptors                 V2
+1        intercept - c statistic  -3.77848978125028
+2            intercept - c p-val               0.01
+3    no intercept - nc statistic  -5.45031052648617
+4        no intercept - nc p-val               0.01
+5 intercept trend - ct statistic  -2.21597153724821
+6      intercept trend- ct p-val 0.0268907955356632
+                     descriptors                 V2
+1        intercept - c statistic -0.527495333985765
+2            intercept - c p-val  0.860146321629154
+3    no intercept - nc statistic -0.004419936429897
+4        no intercept - nc p-val               0.99
+5 intercept trend - ct statistic -0.893010057041962
+6      intercept trend- ct p-val  0.329223886201765
+ Q(12) P-value df
+ 12.45   0.132  8
+ Q(12) P-value df
+ 12.45   0.132  8
+ Q(12) P-value df
+ 52.47       0  8
+ Q(12) P-value df
+ 52.47       0  8
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 0.724586042682621"
+[1] "test for  NY"
+                     descriptors                 V2
+1        intercept - c statistic  -2.14932634431561
+2            intercept - c p-val  0.258835934876494
+3    no intercept - nc statistic  -3.91068253445826
+4        no intercept - nc p-val 0.0157509596505398
+5 intercept trend - ct statistic -0.760613062363768
+6      intercept trend- ct p-val  0.371443379857497
+                     descriptors                V2
+1        intercept - c statistic -1.76326075665330
+2            intercept - c p-val 0.401988782406786
+3    no intercept - nc statistic -1.24174356825783
+4        no intercept - nc p-val 0.891871241236216
+5 intercept trend - ct statistic -1.54342988338961
+6      intercept trend- ct p-val 0.121918762266258
+ Q(12) P-value df
+  5.02   0.755  8
+ Q(12) P-value df
+  5.02   0.755  8
+ Q(12) P-value df
+ 11.52   0.174  8
+ Q(12) P-value df
+ 11.52   0.174  8
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 1.24040733662898"
+[1] "test for  OH"
+                     descriptors                V2
+1        intercept - c statistic -1.25810920147849
+2            intercept - c p-val 0.589263102708338
+3    no intercept - nc statistic -1.44312835659369
+4        no intercept - nc p-val 0.808127416835683
+5 intercept trend - ct statistic 0.467290912638976
+6      intercept trend- ct p-val  0.76280719659144
+                     descriptors                V2
+1        intercept - c statistic  -4.2805233784253
+2            intercept - c p-val              0.01
+3    no intercept - nc statistic  -4.1172755957665
+4        no intercept - nc p-val              0.01
+5 intercept trend - ct statistic -2.63106271197086
+6      intercept trend- ct p-val              0.01
+ Q(12) P-value df
+  8.26   0.508  9
+ Q(12) P-value df
+  8.26   0.508  9
+ Q(12) P-value df
+ 22.27   0.008  9
+ Q(12) P-value df
+ 22.27   0.008  9
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 0.523962993405932"
+[1] "test for  OK"
+                     descriptors                 V2
+1        intercept - c statistic -0.211072246567556
+2            intercept - c p-val  0.928407508171561
+3    no intercept - nc statistic  -1.84282190304512
+4        no intercept - nc p-val  0.641865542271858
+5 intercept trend - ct statistic   1.33563969129869
+6      intercept trend- ct p-val  0.953281227806175
+                     descriptors                V2
+1        intercept - c statistic -2.57828071320434
+2            intercept - c p-val 0.099922465612204
+3    no intercept - nc statistic -2.59675317415291
+4        no intercept - nc p-val 0.328281928188452
+5 intercept trend - ct statistic -1.90135476950256
+6      intercept trend- ct p-val 0.057200300547283
+ Q(12) P-value df
+ 15.74   0.107 10
+ Q(12) P-value df
+ 15.74   0.107 10
+ Q(12) P-value df
+ 16.24   0.093 10
+ Q(12) P-value df
+ 16.24   0.093 10
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 0.62763657363516"
+[1] "test for  OR"
+                     descriptors                V2
+1        intercept - c statistic -0.56626556656005
+2            intercept - c p-val 0.845770660609263
+3    no intercept - nc statistic -2.62770334070705
+4        no intercept - nc p-val 0.315375759550591
+5 intercept trend - ct statistic 0.708781362767727
+6      intercept trend- ct p-val  0.83977626436156
+                     descriptors                 V2
+1        intercept - c statistic   -2.7472406431496
+2            intercept - c p-val 0.0726708640081288
+3    no intercept - nc statistic  -2.67310695444346
+4        no intercept - nc p-val  0.296524090904248
+5 intercept trend - ct statistic  -2.39882611243854
+6      intercept trend- ct p-val 0.0182493245204636
+ Q(12) P-value df
+  19.4   0.013  8
+ Q(12) P-value df
+  19.4   0.013  8
+ Q(12) P-value df
+ 45.95       0  8
+ Q(12) P-value df
+ 45.95       0  8
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 0.6560893353894"
+[1] "test for  PA"
+                     descriptors                 V2
+1        intercept - c statistic -0.959581901507577
+2            intercept - c p-val  0.699944916947077
+3    no intercept - nc statistic  -3.74374381859208
+4        no intercept - nc p-val 0.0238881370920239
+5 intercept trend - ct statistic  0.433286783265193
+6      intercept trend- ct p-val  0.751969227069916
+                     descriptors                 V2
+1        intercept - c statistic  -1.95568163258016
+2            intercept - c p-val  0.330649130566258
+3    no intercept - nc statistic  -1.78312687912752
+4        no intercept - nc p-val   0.66669361375584
+5 intercept trend - ct statistic  -1.62865553066569
+6      intercept trend- ct p-val 0.0975643086640487
+ Q(12) P-value df
+  12.8   0.235 10
+ Q(12) P-value df
+  12.8   0.235 10
+ Q(12) P-value df
+ 10.14   0.428 10
+ Q(12) P-value df
+ 10.14   0.428 10
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 0.80260729870221"
+[1] "test for  RI"
+                     descriptors                 V2
+1        intercept - c statistic  -2.68293069547279
+2            intercept - c p-val 0.0830326835258938
+3    no intercept - nc statistic  -4.21917654886218
+4        no intercept - nc p-val               0.01
+5 intercept trend - ct statistic  -1.47337299478031
+6      intercept trend- ct p-val   0.14426889940601
+                     descriptors                 V2
+1        intercept - c statistic -0.823361683100233
+2            intercept - c p-val  0.750454469144412
+3    no intercept - nc statistic  -0.27128140903205
+4        no intercept - nc p-val               0.99
+5 intercept trend - ct statistic  -1.03940976701229
+6      intercept trend- ct p-val  0.282562624059827
+ Q(12) P-value df
+ 15.51    0.03  7
+ Q(12) P-value df
+ 15.51    0.03  7
+ Q(12) P-value df
+ 30.28       0  7
+ Q(12) P-value df
+ 30.28       0  7
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 0.841315036767168"
+[1] "test for  SC"
+                     descriptors                V2
+1        intercept - c statistic  2.72054455593352
+2            intercept - c p-val              0.99
+3    no intercept - nc statistic 0.694967093912311
+4        no intercept - nc p-val              0.99
+5 intercept trend - ct statistic     4.59544723874
+6      intercept trend- ct p-val              0.99
+                     descriptors                 V2
+1        intercept - c statistic   -4.4045863937898
+2            intercept - c p-val               0.01
+3    no intercept - nc statistic  -5.18422145816464
+4        no intercept - nc p-val               0.01
+5 intercept trend - ct statistic  -2.38167549662125
+6      intercept trend- ct p-val 0.0189683274194559
+ Q(12) P-value df
+ 44.57       0 12
+ Q(12) P-value df
+ 44.57       0 12
+ Q(12) P-value df
+ 37.41       0 12
+ Q(12) P-value df
+ 37.41       0 12
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 0.69064881199356"
+[1] "test for  SD"
+                     descriptors               V2
+1        intercept - c statistic 2.50610406105467
+2            intercept - c p-val             0.99
+3    no intercept - nc statistic 0.36200689537499
+4        no intercept - nc p-val             0.99
+5 intercept trend - ct statistic 5.44017777035574
+6      intercept trend- ct p-val             0.99
+                     descriptors                V2
+1        intercept - c statistic -9.56271418706613
+2            intercept - c p-val              0.01
+3    no intercept - nc statistic -10.1559639856398
+4        no intercept - nc p-val              0.01
+5 intercept trend - ct statistic  -7.1960310226572
+6      intercept trend- ct p-val              0.01
+ Q(12) P-value df
+ 43.97       0 12
+ Q(12) P-value df
+ 43.97       0 12
+ Q(12) P-value df
+ 35.36       0 12
+ Q(12) P-value df
+ 35.36       0 12
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 0.0466128751729573"
+[1] "test for  TN"
+                     descriptors                 V2
+1        intercept - c statistic   1.28188350514073
+2            intercept - c p-val               0.99
+3    no intercept - nc statistic -0.792905073892526
+4        no intercept - nc p-val  0.959966808878643
+5 intercept trend - ct statistic   2.76184696954871
+6      intercept trend- ct p-val               0.99
+                     descriptors                 V2
+1        intercept - c statistic  -2.64943344177013
+2            intercept - c p-val 0.0884462190693332
+3    no intercept - nc statistic  -2.65446828142938
+4        no intercept - nc p-val  0.304276476477329
+5 intercept trend - ct statistic  -1.19919380222125
+6      intercept trend- ct p-val  0.231635441523106
+ Q(12) P-value df
+ 59.61       0 12
+ Q(12) P-value df
+ 59.61       0 12
+ Q(12) P-value df
+ 19.38    0.08 12
+ Q(12) P-value df
+ 19.38    0.08 12
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 0.871791125423176"
+[1] "test for  TX"
+                     descriptors                 V2
+1        intercept - c statistic -0.109101305724288
+2            intercept - c p-val  0.942272302521172
+3    no intercept - nc statistic  -1.83623407311547
+4        no intercept - nc p-val  0.644605904139434
+5 intercept trend - ct statistic   1.46935460104455
+6      intercept trend- ct p-val  0.962894550496876
+                     descriptors                V2
+1        intercept - c statistic -2.34392395273450
+2            intercept - c p-val 0.186709073043100
+3    no intercept - nc statistic -2.37713048170226
+4        no intercept - nc p-val 0.419629621835392
+5 intercept trend - ct statistic -1.51064143830896
+6      intercept trend- ct p-val 0.132369262690373
+  Q(12) P-value df
+ 132.06       0 12
+  Q(12) P-value df
+ 132.06       0 12
+ Q(12) P-value df
+ 55.29       0 12
+ Q(12) P-value df
+ 55.29       0 12
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 0.644112683844782"
+[1] "test for  UT"
+                     descriptors                 V2
+1        intercept - c statistic  -0.82192663892538
+2            intercept - c p-val  0.750981904866077
+3    no intercept - nc statistic  -3.39564977738381
+4        no intercept - nc p-val 0.0583028148804764
+5 intercept trend - ct statistic  0.646580758486708
+6      intercept trend- ct p-val  0.819951370566813
+                     descriptors                 V2
+1        intercept - c statistic  -2.35927152891378
+2            intercept - c p-val  0.181018990114457
+3    no intercept - nc statistic  -2.23358024500443
+4        no intercept - nc p-val  0.479336489547913
+5 intercept trend - ct statistic  -2.10054122009542
+6      intercept trend- ct p-val 0.0369231045782295
+  Q(12) P-value df
+ 209.93       0 12
+  Q(12) P-value df
+ 209.93       0 12
+  Q(12) P-value df
+ 199.86       0 12
+  Q(12) P-value df
+ 199.86       0 12
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 0.516203195197624"
+[1] "test for  VA"
+                     descriptors                 V2
+1        intercept - c statistic  -1.48633950542600
+2            intercept - c p-val  0.504644563272815
+3    no intercept - nc statistic  -3.68096794219506
+4        no intercept - nc p-val 0.0286270623612908
+5 intercept trend - ct statistic 0.0548406829965683
+6      intercept trend- ct p-val  0.631348956067963
+                     descriptors                 V2
+1        intercept - c statistic  -1.43442494746986
+2            intercept - c p-val  0.523903995747574
+3    no intercept - nc statistic -0.870945861306516
+4        no intercept - nc p-val  0.952986976669061
+5 intercept trend - ct statistic  -1.39292975180955
+6      intercept trend- ct p-val  0.169886931694168
+  Q(12) P-value df
+ 311.26       0 12
+  Q(12) P-value df
+ 311.26       0 12
+  Q(12) P-value df
+ 162.95       0 12
+  Q(12) P-value df
+ 162.95       0 12
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 0.827466634637401"
+[1] "test for  VT"
+                     descriptors                V2
+1        intercept - c statistic 0.119767101568531
+2            intercept - c p-val 0.963975880218414
+3    no intercept - nc statistic -2.34719882952438
+4        no intercept - nc p-val 0.432058168528405
+5 intercept trend - ct statistic  1.74777950663242
+6      intercept trend- ct p-val 0.979257288341178
+                     descriptors                V2
+1        intercept - c statistic -2.56233413361022
+2            intercept - c p-val 0.105733938785720
+3    no intercept - nc statistic  -2.7208357865939
+4        no intercept - nc p-val 0.276672231841988
+5 intercept trend - ct statistic -1.90136598972882
+6      intercept trend- ct p-val 0.057198639767788
+ Q(12) P-value df
+ 13.82   0.087  8
+ Q(12) P-value df
+ 13.82   0.087  8
+ Q(12) P-value df
+ 33.42       0  8
+ Q(12) P-value df
+ 33.42       0  8
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 1.1469365778069"
+[1] "test for  WA"
+                     descriptors                 V2
+1        intercept - c statistic  -1.87829690940676
+2            intercept - c p-val  0.359322656093395
+3    no intercept - nc statistic  -4.40201054478902
+4        no intercept - nc p-val               0.01
+5 intercept trend - ct statistic -0.508775366133988
+6      intercept trend- ct p-val   0.45171037467177
+                     descriptors                 V2
+1        intercept - c statistic  -2.25152626440186
+2            intercept - c p-val  0.220965329724031
+3    no intercept - nc statistic  -2.01508201708477
+4        no intercept - nc p-val  0.570216484523338
+5 intercept trend - ct statistic  -1.98089533938634
+6      intercept trend- ct p-val 0.0473162491846473
+ Q(12) P-value df
+ 18.33    0.05 10
+ Q(12) P-value df
+ 18.33    0.05 10
+ Q(12) P-value df
+ 15.05    0.13 10
+ Q(12) P-value df
+ 15.05    0.13 10
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 0.978922090284263"
+[1] "test for  WI"
+                     descriptors                V2
+1        intercept - c statistic 0.826300345281711
+2            intercept - c p-val              0.99
+3    no intercept - nc statistic -1.72872928394560
+4        no intercept - nc p-val  0.68932503440976
+5 intercept trend - ct statistic  2.28424419879646
+6      intercept trend- ct p-val              0.99
+                     descriptors                 V2
+1        intercept - c statistic  -2.58615731590083
+2            intercept - c p-val 0.0986520458224468
+3    no intercept - nc statistic  -2.43029507837587
+4        no intercept - nc p-val  0.397516864562392
+5 intercept trend - ct statistic  -1.74060106081945
+6      intercept trend- ct p-val 0.0809945143843327
+ Q(12) P-value df
+  6.44   0.777 10
+ Q(12) P-value df
+  6.44   0.777 10
+ Q(12) P-value df
+ 12.01   0.284 10
+ Q(12) P-value df
+ 12.01   0.284 10
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 0.651540129132487"
+[1] "test for  WV"
+                     descriptors                 V2
+1        intercept - c statistic   1.97073181722203
+2            intercept - c p-val               0.99
+3    no intercept - nc statistic 0.0686123648624347
+4        no intercept - nc p-val               0.99
+5 intercept trend - ct statistic   3.96284766367221
+6      intercept trend- ct p-val               0.99
+                     descriptors                V2
+1        intercept - c statistic -7.18970592964512
+2            intercept - c p-val              0.01
+3    no intercept - nc statistic -7.55188142821317
+4        no intercept - nc p-val              0.01
+5 intercept trend - ct statistic -5.23292508324174
+6      intercept trend- ct p-val              0.01
+ Q(12) P-value df
+ 25.91   0.007 11
+ Q(12) P-value df
+ 25.91   0.007 11
+ Q(12) P-value df
+ 72.48       0 11
+ Q(12) P-value df
+ 72.48       0 11
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 0.299145463099734"
+[1] "test for  WY"
+                     descriptors                V2
+1        intercept - c statistic  1.83514997051472
+2            intercept - c p-val              0.99
+3    no intercept - nc statistic 0.398701814581886
+4        no intercept - nc p-val              0.99
+5 intercept trend - ct statistic  3.21611577056361
+6      intercept trend- ct p-val              0.99
+                     descriptors                 V2
+1        intercept - c statistic  -2.39902776293734
+2            intercept - c p-val  0.166279446496492
+3    no intercept - nc statistic  -2.68452419445467
+4        no intercept - nc p-val  0.291775316853628
+5 intercept trend - ct statistic  -1.92163710906776
+6      intercept trend- ct p-val 0.0541981780539129
+ Q(12) P-value df
+ 14.94   0.134 10
+ Q(12) P-value df
+ 14.94   0.134 10
+ Q(12) P-value df
+ 14.22   0.163 10
+ Q(12) P-value df
+ 14.22   0.163 10
+[1] "Box test test stat on resid "
+[1] "Box test p-val on resid "
+[1] "Box test test stat on resid^2 "
+[1] "Box test p-val on resid^2 "
+[1] "d= 0.768681005052275"
+      [,1]                    
+ [1,] "AK 0.335979675591552"  
+ [2,] "AR -0.0686183236450745"
+ [3,] "AZ 0.378653505350851"  
+ [4,] "FL 0.474913290055425"  
+ [5,] "IN 0.307017120049979"  
+ [6,] "KY 0.346754063053533"  
+ [7,] "MS 0.248408922255996"  
+ [8,] "ND 0.176010344195526"  
+ [9,] "SD 0.0466128751729573" 
+[10,] "WV 0.299145463099734"  

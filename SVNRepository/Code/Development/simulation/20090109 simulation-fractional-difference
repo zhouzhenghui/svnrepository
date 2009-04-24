@@ -1,0 +1,62 @@
+#Tim 
+#Created 1-10-09
+
+library(Rmetrics)
+library(fArma)
+library(fracdiff)
+library(GeneCycle)
+
+#RH453
+setwd("Z:/SVNRepository/Code/Development/initial_analysis_r_code/")
+#Home
+#setwd("C:/Users/tim/Documents/ClassesSpring09/MastersProject/SVNRepository/timr_FinEngProj09/Code/Development/initial_analysis_r_code")
+
+
+#mattesons class file, revised box.ljung.test to give p-val
+source("../ATS_2008.R")
+
+#our own project source files
+source("../source_functions/initialplots.R")
+source("../source_functions/aicbicadfTest.R")
+source("../source_functions/completearmamodelwithstats.R")
+source("../source_functions/fractional.diff.est.sim.R")
+
+all.data = read.table("../../../Data/States/all.txt")
+all.data.state = all.data[,1]
+states = read.csv("../../../Data/States/states.csv")
+
+all.data.state = all.data[,1]
+state.names = as.matrix(states$State)
+state.ar.orders = as.matrix(states$AR.order)
+state.ma.orders = as.matrix(states$MA.order)
+state.d.orders = as.matrix(states$d)
+state.alpha.orders = as.matrix(states$m.order)
+state.beta.orders = as.matrix(states$s.order)
+#########################################
+###########Set test parameters here######
+#lag to use in all Box Jenkin's tests
+lags.to.use = 12;
+#adjust d.o.f. (TRUE/FALSE)
+adjust.dof = TRUE;
+#significance of tests
+alpha = 0.05;
+##############################
+
+dsimvector = NULL
+totaldsimvector =NULL
+for (i in 48:length(as.matrix(state.names))){
+#use following to select just 1 state
+state.num = 47
+
+#for (i in state.num:state.num){
+	current.state.name = as.matrix(state.names)[i]
+	current.state.data = subset(all.data,all.data[,1]==current.state.name)[,4]
+	current.state.data.diff = diff(current.state.data)
+	dsimvector = 1
+	fractional.diff.est.sim(state.name=current.state.name, data = current.state.data,arma.order = c(state.ar.orders[i],0,state.ar.orders[i]),largerN=1000, no.of.sims=100, include.model = FALSE)
+	#sink("output.txt",append=TRUE);
+	totaldsimvector = c(totaldsimvector ,dsimvector )
+}
+	
+
+

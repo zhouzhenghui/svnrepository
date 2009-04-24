@@ -1,0 +1,39 @@
+library(fArma)
+library(fracdiff)
+library(GeneCycle)
+library(fGarch)
+
+setwd("Z:/SVNRepository/Tommy")
+
+source("ATS_2008.R")
+
+all.data = read.table("../Data/States/all.txt");
+Para = read.csv("../Data/States/states.csv");
+
+
+for(i=1:length(Para$States)){
+    current.state.data = subset(all.data,all.data[,1]==Para$States)[,4];
+    current.state.data.sreturn = (current.state.data[2:length(current.state.data)]-current.state.data[1:(length(current.state.data)-1)])/current.state.data[1:(length(current.state.data)-1)];
+
+    for(j = 1:(length(Para$AR.order[i])+length(Para$MA.order[i])+1)){
+        current.fix = c(current.fix,"NA");
+    }
+    
+    current.AR.Drop = as.numeric(unlist(strsplit(as.character(Para$AR.order.1[i]), ",")));
+    current.MA.Drop = as.numeric(unlist(strsplit(as.character(Para$MA.order.1[i]), ",")));
+    if(intercept[i] <> 1){
+       current.fix[1] = 0;
+    }
+    if(current.AR.Drop[1] <> 0){
+      for(j = 1:(length(current.AR.Drop))){
+          current.fix[1+current.AR.Drop[j]] = 0;
+      }
+    }
+    if(current.MA.Drop[1] <> 0){
+      for(j = 1:(length(current.MA.Drop))){
+          current.fix[1+length(Para$AR.order[i])+current.MA.Drop[j]] = 0;
+      }
+    }
+    model = arima(current.state.data.sreturn,order = c(Para$AR.order[i],0,Para$MA.order[i])),fix = current.fix)
+
+}

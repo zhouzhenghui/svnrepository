@@ -1,0 +1,16 @@
+ all.params.plus.ses
+test.vector =  all.params.plus.ses
+test.vector = subset(test.vector,select = -lambda.se)
+dim(test.vector)[2]
+x=seq(1:(dim(test.vector)[1] * dim(test.vector)[2]/4))
+test.vector.2d = test.vector[,c(1,2)]
+y = test.vector.2d[,1]
+delta = test.vector[,2]
+errbar(x,y,y+delta,y-delta,xaxt="n",xlab="States",ylab="95% Confidence Intervals",ylim=c(1,5),cex.axis=0.7,cex.lab=0.7, xaxt = "n")
+
+ test = whittleFit(data, order = c(0, 0), subseries = 1, method = c("farma"),trace = T, spec = FALSE, title = NULL, description = NULL)
+test@hurst$H+abs(qnorm(0.05/2))*sqrt(test@hurst$sigma2)/sqrt(length(test@data$x))
+
+x= fdSperio(data,bandw.exp = 0.5)
+sqrt((pi^2)/24)/sqrt(sqrt(length(data)))
+confint(x)
