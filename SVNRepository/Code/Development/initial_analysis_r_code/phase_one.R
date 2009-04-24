@@ -1,5 +1,5 @@
 #set wd
-#setwd("Z:/SVNRepository/Code/Development/initial_analysis_r_code/")
+#setwd("Z:/SVNRepository2/SVNRepository/Code/Development/initial_analysis_r_code/")
 #setwd("C:/Users/tim/Documents/ClassesSpring09/MastersProject/SVNRepository/timr_FinEngProj09/Code/Development/initial_analysis_r_code")
 
 #some libraries needed for regression and such
@@ -29,7 +29,7 @@ source("../source_functions/plot.actual.fitted.R")
 
 
 begin_month=1
-begin_year=1998
+begin_year=1999
 state = "AZ" #our dependent variable 
 end_month = 6
 end_year = 2008
@@ -98,7 +98,8 @@ sink()
 
 #do a robust regression
 shifted.multivar.test.data.vector = shift.df.multi(test.data.vector,state,independent.variables)
-#dataframe.eda(shifted.multivar.test.data.vector, state, dates, basicTS = F, comparisonTS = T, allTS = F, CCF = F, scatter = F, ACF = F, PACF = F)
+#dataframe.eda(shifted.multivar.test.data.vector, state, dates, basicTS = F, comparisonTS = T, allTS = F, CCF = F, scatter = T, ACF = F, PACF = F)
+#plot.actual.fitted(shifted.multivar.test.data.vector,state,dates,sreturn=TRUE)
 
 predictors = shifted.multivar.test.data.vector
 predictors=as.matrix(predictors[,which(names(predictors)!=state)])
@@ -119,7 +120,7 @@ multi.adf.test.lags(resids)
 #model check
 which.min(abs(summary(robust.lm)$coefficients[,3]))
 #plot(resids)
-#acf(resids)
+#acf(resids, lag.max = 40, main = "ACF of Phase 1 Sq-Residuals")
 pacf(diff(resids))
 lag=2
 ur.df(resids,lags=lag,type="none")@cval
