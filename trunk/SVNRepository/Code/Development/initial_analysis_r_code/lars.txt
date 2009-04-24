@@ -1,0 +1,62 @@
+
+Call:
+lars(x = predictors, y = response, type = c("lar"))
+R-squared: 0.569 
+Sequence of LAR moves:
+     unemp_rate-Lag-8 unemp_rate-Lag-7 unemp_rate-Lag-5 unemp_rate-Lag8
+Var                21               22               24              59
+Step                1                2                3               4
+     unemp_rate-Lag-6 ty_cr-Lag-5 foreclosures-Lag0 foreclosures-Lag-1
+Var                23          10                39                 35
+Step                5           6                 7                  8
+     ty_cr-Lag-6 unemp_rate-Lag7 median_income-Lag-9 foreclosures-Lag1
+Var            9              58                   3                60
+Step           9              10                  11                12
+     unemp_rate-Lag6 median_income-Lag-6 foreclosures-Lag-3 unemp_rate-Lag4
+Var               57                   6                 33              55
+Step              13                  14                 15              16
+     unemp_rate-Lag-3 foreclosures-Lag2 unemp_rate-Lag5 ty_cr-Lag4 ty_cr-Lag3
+Var                26                61              56         43         42
+Step               17                18              19         20         21
+     foreclosures-Lag-2 median_income-Lag-10 median_income-Lag-12 ty_cr-Lag-4
+Var                  34                    2                    1          11
+Step                 22                   23                   24          25
+     building_permits-Lag7 ty_cr-Lag5 foreclosures-Lag-5 foreclosures-Lag-6
+Var                     67         44                 31                 30
+Step                    26         27                 28                 29
+     building_permits-Lag6 mort_orig-Lag6 ty_cr-Lag2 mort_orig-Lag3
+Var                     66             51         41             48
+Step                    30             31         32             33
+     mort_orig-Lag-5 mort_orig-Lag4 pop_size-Lag-6 building_permits-Lag8
+Var               16             49             29                    68
+Step              34             35             36                    37
+     ty_cr-Lag-1 mort_orig-Lag-1 foreclosures-Lag-4 building_permits-Lag9
+Var           14              20                 32                    69
+Step          38              39                 40                    41
+     mort_orig-Lag2 building_permits-Lag14 mort_orig-Lag-4 mort_orig-Lag1
+Var              47                     74              17             46
+Step             42                     43              44             45
+     building_permits-Lag10 mort_orig-Lag0 mort_orig-Lag5 mort_orig-Lag-6
+Var                      70             37             50              15
+Step                     46             47             48              49
+     unemp_rate-Lag-4 median_income-Lag-5 unemp_rate-Lag0
+Var                25                   7              38
+Step               50                  51              52
+     building_permits-Lag11 ty_cr-Lag-2 mort_orig-Lag-3 unemp_rate-Lag1
+Var                      71          13              18              52
+Step                     53          54              55              56
+     unemp_rate-Lag3 mort_orig-Lag-2 ty_cr-Lag1 building_permits-Lag12
+Var               54              19         40                     72
+Step              57              58         59                     60
+     building_permits-Lag13 ty_cr-Lag-3 unemp_rate-Lag-2 ty_cr-Lag0
+Var                      73          12               27         36
+Step                     61          62               63         64
+     unemp_rate-Lag-1 foreclosures-Lag4 foreclosures-Lag6 median_income-Lag-7
+Var                28                63                65                   5
+Step               65                66                67                  68
+     median_income-Lag-3 ty_cr-Lag6 foreclosures-Lag3 foreclosures-Lag5
+Var                    8         45                62                64
+Step                  69         70                71                72
+     unemp_rate-Lag2 median_income-Lag-8
+Var               53                   4
+Step              73                  74

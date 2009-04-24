@@ -1,0 +1,29 @@
+####Genereates a multiple axis plot using overplot
+source("../source_functions/plotting_functions.R")
+##create dataframe of values
+library(tseries)
+library(gplots)
+library(FinTS)
+library(zoo)
+library(rgl)
+
+
+sink_to_pdf = TRUE
+partition = ""
+
+AIC = c(3,4,5)
+BIC = c(0.1,.5,.6)
+State.labels  = c("AK","AL","AR")
+State = c(1,2,3)
+data = as.data.frame(cbind(State,AIC,BIC))
+#data$State = State.labels
+data.formatted = data
+clean.data(daily.data, 0)
+y = stack(data.formatted,select = -State)
+x = data.formatted$State
+x_all = rep(x,length(data.formatted)-1)
+data.formatted.subset = subset(data.formatted, select = -State)
+
+
+p = custom.overplot(data.formatted.subset,data.formatted,y,x_all,State.labels,sink_to_pdf)
+

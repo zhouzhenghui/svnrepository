@@ -1,0 +1,43 @@
+Correlation Information Criterion (CIC)
+Akaike Information Criterion (AIC)
+Bayesian Information Criterion (BIC)
+Multiple Correlation Information criterion (MIC)
+Minimum Description Length (MDL)
+Final Prediction Error
+
+
+
+FPE, BIC & MIC predict similar orders for an AR process. However CIC gives better predictions.
+The order of the AR process is based on the minimal estimate of correlation period.
+(Ref: http://www.ursi.org/Proceedings/ProcGA05/pdf/CP2.1(01104).pdf)
+
+
+
+The following IEEE paper does some study to corroborate the consistency of CIC over AIC.
+(Ref:http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=00286962)
+
+> CIC takes into account Hypothesis testing considerations in conjunction with information 
+  theoretical considerations.
+
+> Read the conclusions : imp
+> CIC provides AIC with asymptotic optimality.
+> CIC also tends to remove the redundancy in model order determined by AIC and consequently yields
+  more accurate results in system estimation.
+> AIC is reported to be too strict in model order determination, yielding excessive model orders
+  with the result that degradation may take place in system estimation.
+> AIC provides optimal orders in sense of a minimum information theoretic criterion estimate, but
+  it lacks in providing asymptotic optimality.
+> CIC happens to be a consistent estimate i.e. aumptotically unbiased estimate of the model order.
+> CIC works much better when the sample order size is large. It tends to give too low order values
+  for smaller samples.
+
+
+Another study that confirms superiority of CIC over AIC and BIC:
+(Ref: http://www.citeulike.org/user/Borelli/article/1362648
+ Ref: http://scitation.aip.org/getabs/servlet/GetabsServlet?prog=normal&id=APCPCS000803000001000080000001&idtype=cvips&gifs=yes)
+
+> Find n from N iid samples of a complete dag of n bits. The CIC criterion outperforms AIC and BIC by orders of magnitude 
+  when n > 3 and it is just better for the cases n = 2, 3.
+
+
+

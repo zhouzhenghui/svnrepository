@@ -1,0 +1,27 @@
+source("../source_functions/UnitRootNormality.R")
+current.state.name="AR"
+current.state.data = subset(all.data,all.data[,1]==current.state.name)[,4]
+current.state.data.sreturn = (current.state.data[2:length(current.state.data)]-current.state.data[1:(length(current.state.data)-1)])/current.state.data[1:(length(current.state.data)-1)]
+ current.state.data.sreturn
+ plot(as.ts(current.state.data.sreturn))
+ acf(as.ts(current.state.data.sreturn))
+	
+
+eacf(current.state.data.sreturn)
+Box.Ljung.test(model$model$residuals^2,lag=12,12)
+ acf(model$model$residuals^2)
+ pacf(model$model$residuals^2)
+
+ model = auto.model("AR",134)
+
+Box.Ljung.test((model$model@residuals/sqrt(model$model@sigma.t))^2,lag=12,10)
+Box.Ljung.test(model$model$residuals,lag=12,8)
+Box.Ljung.test(current.state.data.sreturn,lag=12,12)
+
+acf(model$model$residuals)
+
+
+Box.Ljung.test(tester$residuals,lag=12,9)
+
+source("Unitroot
+unit.root.test(current.state.data.sreturn)

@@ -1,0 +1,90 @@
+# Shirley
+# Created Jan 15 2009
+
+library(Hmisc)
+library(Rmetrics)
+library(fGarch)
+
+###########
+###function that returns d param estimate, ase, and simulation results of avg. and
+###se of parameter estimates, for n=134 and n=1000
+###outputs the following vector of data
+### "obs.GPH-d-est" "obs.GPH-d-ase" "sim(n=sample-length).d-est" "sim(n=sample-length).d-ase" 
+###"sim(n=largerN).GPH-d-est" "sim(n=largerN).d-ase"
+##############
+
+
+setwd("Z:/MEng Project/")
+
+par(mfrow=c(2,1))
+data = destvector
+read.table("parameter and SE data test.txt")
+
+# Observed data plot:
+num.states = length(data[,1])
+x = 1:num.states  	# x represents the diff states
+#dimnames(data) = list(x, c("observed", "simulated", "fd"))  # dimension of the x var is 2 (obs, sim)
+y = data[,2]  		# y represents the mean(parameter value) of each x
+delta = data[,3]
+errbar(x,y,y+delta,y-delta,xaxt="n",xlab="States",ylab="95% Confidence Intervals",ylim=c(1,5),cex.axis=0.7,cex.lab=0.7)
+	## for 95% CI, multiply by 1.96!!!!!!! #####
+axis(1, at = x, labels = data[,1], las = 2, cex.axis=0.7)
+title(main = "Observed Fractional Difference Parameter", cex.main=0.8)
+
+# Simulated data plot:
+y2 = data[,4]
+delta2 = data[,5]
+errbar(x,y2,y2+delta2,y2-delta2,xaxt="n",xlab="States",ylab="95% Confidence Intervals",ylim=c(1,5),cex.axis=0.7,cex.lab=0.7)
+axis(1, at = x, labels = data[,1], las = 2, cex.axis=0.7)
+title(main = "Simulated Fractional Difference Parameter-n=Sample Size", cex.main=0.8)
+
+# Simulated data plot:
+y2 = data[,6]
+delta2 = data[,7]
+errbar(x,y2,y2+delta2,y2-delta2,xaxt="n",xlab="States",ylab="95% Confidence Intervals",ylim=c(1,5),cex.axis=0.7,cex.lab=0.7)
+axis(1, at = x, labels = data[,1], las = 2, cex.axis=0.7)
+title(main = "Simulated Fractional Difference Parameter-n=1000", cex.main=0.8)
+
+#######make sure y-axis scale is same for observed and simulated:  i.e. ylim=c(1,5)
+
+
+
+
+plot(as.numeric(data[,2])+as.numeric(data[,3]), type = "n", xaxt = "n")
+axis(1, at = x, labels = data[,1], las = 2, cex.axis=0.7)
+points(as.numeric(data[,2]))
+par(new=T)
+points(as.numeric(data[,2])+as.numeric(data[,3]))
+par(new=T)
+points(as.numeric(data[,2])-as.numeric(data[,3]))
+par(new=T)
+points(as.numeric(data[,4])+as.numeric(data[,5]))
+par(new=T)
+points(as.numeric(data[,4])-as.numeric(data[,5]))
+par(new=T)
+
+points(as.numeric(data[,6])+as.numeric(data[,7]))
+par(new=T)
+points(as.numeric(data[,6])-as.numeric(data[,7]))
+
+
+
+
+######## testing ######
+test.data = read.table("NV.txt")
+##example ARMA(1,1)
+#sim.size = length(current.state.data.diff)
+sim.size = 1000
+garch.spec = garchSpec(model = list(ar =1 , ma =1,alpha =1, beta = 1, mu = 1,omega = 1), cond.dist = "norm")
+garch.spec
+garch.sim = garchSim(model = list(ar =1 , ma =1,alpha =1, beta = 1, mu = 1,omega = 1), n = sim.size, n.start = 1) ##works
+sim.data = as.numeric(garch.sim)   # vector of simulated values
+
+############
+i = 1
+
+while (i <= num.states) {
+	sim.param.value = mean(sim.data)
+	sim.param.SE.value = stdev(sim.data)
+	i = i + 1
+}

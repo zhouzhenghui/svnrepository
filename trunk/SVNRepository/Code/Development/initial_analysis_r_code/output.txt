@@ -1,0 +1,1594 @@
+[1] "DE"
+$coef
+   intercept 
+0.0003147870 
+
+$se
+  intercept 
+0.006592096 
+
+$t.stat
+ intercept 
+0.04775219 
+
+$fitmodel
+   intercept 
+0.0003147870 
+
+$invertible
+Invertible Model? 
+             TRUE 
+
+$mean.good
+Mean Equation Adequate? 
+                  FALSE 
+
+$vol.good
+ARCH Effect? 
+        TRUE 
+
+$Box.mean.p.value
+Resid Box Test P-Val 
+        2.209344e-14 
+
+$Box.mean.stat
+Resid Box Test Stat 
+            91.8043 
+
+$Box.mean.dof.adj
+Resid Box Test DOF Used 
+                     12 
+
+$Box.vol.pval
+Resid^2 Box Test P-Val 
+           6.28207e-08 
+
+$Box.vol.stat
+Resid^2 Box Test Stat 
+             57.55206 
+
+$Box.vol.dof.adj
+Resid^2 Box Test DOF Used 
+                       12 
+
+$sigma2
+Sigma^2 of residual series 
+               0.005778608 
+
+[1] "AK"
+$coef
+ intercept 
+0.01251558 
+
+$se
+  intercept 
+0.003972235 
+
+$t.stat
+intercept 
+ 3.150765 
+
+$fitmodel
+ intercept 
+0.01251558 
+
+$invertible
+Invertible Model? 
+             TRUE 
+
+$mean.good
+Mean Equation Adequate? 
+                  FALSE 
+
+$vol.good
+ARCH Effect? 
+        TRUE 
+
+$Box.mean.p.value
+Resid Box Test P-Val 
+          0.04877385 
+
+$Box.mean.stat
+Resid Box Test Stat 
+           21.11132 
+
+$Box.mean.dof.adj
+Resid Box Test DOF Used 
+                     12 
+
+$Box.vol.pval
+Resid^2 Box Test P-Val 
+          7.712418e-06 
+
+$Box.vol.stat
+Resid^2 Box Test Stat 
+             45.73314 
+
+$Box.vol.dof.adj
+Resid^2 Box Test DOF Used 
+                       12 
+
+$sigma2
+Sigma^2 of residual series 
+               0.002113338 
+
+[1] "AL"
+$coef
+        ar1         ma1   intercept 
+-0.53886642  0.00000000  0.01110528 
+
+$se
+         ar1          ma1    intercept 
+0.0753105947 0.0000000000 0.0009821083 
+
+$t.stat
+      ar1       ma1 intercept 
+-7.155254 -1.979564 11.307594 
+
+$fitmodel
+        ar1         ma1   intercept 
+-0.53886642  0.00000000  0.01110528 
+
+$invertible
+Invertible Model? 
+             TRUE 
+
+$mean.good
+Mean Equation Adequate? 
+                   TRUE 
+
+$vol.good
+ARCH Effect? 
+        TRUE 
+
+$Box.mean.p.value
+Resid Box Test P-Val 
+           0.2547364 
+
+$Box.mean.stat
+Resid Box Test Stat 
+           12.47154 
+
+$Box.mean.dof.adj
+Resid Box Test DOF Used 
+                     10 
+
+$Box.vol.pval
+Resid^2 Box Test P-Val 
+          1.383338e-13 
+
+$Box.vol.stat
+Resid^2 Box Test Stat 
+             87.68479 
+
+$Box.vol.dof.adj
+Resid^2 Box Test DOF Used 
+                       12 
+
+$sigma2
+Sigma^2 of residual series 
+              0.0003020394 
+
+[1] "AR"
+$coef
+        ar1         ma1   intercept 
+-0.96695366  0.68594945  0.01067131 
+
+$se
+        ar1         ma1   intercept 
+0.043917222 0.083142483 0.001467573 
+
+$t.stat
+       ar1        ma1  intercept 
+-22.017642   8.250288   7.271400 
+
+$fitmodel
+        ar1         ma1   intercept 
+-0.96695366  0.68594945  0.01067131 
+
+$invertible
+Invertible Model? 
+             TRUE 
+
+$mean.good
+Mean Equation Adequate? 
+                  FALSE 
+
+$vol.good
+ARCH Effect? 
+        TRUE 
+
+$Box.mean.p.value
+Resid Box Test P-Val 
+         0.003912615 
+
+$Box.mean.stat
+Resid Box Test Stat 
+           25.87456 
+
+$Box.mean.dof.adj
+Resid Box Test DOF Used 
+                     10 
+
+$Box.vol.pval
+Resid^2 Box Test P-Val 
+          4.457834e-10 
+
+$Box.vol.stat
+Resid^2 Box Test Stat 
+             69.23198 
+
+$Box.vol.dof.adj
+Resid^2 Box Test DOF Used 
+                       12 
+
+$sigma2
+Sigma^2 of residual series 
+              0.0003907766 
+
+[1] "AZ"
+$coef
+       ar1        ar2        ar3  intercept 
+-0.6901759 -0.6654254 -0.2044416  0.0000000 
+
+$se
+       ar1        ar2        ar3  intercept 
+0.08800914 0.08991797 0.08807999 0.00000000 
+
+$t.stat
+      ar1       ar2       ar3 intercept 
+-7.842093 -7.400360 -2.321090 -1.979564 
+
+$fitmodel
+       ar1        ar2        ar3  intercept 
+-0.6901759 -0.6654254 -0.2044416  0.0000000 
+
+$invertible
+Invertible Model? 
+             TRUE 
+
+$mean.good
+Mean Equation Adequate? 
+                   TRUE 
+
+$vol.good
+ARCH Effect? 
+        TRUE 
+
+$Box.mean.p.value
+Resid Box Test P-Val 
+           0.4814165 
+
+$Box.mean.stat
+Resid Box Test Stat 
+           8.533329 
+
+$Box.mean.dof.adj
+Resid Box Test DOF Used 
+                      9 
+
+$Box.vol.pval
+Resid^2 Box Test P-Val 
+           0.003190016 
+
+$Box.vol.stat
+Resid^2 Box Test Stat 
+             29.61497 
+
+$Box.vol.dof.adj
+Resid^2 Box Test DOF Used 
+                       12 
+
+$sigma2
+Sigma^2 of residual series 
+              0.0005972178 
+
+[1] "CA"
+$coef
+       ar1  intercept 
+-0.1278261  0.0000000 
+
+$se
+       ar1  intercept 
+0.08598376 0.00000000 
+
+$t.stat
+      ar1 intercept 
+-1.486631 -1.979564 
+
+$fitmodel
+       ar1  intercept 
+-0.1278261  0.0000000 
+
+$invertible
+Invertible Model? 
+             TRUE 
+
+$mean.good
+Mean Equation Adequate? 
+                   TRUE 
+
+$vol.good
+ARCH Effect? 
+        TRUE 
+
+$Box.mean.p.value
+Resid Box Test P-Val 
+           0.1600116 
+
+$Box.mean.stat
+Resid Box Test Stat 
+           15.51745 
+
+$Box.mean.dof.adj
+Resid Box Test DOF Used 
+                     11 
+
+$Box.vol.pval
+Resid^2 Box Test P-Val 
+            0.02068632 
+
+$Box.vol.stat
+Resid^2 Box Test Stat 
+             23.94622 
+
+$Box.vol.dof.adj
+Resid^2 Box Test DOF Used 
+                       12 
+
+$sigma2
+Sigma^2 of residual series 
+              0.0001700264 
+
+[1] "CO"
+$coef
+      ma1 intercept 
+-0.741153  0.000000 
+
+$se
+       ma1  intercept 
+0.05632787 0.00000000 
+
+$t.stat
+       ma1  intercept 
+-13.157838  -1.979564 
+
+$fitmodel
+      ma1 intercept 
+-0.741153  0.000000 
+
+$invertible
+Invertible Model? 
+             TRUE 
+
+$mean.good
+Mean Equation Adequate? 
+                  FALSE 
+
+$vol.good
+ARCH Effect? 
+        TRUE 
+
+$Box.mean.p.value
+Resid Box Test P-Val 
+          0.01690976 
+
+$Box.mean.stat
+Resid Box Test Stat 
+           23.13614 
+
+$Box.mean.dof.adj
+Resid Box Test DOF Used 
+                     11 
+
+$Box.vol.pval
+Resid^2 Box Test P-Val 
+          3.379598e-05 
+
+$Box.vol.stat
+Resid^2 Box Test Stat 
+             41.96224 
+
+$Box.vol.dof.adj
+Resid^2 Box Test DOF Used 
+                       12 
+
+$sigma2
+Sigma^2 of residual series 
+              0.0002188418 
+
+[1] "CT"
+$coef
+       ma1  intercept 
+-0.9999995  0.0000000 
+
+$se
+       ma1  intercept 
+0.01913029 0.00000000 
+
+$t.stat
+       ma1  intercept 
+-52.273101  -1.979564 
+
+$fitmodel
+       ma1  intercept 
+-0.9999995  0.0000000 
+
+$invertible
+Invertible Model? 
+             TRUE 
+
+$mean.good
+Mean Equation Adequate? 
+                  FALSE 
+
+$vol.good
+ARCH Effect? 
+        TRUE 
+
+$Box.mean.p.value
+Resid Box Test P-Val 
+        1.255329e-12 
+
+$Box.mean.stat
+Resid Box Test Stat 
+           80.36323 
+
+$Box.mean.dof.adj
+Resid Box Test DOF Used 
+                     11 
+
+$Box.vol.pval
+Resid^2 Box Test P-Val 
+                     0 
+
+$Box.vol.stat
+Resid^2 Box Test Stat 
+             132.7922 
+
+$Box.vol.dof.adj
+Resid^2 Box Test DOF Used 
+                       12 
+
+$sigma2
+Sigma^2 of residual series 
+               0.000747142 
+
+[1] "DC"
+$coef
+       ar1  intercept 
+-0.7976774  0.0000000 
+
+$se
+       ar1  intercept 
+0.05098948 0.00000000 
+
+$t.stat
+       ar1  intercept 
+-15.643959  -1.979564 
+
+$fitmodel
+       ar1  intercept 
+-0.7976774  0.0000000 
+
+$invertible
+Invertible Model? 
+             TRUE 
+
+$mean.good
+Mean Equation Adequate? 
+                  FALSE 
+
+$vol.good
+ARCH Effect? 
+        TRUE 
+
+$Box.mean.p.value
+Resid Box Test P-Val 
+        2.933494e-07 
+
+$Box.mean.stat
+Resid Box Test Stat 
+           51.82445 
+
+$Box.mean.dof.adj
+Resid Box Test DOF Used 
+                     11 
+
+$Box.vol.pval
+Resid^2 Box Test P-Val 
+          4.163336e-14 
+
+$Box.vol.stat
+Resid^2 Box Test Stat 
+              90.3851 
+
+$Box.vol.dof.adj
+Resid^2 Box Test DOF Used 
+                       12 
+
+$sigma2
+Sigma^2 of residual series 
+               0.001839544 
+
+[1] "DE"
+$coef
+   intercept 
+0.0003147870 
+
+$se
+  intercept 
+0.006592096 
+
+$t.stat
+ intercept 
+0.04775219 
+
+$fitmodel
+   intercept 
+0.0003147870 
+
+$invertible
+Invertible Model? 
+             TRUE 
+
+$mean.good
+Mean Equation Adequate? 
+                  FALSE 
+
+$vol.good
+ARCH Effect? 
+        TRUE 
+
+$Box.mean.p.value
+Resid Box Test P-Val 
+        2.209344e-14 
+
+$Box.mean.stat
+Resid Box Test Stat 
+            91.8043 
+
+$Box.mean.dof.adj
+Resid Box Test DOF Used 
+                     12 
+
+$Box.vol.pval
+Resid^2 Box Test P-Val 
+           6.28207e-08 
+
+$Box.vol.stat
+Resid^2 Box Test Stat 
+             57.55206 
+
+$Box.vol.dof.adj
+Resid^2 Box Test DOF Used 
+                       12 
+
+$sigma2
+Sigma^2 of residual series 
+               0.005778608 
+
+[1] "data"               "i"                  "state.alpha.orders"
+[4] "state.ar.orders"    "state.beta.orders"  "state.ma.orders"   
+[1] "data"
+      [,1]
+ [1,]    1
+ [2,]    1
+ [3,]    1
+ [4,]    1
+ [5,]    1
+ [6,]    1
+ [7,]    1
+ [8,]    1
+ [9,]    1
+[10,]   NA
+[11,]   NA
+[12,]    0
+[13,]    0
+[14,]    0
+[15,]    0
+[16,]    0
+[17,]    0
+[18,]    0
+[19,]    0
+[20,]    0
+[21,]    0
+[22,]    0
+[23,]    0
+[24,]    0
+[25,]    0
+[26,]    0
+[27,]    0
+[28,]    0
+[29,]    0
+[30,]    0
+[31,]    0
+[32,]    0
+[33,]    0
+[34,]    0
+[35,]    0
+[36,]    0
+[37,]    0
+[38,]    0
+[39,]    0
+[40,]    0
+[41,]    0
+[42,]    0
+[43,]    0
+[44,]    0
+[45,]    0
+[46,]    0
+[47,]    0
+[48,]    0
+[49,]    0
+[50,]    0
+[51,]    0
+[1] "data"               "i"                  "state.alpha.orders"
+[4] "state.ar.orders"    "state.beta.orders"  "state.ma.orders"   
+[1] "data"
+[1] "data"               "i"                  "state.alpha.orders"
+[4] "state.ar.orders"    "state.beta.orders"  "state.ma.orders"   
+[1] "data"
+[1] 0
+
+Series Initialization:
+ ARMA model:                arma
+ Formula mean:              ~ arma(0, 0)
+ GARCH model:               garch
+ Formula var:               ~ garch(1, 1)
+ ARMA Order:                0 0
+ Max ARMA Order:            0
+ GARCH Order:               1 1
+ Max GARCH Order:           1
+ Maximum Order:             1
+ h.start:                   2
+ llh.start:                 1
+ Length of Series:          133
+ Recursion Init:            mci
+ Series Scale:              0.03174885
+
+Parameter Initialization:
+ Initial Parameters:          $params
+ Limits of Transformations:   $U, $V
+ Which Parameters are Fixed?  $includes
+ Parameter Matrix:
+                     U           V      params includes
+    mu     -0.27426943   0.2742694 -0.02742694     TRUE
+    omega   0.00000100 100.0000000  0.10000000     TRUE
+    alpha1  0.00000001   1.0000000  0.10000000     TRUE
+    gamma1 -0.99999999   1.0000000  0.10000000    FALSE
+    beta1   0.00000001   1.0000000  0.80000000     TRUE
+    delta   0.00000000   2.0000000  2.00000000    FALSE
+    skew    0.10000000  10.0000000  1.00000000    FALSE
+    shape   1.00000000  20.0000000  4.00000000    FALSE
+ Index List of Parameters to be Optimized:
+    mu  omega alpha1  beta1 
+     1      2      3      5 
+ Persistence:                  0.9 
+
+
+--- START OF TRACE ---
+
+R coded nlminb Solver: 
+
+  0:     158.95620: -0.0274269 0.100000 0.100000 0.800000
+  1:     149.32716: -0.0274268 0.0689357 0.101715 0.781803
+  2:     141.93854: -0.0274266 0.0430747 0.107921 0.774313
+  3:     138.99841: -0.0274264 0.0331081 0.111902 0.773740
+  4:     133.85015: -0.0274257 0.0137139 0.121130 0.774598
+  5:     133.43221: -0.0274180 1.00000e-06 0.193628 0.815769
+  6:     130.78261: -0.0274179 0.0102354 0.193772 0.815930
+  7:     127.94771: -0.0273996 0.0101638 0.212110 0.779325
+  8:     127.20717: -0.0273993 0.00524536 0.211912 0.778392
+  9:     127.11338: -0.0273910 0.00697045 0.216078 0.776230
+ 10:     126.37161: -0.0272502 0.00617814 0.282591 0.744295
+ 11:     119.57287: -0.00375524 0.0191249 0.944776 0.266740
+ 12:     119.26791: -0.00392763 0.0201334 0.944994 0.298572
+ 13:     119.05113: -0.00297412 0.0173928 0.898603 0.345315
+ 14:     118.95530: 0.000301245 0.0107220 0.828901 0.410807
+ 15:     118.75731: -0.000263436 0.0133264 0.923631 0.351856
+ 16:     118.59604: -0.00352760 0.0110904       1. 0.323763
+ 17:     118.57575: 0.000641715 0.0107788       1. 0.330286
+ 18:     118.57013: -0.000760104 0.0112609       1. 0.332353
+ 19:     118.56988: -0.000700920 0.0111224       1. 0.332623
+ 20:     118.56988: -0.000694103 0.0111067       1. 0.332734
+ 21:     118.56988: -0.000694525 0.0111066       1. 0.332740
+
+Final Estimate of the Negative LLH:
+ LLH:  -340.2667    norm LLH:  -2.558396 
+           mu         omega        alpha1         beta1 
+-2.205035e-05  1.119536e-05  1.000000e+00  3.327405e-01 
+
+R-optimhess Difference Approximated Hessian Matrix:
+                  mu         omega        alpha1         beta1
+mu     -3.149568e+06 -5.214974e+07     -13.09055      600.2900
+omega  -5.214974e+07 -2.675666e+10 -630256.28759 -1449530.1541
+alpha1 -1.309055e+01 -6.302563e+05     -51.66898     -130.3354
+beta1   6.002900e+02 -1.449530e+06    -130.33537     -330.5285
+attr(,"time")
+Time difference of 0.03399992 secs
+
+--- END OF TRACE ---
+
+
+Time to Estimate Parameters:
+ Time difference of 0.161 secs
+    P-Val 
+0.1352131 
+    P-Val 
+0.5622445 
+
+Series Initialization:
+ ARMA model:                arma
+ Formula mean:              ~ arma(0, 1)
+ GARCH model:               garch
+ Formula var:               ~ garch(1, 1)
+ ARMA Order:                0 1
+ Max ARMA Order:            1
+ GARCH Order:               1 1
+ Max GARCH Order:           1
+ Maximum Order:             1
+ h.start:                   2
+ llh.start:                 1
+ Length of Series:          132
+ Recursion Init:            mci
+ Series Scale:              0.08520852
+
+Parameter Initialization:
+ Initial Parameters:          $params
+ Limits of Transformations:   $U, $V
+ Which Parameters are Fixed?  $includes
+ Parameter Matrix:
+                       U           V        params includes
+    mu     -3.364055e-02  0.03364055  5.695181e-05     TRUE
+    ma1    -1.000000e+00  0.99999999 -9.999995e-01     TRUE
+    omega   7.260492e-09  0.72604919  7.260492e-04     TRUE
+    alpha1  1.000000e-08  0.99999999  1.000000e-01     TRUE
+    gamma1 -1.000000e+00  0.99999999  1.000000e-01    FALSE
+    beta1   1.000000e-08  0.99999999  8.000000e-01     TRUE
+    delta   0.000000e+00  2.00000000  2.000000e+00    FALSE
+    skew    1.000000e-01 10.00000000  1.000000e+00    FALSE
+    shape   1.000000e+00 20.00000000  4.000000e+00    FALSE
+ Index List of Parameters to be Optimized:
+    mu    ma1  omega alpha1  beta1 
+     1      2      3      4      6 
+ Persistence:                  0.9 
+
+Iteration Path:
+
+
+
+Now NLMINB 
+
+
+ LLH:  -7.917424    norm LLH:  -0.05998048 
+           mu           ma1         omega        alpha1         beta1 
+ 5.695181e-05 -9.999995e-01  7.260492e-04  1.000000e-01  8.000000e-01 
+ LLH:  -7.917562    norm LLH:  -0.05998153 
+           mu           ma1         omega        alpha1         beta1 
+ 5.695181e-05 -9.999995e-01  7.260492e-04  1.000000e-01  8.000000e-01 
+ LLH:  -192.9224    norm LLH:  -1.461533 
+           mu           ma1         omega        alpha1         beta1 
+ 6.903666e-07 -1.336933e-03  7.782100e-04  1.411283e-01  8.254995e-01 
+ LLH:  -192.9227    norm LLH:  -1.461536 
+           mu           ma1         omega        alpha1         beta1 
+ 6.903666e-07 -1.350023e-03  7.782100e-04  1.411283e-01  8.254995e-01 
+ LLH:  -192.9278    norm LLH:  -1.461574 
+           mu           ma1         omega        alpha1         beta1 
+ 6.903666e-07 -1.336933e-03  7.781150e-04  1.411283e-01  8.254995e-01 
+ LLH:  -235.1212    norm LLH:  -1.781221 
+           mu           ma1         omega        alpha1         beta1 
+ 6.270101e-07 -4.787479e-03  3.695791e-04  1.372240e-01  7.814037e-01 
+ LLH:  -282.8825    norm LLH:  -2.143049 
+           mu           ma1         omega        alpha1         beta1 
+ 5.877850e-07 -6.960081e-03  1.118120e-05  1.362676e-01  7.671463e-01 
+ LLH:  -282.8825    norm LLH:  -2.143049 
+           mu           ma1         omega        alpha1         beta1 
+ 5.986361e-07 -6.960081e-03  1.118120e-05  1.362676e-01  7.671463e-01 
+ LLH:  -282.8839    norm LLH:  -2.14306 
+           mu           ma1         omega        alpha1         beta1 
+ 5.877850e-07 -6.960081e-03  1.118381e-05  1.362676e-01  7.671463e-01 
+ LLH:  -285.3063    norm LLH:  -2.161412 
+           mu           ma1         omega        alpha1         beta1 
+ 5.886599e-07 -7.039173e-03  3.967276e-05  1.364026e-01  7.672367e-01 
+ LLH:  -285.3063    norm LLH:  -2.161412 
+           mu           ma1         omega        alpha1         beta1 
+ 5.356935e-07 -7.039173e-03  3.967276e-05  1.364026e-01  7.672367e-01 
+ LLH:  -285.3064    norm LLH:  -2.161412 
+           mu           ma1         omega        alpha1         beta1 
+ 5.886599e-07 -7.039173e-03  3.967238e-05  1.364026e-01  7.672367e-01 
+ LLH:  -285.8283    norm LLH:  -2.165366 
+           mu           ma1         omega        alpha1         beta1 
+ 5.385471e-07 -7.204360e-03  3.538944e-05  1.365198e-01  7.633582e-01 
+ LLH:  -285.8701    norm LLH:  -2.165683 
+           mu           ma1         omega        alpha1         beta1 
+ 4.988792e-07 -7.380032e-03  2.084638e-05  1.376333e-01  7.674992e-01 
+ LLH:  -285.8701    norm LLH:  -2.165683 
+           mu           ma1         omega        alpha1         beta1 
+ 5.518488e-07 -7.380032e-03  2.084638e-05  1.376333e-01  7.674992e-01 
+ LLH:  -285.8701    norm LLH:  -2.165683 
+           mu           ma1         omega        alpha1         beta1 
+ 4.988792e-07 -7.380032e-03  2.084658e-05  1.376333e-01  7.674992e-01 
+ LLH:  -286.2275    norm LLH:  -2.16839 
+           mu           ma1         omega        alpha1         beta1 
+ 3.885943e-07 -7.525120e-03  2.850928e-05  1.391729e-01  7.689487e-01 
+ LLH:  -286.2275    norm LLH:  -2.16839 
+           mu           ma1         omega        alpha1         beta1 
+ 3.356141e-07 -7.525120e-03  2.850928e-05  1.391729e-01  7.689487e-01 
+ LLH:  -286.2275    norm LLH:  -2.16839 
+           mu           ma1         omega        alpha1         beta1 
+ 3.885943e-07 -7.525120e-03  2.850914e-05  1.391729e-01  7.689487e-01 
+ LLH:  -286.2275    norm LLH:  -2.16839 
+           mu           ma1         omega        alpha1         beta1 
+ 3.885943e-07 -7.525120e-03  2.850928e-05  1.391729e-01  7.689481e-01 
+ LLH:  -286.3478    norm LLH:  -2.169302 
+           mu           ma1         omega        alpha1         beta1 
+ 2.096610e-07 -7.759044e-03  2.657737e-05  1.408823e-01  7.673496e-01 
+ LLH:  -286.4887    norm LLH:  -2.170369 
+           mu           ma1         omega        alpha1         beta1 
+-1.180413e-07 -8.022466e-03  2.661969e-05  1.439423e-01  7.644461e-01 
+ LLH:  -287.0814    norm LLH:  -2.174859 
+           mu           ma1         omega        alpha1         beta1 
+-1.649635e-06 -9.253629e-03  2.681752e-05  1.582439e-01  7.508758e-01 
+ LLH:  -288.5111    norm LLH:  -2.185690 
+           mu           ma1         omega        alpha1         beta1 
+-7.064270e-06 -1.360615e-02  2.751688e-05  2.088041e-01  7.029010e-01 
+ LLH:  -288.5111    norm LLH:  -2.185690 
+           mu           ma1         omega        alpha1         beta1 
+-7.011100e-06 -1.360615e-02  2.751688e-05  2.088041e-01  7.029010e-01 
+ LLH:  -288.5111    norm LLH:  -2.185690 
+           mu           ma1         omega        alpha1         beta1 
+-7.064270e-06 -1.360615e-02  2.751688e-05  2.088041e-01  7.029015e-01 
+ LLH:  -288.5222    norm LLH:  -2.185775 
+           mu           ma1         omega        alpha1         beta1 
+-7.061630e-06 -1.388072e-02  3.180742e-05  2.089008e-01  7.029455e-01 
+ LLH:  -288.5222    norm LLH:  -2.185775 
+           mu           ma1         omega        alpha1         beta1 
+-7.061630e-06 -1.388072e-02  3.180712e-05  2.089008e-01  7.029455e-01 
+ LLH:  -288.5700    norm LLH:  -2.186137 
+           mu           ma1         omega        alpha1         beta1 
+-7.083205e-06 -1.403806e-02  2.895847e-05  2.091717e-01  7.033742e-01 
+ LLH:  -288.5700    norm LLH:  -2.186137 
+           mu           ma1         omega        alpha1         beta1 
+-7.083205e-06 -1.403806e-02  2.895863e-05  2.091717e-01  7.033742e-01 
+ LLH:  -288.6368    norm LLH:  -2.186643 
+           mu           ma1         omega        alpha1         beta1 
+-7.072768e-06 -1.525499e-02  3.137372e-05  2.095437e-01  7.034917e-01 
+ LLH:  -288.6368    norm LLH:  -2.186643 
+           mu           ma1         omega        alpha1         beta1 
+-7.072768e-06 -1.525499e-02  3.137355e-05  2.095437e-01  7.034917e-01 
+ LLH:  -288.7055    norm LLH:  -2.187163 
+           mu           ma1         omega        alpha1         beta1 
+-7.197752e-06 -1.539787e-02  2.784167e-05  2.108037e-01  7.057564e-01 
+ LLH:  -288.7055    norm LLH:  -2.187163 
+           mu           ma1         omega        alpha1         beta1 
+-7.197752e-06 -1.539787e-02  2.784183e-05  2.108037e-01  7.057564e-01 
+ LLH:  -288.7538    norm LLH:  -2.187529 
+           mu           ma1         omega        alpha1         beta1 
+-7.492786e-06 -1.593329e-02  2.949150e-05  2.133957e-01  7.103211e-01 
+ LLH:  -288.7538    norm LLH:  -2.187529 
+           mu           ma1         omega        alpha1         beta1 
+-7.492786e-06 -1.593329e-02  2.949133e-05  2.133957e-01  7.103211e-01 
+ LLH:  -288.7538    norm LLH:  -2.187529 
+           mu           ma1         omega        alpha1         beta1 
+-7.492786e-06 -1.593329e-02  2.949150e-05  2.133957e-01  7.103200e-01 
+ LLH:  -288.7782    norm LLH:  -2.187714 
+           mu           ma1         omega        alpha1         beta1 
+-8.513996e-06 -1.606171e-02  2.367799e-05  2.151407e-01  7.137038e-01 
+ LLH:  -288.7782    norm LLH:  -2.187714 
+           mu           ma1         omega        alpha1         beta1 
+-8.513996e-06 -1.606171e-02  2.367818e-05  2.151407e-01  7.137038e-01 
+ LLH:  -288.8591    norm LLH:  -2.188327 
+           mu           ma1         omega        alpha1         beta1 
+-9.411195e-06 -1.696145e-02  2.727826e-05  2.134044e-01  7.103727e-01 
+ LLH:  -288.8591    norm LLH:  -2.188327 
+           mu           ma1         omega        alpha1         beta1 
+-9.411195e-06 -1.696145e-02  2.727810e-05  2.134044e-01  7.103727e-01 
+ LLH:  -288.8591    norm LLH:  -2.188327 
+           mu           ma1         omega        alpha1         beta1 
+-9.411195e-06 -1.696145e-02  2.727826e-05  2.134044e-01  7.103717e-01 
+ LLH:  -288.8995    norm LLH:  -2.188633 
+           mu           ma1         omega        alpha1         beta1 
+-1.207047e-05 -1.941440e-02  2.557425e-05  2.100266e-01  7.038272e-01 
+ LLH:  -288.8995    norm LLH:  -2.188633 
+           mu           ma1         omega        alpha1         beta1 
+-1.207047e-05 -1.941440e-02  2.557441e-05  2.100266e-01  7.038272e-01 
+ LLH:  -288.8995    norm LLH:  -2.188633 
+           mu           ma1         omega        alpha1         beta1 
+-1.207047e-05 -1.941440e-02  2.557425e-05  2.100266e-01  7.038286e-01 
+ LLH:  -289.3078    norm LLH:  -2.191726 
+           mu           ma1         omega        alpha1         beta1 
+-2.478562e-05 -2.361166e-02  2.343192e-05  2.164609e-01  7.168813e-01 
+ LLH:  -289.3078    norm LLH:  -2.191726 
+           mu           ma1         omega        alpha1         beta1 
+-2.478562e-05 -2.361166e-02  2.343192e-05  2.164609e-01  7.168808e-01 
+ LLH:  -289.3275    norm LLH:  -2.191875 
+           mu           ma1         omega        alpha1         beta1 
+-2.478404e-05 -2.375747e-02  2.533348e-05  2.164835e-01  7.168709e-01 
+ LLH:  -289.3275    norm LLH:  -2.191875 
+           mu           ma1         omega        alpha1         beta1 
+-2.478404e-05 -2.375747e-02  2.533308e-05  2.164835e-01  7.168709e-01 
+ LLH:  -289.3439    norm LLH:  -2.192000 
+           mu           ma1         omega        alpha1         beta1 
+-2.478177e-05 -2.400079e-02  2.409017e-05  2.165095e-01  7.168352e-01 
+ LLH:  -289.3439    norm LLH:  -2.192000 
+           mu           ma1         omega        alpha1         beta1 
+-2.478177e-05 -2.400079e-02  2.409031e-05  2.165095e-01  7.168352e-01 
+ LLH:  -289.376    norm LLH:  -2.192243 
+           mu           ma1         omega        alpha1         beta1 
+-2.546425e-05 -2.448711e-02  2.572373e-05  2.164276e-01  7.166712e-01 
+ LLH:  -289.376    norm LLH:  -2.192243 
+           mu           ma1         omega        alpha1         beta1 
+-2.546425e-05 -2.448711e-02  2.572358e-05  2.164276e-01  7.166712e-01 
+ LLH:  -289.4397    norm LLH:  -2.192725 
+           mu           ma1         omega        alpha1         beta1 
+-2.743512e-05 -2.537209e-02  2.422175e-05  2.161167e-01  7.162449e-01 
+ LLH:  -289.5239    norm LLH:  -2.193363 
+           mu           ma1         omega        alpha1         beta1 
+-3.096440e-05 -2.660320e-02  2.443119e-05  2.155251e-01  7.155375e-01 
+ LLH:  -289.9183    norm LLH:  -2.196351 
+           mu           ma1         omega        alpha1         beta1 
+-4.830460e-05 -3.265196e-02  2.546022e-05  2.126185e-01  7.120620e-01 
+ LLH:  -291.1740    norm LLH:  -2.205863 
+           mu           ma1         omega        alpha1         beta1 
+-1.176019e-04 -5.682482e-02  2.957257e-05  2.010029e-01  6.981727e-01 
+ LLH:  -292.1122    norm LLH:  -2.212971 
+           mu           ma1         omega        alpha1         beta1 
+-2.474262e-04 -1.021112e-01  3.727681e-05  1.792417e-01  6.721518e-01 
+ LLH:  -292.1122    norm LLH:  -2.212971 
+           mu           ma1         omega        alpha1         beta1 
+-2.474262e-04 -1.021112e-01  3.727696e-05  1.792417e-01  6.721518e-01 
+ LLH:  -292.1122    norm LLH:  -2.212971 
+           mu           ma1         omega        alpha1         beta1 
+-2.474262e-04 -1.021112e-01  3.727681e-05  1.792417e-01  6.721525e-01 
+ LLH:  -298.6223    norm LLH:  -2.26229 
+           mu           ma1         omega        alpha1         beta1 
+-4.471253e-04 -2.016540e-01  3.275697e-05  1.752213e-01  6.893854e-01 
+ LLH:  -313.3583    norm LLH:  -2.373926 
+           mu           ma1         omega        alpha1         beta1 
+-1.046946e-03 -5.001838e-01  1.155543e-05  1.626464e-01  7.407442e-01 
+ LLH:  -314.6566    norm LLH:  -2.383762 
+           mu           ma1         omega        alpha1         beta1 
+-1.046926e-03 -5.002060e-01  2.274179e-05  1.626824e-01  7.407869e-01 
+ LLH:  -314.6567    norm LLH:  -2.383763 
+           mu           ma1         omega        alpha1         beta1 
+-1.046926e-03 -5.002060e-01  2.274164e-05  1.626824e-01  7.407869e-01 
+ LLH:  -314.7974    norm LLH:  -2.384829 
+           mu           ma1         omega        alpha1         beta1 
+-1.042121e-03 -5.007309e-01  2.099030e-05  1.626894e-01  7.408486e-01 
+ LLH:  -314.9265    norm LLH:  -2.385807 
+           mu           ma1         omega        alpha1         beta1 
+-1.029303e-03 -5.021054e-01  1.916413e-05  1.626962e-01  7.410228e-01 
+ LLH:  -315.0315    norm LLH:  -2.386602 
+           mu           ma1         omega        alpha1         beta1 
+-1.015908e-03 -5.035063e-01  1.908590e-05  1.626774e-01  7.411819e-01 
+ LLH:  -315.4933    norm LLH:  -2.390101 
+           mu           ma1         omega        alpha1         beta1 
+-9.567815e-04 -5.096900e-01  1.874061e-05  1.625946e-01  7.418841e-01 
+ LLH:  -317.4481    norm LLH:  -2.40491 
+           mu           ma1         omega        alpha1         beta1 
+-7.006298e-04 -5.364796e-01  1.724470e-05  1.622357e-01  7.449264e-01 
+ LLH:  -322.9685    norm LLH:  -2.446731 
+           mu           ma1         omega        alpha1         beta1 
+ 3.239670e-04 -6.436372e-01  1.126113e-05  1.608001e-01  7.570954e-01 
+ LLH:  -322.9686    norm LLH:  -2.446732 
+           mu           ma1         omega        alpha1         beta1 
+ 3.239381e-04 -6.436372e-01  1.126113e-05  1.608001e-01  7.570954e-01 
+ LLH:  -324.8701    norm LLH:  -2.461137 
+           mu           ma1         omega        alpha1         beta1 
+ 3.236538e-04 -6.836195e-01  1.765420e-05  1.717750e-01  7.521323e-01 
+ LLH:  -324.8702    norm LLH:  -2.461138 
+           mu           ma1         omega        alpha1         beta1 
+ 3.236538e-04 -6.836195e-01  1.765409e-05  1.717750e-01  7.521323e-01 
+ LLH:  -327.0276    norm LLH:  -2.477482 
+           mu           ma1         omega        alpha1         beta1 
+ 3.170885e-04 -7.237537e-01  1.359831e-05  1.822510e-01  7.476798e-01 
+ LLH:  -330.9464    norm LLH:  -2.507170 
+           mu           ma1         omega        alpha1         beta1 
+ 2.974258e-04 -8.441680e-01  1.092969e-05  2.136887e-01  7.343285e-01 
+ LLH:  -330.9464    norm LLH:  -2.507170 
+           mu           ma1         omega        alpha1         beta1 
+ 2.974258e-04 -8.441649e-01  1.092969e-05  2.136887e-01  7.343285e-01 
+ LLH:  -331.8774    norm LLH:  -2.514223 
+           mu           ma1         omega        alpha1         beta1 
+ 2.231250e-04 -8.592448e-01  1.138695e-05  2.178595e-01  7.335423e-01 
+ LLH:  -331.8774    norm LLH:  -2.514223 
+           mu           ma1         omega        alpha1         beta1 
+ 2.231250e-04 -8.592448e-01  1.138683e-05  2.178595e-01  7.335423e-01 
+ LLH:  -333.5037    norm LLH:  -2.526543 
+           mu           ma1         omega        alpha1         beta1 
+ 6.149307e-05 -8.712586e-01  9.056293e-06  2.367424e-01  7.224467e-01 
+ LLH:  -333.5037    norm LLH:  -2.526543 
+           mu           ma1         omega        alpha1         beta1 
+ 6.149307e-05 -8.712586e-01  9.056417e-06  2.367424e-01  7.224467e-01 
+ LLH:  -334.0284    norm LLH:  -2.530518 
+           mu           ma1         omega        alpha1         beta1 
+-6.225388e-05 -8.646739e-01  1.481469e-05  2.641298e-01  6.944215e-01 
+ LLH:  -334.0284    norm LLH:  -2.530518 
+           mu           ma1         omega        alpha1         beta1 
+-6.225112e-05 -8.646739e-01  1.481469e-05  2.641298e-01  6.944215e-01 
+ LLH:  -334.0284    norm LLH:  -2.530518 
+           mu           ma1         omega        alpha1         beta1 
+-6.225388e-05 -8.646745e-01  1.481469e-05  2.641298e-01  6.944215e-01 
+ LLH:  -334.0285    norm LLH:  -2.530519 
+           mu           ma1         omega        alpha1         beta1 
+-6.225388e-05 -8.646739e-01  1.481469e-05  2.641266e-01  6.944215e-01 
+ LLH:  -334.1835    norm LLH:  -2.531693 
+           mu           ma1         omega        alpha1         beta1 
+-7.588767e-05 -8.732858e-01  1.450087e-05  2.713061e-01  6.849040e-01 
+ LLH:  -334.2484    norm LLH:  -2.532185 
+           mu           ma1         omega        alpha1         beta1 
+-4.737310e-05 -8.747697e-01  1.323423e-05  2.622287e-01  6.877772e-01 
+ LLH:  -334.2484    norm LLH:  -2.532185 
+           mu           ma1         omega        alpha1         beta1 
+-4.737537e-05 -8.747697e-01  1.323423e-05  2.622287e-01  6.877772e-01 
+ LLH:  -334.2565    norm LLH:  -2.532246 
+           mu           ma1         omega        alpha1         beta1 
+-5.594677e-05 -8.749739e-01  1.319705e-05  2.540130e-01  6.931548e-01 
+ LLH:  -334.2565    norm LLH:  -2.532246 
+           mu           ma1         omega        alpha1         beta1 
+-5.594677e-05 -8.749739e-01  1.319705e-05  2.540130e-01  6.931539e-01 
+ LLH:  -334.2581    norm LLH:  -2.532258 
+           mu           ma1         omega        alpha1         beta1 
+-5.668876e-05 -8.744363e-01  1.337827e-05  2.525404e-01  6.928421e-01 
+ LLH:  -334.2581    norm LLH:  -2.532258 
+           mu           ma1         omega        alpha1         beta1 
+-5.668645e-05 -8.744363e-01  1.337827e-05  2.525404e-01  6.928421e-01 
+ LLH:  -334.2581    norm LLH:  -2.532258 
+           mu           ma1         omega        alpha1         beta1 
+-5.668876e-05 -8.744367e-01  1.337827e-05  2.525404e-01  6.928421e-01 
+ LLH:  -334.2582    norm LLH:  -2.532259 
+           mu           ma1         omega        alpha1         beta1 
+-5.677580e-05 -8.746246e-01  1.341057e-05  2.521717e-01  6.925771e-01 
+ LLH:  -334.2582    norm LLH:  -2.532259 
+           mu           ma1         omega        alpha1         beta1 
+-5.677055e-05 -8.746246e-01  1.341057e-05  2.521717e-01  6.925771e-01 
+ LLH:  -334.2582    norm LLH:  -2.532259 
+           mu           ma1         omega        alpha1         beta1 
+-5.677580e-05 -8.746243e-01  1.341057e-05  2.521717e-01  6.925771e-01 
+ LLH:  -334.2582    norm LLH:  -2.532259 
+           mu           ma1         omega        alpha1         beta1 
+-5.677580e-05 -8.746246e-01  1.341046e-05  2.521717e-01  6.925771e-01 
+ LLH:  -334.2582    norm LLH:  -2.532259 
+           mu           ma1         omega        alpha1         beta1 
+-5.672266e-05 -8.745994e-01  1.340819e-05  2.522850e-01  6.925169e-01 
+ LLH:  -334.2582    norm LLH:  -2.532259 
+           mu           ma1         omega        alpha1         beta1 
+-5.672266e-05 -8.746007e-01  1.340819e-05  2.522850e-01  6.925169e-01 
+ LLH:  -334.2582    norm LLH:  -2.532259 
+           mu           ma1         omega        alpha1         beta1 
+-5.672266e-05 -8.745994e-01  1.340870e-05  2.522850e-01  6.925169e-01 
+ LLH:  -334.2582    norm LLH:  -2.532259 
+           mu           ma1         omega        alpha1         beta1 
+-5.672166e-05 -8.746013e-01  1.340849e-05  2.522839e-01  6.925193e-01 
+
+Time to Compute Hessian:
+ Time difference of 0.3120000 secs
+
+Final Estimate:
+ LLH:  -334.2582    norm LLH:  -2.532259 
+           mu           ma1         omega        alpha1         beta1 
+-5.672166e-05 -8.746013e-01  1.340849e-05  2.522839e-01  6.925193e-01 
+
+Hessian Matrix:
+                 mu          ma1         omega       alpha1        beta1
+mu      69215797.91  -69523.8473   211558256.7   -4571.4198    8408.4993
+ma1       -69523.85    2412.7353     -552453.5    -106.3451    -219.8652
+omega  211558256.73 -552453.5439 51334490926.9 2448905.5480 5139270.1990
+alpha1     -4571.42    -106.3451     2448905.5     532.1892     728.5492
+beta1       8408.50    -219.8652     5139270.2     728.5492    1359.4482
+
+--- END OF TRACE ---
+
+
+Time to Estimate Parameters:
+ Time difference of 2.744 secs
+     P-Val 
+0.05240261 
+     P-Val 
+0.05190244 
+      P-Val 
+0.001429987 
+[1] "FL"
+$coef
+       ar1        ar2        ar3        ar4  intercept 
+-1.5906311 -1.5933224 -1.4806777 -0.6854014  0.0000000 
+
+$se
+       ar1        ar2        ar3        ar4  intercept 
+0.09082570 0.12491283 0.11240449 0.09097895 0.00000000 
+
+$t.stat
+       ar1        ar2        ar3        ar4  intercept 
+-17.513006 -12.755475 -13.172763  -7.533626  -1.979564 
+
+$fitmodel
+       ar1        ar2        ar3        ar4  intercept 
+-1.5906311 -1.5933224 -1.4806777 -0.6854014  0.0000000 
+
+$invertible
+Invertible Model? 
+             TRUE 
+
+$mean.good
+Mean Equation Adequate? 
+                  FALSE 
+
+$vol.good
+ARCH Effect? 
+        TRUE 
+
+$Box.mean.p.value
+Resid Box Test P-Val 
+         0.008170674 
+
+$Box.mean.stat
+Resid Box Test Stat 
+           20.63904 
+
+$Box.mean.dof.adj
+Resid Box Test DOF Used 
+                      8 
+
+$Box.vol.pval
+Resid^2 Box Test P-Val 
+                     0 
+
+$Box.vol.stat
+Resid^2 Box Test Stat 
+             140.0225 
+
+$Box.vol.dof.adj
+Resid^2 Box Test DOF Used 
+                       12 
+
+$sigma2
+Sigma^2 of residual series 
+               0.003329748 
+
+
+Title:
+ GARCH Modelling 
+
+Call:
+ garchFit(formula = ~arma(0, 1) + garch(1, 1), data = current.state.data.testdata, 
+    cond.dist = c("QMLE"), include.mean = TRUE) 
+
+Mean and Variance Equation:
+ ~arma(0, 1) + ~garch(1, 1) 
+
+Conditional Distribution:
+ QMLE 
+
+Coefficient(s):
+          mu           ma1         omega        alpha1         beta1  
+-5.67217e-05  -8.74601e-01   1.34085e-05   2.52284e-01   6.92519e-01  
+
+Error Analysis:
+         Estimate  Std. Error  t value Pr(>|t|)    
+mu     -5.672e-05   1.233e-04   -0.460  0.64555    
+ma1    -8.746e-01   2.084e-02  -41.972  < 2e-16 ***
+omega   1.341e-05   5.700e-06    2.352  0.01865 *  
+alpha1  2.523e-01   8.512e-02    2.964  0.00304 ** 
+beta1   6.925e-01   5.974e-02   11.592  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+
+Log Likelihood:
+ -334.2582    normalized:  -2.532259 
+
+Description:
+ Tue Jan 27 18:27:35 2009 by user: tdr9 
+
+$adf.p.value
+[1] 0.01839618
+
+$adf.p.value2
+           
+0.01839618 
+
+$pp.p.value
+[1] 0.01
+
+$kpss.p.value
+[1] 0.1
+
+$adf.lag.value
+[1] 16
+
+
+	Augmented Dickey-Fuller Test
+
+data:  current.state.data.testdata 
+Dickey-Fuller = -16.3004, Lag order = 4, p-value = 0.01
+alternative hypothesis: stationary 
+
+$adf.p.value
+[1] 0.01839618
+
+$adf.p.value2
+           
+0.01839618 
+
+$pp.p.value
+[1] 0.01
+
+$kpss.p.value
+[1] 0.1
+
+$adf.lag.value
+[1] 16
+
+
+Series Initialization:
+ ARMA model:                arma
+ Formula mean:              ~ arma(0, 1)
+ GARCH model:               garch
+ Formula var:               ~ garch(1, 1)
+ ARMA Order:                0 1
+ Max ARMA Order:            1
+ GARCH Order:               1 1
+ Max GARCH Order:           1
+ Maximum Order:             1
+ h.start:                   2
+ llh.start:                 1
+ Length of Series:          133
+ Recursion Init:            mci
+ Series Scale:              0.06081366
+
+Parameter Initialization:
+ Initial Parameters:          $params
+ Limits of Transformations:   $U, $V
+ Which Parameters are Fixed?  $includes
+ Parameter Matrix:
+                       U           V        params includes
+    mu     -2.362197e-02  0.02362197 -0.0002751506     TRUE
+    ma1    -1.000000e+00  0.99999999 -0.9160755250     TRUE
+    omega   3.698301e-09  0.36983011  0.0003698301     TRUE
+    alpha1  1.000000e-08  0.99999999  0.1000000000     TRUE
+    gamma1 -1.000000e+00  0.99999999  0.1000000000    FALSE
+    beta1   1.000000e-08  0.99999999  0.8000000000     TRUE
+    delta   0.000000e+00  2.00000000  2.0000000000    FALSE
+    skew    1.000000e-01 10.00000000  1.0000000000    FALSE
+    shape   1.000000e+00 20.00000000  4.0000000000    FALSE
+ Index List of Parameters to be Optimized:
+    mu    ma1  omega alpha1  beta1 
+     1      2      3      4      6 
+ Persistence:                  0.9 
+
+Iteration Path:
+
+
+
+Now NLMINB 
+
+
+ LLH:  -250.2718    norm LLH:  -1.881743 
+           mu           ma1         omega        alpha1         beta1 
+-0.0002751506 -0.9160755250  0.0003698301  0.1000000000  0.8000000000 
+ LLH:  -250.2719    norm LLH:  -1.881743 
+           mu           ma1         omega        alpha1         beta1 
+-0.0002751506 -0.9160755250  0.0003698301  0.1000000000  0.8000000000 
+ LLH:  -250.2719    norm LLH:  -1.881743 
+           mu           ma1         omega        alpha1         beta1 
+-0.0002751506 -0.9160755101  0.0003698301  0.1000000000  0.8000000000 
+ LLH:  -266.3483    norm LLH:  -2.002619 
+           mu           ma1         omega        alpha1         beta1 
+-0.0002741510 -0.9120471711  0.0002573484  0.0974535592  0.7818868067 
+ LLH:  -287.0552    norm LLH:  -2.158310 
+           mu           ma1         omega        alpha1         beta1 
+-2.718314e-04 -9.016428e-01  1.200348e-05  9.548539e-02  7.575969e-01 
+ LLH:  -287.0768    norm LLH:  -2.158472 
+           mu           ma1         omega        alpha1         beta1 
+-2.718314e-04 -9.016428e-01  1.202207e-05  9.548539e-02  7.575969e-01 
+ LLH:  -295.4839    norm LLH:  -2.221684 
+           mu           ma1         omega        alpha1         beta1 
+-2.714274e-04 -9.004230e-01  7.432415e-05  9.724972e-02  7.587009e-01 
+ LLH:  -295.4839    norm LLH:  -2.221684 
+           mu           ma1         omega        alpha1         beta1 
+-2.714274e-04 -9.004230e-01  7.432392e-05  9.724972e-02  7.587009e-01 
+ LLH:  -298.7279    norm LLH:  -2.246074 
+           mu           ma1         omega        alpha1         beta1 
+-2.702559e-04 -8.944449e-01  6.128218e-05  1.031994e-01  7.730534e-01 
+ LLH:  -302.6146    norm LLH:  -2.275298 
+           mu           ma1         omega        alpha1         beta1 
+-2.670878e-04 -8.780169e-01  4.472608e-05  1.207193e-01  8.180026e-01 
+ LLH:  -302.6147    norm LLH:  -2.275298 
+           mu           ma1         omega        alpha1         beta1 
+-2.670878e-04 -8.780169e-01  4.472608e-05  1.207189e-01  8.180026e-01 
+ LLH:  -302.6147    norm LLH:  -2.275298 
+           mu           ma1         omega        alpha1         beta1 
+-2.670878e-04 -8.780169e-01  4.472608e-05  1.207193e-01  8.180021e-01 
+ LLH:  -308.3581    norm LLH:  -2.318482 
+           mu           ma1         omega        alpha1         beta1 
+-2.668972e-04 -8.770920e-01  2.137988e-05  1.205184e-01  8.173422e-01 
+ LLH:  -308.3581    norm LLH:  -2.318482 
+           mu           ma1         omega        alpha1         beta1 
+-2.668972e-04 -8.770920e-01  2.137988e-05  1.205187e-01  8.173422e-01 
+ LLH:  -309.0629    norm LLH:  -2.323781 
+           mu           ma1         omega        alpha1         beta1 
+-2.667096e-04 -8.763277e-01  1.306338e-05  1.205390e-01  8.172469e-01 
+ LLH:  -309.0629    norm LLH:  -2.323781 
+           mu           ma1         omega        alpha1         beta1 
+-2.667096e-04 -8.763277e-01  1.306361e-05  1.205390e-01  8.172469e-01 
+ LLH:  -309.4098    norm LLH:  -2.326389 
+           mu           ma1         omega        alpha1         beta1 
+-2.661840e-04 -8.743101e-01  1.722634e-05  1.209827e-01  8.175158e-01 
+ LLH:  -309.4098    norm LLH:  -2.326389 
+           mu           ma1         omega        alpha1         beta1 
+-2.661840e-04 -8.743101e-01  1.722623e-05  1.209827e-01  8.175158e-01 
+ LLH:  -310.4564    norm LLH:  -2.334259 
+           mu           ma1         omega        alpha1         beta1 
+-2.650669e-04 -8.698650e-01  1.258302e-05  1.219092e-01  8.179745e-01 
+ LLH:  -311.9799    norm LLH:  -2.345713 
+           mu           ma1         omega        alpha1         beta1 
+-2.631491e-04 -8.622226e-01  1.126331e-05  1.236616e-01  8.189264e-01 
+ LLH:  -317.3429    norm LLH:  -2.386037 
+           mu           ma1         omega        alpha1         beta1 
+-2.543152e-04 -8.270196e-01  5.184379e-06  1.317334e-01  8.233112e-01 
+ LLH:  -317.3430    norm LLH:  -2.386037 
+           mu           ma1         omega        alpha1         beta1 
+-2.543152e-04 -8.270196e-01  5.184475e-06  1.317334e-01  8.233112e-01 
+ LLH:  -319.9401    norm LLH:  -2.405564 
+           mu           ma1         omega        alpha1         beta1 
+-2.577152e-04 -7.857030e-01  2.540149e-05  1.388627e-01  7.981803e-01 
+ LLH:  -319.9401    norm LLH:  -2.405565 
+           mu           ma1         omega        alpha1         beta1 
+-2.577152e-04 -7.857030e-01  2.540139e-05  1.388627e-01  7.981803e-01 
+ LLH:  -319.9401    norm LLH:  -2.405565 
+           mu           ma1         omega        alpha1         beta1 
+-2.577152e-04 -7.857030e-01  2.540149e-05  1.388627e-01  7.981794e-01 
+ LLH:  -323.6292    norm LLH:  -2.433302 
+           mu           ma1         omega        alpha1         beta1 
+-2.654796e-04 -7.698695e-01  1.775180e-05  1.644490e-01  7.594381e-01 
+ LLH:  -323.6292    norm LLH:  -2.433303 
+           mu           ma1         omega        alpha1         beta1 
+-2.654796e-04 -7.698695e-01  1.775180e-05  1.644499e-01  7.594381e-01 
+ LLH:  -323.8127    norm LLH:  -2.434682 
+           mu           ma1         omega        alpha1         beta1 
+-2.654312e-04 -7.696685e-01  1.462357e-05  1.644926e-01  7.594743e-01 
+ LLH:  -323.8963    norm LLH:  -2.435310 
+           mu           ma1         omega        alpha1         beta1 
+-2.652340e-04 -7.689030e-01  1.418612e-05  1.647553e-01  7.597634e-01 
+ LLH:  -324.1157    norm LLH:  -2.43696 
+           mu           ma1         omega        alpha1         beta1 
+-2.646423e-04 -7.666066e-01  1.287376e-05  1.655434e-01  7.606307e-01 
+ LLH:  -324.3026    norm LLH:  -2.438365 
+           mu           ma1         omega        alpha1         beta1 
+-2.622756e-04 -7.574210e-01  7.624304e-06  1.686959e-01  7.641000e-01 
+ LLH:  -324.3026    norm LLH:  -2.438365 
+           mu           ma1         omega        alpha1         beta1 
+-2.622756e-04 -7.574210e-01  7.624403e-06  1.686959e-01  7.641000e-01 
+ LLH:  -326.0079    norm LLH:  -2.451187 
+           mu           ma1         omega        alpha1         beta1 
+-2.705204e-04 -7.465646e-01  1.292757e-05  1.711488e-01  7.716046e-01 
+ LLH:  -326.0079    norm LLH:  -2.451187 
+           mu           ma1         omega        alpha1         beta1 
+-2.705204e-04 -7.465646e-01  1.292749e-05  1.711488e-01  7.716046e-01 
+ LLH:  -326.591    norm LLH:  -2.455571 
+           mu           ma1         omega        alpha1         beta1 
+-2.693278e-04 -7.381732e-01  1.170153e-05  1.615547e-01  7.772265e-01 
+ LLH:  -327.6921    norm LLH:  -2.46385 
+           mu           ma1         omega        alpha1         beta1 
+-2.658101e-04 -7.131774e-01  1.189277e-05  1.326220e-01  7.941406e-01 
+ LLH:  -328.3838    norm LLH:  -2.469051 
+           mu           ma1         omega        alpha1         beta1 
+-2.772206e-04 -6.735627e-01  2.754198e-06  1.708897e-01  7.872295e-01 
+ LLH:  -328.3839    norm LLH:  -2.469052 
+           mu           ma1         omega        alpha1         beta1 
+-2.772206e-04 -6.735627e-01  2.754334e-06  1.708897e-01  7.872295e-01 
+ LLH:  -330.3183    norm LLH:  -2.483596 
+           mu           ma1         omega        alpha1         beta1 
+-2.899806e-04 -6.556800e-01  1.245990e-05  2.066582e-01  7.488146e-01 
+ LLH:  -330.3183    norm LLH:  -2.483597 
+           mu           ma1         omega        alpha1         beta1 
+-2.899806e-04 -6.556800e-01  1.245984e-05  2.066582e-01  7.488146e-01 
+ LLH:  -330.5759    norm LLH:  -2.485533 
+           mu           ma1         omega        alpha1         beta1 
+-2.647869e-04 -6.409491e-01  1.224538e-05  2.416243e-01  7.093485e-01 
+ LLH:  -330.5759    norm LLH:  -2.485533 
+           mu           ma1         omega        alpha1         beta1 
+-2.647869e-04 -6.409491e-01  1.224544e-05  2.416243e-01  7.093485e-01 
+ LLH:  -330.5760    norm LLH:  -2.485533 
+           mu           ma1         omega        alpha1         beta1 
+-2.647869e-04 -6.409491e-01  1.224538e-05  2.416249e-01  7.093485e-01 
+ LLH:  -330.5760    norm LLH:  -2.485534 
+           mu           ma1         omega        alpha1         beta1 
+-2.647869e-04 -6.409491e-01  1.224538e-05  2.416243e-01  7.093491e-01 
+ LLH:  -331.4939    norm LLH:  -2.492435 
+           mu           ma1         omega        alpha1         beta1 
+-2.814349e-04 -5.938570e-01  5.732081e-06  2.594570e-01  7.322069e-01 
+ LLH:  -331.4939    norm LLH:  -2.492435 
+           mu           ma1         omega        alpha1         beta1 
+-2.814349e-04 -5.938570e-01  5.732081e-06  2.594564e-01  7.322069e-01 
+ LLH:  -331.6598    norm LLH:  -2.493683 
+           mu           ma1         omega        alpha1         beta1 
+-1.500380e-04 -5.955247e-01  8.706270e-06  2.629567e-01  7.311367e-01 
+ LLH:  -331.6598    norm LLH:  -2.493683 
+           mu           ma1         omega        alpha1         beta1 
+-1.500380e-04 -5.955247e-01  8.706183e-06  2.629567e-01  7.311367e-01 
+ LLH:  -331.6598    norm LLH:  -2.493683 
+           mu           ma1         omega        alpha1         beta1 
+-1.500380e-04 -5.955247e-01  8.706270e-06  2.629567e-01  7.311362e-01 
+ LLH:  -332.1075    norm LLH:  -2.497049 
+           mu           ma1         omega        alpha1         beta1 
+-1.608254e-04 -5.513877e-01  8.834697e-06  2.795199e-01  7.107395e-01 
+ LLH:  -332.1526    norm LLH:  -2.497388 
+           mu           ma1         omega        alpha1         beta1 
+-2.960448e-05 -5.526750e-01  8.092594e-06  2.761057e-01  7.141671e-01 
+ LLH:  -332.1526    norm LLH:  -2.497388 
+           mu           ma1         omega        alpha1         beta1 
+-2.960448e-05 -5.526750e-01  8.092666e-06  2.761057e-01  7.141671e-01 
+ LLH:  -332.3714    norm LLH:  -2.499033 
+           mu           ma1         omega        alpha1         beta1 
+-9.251456e-05 -5.221286e-01  7.595169e-06  2.419195e-01  7.314842e-01 
+ LLH:  -332.3714    norm LLH:  -2.499033 
+           mu           ma1         omega        alpha1         beta1 
+-9.251456e-05 -5.221286e-01  7.595169e-06  2.419195e-01  7.314846e-01 
+ LLH:  -332.4066    norm LLH:  -2.499298 
+           mu           ma1         omega        alpha1         beta1 
+-7.762353e-05 -5.205696e-01  8.391058e-06  2.263636e-01  7.383496e-01 
+ LLH:  -332.4066    norm LLH:  -2.499298 
+           mu           ma1         omega        alpha1         beta1 
+-7.762353e-05 -5.205708e-01  8.391058e-06  2.263636e-01  7.383496e-01 
+ LLH:  -332.4066    norm LLH:  -2.499298 
+           mu           ma1         omega        alpha1         beta1 
+-7.762353e-05 -5.205696e-01  8.391058e-06  2.263643e-01  7.383496e-01 
+ LLH:  -332.4082    norm LLH:  -2.49931 
+           mu           ma1         omega        alpha1         beta1 
+-6.532053e-05 -5.227849e-01  8.475905e-06  2.256434e-01  7.396483e-01 
+ LLH:  -332.4082    norm LLH:  -2.49931 
+           mu           ma1         omega        alpha1         beta1 
+-6.532948e-05 -5.227849e-01  8.475905e-06  2.256434e-01  7.396483e-01 
+ LLH:  -332.4082    norm LLH:  -2.49931 
+           mu           ma1         omega        alpha1         beta1 
+-6.532053e-05 -5.227849e-01  8.475831e-06  2.256434e-01  7.396483e-01 
+ LLH:  -332.4082    norm LLH:  -2.49931 
+           mu           ma1         omega        alpha1         beta1 
+-6.532053e-05 -5.227849e-01  8.475905e-06  2.256428e-01  7.396483e-01 
+ LLH:  -332.4083    norm LLH:  -2.499310 
+           mu           ma1         omega        alpha1         beta1 
+-6.472216e-05 -5.231999e-01  8.459750e-06  2.249364e-01  7.400565e-01 
+ LLH:  -332.4083    norm LLH:  -2.499310 
+           mu           ma1         omega        alpha1         beta1 
+-6.475790e-05 -5.231999e-01  8.459750e-06  2.249364e-01  7.400565e-01 
+ LLH:  -332.4083    norm LLH:  -2.499310 
+           mu           ma1         omega        alpha1         beta1 
+-6.551753e-05 -5.232385e-01  8.460830e-06  2.250247e-01  7.400062e-01 
+ LLH:  -332.4083    norm LLH:  -2.499310 
+           mu           ma1         omega        alpha1         beta1 
+-6.554008e-05 -5.232385e-01  8.460830e-06  2.250247e-01  7.400062e-01 
+ LLH:  -332.4083    norm LLH:  -2.499310 
+           mu           ma1         omega        alpha1         beta1 
+-6.551753e-05 -5.232443e-01  8.460830e-06  2.250247e-01  7.400062e-01 
+ LLH:  -332.4083    norm LLH:  -2.499310 
+           mu           ma1         omega        alpha1         beta1 
+-6.560926e-05 -5.232502e-01  8.460721e-06  2.250226e-01  7.400110e-01 
+ LLH:  -332.4083    norm LLH:  -2.499310 
+           mu           ma1         omega        alpha1         beta1 
+-6.560980e-05 -5.232505e-01  8.460705e-06  2.250222e-01  7.400114e-01 
+
+Time to Compute Hessian:
+ Time difference of 0.3120000 secs
+
+Final Estimate:
+ LLH:  -332.4083    norm LLH:  -2.499310 
+           mu           ma1         omega        alpha1         beta1 
+-6.560980e-05 -5.232505e-01  8.460705e-06  2.250222e-01  7.400114e-01 
+
+Hessian Matrix:
+                 mu          ma1        omega        alpha1         beta1
+mu      3391407.907   2615.17541 5.116986e+07   -2201.94357   -1127.63096
+ma1        2615.175    162.49337 3.287687e+05      23.85025      87.86039
+omega  51169861.817 328768.69309 6.007175e+10 4324421.28911 7213535.31915
+alpha1    -2201.944     23.85025 4.324421e+06     816.30631    1087.82110
+beta1     -1127.631     87.86039 7.213535e+06    1087.82110    1718.12302
+
+--- END OF TRACE ---
+
+
+Time to Estimate Parameters:
+ Time difference of 2.089 secs
+    P-Val 
+0.2294801 
+   P-Val 
+0.868812 
+
+Series Initialization:
+ ARMA model:                arma
+ Formula mean:              ~ arma(0, 1)
+ GARCH model:               garch
+ Formula var:               ~ garch(1, 1)
+ ARMA Order:                0 1
+ Max ARMA Order:            1
+ GARCH Order:               1 1
+ Max GARCH Order:           1
+ Maximum Order:             1
+ h.start:                   2
+ llh.start:                 1
+ Length of Series:          133
+ Recursion Init:            mci
+ Series Scale:              0.02447468
+
+Parameter Initialization:
+ Initial Parameters:          $params
+ Limits of Transformations:   $U, $V
+ Which Parameters are Fixed?  $includes
+ Parameter Matrix:
+                     U           V       params includes
+    mu     -0.11599550   0.1159955 -0.003399794     TRUE
+    ma1    -0.99999999   1.0000000 -0.854526512     TRUE
+    omega   0.00000100 100.0000000  0.100000000     TRUE
+    alpha1  0.00000001   1.0000000  0.100000000     TRUE
+    gamma1 -0.99999999   1.0000000  0.100000000    FALSE
+    beta1   0.00000001   1.0000000  0.800000000     TRUE
+    delta   0.00000000   2.0000000  2.000000000    FALSE
+    skew    0.10000000  10.0000000  1.000000000    FALSE
+    shape   1.00000000  20.0000000  4.000000000    FALSE
+ Index List of Parameters to be Optimized:
+    mu    ma1  omega alpha1  beta1 
+     1      2      3      4      6 
+ Persistence:                  0.9 
+
+
+--- START OF TRACE ---
+
+R coded nlminb Solver: 
+
+  0:     140.35064: -0.00339979 -0.854527 0.100000 0.100000 0.800000
+  1:     129.24921: -0.00339957 -0.850847 0.0692421 0.0954269 0.781301
+  2:     125.79385: -0.00339943 -0.848866 0.0577103 0.0950187 0.777528
+  3:     120.19924: -0.00339903 -0.844012 0.0341990 0.0955352 0.772178
+  4:     119.20383: -0.00339872 -0.841075 0.0288204 0.0978667 0.773063
+  5:     117.64901: -0.00339783 -0.833390 0.0216756 0.104810 0.777162
+  6:     116.58501: -0.00339604 -0.820026 0.0274795 0.117634 0.787421
+  7:     113.78227: -0.00338881 -0.779057 0.0151830 0.114385 0.778067
+  8:     112.82521: -0.00338057 -0.736974 0.0264684 0.111782 0.773338
+  9:     111.12422: -0.00336795 -0.714013 0.0191996 0.139475 0.749256
+ 10:     109.46802: -0.00332654 -0.683263 0.0149422 0.109835 0.825789
+ 11:     108.85115: -0.00332652 -0.683064 0.0113950 0.109632 0.825330
+ 12:     108.81196: -0.00332562 -0.680721 0.0102864 0.107800 0.827002
+ 13:     108.76572: -0.00332464 -0.678158 0.0109222 0.106007 0.828637
+ 14:     108.70915: -0.00332255 -0.672727 0.0102072 0.102331 0.831457
+ 15:     108.58409: -0.00331644 -0.658805 0.0116256 0.102345 0.828317
+ 16:     108.44623: -0.00330812 -0.654894 0.0107582 0.113826 0.820726
+ 17:     108.43186: -0.00329118 -0.654126 0.0107192 0.109641 0.832190
+ 18:     108.39764: -0.00326261 -0.650994 0.00830474 0.103040 0.841483
+ 19:     108.29665: -0.00323993 -0.644935 0.00973019 0.108631 0.832662
+ 20:     108.23648: -0.00323792 -0.633957 0.00868012 0.113132 0.835783
+ 21:     108.17012: -0.00319126 -0.625121 0.00915067 0.116779 0.829160
+ 22:     108.16565: -0.00319124 -0.625071 0.00945101 0.116752 0.829159
+ 23:     108.16379: -0.00319119 -0.624902 0.00936402 0.116569 0.829005
+ 24:     108.16090: -0.00318727 -0.624549 0.00950912 0.116279 0.829178
+ 25:     108.11812: -0.00300852 -0.612041 0.00897739 0.106032 0.838163
+ 26:     108.07538: -0.00216423 -0.595793 0.00975487 0.115805 0.826211
+ 27:     108.07435: -0.00178862 -0.594143 0.00977869 0.115744 0.826281
+ 28:     108.07422: -0.00157775 -0.594083 0.00977315 0.115823 0.826269
+ 29:     108.07422: -0.00153969 -0.594242 0.00977069 0.115838 0.826263
+ 30:     108.07422: -0.00153809 -0.594282 0.00977039 0.115838 0.826262
+ 31:     108.07422: -0.00153841 -0.594284 0.00977039 0.115838 0.826263
+
+Final Estimate of the Negative LLH:
+ LLH:  -385.3712    norm LLH:  -2.897528 
+           mu           ma1         omega        alpha1         beta1 
+-3.765210e-05 -5.942842e-01  5.852560e-06  1.158377e-01  8.262625e-01 
+
+R-optimhess Difference Approximated Hessian Matrix:
+                  mu           ma1         omega        alpha1         beta1
+mu     -7.233158e+06   -3146.49679 -1.297769e+08  5.716697e+03 -7.701353e+03
+ma1    -3.146497e+03    -147.07567 -4.626172e+05 -3.455536e+01 -7.144293e+01
+omega  -1.297769e+08 -462617.17804 -2.985459e+11 -1.479845e+07 -2.361014e+07
+alpha1  5.716697e+03     -34.55536 -1.479845e+07 -2.300310e+03 -2.472031e+03
+beta1  -7.701353e+03     -71.44293 -2.361014e+07 -2.472031e+03 -3.238362e+03
+attr(,"time")
+Time difference of 0.04699993 secs
+
+--- END OF TRACE ---
+
+
+Time to Estimate Parameters:
+ Time difference of 0.5309999 secs
+    P-Val 
+0.2472683 
+       P-Val 
+0.0005131653 

@@ -1,0 +1,9 @@
+	For red states:
+
+Check stationarity of (return series) = (first difference of HPI)
+Try checking stationarity of log or 1st difference of return series
+Try investigating fractional integration (long memory)
+	Heuristic approaches (ch4 beran)
+	Whittle Estimates (ch6 beran)
+
+Fit a new model (ARIMA, FGN, or ARFIMA)

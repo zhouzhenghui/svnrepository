@@ -1,0 +1,222 @@
+###---PHASE 1---###
+setwd("//erevno/Courses/Agamas/Shirley/SVNRepository/Code/Development/initial_analysis_r_code")
+library(leaps)
+#source initial files
+source("../source_functions/get.all.data.R")
+source("../source_functions/get.sd.data.R")
+source("../source_functions/get.sreturn.R")
+source("../source_functions/multi.adf.test.R")
+source("../source_functions/multi.adf.test.lags.R")
+source("../source_functions/format.dates.R")
+source("../source_functions/chop.R")
+source("../source_functions/shift.R")
+source("../source_functions/get.lagvectors.R")
+source("../source_functions/dataframe.eda.R")
+source("../source_functions/dategen.R")
+source("../source_functions/get.res.formula.R")
+source("../source_functions/shift.df.R")
+source("../source_functions/shift.df.multi.R")
+
+begin_month=1
+begin_year=1998
+state = "FL" #our dependent variable 
+end_month = 6
+end_year = 2008
+
+supply_demand_data_code_vector=c(
+"median_income",
+#"thirty_year_current_coupon",
+"thirty_year_commitment_rate",
+"mortgage_originations",
+"unemployment_rate",
+#"primary_interest_rate",
+"population_size",
+#"population_growth",
+#"median_house_median_income",
+#"delta_from_median_house_median_income"
+"foreclosures",
+#"housing_stock",
+#"inventory_turnover",
+"building_permits"
+)
+
+#basic tests
+test.data.frame = get.all.data(supply_demand_data_code_vector,state,begin_month,begin_year,end_month,end_year) 
+test.data.vector = test.data.frame$combined_spec # this has the mean-centered rates (non-simple return), and simple returns
+
+dates = dategen(begin_month+1,begin_year, end_month, end_year)  #begin month + 1 because we had to chop off the first month
+
+test.and.plot = dataframe.eda(test.data.vector, state, dates, basicTS = F, comparisonTS = T, allTS = T, CCF = F, scatter = F, ACF = F, PACF = F)
+test.and.plot$adf.test
+
+#get shifted independent variables
+independent.variables = supply_demand_data_code_vector
+#do the time shiftin here, lags depend on ranges entered in lagranges.csv
+shifted.multivar.test.data.vector = shift.df.multi(test.data.vector,state,independent.variables)
+dataframe.eda(shifted.multivar.test.data.vector,state,dates) #X out for a cheap time shifting animation, just do it you'll see
+
+#try a stepwise regression on 1 variable to determine the most significant lag
+form = as.formula(paste(state," ~ .",sep=""))
+bs.reg = regsubsets(x= form, nbest=1, data = shifted.multivar.test.data.vector, nvmax=30,intercept=FALSE, method=c("backward"), really.big=FALSE)
+summary(bs.reg)
+names(bs.reg)
+plot(x=bs.reg, labels=bs.reg$xnames, scale=c("bic"), col="blue", main = paste("Stepwise BIC Regression of",state))
+dev.new()
+plot(x=bs.reg, labels=bs.reg$xnames, scale=c("adjr2"), col="blue", main = paste("Stepwise R^2 Regression of",state))
+
+## Fit rlm to lagged variables
+n = ncol(shifted.multivar.test.data.vector)
+y = rlm(shifted.multivar.test.data.vector[,1:(n-1)],shifted.multivar.test.data.vector[,n])
+summary(y)
+
+## Fit rlm to unlagged variables
+a = rlm(test.data.vector[,1:(length(test.data.vector)-1)],test.data.vector[,length(test.data.vector)])
+summary(y)
+
+## Plot unlagged, lagged regression models + original HPI
+##- CHANGE STATE NAME IN TITLE
+plot(a$fitted.values,type="l",main="Model vs. Fitted FL",col="red")
+lines(test.data.vector[,length(test.data.vector)])
+lines(y$fitted.values,type="l",col="blue")
+legend("bottomright",c("unlagged","lagged","actual"),col=c("red","blue","black"),lty=c(1,1,1))
+
+## Lagged regression residuals plots
+par(mfrow=c(1,3))
+plot(y$residuals,main="Lagged regression residuals")
+acf(y$residuals, lag=40,main="ACF")
+pacf(y$residuals, main="PACF")
+
+## Unlagged regression residuals plots
+par(mfrow=c(1,3))
+plot(a$residuals,main="Unlagged regression residuals")
+acf(a$residuals, lag=40,main="ACF")
+pacf(a$residuals, main="PACF")
+
+## Stationarity tests for lagged regression residuals
+pacf(y$residuals)   # get lag from this + 1
+adf.test(y$residuals, k=2)
+
+###---PHASE 2---###
+
+## Ljung-Box test to check for autocorrelation
+Box.test(y$residuals, lag = 12, type = c("Ljung-Box"))
+
+source("../source_functions/ATS_2008.R")
+eacf(y$residuals)
+arima.fit = arima(y$residuals,order = c(1,0,0))
+params = 1
+Box.Ljung.test(arima.fit$residuals,lag = 12, adj.DF =  12-params)
+Box.Ljung.test(arima.fit$residuals^2,lag = 12, adj.DF =  12)
+library(fGarch)
+garch.fit = garchFit(formula = ~arma(1,0)+garch(1,1), data=arima.fit$residuals,cond.dist = c("QMLE"), include.mean=TRUE)
+
+## Checking adequacy of GARCH model
+meanParams = 1
+volParams = 2
+sresi=garch.fit@residuals/garch.fit@sigma.t
+Box.Ljung.test(sresi, lag = 12, adj.DF =  12-meanParams)  
+Box.Ljung.test(sresi^2, lag = 12, adj.DF = 12-volParams ) 
+
+
+
+
+##-------------------------------------- IGNORE FOLLOWING (SCRAP)
+
+n = ncol(shifted.multivar.test.data.vector)
+temp = NULL
+for(i in 1:(n-1)){
+temp = c(temp;shifted.multivar.test.data.vector[,i])
+}
+a = rlm(test.data.vector[,1:(length(test.data.vector)-1)],test.data.vector[,length(test.data.vector)])
+
+summary(a)
+adf.test(a$residuals)
+dev.new()
+plot(a$fitted.values,type="l",main="Model vs. Fitted FL",col="red")
+lines(test.data.vector[,length(test.data.vector)])
+lines(y$fitted.values,type="l",col="blue")
+legend("bottomright",c("unlagged","lagged","actual"),col=c("red","blue","black"),lty=c(1,1,1))
+?legend
+vif(a)
+
+
+shifted.multivar.test.data.vector[,2]
+y = rlm(shifted.multivar.test.data.vector[,1:(n-1)],shifted.multivar.test.data.vector[,n])
+summary(y)
+library(faraway)
+vif(y)
+
+fit_values = y$fitted.values
+?lm
+
+plot(fit_values,type="l",main="Florida rlm")
+lines(shifted.multivar.test.data.vector[,n],col="red")
+
+pacf(diff(y$residuals))
+adf.test(y$residuals)
+adf.test(y$residuals,k=9)
+adf.test(a,k=9)
+plot(a)
+dev.new()
+plot(y$residuals)
+acf(a, lag=100)
+
+
+
+adf
+plot(y$residuals)
+Box.test(y$residuals, lag = 12, type = c("Ljung-Box"))
+adf.test(y$residuals)
+acf(y$residuals, lag=40)
+plot(x$residuals)
+acf(x$residuals, lag=40)
+
+x = lm(shifted.multivar.test.data.vector[,n]~shifted.multivar.test.data.vector[,1:(n-1)], data = shifted.multivar.test.data.vector)
+plot(x$fitted.values, type ="l")
+lines(shifted.multivar.test.data.vector[,n],col="red")
+
+x=lm(formula = form, data = shifted.multivar.test.data.vector)
+summary(x)
+length(shifted.multivar.test.data.vector[,1])
+length(test.data.frame$combined_spec[,8])
+names(test.data.frame)
+?ncol
+
+names(y)
+?rlm
+
+rlm(subset(shifted.multivar.test.data.vector[,1:(n-1)],select=-"mortgage_originations-Lag0"),shifted.multivar.test.data.vector[,n])
+
+
+
+### PHASE 2
+library(Rmetrics)
+library(fracdiff)
+residuals = y$residuals
+d.est = whittleFit(residuals , order = c(0, 0), subseries = 1, method = c("farma"),trace = TRUE, spec = FALSE, title = NULL, description = NULL)@hurst$H  - 0.5
+		hurst = whittleFit(residuals , order = c(0, 0), subseries = 1, method = c("farma"),trace = F, spec = FALSE, title = NULL, description = NULL)
+		d.hat = hurst@hurst$H  - 0.5
+		d.hat.sd = sqrt(.CetaARIMA(hurst@hurst$H,0, 0)/length(hurst@data$x))
+
+residuals.fracdiff = diffseries(residuals,d.est)
+
+source("../source_functions/ATS_2008.R")
+eacf(y$residuals)
+arima.fit = arima(y$residuals,order = c(1,0,0))
+params = 1
+Box.Ljung.test(arima.fit$residuals,lag = 12, adj.DF =  12-params)
+Box.Ljung.test(arima.fit$residuals^2,lag = 12, adj.DF =  12)
+library(fGarch)
+garch.fit = garchFit(formula = ~arma(1,0)+garch(1,1), data=arima.fit$residuals,cond.dist = c("QMLE"), include.mean=TRUE)
+
+## Checking adequacy of GARCH model
+meanParams = 1
+volParams = 2
+sresi=garch.fit@residuals/garch.fit@sigma.t
+Box.Ljung.test(sresi, lag = 12, adj.DF =  12-meanParams)  
+Box.Ljung.test(sresi^2, lag = 12, adj.DF = 12-volParams ) 
+
+
+
+
+

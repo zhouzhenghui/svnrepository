@@ -1,0 +1,6 @@
+ [1] "AZ" "CA" "CO" "CT" "DC" "DE" "FL" "GA" "ID" "KS" "LA" "MA" "MD" "ME" "MI"
+[16] "MN" "MO" "MT" "NH" "NJ" "NV" "NY" "OH" "OK" "OR" "PA" "RI" "TN" "TX" "VA"
+[31] "WA"
+ [1] "AZ" "CA" "CO" "CT" "DC" "DE" "FL" "GA" "ID" "KS" "LA" "MA" "MD" "ME" "MI"
+[16] "MN" "MO" "MT" "NH" "NJ" "NV" "NY" "OH" "OK" "OR" "PA" "RI" "TN" "TX" "VA"
+[31] "WA"

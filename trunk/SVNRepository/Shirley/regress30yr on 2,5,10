@@ -1,0 +1,117 @@
+setwd("//erevno/Courses/Agamas/Shirley/SVNRepository/Data/Forward Curve")
+
+data=read.csv("Libor_Swap.csv",header=TRUE)
+
+library(MASS)
+library(car)
+library(faraway)
+
+y = data[,5]
+yr2 = data[,2]
+yr5 = data[,3]
+yr10 = data[,4]
+
+y = y[1:193]
+yr2 = yr2[1:193]
+yr5 = yr5[1:193]
+yr10 = yr10[1:193]
+
+## MODEL 1
+
+y_lm = lm(y~yr2+yr5+yr10)
+summary(y_lm)
+
+acf(y_lm)
+
+vif(y_lm)
+anova(y_lm)
+qqnorm(y_lm$residual,datax=T)
+qqline(y_lm$residual,datax=T)
+
+qqnorm(yr2,datax = T)
+
+yr2.sqrt = yr2^.5
+yr2.log = log(yr2)
+yr2.log10 = log(yr2,base=10)
+
+par(mfrow = c(1,2))
+qqnorm(yr2.sqrt,datax = T)
+qqline(yr2.sqrt,datax=T)
+
+qqnorm(yr2.log ,datax = T)
+qqline(yr2.log ,datax=T)
+
+qqnorm(yr2.log10 ,datax = T)
+qqline(yr2.log10 ,datax=T)
+
+library(tseries)
+library(nortest)
+
+jarque.bera.test(yr2.sqrt)
+jarque.bera.test(yr2.log)
+
+ad.test(yr2)
+ad.test(yr2.sqrt)
+ad.test(yr2.log)
+ad.test(yr2.log10)
+
+ad.test(y_lm$residual)
+acf(y_lm$residual)
+
+return.box.cox(yr2)
+
+
+## MODEL 2
+
+y_lm2 = lm(y~yr5+yr10)
+summary(y_lm2)
+vif(y_lm2)
+
+## MODEL 3
+plot(cbind(yr10,y))
+y_lm3 = lm(y~yr10)
+abline( 5.3183,  0.6562  )
+
+
+y.tr = log(y)
+yr10.tr = log(yr10)
+
+y_lm3 = lm(y.tr~yr10.tr)
+
+
+summary(y_lm3)
+acf(y_lm3$residuals)
+
+
+qqnorm(y_lm3$residuals, datax = TRUE)
+qqline(y_lm3$residuals, datax = TRUE)
+
+dev.new()
+plot(y_lm3$fitted, y_lm3$residuals)
+lines(lowess(y_lm3$fitted, y_lm3$residuals))
+
+## MODEL 4
+
+y.diff = diff(y)
+yr10.diff = diff(yr10)
+
+y_lm4 = lm(log(y) ~ log(yr5)+ log(yr10))
+
+plot(cbind(log(yr5), log(y)), xlab = 
+)
+
+
+predict(y_lm4)
+?predict
+summary(y_lm4)
+acf(y_lm4$residuals, main = "Sample ACF of Residuals")
+
+vif(y_lm4)
+
+qqnorm(y_lm4$residuals, datax = TRUE)
+qqline(y_lm4$residuals, datax = TRUE)
+
+dev.new()
+plot(y_lm4$fitted, y_lm4$residuals, main = "Fitted vs. Residuals", xlab = "log(Fitted)", ylab = "Residuals")
+lines(lowess(y_lm4$fitted, y_lm4$residuals))
+

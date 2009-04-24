@@ -1,0 +1,56 @@
+library(Rmetrics)
+library(fArma)
+library(fracdiff)
+library(fBasics)
+library(tseries)
+library(MASS)
+library(fGarch)
+library(nortest)
+
+setwd("Z:/M.Eng Project/SVNRepository/Data/States")
+
+all.data = read.table("all.txt")
+all.data.state = all.data[,1]
+states = read.csv("states.csv")
+state.names = as.matrix(states$State)
+
+normality.pvalues = c("State", "Shapiro", "JB", "AD", "CVM", "KS")
+
+for (i in 1:length(as.matrix(state.names))){
+	current.name = as.matrix(state.names)[i]
+	current.data = subset(all.data,all.data[,1]==current.name)[,4]
+	n = length(current.data)
+
+	current.data.sreturn = (current.data[2:n]-current.data[1:n-1])/current.data[1:n-1]
+	
+	results.shapiro = round(shapiroTest(current.data.sreturn)@test$p.value,3)
+	results.jb = round(as.numeric(jarqueberaTest(current.data.sreturn)@test$p.value),3)
+	results.ad = round(adTest(current.data.sreturn)@test$p.value,3)
+	results.cvm = round(cvm.test(current.data.sreturn)$p.value,3)
+	results.ks = round(ks.test(current.data.sreturn, "pnorm", mean(current.data.sreturn), sd(current.data.sreturn), alternative = c("two.sided"),exact = TRUE)$p.value,3)
+
+	normality.pvalues = rbind(normality.pvalues,append(state.names[i],c(results.shapiro, results.jb, results.ad, results.cvm, results.ks)))
+}
+
+normality.diff.pvalues = c("State", "Shapiro", "JB", "AD", "CVM", "KS")
+
+for (i in 1:length(as.matrix(state.names))){
+	current.name = as.matrix(state.names)[i]
+	current.data = subset(all.data,all.data[,1]==current.name)[,4]
+	n = length(current.data)
+
+	current.data.sreturn = (current.data[2:n]-current.data[1:n-1])/current.data[1:n-1]
+	diff.current.data.sreturn = diff(current.data.sreturn)
+	current.data.sreturn = diff.current.data.sreturn
+
+	results.shapiro = round(shapiroTest(current.data.sreturn)@test$p.value,3)
+	results.jb = round(as.numeric(jarqueberaTest(current.data.sreturn)@test$p.value),3)
+	results.ad = round(adTest(current.data.sreturn)@test$p.value,3)
+	results.cvm = round(cvm.test(current.data.sreturn)$p.value,3)
+	results.ks = round(ks.test(current.data.sreturn, "pnorm", mean(current.data.sreturn), sd(current.data.sreturn), alternative = c("two.sided"),exact = TRUE)$p.value,3)
+
+	normality.diff.pvalues = rbind(normality.pvalues,append(state.names[i],c(results.shapiro, results.jb, results.ad, results.cvm, results.ks)))
+}
+
+normality.pvalues
+normality.diff.pvalues

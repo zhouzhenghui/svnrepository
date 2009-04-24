@@ -1,0 +1,136 @@
+#set wd
+#setwd("Z:/SVNRepository/Code/Development/initial_analysis_r_code/")
+#setwd("C:/Users/tim/Documents/ClassesSpring09/MastersProject/SVNRepository/timr_FinEngProj09/Code/Development/initial_analysis_r_code")
+
+setwd("//erevno/Courses/Agamas/Shirley/SVNRepository/Code/Development/initial_analysis_r_code")
+
+
+#some libraries
+library(leaps)
+
+#source initial files
+source("../source_functions/get.all.data.R")
+source("../source_functions/get.sd.data.R")
+source("../source_functions/get.sreturn.R")
+source("../source_functions/multi.adf.test.R")
+source("../source_functions/multi.adf.test.lags.R")
+source("../source_functions/format.dates.R")
+source("../source_functions/chop.R")
+source("../source_functions/shift.R")
+source("../source_functions/get.lagvectors.R")
+source("../source_functions/dataframe.eda.R")
+source("../source_functions/dategen.R")
+source("../source_functions/get.res.formula.R")
+source("../source_functions/shift.df.R")
+source("../source_functions/shift.df.multi.R")
+
+
+begin_month=1
+begin_year=1998
+state = "FL" #our dependent variable 
+end_month = 6
+end_year = 2008
+
+
+
+supply_demand_data_code_vector=c(
+"median_income",
+#"thirty_year_current_coupon",
+"thirty_year_commitment_rate",
+"mortgage_originations",
+"unemployment_rate",
+#"primary_interest_rate",
+"population_size",
+#"population_growth",
+#"median_house_median_income",
+#"delta_from_median_house_median_income"
+"foreclosures",
+#"housing_stock",
+#"inventory_turnover",
+"building_permits"
+)
+
+##  Unlagged FL
+supply_demand_data_code_vector = c(
+#"median_income",
+#"thirty_year_current_coupon",
+#"thirty_year_commitment_rate",
+#"mortgage_originations",
+"unemployment_rate",
+#"primary_interest_rate",
+"population_size"
+#"population_growth",
+#"median_house_median_income",
+#"delta_from_median_house_median_income"
+#"foreclosures",
+#"housing_stock",
+#"inventory_turnover",
+#"building_permits"
+)
+
+
+#basic tests
+test.data.frame = get.all.data(supply_demand_data_code_vector,state,begin_month,begin_year,end_month,end_year) 
+test.data.vector = test.data.frame$combined_spec # this has the mean-centered rates (non-simple return), and simple returns
+
+dates = dategen(begin_month+1,begin_year, end_month, end_year)  #begin month + 1 because we had to chop off the first month
+
+test.and.plot = dataframe.eda(test.data.vector, state, dates, basicTS = F, comparisonTS = T, allTS = T, CCF = F, scatter = F, ACF = F, PACF = F)
+test.and.plot$adf.test
+
+
+#get 1 shifted independent variables
+#independent.variables = c("population_size")
+#get multiple shifted independent variables
+independent.variables = supply_demand_data_code_vector
+independent.variables = c(
+"median_income",
+#"thirty_year_current_coupon",
+#"thirty_year_commitment_rate",
+"mortgage_originations",
+#"unemployment_rate",
+#"primary_interest_rate",
+"population_size",
+#"population_growth",
+#"median_house_median_income",
+#"delta_from_median_house_median_income"
+"foreclosures"
+#"housing_stock",
+#"inventory_turnover",
+#"building_permits"
+)
+
+## Lagged FL
+independent.variables = c("unemployment_rate","population_size")
+
+##  Unlagged FL
+independent.variables = c(
+"median_income",
+#"thirty_year_current_coupon",
+#"thirty_year_commitment_rate",
+"mortgage_originations",
+"unemployment_rate",
+#"primary_interest_rate",
+"population_size",
+#"population_growth",
+#"median_house_median_income",
+#"delta_from_median_house_median_income"
+"foreclosures",
+#"housing_stock",
+#"inventory_turnover",
+"building_permits"
+)
+
+#do the time shiftin here, lags depend on ranges entered in lagranges.csv
+shifted.multivar.test.data.vector = shift.df.multi(test.data.vector,state,independent.variables)
+dataframe.eda(shifted.multivar.test.data.vector,state,dates) #X out for a cheap time shifting animation, just do it you'll see
+
+
+#try a stepwise regression on 1 variable to determine the most significant lag
+form = as.formula(paste(state," ~ .",sep=""))
+bs.reg = regsubsets(x= form, nbest=1, data = shifted.multivar.test.data.vector, nvmax=30,intercept=FALSE, method=c("backward"), really.big=FALSE)
+summary(bs.reg)
+names(bs.reg)
+plot(x=bs.reg, labels=bs.reg$xnames, scale=c("bic"), col="blue", main = paste("Stepwise BIC Regression of",state))
+dev.new()
+plot(x=bs.reg, labels=bs.reg$xnames, scale=c("adjr2"), col="blue", main = paste("Stepwise R^2 Regression of",state))

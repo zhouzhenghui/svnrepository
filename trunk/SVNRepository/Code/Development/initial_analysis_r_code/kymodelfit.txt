@@ -1,0 +1,11 @@
+[1] "d= 0.346754063053533"
+
+Call:
+arima(x = ky.diffseries, order = c(0, 0, 1))
+
+Coefficients:
+          ma1  intercept
+      -0.3049     0.0255
+s.e.   0.0991     0.0846
+
+sigma^2 estimated as 1.954:  log likelihood = -235.08,  aic = 476.16

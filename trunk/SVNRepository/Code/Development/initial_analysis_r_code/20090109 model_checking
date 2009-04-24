@@ -1,0 +1,99 @@
+#Tim 
+#Created 1-10-09
+####INITIALIZATION--RUN THIS FIRST#####
+library(Rmetrics)
+library(fArma)
+library(fracdiff)
+library(GeneCycle)
+library(fGarch)
+library(tseries)
+library(Hmisc)
+#RH453
+setwd("Z:/SVNRepository/Code/Development/initial_analysis_r_code/")
+#Home
+#setwd("C:/Users/tim/Documents/ClassesSpring09/MastersProject/SVNRepository/timr_FinEngProj09/Code/Development/initial_analysis_r_code")
+
+
+#mattesons class file, revised box.ljung.test to give p-val
+source("../ATS_2008.R")
+
+#our own project source files
+source("../source_functions/initialplots.R")
+source("../source_functions/aicbicadfTest.R")
+source("../source_functions/completearmamodelwithstats.R")
+source("../source_functions/UnitRootNormality.R")
+source("../source_functions/autoModel.R")
+
+all.data = read.table("../../../Data/States/all.txt")
+all.data.state = all.data[,1]
+all_states = read.csv("../../../Data/States/states2.csv")
+stationary_state_names = read.csv("../../../Data/States/nonstationarystates.csv")
+
+##########################
+#set states to use here
+#states = all_states
+states = all_states[match(as.matrix(stationary_state_names$State),as.matrix(all_states$State)),]
+
+##########################
+
+all.data.state = all.data[,1]
+state.names = as.matrix(states$State)
+state.ar.orders = as.matrix(states$AR.order)
+state.ma.orders = as.matrix(states$MA.order)
+state.d.orders = as.matrix(states$d)
+state.alpha.orders = as.matrix(states$alpha.order)
+state.beta.orders = as.matrix(states$beta.order)
+state.unit.roots = as.matrix(states$unitroot)
+
+#########################################
+###########Set test parameters here######
+#lag to use in all Box Jenkin's tests
+lags.to.use = 12;
+lag.to.use = 12;
+#adjust d.o.f. (TRUE/FALSE)
+adjust.dof = TRUE;
+#significance of tests
+alpha = 0.05;
+##Loop that runs through states starts here
+##############################
+d.vector = NULL
+adfpvalvec=NULL
+pppvalvec=NULL
+kpsspvalvec=NULL
+adflagvec=NULL
+critvalvec=NULL
+tstatvec=NULL
+state.num = 1
+i=1
+####END INITIALIZATION#####
+
+model_checks_vec = NULL
+state_names_vec = NULL
+
+for (i in 1:length(as.matrix(state.names))){
+
+	##CHECKS FOR STATIONARITY
+	current.state.name = as.matrix(state.names)[i]
+	current.state.data = subset(all.data,all.data[,1]==current.state.name)[,4]
+	current.state.data.diff = diff(current.state.data)
+	current.state.data.sreturn = (current.state.data[2:length(current.state.data)]-current.state.data[1:(length(current.state.data)-1)])/current.state.data[1:(length(current.state.data)-1)]
+
+	n=length(current.state.data.sreturn)
+	if(state.unit.roots[i]==0){
+
+		model=auto.model(current.state.name,n)
+		model_checks_vec=c(model_checks_vec,model$model.check)
+		state_names_vec=c(state_names_vec,current.state.name)
+	}
+	print(current.state.name)
+}
+	model_checks_vec[2]
+	model_checks_mean_vec = as.numeric(model_checks_vec[seq(1,2*length(state_names_vec),by=2)])
+	model_checks_vol_vec = as.numeric(model_checks_vec[seq(2,2*length(state_names_vec),by=2)])
+	
+	statenumbers = seq(1:length(state_names_vec))
+	plot(statenumbers ,model_checks_mean_vec,pch=1,col="red",xaxt = "n",xlab = "States", ylab="P-Values")
+	axis(side =1 , at=statenumbers, labels = state_names_vec, las = 3)
+	par(new=T)
+	points(statenumbers,model_checks_vol_vec,pch=2,col="blue") 
+	abline(h=0.05,col="blue",lty=2)

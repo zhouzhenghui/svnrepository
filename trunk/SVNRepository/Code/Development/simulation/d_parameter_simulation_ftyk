@@ -1,0 +1,56 @@
+## Simulation for d Parameters
+## February 3, 2009
+## Wesley & Yasin
+
+library(Rmetrics)
+library(fArma)
+library(fracdiff)
+
+d.results = rep(0, 1000)
+d.results2 = rep(0, 1000)
+
+for(i in 1:1000){
+	sim.data = arima.sim(list(order = c(1,0,0), ar = 0.7, d=0.3), n = 134, n.start = 1000)
+	d.results[i]=fdGPH(sim.data)$d
+}
+
+for(i in 1:1000){
+	sim.data = arima.sim(list(order = c(1,0,0), ar = 0.7, d=0.3), n = 662, n.start = 1000)
+	d.results2[i]=fdGPH(sim.data)$d
+}
+
+## Results for n = 134
+d.results.sort = sort(d.results)
+
+plot(density(d.results))
+
+d.results.sort[250]
+d.results.sort[500]
+d.results.sort[975]
+
+## Results for n = 662
+d.results2.sort = sort(d.results2)
+d.results2.sort[250]
+d.results2.sort[5000]
+d.results2.sort[9750]
+
+--------------------------------------------------
+d.results = rep(0, 1000)
+
+## ARMA(0,0)
+for(i in 1:1000){
+	sim.data = fracdiff.sim(1000,d=0.4,n.start=1000)        
+	d.results[i]=fdGPH(sim.data$series)$d
+}
+
+## Results for n = 1000
+d.results.sort = sort(d.results)
+
+d.results.sort[250]
+d.results.sort[500]
+d.results.sort[975]
+
+plot(density(d.results), main ="Density of d Parameter Simulation; d=0.4")
+
+
+#arima.sim(list(order = c(0,0,0), d=-0.7), n = 1000, n.start = 1000)

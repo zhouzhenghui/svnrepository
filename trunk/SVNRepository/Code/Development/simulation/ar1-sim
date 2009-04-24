@@ -1,0 +1,17 @@
+library(Rmetrics)
+
+# AR(1) coefficient
+phi = 0.5
+sigma.a = 1   # leave fixed, residual sd
+# delta denotes the number of standard deviations
+# to consider for the width of your trading window
+delta = 1.0
+# Simulation size, i.e. number of periods
+# Note that plots are nto very informative unless you keep n ~ 1000
+n = 1000
+
+x = arima.sim(n, model = list(ar = c(phi)),  sd = sigma.a)
+
+acf(x)
+dev.new()
+pacf(x)
