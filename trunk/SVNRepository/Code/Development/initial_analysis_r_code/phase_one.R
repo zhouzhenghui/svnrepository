@@ -29,8 +29,8 @@ source("../source_functions/plot.actual.fitted.R")
 
 
 begin_month=1
-begin_year=1999
-state = "AZ" #our dependent variable 
+begin_year=1998
+state = "FL" #our dependent variable 
 end_month = 6
 end_year = 2008
 
@@ -120,9 +120,11 @@ multi.adf.test.lags(resids)
 #model check
 which.min(abs(summary(robust.lm)$coefficients[,3]))
 #plot(resids)
-#acf(resids, lag.max = 40, main = "ACF of Phase 1 Sq-Residuals")
+#acf(resids^2, lag.max = 40, main = "ACF of Phase 1 Sq-Residuals")
 pacf(diff(resids))
-lag=2
+#Box.Ljung.test(resids,lag = 12, adj.DF =  12)
+
+lag=5
 ur.df(resids,lags=lag,type="none")@cval
 ur.df(resids,lags=lag,type="none")@teststat
 #adf.test(resids,k=1)
@@ -140,13 +142,14 @@ fit2 = robust.lm$residuals - arima.fit$residuals
 residuals1 = robust.lm$residuals
 residuals2 = arima.fit$residuals
 actual = response
-#regression.dataframe = as.data.frame(cbind(actual, fit1, fit1+fit2,residuals1,residuals2))
-regression.dataframe = as.data.frame(cbind(actual, fit1+fit2,residuals2))
-names(regression.dataframe) = c(state,"Phase1+2","Res1+2")
+regression.dataframe = as.data.frame(cbind(actual, fit1, fit1+fit2,residuals1,residuals2))
+names(regression.dataframe) = c(state,"Phase 1 Fitted","Phase 1+2 Fitted","Residuals Phase 1","Residuals Phase 1+2")
+
+#regression.dataframe = as.data.frame(cbind(actual, fit1+fit2,residuals2))
+#names(regression.dataframe) = c(state,"Phase 1+2 Fit","Res1+2")
 plot.actual.fitted(regression.dataframe,state,dates,sreturn=TRUE)
 
 
-#names(regression.dataframe) = c(state,"Phase1","Phase1+2","Res1","Res1+2")
 #end make a dataframe
 
 #back-transform the data to get the original index + fitted
