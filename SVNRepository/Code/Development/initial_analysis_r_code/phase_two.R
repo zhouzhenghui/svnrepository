@@ -12,11 +12,11 @@ eacf(resid.data)
 
 auto.arima(resid.data, stationary = TRUE)
 
-arima.fit = arima(resid.data,order = c(1,0,0), include.mean = TRUE)
+arima.fit = arima(resid.data,order = c(1,0,1), include.mean = TRUE)
 names(arima.fit)
 
 ## --LjungBox test on Model Resids and Sq. Resids 
-params = 1
+params = 2
 acf(arima.fit$resid,lag.max = 40,main="ACF of Phase 2 Residuals")
 acf(arima.fit$resid^2,lag.max = 40,main="ACF of Phase 2 Sq-Residuals")
 Box.Ljung.test(arima.fit$resid,lag = 12, adj.DF =  12-params)
