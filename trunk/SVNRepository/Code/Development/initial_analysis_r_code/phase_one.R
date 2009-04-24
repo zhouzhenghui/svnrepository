@@ -29,7 +29,7 @@ source("../source_functions/plot.actual.fitted.R")
 
 
 begin_month=1
-begin_year=1998
+begin_year=1999
 state = "FL" #our dependent variable 
 end_month = 6
 end_year = 2008
@@ -124,7 +124,7 @@ which.min(abs(summary(robust.lm)$coefficients[,3]))
 pacf(diff(resids))
 #Box.Ljung.test(resids,lag = 12, adj.DF =  12)
 
-lag=5
+lag=2
 ur.df(resids,lags=lag,type="none")@cval
 ur.df(resids,lags=lag,type="none")@teststat
 #adf.test(resids,k=1)
