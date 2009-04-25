@@ -1,6 +1,6 @@
 #set wd
 #setwd("Z:/SVNRepository2/SVNRepository/Code/Development/initial_analysis_r_code/")
-#setwd("C:/Users/tim/Documents/ClassesSpring09/MastersProject/SVNRepository/timr_FinEngProj09/Code/Development/initial_analysis_r_code")
+#setwd("C:/Users/tim/Documents/ClassesSpring09/MastersProject/svnrepository/SVNRepository/Code/Development/initial_analysis_r_code/")
 
 #some libraries needed for regression and such
 library(leaps)
