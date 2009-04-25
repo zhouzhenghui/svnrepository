@@ -5,7 +5,7 @@
 	names = names(new.table)
 	new.table = as.matrix(new.table)
 	lagrange.table = NULL
-	i =1
+	#i =3
 	for (i in 1:dim(new.table)[2]){
 		#see if this is a variable to omit entirely
 		if(length(grep("n",as.character(new.table[,i])))>0){
@@ -44,7 +44,8 @@
 					nas =rep(NA,dim(lagrange.table)[2])	
 
 					for(j in 1:(length(lagvector.temp)-dim(lagrange.table)[1])){
-						lagrange.table = rbind(lagrange.table,nas)
+						lagrange.table = rbind(lagrange.table,nas,deparse.level=0)
+
 					}
 				}
 					lagrange.table = cbind(lagrange.table,lagvector.temp)

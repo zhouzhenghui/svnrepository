@@ -1,24 +1,20 @@
 
 ##Takes current state name, and derives appropriate model with the first n datapoints
 
-"auto.model" = function(current.state.name, percentage, cut.off=FALSE, interp=FALSE){
-
-#setwd("Z:/SVNRepository/Code/Development/source_functions")
-
-source("../source_functions/ATS_2008.R")
-source("../source_functions/model.check.R")
-source("../source_functions/interpolate.R")
-source("../source_functions/cutoff.R")
+"auto.model" = function(current.state.name, percentage, cut.off=FALSE, interp=FALSE, data=NULL){
 
 	
 all.data = read.table("../../../Data/States/all.txt");
-Para = read.csv("../../../Data/States/states4.csv");
+Para = read.csv("../../../Data/Supply Demand/Data/states.csv");
 
 for(k in 1:(length(Para$States))){
        if (Para$States[k] == current.state.name) i = k;
     }
-		current.state.data = subset(all.data,all.data[,1]==current.state.name)[,4];
-    		
+		if(is.null(data)){
+			current.state.data = subset(all.data,all.data[,1]==current.state.name)[,4]; 		
+		}else{
+			current.state.data = data
+		}
 	      
 		current.data = current.state.data   
 
