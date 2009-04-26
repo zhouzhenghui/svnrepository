@@ -11,8 +11,8 @@
 
 	
 	lag=adf.test.order+1
-	critvals=ur.df(resids,lags=lag,type="none")@cval
-	teststat=ur.df(resids,lags=lag,type="none")@teststat
+	critvals=ur.df(data,lags=lag,type="none")@cval
+	teststat=ur.df(data,lags=lag,type="none")@teststat
 	#adf.test(resids,k=1)
 
 

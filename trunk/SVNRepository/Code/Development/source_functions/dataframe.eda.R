@@ -3,7 +3,7 @@ source("../source_functions/multi.adf.test.lags.R")
 source("../source_functions/pretty.ts.graph.R")
 source("../source_functions/custom.overplot.R")
 
-"dataframe.eda" = function(test.data.vector, state, dates, basicTS = T, comparisonTS = T, allTS = T, CCF = T, scatter = T, ACF = T, PACF = T) {
+"dataframe.eda" = function(test.data.vector, state, dates, basicTS = T, comparisonTS = T, allTS = T, CCF = T, scatter = T, ACF = T, PACF = T, same.scale=FALSE) {
 	##Basic Time Series Plots	
 	if (basicTS){
 	for (i in 1:dim(test.data.vector)[2]){
@@ -16,7 +16,7 @@ source("../source_functions/custom.overplot.R")
 	#all time series plot	
 	if (allTS){	
 			
-			custom.overplot(test.data.vector, state, dates)		
+			custom.overplot(test.data.vector, state, dates,same.scale)		
 	}
 
 	#all time series plot	
@@ -25,7 +25,7 @@ source("../source_functions/custom.overplot.R")
 			#dev.new()
 			subset.vector = c(state,names(test.data.vector)[i])
 			new.test.data.vector = subset(test.data.vector, select =subset.vector)
-			custom.overplot(new.test.data.vector, state, dates)
+			custom.overplot(new.test.data.vector, state, dates,same.scale)
 		}
 	}
 

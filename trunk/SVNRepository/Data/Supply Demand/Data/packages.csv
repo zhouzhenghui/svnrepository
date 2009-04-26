@@ -6,3 +6,5 @@ gplots
 fracdiff
 forecast
 fGarch
+lattice
+DierckxSpline

@@ -1,7 +1,7 @@
 library(gplots)
 library(survival)
 source("../source_functions/my.overplot.R")
-"custom.overplot" = function(test.data.vector, state, dates){
+"custom.overplot" = function(test.data.vector, state, dates,same.scale=FALSE){
 	#get limits based on discarded outliers
 		y = stack(test.data.vector)
 		
@@ -29,7 +29,7 @@ source("../source_functions/my.overplot.R")
 		dev.new()	
 		plot.new()
 	
-		p=myoverplot(y[,1] ~ x_all | y[,2], dates = dates,data = test.data.vector,state=state, xlab="Date",ylab="", main=paste(state," Time Series Plot"), plot = T,f=0);
+		p=myoverplot(y[,1] ~ x_all | y[,2], dates = dates,data = test.data.vector,state=state, xlab="Date",ylab="", main=paste(state," Time Series Plot"), plot = T,f=0,same.scale=same.scale);
 		
 		#maxy = ceiling(maxy[match(names(p),names(maxy))])
 		#miny = floor(miny[match(names(p),names(miny))])			
