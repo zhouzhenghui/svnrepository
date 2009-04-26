@@ -14,3 +14,7 @@ Housing Stock,Available Housing Stock,Use Multiple Listing Services,huduser.org,
 Housing Stock,Inventory Turnover,Monthly Stock/Sale,Monthly Stock/Sale,S,,Yearly,,inventory_turnover,it.csv,Couldn't find Monthly Stock/ Sale
 Housing Stock,Building Permits Issuance,www.nahb.org,Census Bureau,S,State,Monthly,1995-2009,building_permits,bp.csv,Completed
 HPI,HPI,OFHEO,OFHEO,NA,State,Quarterly,1975-2009,housing_price_index,hpi.csv,Comleted
+Cost of Credit,2 Year LIBOR,Bloomberg,Bloomberg,D,National,Monthly,1989-2009,libor_2,lb2.csv,Comleted
+Cost of Credit,5 Year LIBOR,Bloomberg,Bloomberg,D,National,Monthly,1989-2009,libor_5,lb5.csv,Comleted
+Cost of Credit,10 Year LIBOR,Bloomberg,Bloomberg,D,National,Monthly,1989-2009,libor_10,lb10.csv,Comleted
+Cost of Credit,20 Year LIBOR,Bloomberg,Bloomberg,D,National,Monthly,1996-2009,libor_20,lb20.csv,Comleted
