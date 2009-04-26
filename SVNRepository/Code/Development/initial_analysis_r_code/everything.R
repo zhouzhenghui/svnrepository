@@ -16,7 +16,7 @@ install.all.packages(install=F)
 #set your initial state parameters and variables lists
 begin_month=1
 begin_year=1998
-state = "ID" #our dependent variable 
+state = "NV" #our dependent variable 
 end_month = 6
 end_year = 2008
 

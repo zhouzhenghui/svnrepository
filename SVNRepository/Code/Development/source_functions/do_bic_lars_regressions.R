@@ -1,5 +1,6 @@
 "do_bic_lars_regressions"=function(state,test.data.vector,independent.variables){
 counter=0
+independent.variable=independent.variables[1]
 for (independent.variable in independent.variables){
 #do the time shiftin here, lags depend on ranges entered in lagranges.csv
 shifted.multivar.test.data.vector = shift.df.multi(test.data.vector,state,independent.variable)
