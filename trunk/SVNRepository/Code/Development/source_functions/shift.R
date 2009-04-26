@@ -100,8 +100,9 @@ for (i in leading.indices){
 
 }
 }
-cbind(new.independent.data,new.dependent.data)
-
+newdataframe = cbind(new.independent.data,new.dependent.data)
+names(newdataframe)[length(names(newdataframe))]=state
+newdataframe 
 
 
 }
