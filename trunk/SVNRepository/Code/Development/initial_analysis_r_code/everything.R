@@ -10,7 +10,7 @@
 #install/source all the packages used in this project (this will take a minute)
 source("../source_functions/source.all.R")
 source.all()
-install.all.packages(install=F)
+install.all.packages(install=T)
 
 
 #set your initial state parameters and variables lists
@@ -22,7 +22,7 @@ end_year = 2008
 
 #Step 1
 #eda--determine some rough lag ranges
-data = grab.data(state,begin_month,begin_year,end_month,end_year,sreturn=T)
+data = grab.data(state,begin_month,begin_year,end_month,end_year,sreturn=F)
 test.data.vector = data$test.data.vector
 dates = data$dates
 independent.variables=data$independent.variables
