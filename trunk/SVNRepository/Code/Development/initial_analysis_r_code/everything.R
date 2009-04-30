@@ -16,7 +16,7 @@ install.all.packages(install=T)
 #set your initial state parameters and variables lists
 begin_month=1
 begin_year=1998
-state = "NV" #our dependent variable 
+state = "ID" #our dependent variable 
 end_month = 6
 end_year = 2008
 
@@ -25,6 +25,8 @@ end_year = 2008
 data = grab.data(state,begin_month,begin_year,end_month,end_year,sreturn=F)
 test.data.vector = data$test.data.vector
 dates = data$dates
+#dates = dategen(begin_month+1,begin_year, end_month, end_year)  #begin month + 1 because we had to chop off the first month
+
 independent.variables=data$independent.variables
 test.and.plot = dataframe.eda(test.data.vector, state, dates, basicTS = F, comparisonTS = T, allTS = F, CCF = F, scatter = F, ACF = F, PACF = F)
 test.and.plot$adf.test
