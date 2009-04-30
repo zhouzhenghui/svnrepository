@@ -1,5 +1,7 @@
 ###---PHASE 1---###
 setwd("//erevno/Courses/Agamas/Shirley/SVNRepository/Code/Development/initial_analysis_r_code")
+setwd("C:/Users/Shirley Lu/Shirley/MEng/Project/SVNRepository/SVNRepository/Code/Development/initial_analysis_r_code")
+
 library(leaps)
 
 #source initial files
@@ -44,7 +46,7 @@ supply_demand_data_code_vector=c(
 
 
 #basic tests
-test.data.frame = get.all.data(supply_demand_data_code_vector,state,begin_month,begin_year,end_month,end_year,smooth=FALSE)
+test.data.frame = get.all.data(supply_demand_data_code_vector,state,begin_month,begin_year,end_month,end_year,smooth=TRUE)
 ## To get original plots:
 test.data.vector = test.data.frame$combined # this has the mean-centered rates (non-simple return), and simple returns
 ## To get simple return plots:
@@ -119,17 +121,23 @@ eacf(y$residuals)
 # Fit ARMA using auto.arima
 library(forecast)
 auto.arima(y$residuals,stationary=T)
-arima.fit = arima(y$residuals,order = c(1,0,1))
+arima.fit = arima(y$residuals,order = c(3,0,0))
 arima.fit
 names(arima.fit)
-params = 2
+params = 3
 Box.Ljung.test(arima.fit$residuals,lag = 12, adj.DF = 12-params)
 Box.Ljung.test(arima.fit$residuals^2,lag = 12, adj.DF = 12)
+
+arima.fit = arma(y$residuals,order = c(2,0,0))
+arima.fit$fitted.values
 
 #### REORGANIZE THIS PART ########
 resid.data = y$residuals
 plot(y$fitted.values + resid.data - arima.fit$residuals, type="l", ylim=c(-0.020,0.035), ylab="Simple Return", xlab="Time", main="Plot of Fitted vs. Actual HPI")
 lines(shifted.multivar.test.data.vector[,n],col="blue")
+lines(y$fitted.values,col="red")
+lines(resid.data - arima.fit$residuals, col="green")
+lines(arima.fit$fitted.values, col="yellow")
 legend("topright",c("Fitted HPI", "Actual HPI"), col=c("black","blue"), lty=c(1,1))
 
 test.data.vector = test.data.frame$combined
