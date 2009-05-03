@@ -1,4 +1,4 @@
-library(fSeries)
+#library(fSeries)
 
 "get.sreturn" = function(vector){
 	#handle 0 values by interpolating (or using previous values to force returns to "0"

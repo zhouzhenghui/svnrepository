@@ -22,7 +22,8 @@ for (i in 1:(split)){
 	if(iterations == 0 && grubbs == TRUE){
 			temp.dataframe = test.data.vector[seq(rowstart,rowend),]
 	}else{
-			temp.dataframe  = new.total.dataframe
+			temp.dataframe  = as.data.frame(new.total.dataframe)
+
 	}
 	
 	
@@ -48,13 +49,13 @@ for (i in 1:(split)){
 			new.temp.dataframe[as.numeric(replacements[p])+1,p]=NA
 		}
 	}else{
-		standardized.temp.dataframe = standardize(temp.dataframe)
-		smoothed.temp.dataframe = rm.outlier(standardized.temp.dataframe,fill=T)
-		replacements = sapply(abs(standardized.temp.dataframe-smoothed.temp.dataframe),"which.max")
-		new.temp.dataframe = temp.dataframe	
-		for(k in 1:(dim(new.temp.dataframe)[2])){
-			new.temp.dataframe[as.numeric(replacements[k]),k]=NA
-		}
+		#standardized.temp.dataframe = standardize(temp.dataframe)
+		#smoothed.temp.dataframe = rm.outlier(standardized.temp.dataframe,fill=T)
+		#replacements = sapply(abs(standardized.temp.dataframe-smoothed.temp.dataframe),"which.max")
+		#new.temp.dataframe = temp.dataframe	
+		#for(k in 1:(dim(new.temp.dataframe)[2])){
+		#	new.temp.dataframe[as.numeric(replacements[k]),k]=NA
+		#}
 
 	}
 	
@@ -64,7 +65,8 @@ for (i in 1:(split)){
 		new.total.dataframe = rbind(new.total.dataframe,new.temp.dataframe)
 	}
 }
-new.total.dataframe = na.omit(new.total.dataframe, method="ie")
+ts.dataframe=timeSeries(new.total.dataframe)
+new.total.dataframe = timeSeries::na.omit(ts.dataframe, method="ie")
 grubbsdone.temp = TRUE
 	for(y in 1:(dim(grubbs.outliers.mask)[2])){	
 		grubbsdone.temp = grubbsdone.temp && !as.matrix(grubbs.outliers.mask)[y]

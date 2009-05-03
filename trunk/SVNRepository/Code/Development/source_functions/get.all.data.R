@@ -13,7 +13,7 @@
 	sd_data_vector_temp = as.data.frame(sd_data_vector_temp)
       names(sd_data_vector_temp)=supply_demand_data_code_vector[i]
       if(length(sd_data_vector)==0){
-		sd_data_vector = sd_data_vector_temp
+		sd_data_vector = sd_data_vector_temps
 	}else{
 		sd_data_vector = cbind(sd_data_vector,sd_data_vector_temp)
 	}

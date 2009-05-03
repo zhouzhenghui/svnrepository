@@ -1,4 +1,4 @@
-library(tseries)
+#library(tseries)
 "multi.adf.test.lags" = function(data){
 VAR20 = ar.ols(diff(data), aic = T, order.max = 20, demean = F, intercept = T)
 	aic.order = as.numeric(names(which.min(VAR20$aic)))  ; 
