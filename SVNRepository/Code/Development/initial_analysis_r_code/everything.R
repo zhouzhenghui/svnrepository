@@ -16,13 +16,13 @@ install.all.packages(install=T)
 #set your initial state parameters and variables lists
 begin_month=1
 begin_year=1998
-state = "MI" #our dependent variable 
+state = "AZ" #our dependent variable 
 end_month = 6
 end_year = 2008
 
 #Step 1
 #eda--determine some rough lag ranges
-data = grab.data(state,begin_month,begin_year,end_month,end_year,sreturn=F)
+data = grab.data(state,begin_month,begin_year,end_month,end_year,sreturn=T)
 test.data.vector = data$test.data.vector
 test.data.vector = as.data.frame(test.data.vector)
 dates = data$dates
@@ -30,7 +30,7 @@ dates = data$dates
 
 independent.variables=data$independent.variables
 test.and.plot = dataframe.eda(test.data.vector, state, dates, basicTS = F, comparisonTS = T, allTS = F, CCF = F, scatter = F, ACF = F, PACF = F)
-test.and.plot$adf.test
+
 
 #Step 2
 #bic-stepwise regression - refine to get initial lag ranges
