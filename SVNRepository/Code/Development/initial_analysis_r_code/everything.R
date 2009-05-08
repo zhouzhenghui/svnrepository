@@ -16,7 +16,7 @@ install.all.packages(install=T)
 #set your initial state parameters and variables lists
 begin_month=1
 begin_year=1998
-state = "ID" #our dependent variable 
+state = "MI" #our dependent variable 
 end_month = 6
 end_year = 2008
 
@@ -24,6 +24,7 @@ end_year = 2008
 #eda--determine some rough lag ranges
 data = grab.data(state,begin_month,begin_year,end_month,end_year,sreturn=F)
 test.data.vector = data$test.data.vector
+test.data.vector = as.data.frame(test.data.vector)
 dates = data$dates
 #dates2 = dategen(begin_month,begin_year, end_month, end_year+5)  #begin month + 1 because we had to chop off the first month
 
