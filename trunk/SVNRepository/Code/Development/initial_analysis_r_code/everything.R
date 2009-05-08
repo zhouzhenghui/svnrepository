@@ -4,14 +4,13 @@
 #saving the results in both lagranges and states csv model files
 
 #set your intial working directory (intial analysis folder)
-#setwd("Z:/svn/SVNRepository/Code/Development/initial_analysis_r_code/")
+#setwd("Z:/SVNRepository/SVNRepository/Code/Development/initial_analysis_r_code/")
 #setwd("C:/Users/tim/Documents/ClassesSpring09/MastersProject/svnrepository/SVNRepository/Code/Development/initial_analysis_r_code/")
 
 #install/source all the packages used in this project (this will take a minute)
 source("../source_functions/source.all.R")
 source.all()
 install.all.packages(install=T)
-
 
 #set your initial state parameters and variables lists
 begin_month=1
