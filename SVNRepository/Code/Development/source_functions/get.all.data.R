@@ -29,7 +29,7 @@
   sd_data_vector_mean = mean(sd_data_vector)
   for (i in 1:length(supply_demand_data_code_vector)){
 	name = names(sd_data_vector[i])
-      flag =  (name == "thirty_year_current_coupon") || (name == "thirty_year_commitment_rate") || (name == "primary_interest_rate")
+      flag =  (name == "thirty_year_current_coupon") || (name == "thirty_year_commitment_rate") || (name == "primary_interest_rate") || (name == "libor_2") || (name == "libor_5") || (name == "libor_2") || (name == "libor_20")
       if(flag){
 		sd_data_vector_stid_temp = sd_data_vector[i] - sd_data_vector_mean[i]
             if (name == "thirty_year_commitment_rate"){
