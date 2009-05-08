@@ -133,3 +133,11 @@ if(case=="building_permits"){
 	replicant=data[c(1:60)]
 	newdata=c(data,replicant)
 }
+
+if(case=="ty_cr"){
+	garch.model.tycr = garchFit(formula= ~arma(1,0) + garch(1,1),data)
+      newdata = c(data,predict(garch.model.tycr,60)$meanForecast)
+)
+
+}
+

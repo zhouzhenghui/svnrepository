@@ -13,7 +13,11 @@ supply_demand_data_code_vector=c(
 "foreclosures",
 #"housing_stock",
 #"inventory_turnover",
-"building_permits"
+"building_permits",
+"libor_2",
+"libor_5",
+"libor_10",
+"libor_20"
 )
 
 adjustment = ifelse(sreturn,1,0)
