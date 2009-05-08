@@ -80,6 +80,6 @@ source("../source_functions/custom.overplot.R")
 
 
 
-	structure(list(adf.test=return.adf.vector))
+	#structure(list(adf.test=return.adf.vector))
 
 }
