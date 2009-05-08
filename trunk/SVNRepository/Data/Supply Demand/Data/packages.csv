@@ -1,4 +1,3 @@
-fGarch
 timeSeries
 leaps
 lars
@@ -9,3 +8,4 @@ fracdiff
 forecast
 lattice
 DierckxSpline
+fGarch
