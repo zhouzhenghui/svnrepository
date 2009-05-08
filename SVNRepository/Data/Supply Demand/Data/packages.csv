@@ -2,11 +2,11 @@ timeSeries
 leaps
 lars
 outliers
+lattice
 urca
 gplots
 fracdiff
 forecast
-lattice
 DierckxSpline
 MASS
 fGarch
