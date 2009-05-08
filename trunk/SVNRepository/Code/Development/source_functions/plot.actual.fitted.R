@@ -6,6 +6,6 @@ source("../source_functions/chop.R")
 
 	dates.temp = chop(dates,chop.begin, location = "beginning")
 	dates.temp = chop(dates.temp,chop.end,location = "end")
-	test.and.plot = dataframe.eda(regression.dataframe, state, dates.temp, basicTS = F, comparisonTS = T, allTS = T, CCF = F, scatter = F, ACF = F, PACF = F, same.scale=TRUE)
+	test.and.plot = dataframe.eda(regression.dataframe, state, dates.temp, basicTS = F, comparisonTS = T, allTS = T, CCF = F, scatter = F, ACF = F, PACF = F, same.scale=same.scale)
 	test.and.plot
 }

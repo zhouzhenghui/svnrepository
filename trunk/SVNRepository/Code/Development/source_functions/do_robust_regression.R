@@ -30,7 +30,7 @@ if(plot){
 	actual = response
 	regression.dataframe = as.data.frame(cbind(actual, fit1))
 	names(regression.dataframe) = c(state,"Phase 1 Fit")
-	plot.actual.fitted(regression.dataframe,state,dates,sreturn=TRUE,same.scale=FALSE)
+	plot.actual.fitted(regression.dataframe,state,dates,sreturn=TRUE,same.scale=TRUE)
 	regression.dataframe = NULL
 	regression.dataframe = as.data.frame(cbind(actual, residuals1))
 	names(regression.dataframe) = c(state,"Residuals 1")
