@@ -31,8 +31,10 @@ source("../source_functions/custom.overplot.R")
 
 
 	##Stationarity Tests
-	adf.tests = as.data.frame(sapply(test.data.vector,"multi.adf.test"))
-	adf.lags = as.data.frame(sapply(test.data.vector,"multi.adf.test.lags"))
+	adf.test = NA
+	adf.lags = NA
+	#adf.tests = as.data.frame(sapply(test.data.vector,"multi.adf.test"))
+	#adf.lags = as.data.frame(sapply(test.data.vector,"multi.adf.test.lags"))
 	return.adf.vector = cbind(adf.tests,adf.lags)
 		#Check (P)ACFS
 		for (i in 1:dim(test.data.vector)[2]){
