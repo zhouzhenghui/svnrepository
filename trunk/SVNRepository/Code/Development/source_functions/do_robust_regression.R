@@ -17,7 +17,7 @@ resids.temp=as.ts(robust.lm$residuals)
 
 
 #model check
-if(min(abs(summary(robust.lm)$coefficients[,3]))<1.6){
+if(min(abs(summary(robust.lm)$coefficients[,3]))<20){
 	drop=names(which.min(abs(summary(robust.lm)$coefficients[,3])))
 }else{
 	drop=""

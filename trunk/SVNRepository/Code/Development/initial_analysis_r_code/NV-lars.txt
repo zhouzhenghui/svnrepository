@@ -1,99 +1,14 @@
 
 Call:
 lars(x = predictors, y = response, type = c("lar"))
-R-squared: 0.146 
+R-squared: 0.171 
 Sequence of LAR moves:
-     median_income-Lag-3 median_income-Lag0 median_income-Lag1
-Var                    1                  4                  5
-Step                   1                  2                  3
-     median_income-Lag2 median_income-Lag3 median_income-Lag-1
-Var                   6                  7                   3
-Step                  4                  5                   6
-     median_income-Lag-2
-Var                    2
-Step                   7
-
-Call:
-lars(x = predictors, y = response, type = c("lar"))
-R-squared: 0.169 
-Sequence of LAR moves:
-     mort_orig-Lag2 mort_orig-Lag3 mort_orig-Lag4 mort_orig-Lag5
-Var               1              2              3              4
-Step              1              2              3              4
-     mort_orig-Lag7 mort_orig-Lag10 mort_orig-Lag6 mort_orig-Lag13
-Var               6               9              5              12
-Step              5               6              7               8
-     mort_orig-Lag11 mort_orig-Lag8 mort_orig-Lag12 mort_orig-Lag9
-Var               10              7              11              8
-Step               9             10              11             12
-     mort_orig-Lag14
-Var               13
-Step              13
-
-Call:
-lars(x = predictors, y = response, type = c("lar"))
-R-squared: 0.355 
-Sequence of LAR moves:
-     unemp_rate-Lag1 unemp_rate-Lag3 unemp_rate-Lag0 unemp_rate-Lag-1
-Var                6               8               5                4
-Step               1               2               3                4
-     unemp_rate-Lag2 unemp_rate-Lag4 unemp_rate-Lag-2 unemp_rate-Lag-4
-Var                7               9                3                1
-Step               5               6                7                8
-     unemp_rate-Lag-3
-Var                 2
-Step                9
-
-Call:
-lars(x = predictors, y = response, type = c("lar"))
-R-squared: 0.251 
-Sequence of LAR moves:
-     pop_size-Lag-5 pop_size-Lag-6 pop_size-Lag6 pop_size-Lag-4
-Var               2              1            13              3
-Step              1              2             3              4
-     pop_size-Lag-3 pop_size-Lag3 pop_size-Lag0 pop_size-Lag5
-Var               4            10             7            12
-Step              5             6             7             8
-     pop_size-Lag4 pop_size-Lag-1 pop_size-Lag1 pop_size-Lag-2
-Var             11              6             8              5
-Step             9             10            11             12
-     pop_size-Lag2
-Var              9
-Step            13
-
-Call:
-lars(x = predictors, y = response, type = c("lar"))
-R-squared: 0.032 
-Sequence of LAR moves:
-     foreclosures-Lag-1 foreclosures-Lag0 foreclosures-Lag-2
-Var                   8                 9                  7
-Step                  1                 2                  3
-     foreclosures-Lag-6 foreclosures-Lag-7 foreclosures-Lag-3
-Var                   3                  2                  6
-Step                  4                  5                  6
-     foreclosures-Lag-4 foreclosures-Lag-8 foreclosures-Lag-5
-Var                   5                  1                  4
-Step                  7                  8                  9
-
-Call:
-lars(x = predictors, y = response, type = c("lar"))
-R-squared: 0.169 
-Sequence of LAR moves:
-     building_permits-Lag19 building_permits-Lag18
-Var                      10                      9
-Step                      1                      2
-     building_permits-Lag17 building_permits-Lag20
-Var                       8                     11
-Step                      3                      4
-     building_permits-Lag16 building_permits-Lag12
-Var                       7                      3
-Step                      5                      6
-     building_permits-Lag11 building_permits-Lag10
-Var                       2                      1
-Step                      7                      8
-     building_permits-Lag13 building_permits-Lag15
-Var                       4                      6
-Step                      9                     10
-     building_permits-Lag14
-Var                       5
-Step                     11
+     libor_10-Lag11 libor_10-Lag3 libor_10-Lag12 libor_10-Lag4 libor_10-Lag2
+Var              12             4             13             5             3
+Step              1             2              3             4             5
+     libor_10-Lag10 libor_10-Lag8 libor_10-Lag5 libor_10-Lag9 libor_10-Lag6
+Var              11             9             6            10             7
+Step              6             7             8             9            10
+     libor_10-Lag7 libor_10-Lag1 libor_10-Lag0
+Var              8             2             1
+Step            11            12            13

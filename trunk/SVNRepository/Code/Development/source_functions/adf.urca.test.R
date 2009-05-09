@@ -7,7 +7,7 @@
 	d = k+0:20*k*2;
 	VAR20$bic = VAR20$aic - 2*d + d*log(n);
 	bic.order = as.numeric(names(which.min(VAR20$bic)));
-	adf.test.order = min(bic.order,aic.order)	;	
+	adf.test.order = min(bic.order,aic.order)	+ 1;	
 
 	
 	lag=adf.test.order+1
