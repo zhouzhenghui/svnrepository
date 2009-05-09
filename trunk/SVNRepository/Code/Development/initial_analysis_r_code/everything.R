@@ -10,12 +10,13 @@
 #install/source all the packages used in this project (this will take a minute)
 source("../source_functions/source.all.R")
 source.all()
-install.all.packages(install=T)
+install.all.packages(install=F)
+detach(package:fSeries)
 
 #set your initial state parameters and variables lists
 begin_month=1
 begin_year=1998
-state = "AZ" #our dependent variable 
+state = "NV" #our dependent variable 
 end_month = 6
 end_year = 2008
 
@@ -26,9 +27,10 @@ test.data.vector = data$test.data.vector
 test.data.vector = as.data.frame(test.data.vector)
 dates = data$dates
 #dates2 = dategen(begin_month,begin_year, end_month, end_year+5)  #begin month + 1 because we had to chop off the first month
-
 independent.variables=data$independent.variables
 test.and.plot = dataframe.eda(test.data.vector, state, dates, basicTS = F, comparisonTS = T, allTS = F, CCF = F, scatter = F, ACF = F, PACF = F)
+shifted.multivar.test.data.vector = shift.df.multi(test.data.vector,state,independent.variables)
+test.and.plot = dataframe.eda(shifted.multivar.test.data.vector, state, dates, basicTS = F, comparisonTS = T, allTS = F, CCF = F, scatter = F, ACF = F, PACF = F)
 
 
 #Step 2
