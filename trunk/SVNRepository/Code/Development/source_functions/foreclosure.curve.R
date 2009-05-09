@@ -59,6 +59,6 @@ newconverteddata[which(newconverteddata<0)]=0
 newdata=newconverteddata
 #plot(as.ts(newdata),col="blue")
 #lines(as.ts(data))
-stucture(list(newdata=newdata,data = data,total=sum(newdata)))
+structure(list(newdata=newdata,data = data,total=sum(newdata)))
 
 }
