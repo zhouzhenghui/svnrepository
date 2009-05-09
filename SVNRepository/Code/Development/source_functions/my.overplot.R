@@ -35,7 +35,9 @@
     mycall[[1]] <- as.name(panel)
     if (same.scale) {
         if (missing(ylim)) 
-            mycall$ylim <- range(y[y > 0], na.rm = TRUE)
+            #mycall$ylim <- range(y[y > 0], na.rm = TRUE)
+		mycall$ylim <- range(y, na.rm = TRUE)
+
     }
     if (missing(xlim)) 
         if (log %in% c("x", "xy")) 
@@ -88,7 +90,9 @@
             }
             else {
                 if (same.scale) 
-                  mycall$ylim <- c(min.y[i], y.all.max)
+                  #mycall$ylim <- c(min.y[i], y.all.max)
+			mycall$ylim <- c(y.all.min, y.all.max)
+
                 else mycall$ylim <- c(min.y[i], max.tmp.y)
             }
         }
