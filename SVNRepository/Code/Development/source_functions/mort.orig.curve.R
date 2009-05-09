@@ -14,6 +14,6 @@
 	projection = c(piece1,piece2)
 	newdata = c(data,projection)
 
-stucture(list(newdata=newdata,data=data,total=sum(newdata)))
+structure(list(newdata=newdata,data=data,total=sum(newdata)))
 
 }

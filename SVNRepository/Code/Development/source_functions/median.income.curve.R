@@ -10,9 +10,11 @@
 	xreg.var = .03*x.s +  middle.element
 	xreg.var2 = .03*x.s.2 + last.element
 	replicant=data[c((length(data)-59):length(data))]
-	fit=auto.arima(replicant,xreg=xreg.var)
+	fit=auto.arima(replicant,stationary=TRUE),xreg=xreg.var)
+	
+
 	#plot(as.ts(replicant))
-	lines(as.ts(replicant-fit$residuals))
+	#lines(as.ts(replicant-fit$residuals))
 	prediction = as.matrix(predict(fit,n.ahead=60,newxreg=xreg.var2)$pred)
 	#plot(as.ts(prediction))
 	#plot(as.ts(c(data,prediction)),col="blue")
@@ -23,6 +25,6 @@
 	newdata=c(data,prediction)
 	
 	#plot(as.ts(newdata))
-stucture(list(newdata=newdata,data = data,total=sum(newdata)))
+structure(list(newdata=newdata,data = data,total=sum(newdata)))
 
 }

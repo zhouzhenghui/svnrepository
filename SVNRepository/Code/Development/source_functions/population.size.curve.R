@@ -18,6 +18,6 @@
 	newdata=c(data,newdata2)
 	#plot(as.ts(newdata),col="blue")
 	#lines(as.ts(data),col="black")
-stucture(list(newdata=newdata,data = data,total=sum(newdata)))
+structure(list(newdata=newdata,data = data,total=sum(newdata)))
 
 }

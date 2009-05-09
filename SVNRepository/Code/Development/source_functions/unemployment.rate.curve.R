@@ -66,6 +66,6 @@ newdata=c(data,prediction)
 #plot(as.ts(newdata))
 #lines(as.ts(data),col="blue")
 
-stucture(list(newdata=newdata,data = data,total=sum(newdata)))
+structure(list(newdata=newdata,data = data,total=sum(newdata)))
 
 }
