@@ -1,37 +1,46 @@
 "unemployment.rate.curve"=function(state,data){
 
-peak = max(data)
-peak.location = min(which.max(data))
-trough = min(data)
-trough.location = max(which.min(data))
+index=ifelse(state=="KY",80,62)
+
+peak = max(data[c(index:length(data))])
+peak.location = min(which.max(data[c(index:length(data))]))+index
+trough = min(data[c(index:length(data))])
+trough.location = max(which.min(data[c(index:length(data))]))+index
 curve.fit.start = floor(peak.location*0.9)
 curve.fit.end = length(data)
 semi.period = abs(trough.location-peak.location)
 
-X=c(curve.fit.start,peak.location,trough.location,curve.fit.end ,next.peak-30,last.location)
-Y=c(data[curve.fit.start],peak,trough,data[curve.fit.end],peak,copy.value)
-
-X=c(curve.fit.end ,next.peak-30,last.location)
-Y=c(data[curve.fit.end],peak,copy.value)
+#X=c(curve.fit.start,peak.location,trough.location,curve.fit.end ,next.peak-30,last.location)
+#Y=c(data[curve.fit.start],peak,trough,data[curve.fit.end],peak,copy.value)
 
 
 
 #X=c(curve.fit.start:curve.fit.end)-1
 #Y=data[X+1]
 #next peak
-#next.peak = semi.period + trough.location
+next.peak = semi.period + trough.location
 #X=c(X,next.peak)
 #Y=c(Y,peak)
 ##last value
-#last.location = length(data) + 60
-#last.location.copy = peak.location + (next.peak-last.location)
-#copy.value = data[last.location.copy]
+last.location = length(data) + 60
+last.location.copy = peak.location + (next.peak-last.location)
+copy.value = data[last.location.copy]
 #X=c(X,last.location)
 #Y=c(Y,copy.value)
 #plot(X,Y)
-#model <- lm(Y ~ X + I(X^2) + I(X^2) + I(X^3) + I(X^4))
+if(state!="VT"){
+X=c(curve.fit.end ,mean(c(curve.fit.end,last.location)),last.location)
+Y=c(data[curve.fit.end],peak,copy.value)
+}else{
+X=c(trough.location  ,curve.fit.end,last.location)
+Y=c(trough,data[curve.fit.end],trough)
+}
+
+model <- lm(Y ~ X + I(X^2) + I(X^2) + I(X^3) + I(X^4))
 #newx=c(curve.fit.end:last.location)-1
 newx=c(0:last.location)-1
+
+
 
 int = model$coefficients[1]
 coeff1 = ifelse(is.na(model$coefficients[2]),0,model$coefficients[2])

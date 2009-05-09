@@ -16,6 +16,8 @@ end_year = 2008
 
 for (i in 1:length(state.names)){
 state = state.names[i] #our dependent variable 
+if(state!="DC"){
+
 data = grab.data(state,begin_month,begin_year,end_month,end_year,sreturn=F)
 test.data.vector = data$test.data.vector
 test.data.vector = as.data.frame(test.data.vector)
@@ -29,8 +31,8 @@ for (k in 1:(length(names(test.data.vector))-5)){
 		curvefit = median.income.curve(state,data)
 	}
 	if (names(test.data.vector)[k]=="ty_cr"){
-		#data = test.data.vector[,k]
-		#curvefit = ty.cr.curve(state,data)		
+		data = test.data.vector[,k]
+		curvefit = ty.cr.curve(state,data)		
 
 	}
 	if (names(test.data.vector)[k]=="mort_orig"){
@@ -60,5 +62,5 @@ for (k in 1:(length(names(test.data.vector))-5)){
 
 }
 dev.new()
-
+}
 }
