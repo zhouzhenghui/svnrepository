@@ -1,9 +1,10 @@
 "get.lagvectors" = function(state){
 	table = read.csv("../../../Data/Supply Demand/Data/lagranges.csv")
 	#get the correct row
-	new.table = table[which(table$State==state),2:dim(table)[2]]
+	new.table = table[which(table$State==state),2:(dim(table)[2]-1)]
 	names = names(new.table)
 	new.table = as.matrix(new.table)
+
 	lagrange.table = NULL
 	#i =3
 	for (i in 1:dim(new.table)[2]){
