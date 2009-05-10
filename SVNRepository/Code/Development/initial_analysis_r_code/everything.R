@@ -10,12 +10,12 @@
 #install/source all the packages used in this project (this will take a minute)
 source("../source_functions/source.all.R")
 source.all()
-install.all.packages(install=F)
+install.all.packages(install=T)
 detach(package:fSeries)
 
 #set your initial state parameters and variables lists
 begin_month=1
-state = "OH" #our dependent variable 
+state = "CA" #our dependent variable 
 begin_year=get_start_year(state)
 end_month = 6
 end_year = 2008
@@ -62,7 +62,7 @@ test.data.vector2 = as.data.frame(test.data.vector2)
 dates = data$dates
 new.curves=curvefit(test.data.vector2,state,plot=T)
 plot(as.ts(get.tim.data(new.curves)))
-new.curves = smoother(new.curves)
+#new.curves = smoother(new.curves)
 
 #Step 6
 #Get forecasts, check forecasts, store, and plot

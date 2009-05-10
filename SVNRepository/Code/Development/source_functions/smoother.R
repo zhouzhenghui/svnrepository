@@ -1,7 +1,7 @@
 source("../source_functions/get.orig.data.R")
 source("../source_functions/standardize.R")
 library("outliers")
-"smoother"=function(test.data.vector){
+"smoother"=function(test.data.vector, iterations = 3){
 
 iterations =0
 grubbs = TRUE
@@ -12,7 +12,7 @@ total_size =dim(test.data.vector)[1]
 #splitsize=18
 splitsize=total_size
 split = floor(total_size/splitsize)
-for(counter in 1:3){
+for(counter in 1:iterations){
 #while(grubbsdone==TRUE){
 #change this later
 for (i in 1:(split)){

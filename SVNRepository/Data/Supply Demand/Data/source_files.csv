@@ -38,3 +38,4 @@ predictor.R
 forecaster.R
 get.tim.data.R
 get.drift.forecast.error.R
+close_all.R
