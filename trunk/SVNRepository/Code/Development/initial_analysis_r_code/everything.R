@@ -15,7 +15,7 @@ detach(package:fSeries)
 
 #set your initial state parameters and variables lists
 begin_month=1
-state = "ID" #our dependent variable 
+state = "OH" #our dependent variable 
 begin_year=get_start_year(state)
 end_month = 6
 end_year = 2008
@@ -60,11 +60,13 @@ data = grab.data(state,begin_month,begin_year,end_month,end_year,sreturn=F)
 test.data.vector2 = data$test.data.vector
 test.data.vector2 = as.data.frame(test.data.vector2)
 dates = data$dates
-new.curves=curvefit(test.data.vector2,state,plot=F)
-
+new.curves=curvefit(test.data.vector2,state,plot=T)
+plot(as.ts(get.tim.data(new.curves)))
+new.curves = smoother(new.curves)
 
 #Step 6
 #Get forecasts, check forecasts, store, and plot
 driftmodel = robust.lm$robust.lm
 volmodel = vol.model$model
-forecaster(driftmodel, volmodel,independent.variables,new.curves,plot=T,plotindex = T, plot.ses = T)
+forecaster(driftmodel,resids,volmodel,independent.variables,test.data.vector,new.curves,plot=T,plotindex=T, plot.ses = F)
+
