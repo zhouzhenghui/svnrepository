@@ -32,3 +32,8 @@ population.size.curve.R
 building.permits.curve.R
 unemployment.rate.curve.R
 ty.cr.curve.R
+get_start_year.R
+curvefit.R
+predictor.R
+forecaster.R
+get.tim.data.R

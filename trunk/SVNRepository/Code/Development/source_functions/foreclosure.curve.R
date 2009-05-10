@@ -1,5 +1,5 @@
 #this assumes we're ending at q122008 and projecting forward 60 months (q122013
-"foreclosure.curve"=function(state,data){
+"foreclosure.curve"=function(state,data,lag=0){
 #the following number taken as "best case" cumulative foreclosures in 2008/2009
 #assume recovery (less foreclosures each month) by Q3'09
 cumulatives = read.csv("../../../Data/Supply Demand/Data/foreclosurecurves.csv")
@@ -27,7 +27,7 @@ Y=c(Y,cumulative.2011)
 X=c(X,origin+56)
 Y=c(Y,cumulative.2012)
 
-newx = c(1:(origin+60))-1
+newx = c(1:(origin+60+lag))-1
 #plot(X,Y)
 model <- lm(Y ~ X + I(X^2) + I(X^2) + I(X^3))
 

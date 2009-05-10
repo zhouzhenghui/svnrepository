@@ -1,9 +1,9 @@
-"population.size.curve"=function(state,data){
-	X=c(1:length(data))
-	Y=data
+"population.size.curve"=function(state,data,lag=0){
+	X=c((length(data)-12):length(data))
+	Y=data[X]
 	last.element = data[length(data)]
 	model <- lm(Y ~ X)
-	newx=c((length(data)+1):(length(data)+60))-1
+	newx=c((length(data)+1):(length(data)+(60+lag)))-1
 	int = model$coefficients[1]
 	coeff1 = ifelse(is.na(model$coefficients[2]),0,model$coefficients[2])
 	coeff2 = ifelse(is.na(model$coefficients[3]),0,model$coefficients[3])

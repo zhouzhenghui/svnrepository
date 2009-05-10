@@ -1,6 +1,6 @@
-"building.permits.curve"=function(state,data){
+"building.permits.curve"=function(state,data,lag=0){
 	#plot(as.ts(data))
-	replicant=data[c(1:60)]	
+	replicant=data[c(1:(60+lag))]	
 	replicant2= diff(replicant,lag=12,differences = 1)
 	VAR20 = ar.ols(replicant2, aic = T, order.max = 20, demean = F, intercept = T)
 	#pacf(replicant2)
@@ -15,7 +15,7 @@
 
 	#fit=auto.arima(replicant,max.P = 14, max.Q = 14,start.P=12, start.Q=12)
 	fit2=arima(x=replicant, order = c(bic.order , 0, 0), seasonal = list(order = c(1, 0, 0), period = 12), xreg = NULL, include.mean = TRUE)
-	prediction=as.matrix(predict(fit2,n.ahead=60)$pred)
+	prediction=as.matrix(predict(fit2,n.ahead=(60+lag))$pred)
 	#plot(as.ts(prediction))
 	#acf(prediction,lag.max = 60)
 	#height.adjust=prediction[1]- data[length(data)]
