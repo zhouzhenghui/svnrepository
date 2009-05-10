@@ -47,7 +47,7 @@ if(plot){
 	plot.actual.fitted(regression.dataframe, state, dates=dates2,sreturn=T, same.scale=T)
 
 	if(plotindex==T){
-		data = grab.data(state,begin_month,begin_year,end_month,end_year,sreturn=F
+		data = grab.data(state,begin_month,begin_year,end_month,end_year,sreturn=F)
 		test.data.vector3 = data$test.data.vector
 		test.data.vector3 = as.data.frame(test.data.vector3)
 		statedata= test.data.vector3[,which(names(test.data.vector3)==state)]

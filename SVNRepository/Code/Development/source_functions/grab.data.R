@@ -21,7 +21,7 @@ supply_demand_data_code_vector=c(
 )
 
 adjustment = ifelse(sreturn,1,0)
-test.data.frame = get.all.data(supply_demand_data_code_vector,state,begin_month,begin_year,end_month,end_year,smooth=TRUE) 
+test.data.frame = get.all.data(supply_demand_data_code_vector,state,begin_month,begin_year,end_month,end_year,smooth=FALSE) 
 if(sreturn){
 	test.data.vector = test.data.frame$combined_stand # this has the mean-centered rates (non-simple return), and simple returns
 }else{
