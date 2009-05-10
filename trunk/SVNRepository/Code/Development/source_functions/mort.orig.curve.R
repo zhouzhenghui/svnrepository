@@ -8,9 +8,9 @@
 
 	X=c(1:(36+lag))-1
 	Y=data[X+1]
-	X=c(1:(60+lag))-1
+	#X=c(1:(60+lag))-1
 
-	Y=c(rep(0,24),Y)
+	piece1=rep(lastval,24)
 	model <- lm(Y ~ X + I(X^2) + I(X^2))
 	int=as.numeric(model$coeff[1])
 	piece2=as.numeric(model$fit-int)
@@ -21,11 +21,36 @@
 		minimum = abs(min(piece2[min.where]))
 	}
 	piece2= piece2 + minimum
+	if(piece2[1]<lastval){
+		piece2 = piece2 + lastval
+	}
 	#concatenate
 	#piece2=as.numeric(piece2)
-	projection = piece2
-	newdata = c(data,projection)
+	first.value = 1
 
+	#sreturn = get.sreturn(piece2)	
+	#sreturn2 = smoother(cbind(sreturn,sreturn),iterations=5)[,1]
+	#piece2 = get.orig.data(first.value,sreturn2)
+
+
+	projection = c(piece1,piece2)
+	newdata = c(data,projection)
+	first.value = newdata [1]
+	##plot(as.ts(projection ))
+	#sreturn = get.sreturn(newdata )	
+	#sreturn2 = smoother(cbind(sreturn,sreturn),iterations=5)[,1]
+	
+	
+	#plot(as.ts(sreturn))
+	#sreturn2 = smoother(cbind(sreturn,sreturn),iterations=2)[,1]
+	#plot(as.ts(sreturn2))
+#	orig.data = get.orig.data(first.value,sreturn2)
+	#plot(as.ts(orig.data))
+
+
+	#plot(as.ts(newdata))
+	#plot(as.ts(get.sreturn(newdata)))
+	
 structure(list(newdata=newdata,data=data,total=sum(newdata)))
 
 }

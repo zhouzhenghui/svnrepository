@@ -1,5 +1,5 @@
 "population.size.curve"=function(state,data,lag=0){
-	X=c((length(data)-12):length(data))
+	X=c((length(data)-60):length(data))
 	Y=data[X]
 	last.element = data[length(data)]
 	model <- lm(Y ~ X)
@@ -18,6 +18,14 @@
 	newdata=c(data,newdata2)
 	#plot(as.ts(newdata),col="blue")
 	#lines(as.ts(data),col="black")
+	first.value = newdata[1]
+	sreturn = get.sreturn(newdata)
+	#plot(as.ts(sreturn))
+	sreturn2 = smoother(cbind(sreturn,sreturn),iterations=1)[,1]
+	#plot(as.ts(sreturn2))
+	
+	newdata = get.orig.data(first.value,sreturn2)
+	#plot(as.ts(get.sreturn(newdata)))
 structure(list(newdata=newdata,data = data,total=sum(newdata)))
 
 }
