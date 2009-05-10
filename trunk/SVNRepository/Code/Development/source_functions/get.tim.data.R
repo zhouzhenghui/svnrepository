@@ -9,7 +9,6 @@
       flag =  (name == "thirty_year_current_coupon") || (name == "thirty_year_commitment_rate") || (name == "primary_interest_rate") || (name == "libor_2") || (name == "libor_5") || (name == "libor_2") || (name == "libor_20")
       if(flag){
 		sd_data_vector_stid_temp = combined_data_vector[i] - sd_data_vector_mean[i]
-            names(sd_data_vector_special_temp) = name
             sd_data_vector_stid_temp = as.data.frame(sd_data_vector_stid_temp[,1][2:length(sd_data_vector_stid_temp[,1])])
             names(sd_data_vector_stid_temp) = supply_demand_data_code_vector[i]
 	}else{
