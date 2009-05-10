@@ -19,19 +19,20 @@ forecasts= phase1.predictions
 predictors.forecasts = new.forecasting.data[c((length-59):length),]
 resids.forecasts = phase2.predictions
 
-phase1.se = get.drift.forecast.error(driftmodel,responses,predictors,predictors.forecasts,forecasts,resids,resids.forecasts, alpha)
-
+#phase1.se = get.drift.forecast.error(driftmodel,responses,predictors,predictors.forecasts,forecasts,resids,resids.forecasts, alpha)
+phase1.se = 0
 total.predictions = phase1.predictions+phase2.predictions
 total.se = phase1.se + phase2.se
 total.se = rm.outlier(total.se,fill=T)
 
+orig.responses = test.data.vector[,which(names(test.data.vector)==state)]
 
-total.fit = c(responses,total.predictions)
-errors1 = total.fit+c(rep(NA,length(responses)),total.se)
-errors2 = total.fit-c(rep(NA,length(responses)),total.se)
+total.fit = c(orig.responses,total.predictions)
+errors1 = total.fit+c(rep(NA,length(orig.responses)),total.se)
+errors2 = total.fit-c(rep(NA,length(orig.responses)),total.se)
 
 
-original.fit = c(responses,rep(NA,length(total.predictions)))
+original.fit = c(orig.responses,rep(NA,length(total.predictions)))
 
 if(plot==TRUE){
 	if(plot.ses == T){
@@ -59,8 +60,14 @@ if(plot==TRUE){
 		regression.dataframe = as.data.frame(cbind(original.fit,total.fit) )
 		names(regression.dataframe) = c("Forecast",state)
 		dates2 = dategen(begin_month,begin_year, end_month, end_year+5)  #begin month + 1 because we had to chop off the first month
-	plot.actual.fitted(regression.dataframe, state, dates=dates2,sreturn=T, same.scale=T)
+
+		plot.actual.fitted(regression.dataframe, state, dates=dates2,sreturn=T, same.scale=T,adjust=F)
 		projectedindex = total.fit
+		
+		new.obs = get.sd.data("housing_price_index",state =state,begin_month,begin_year,end_month+6,end_year)$interpolated_data
+		#new.obs[c(1:(length(new.obs)-2))]=NA
+		lines(new.obs,col="green",lwd=2,lty=2)
+
 
 	}
 }
