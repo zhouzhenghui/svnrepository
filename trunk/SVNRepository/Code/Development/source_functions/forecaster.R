@@ -33,6 +33,7 @@ errors2 = total.fit-c(rep(NA,length(orig.responses)),total.se)
 
 
 original.fit = c(orig.responses,rep(NA,length(total.predictions)))
+projectedreturns = total.fit
 
 if(plot==TRUE){
 	if(plot.ses == T){
@@ -71,5 +72,5 @@ if(plot==TRUE){
 
 	}
 }
-structure(list(projectedindex = projectedindex))
+structure(list(projectedindex = projectedindex, projectedreturns = projectedreturns))
 }
