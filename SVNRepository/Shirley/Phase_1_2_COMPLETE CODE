@@ -22,7 +22,7 @@ source("../source_functions/shift.df.multi.R")
 source("../source_functions/smoother.R")
 
 begin_month=1
-begin_year=1998
+begin_year=2000
 state = "FL" #our dependent variable 
 end_month = 6
 end_year = 2008
@@ -121,15 +121,22 @@ eacf(y$residuals)
 # Fit ARMA using auto.arima
 library(forecast)
 auto.arima(y$residuals,stationary=T)
-arima.fit = arima(y$residuals,order = c(3,0,0))
+arima.fit = arima(y$residuals,order = c(1,0,0))
 arima.fit
 names(arima.fit)
-params = 3
+params = 1
 Box.Ljung.test(arima.fit$residuals,lag = 12, adj.DF = 12-params)
 Box.Ljung.test(arima.fit$residuals^2,lag = 12, adj.DF = 12)
 
 arima.fit = arma(y$residuals,order = c(2,0,0))
 arima.fit$fitted.values
+
+## PLOTTING ARMA RESIDUALS
+plot(arima.fit$residuals, type="p")
+loess(arima.fit$residuals)
+abline(h=0)
+?loess
+
 
 #### REORGANIZE THIS PART ########
 resid.data = y$residuals
@@ -149,11 +156,11 @@ lines(test.data.vector[,ncol(test.data.vector)], col="blue")
 
 ## Fit GARCH if residual^2 fails
 library(fGarch)
-garch.fit = garchFit(formula = ~arma(1,0)+garch(1,1), data=arima.fit$residuals,cond.dist = c("QMLE"), include.mean=TRUE)
+garch.fit = garchFit(formula = ~arma(1,0)+garch(1,2), data=arima.fit$residuals,cond.dist = c("QMLE"), include.mean=TRUE)
 
 ## Checking adequacy of GARCH model
 meanParams = 1
-volParams = 2
+volParams = 3
 sresi=garch.fit@residuals/garch.fit@sigma.t
 Box.Ljung.test(sresi, lag = 12, adj.DF =  12-meanParams)  
 Box.Ljung.test(sresi^2, lag = 12, adj.DF = 12-volParams) 
