@@ -10,7 +10,7 @@
 #install/source all the packages used in this project (this will take a minute)
 source("../source_functions/source.all.R")
 source.all()
-install.all.packages(install=T)
+install.all.packages(install=F)
 detach(package:fSeries)
 
 #set your initial state parameters and variables lists
@@ -68,5 +68,5 @@ plot(as.ts(get.tim.data(new.curves)))
 #Get forecasts, check forecasts, store, and plot
 driftmodel = robust.lm$robust.lm
 volmodel = vol.model$model
-forecaster(driftmodel,resids,volmodel,independent.variables,test.data.vector,new.curves,plot=T,plotindex=T, plot.ses = F)
+projections = forecaster(driftmodel,resids,volmodel,independent.variables,test.data.vector,new.curves,plot=T,plotindex=T, plot.ses = F)
 

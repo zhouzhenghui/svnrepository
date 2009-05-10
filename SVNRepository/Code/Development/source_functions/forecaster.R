@@ -60,9 +60,9 @@ if(plot==TRUE){
 		names(regression.dataframe) = c("Forecast",state)
 		dates2 = dategen(begin_month,begin_year, end_month, end_year+5)  #begin month + 1 because we had to chop off the first month
 	plot.actual.fitted(regression.dataframe, state, dates=dates2,sreturn=T, same.scale=T)
-
+		projectedindex = total.fit
 
 	}
 }
-
+structure(list(projectedindex = projectedindex))
 }
