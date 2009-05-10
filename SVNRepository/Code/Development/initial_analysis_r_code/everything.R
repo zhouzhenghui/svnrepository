@@ -74,4 +74,4 @@ test.data.vector = data$test.data.vector
 test.data.vector = as.data.frame(test.data.vector)
 dates = data$dates
 projections = forecaster(driftmodel,resids,volmodel,independent.variables,test.data.vector,new.curves,plot=T,plotindex=T, plot.ses = F)
-
+projections$projectedindex 
