@@ -22,8 +22,8 @@ source("../source_functions/shift.df.multi.R")
 source("../source_functions/smoother.R")
 
 begin_month=1
-begin_year=2000
-state = "FL" #our dependent variable 
+begin_year=1998
+state = "KS" #our dependent variable 
 end_month = 6
 end_year = 2008
 
