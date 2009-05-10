@@ -17,7 +17,7 @@ for (k in 1:(length(names(test.data.vector))-5)){
 	lag.to.use = lagranges[,which(names(lagranges)==names(test.data.vector)[k])]
 	lag.to.use = min(na.omit(lag.to.use))
 	lag.to.use = ifelse(is.na(lag.to.use),1,lag.to.use)
-	lag.to.use = ifelse(lag.to.use<0,abs(lag.to.use),1)
+	lag.to.use = ifelse(lag.to.use<0,abs(lag.to.use)+1,1)
 
 	if (names(test.data.vector)[k]=="median_income"){
 		data = test.data.vector[,k]		
