@@ -15,8 +15,8 @@ detach(package:fSeries)
 
 #set your initial state parameters and variables lists
 begin_month=1
-begin_year=1999
-state = "NV" #our dependent variable 
+state = "ID" #our dependent variable 
+begin_year=get_start_year(state)
 end_month = 6
 end_year = 2008
 
@@ -43,16 +43,28 @@ do_bic_lars_regressions(state,test.data.vector,independent.variables)
 robust.lm=do_robust_regression(state,test.data.vector,dates,independent.variables,automatic=T,plot=T)
 robust.lm
 resids = robust.lm$resids
+acf(resids, lag.max=40)
 phase1fits=robust.lm$robust.lm$fit
 
 #Step 4
 #Phase 2-vol modeling 
-vol.model = do_vol_modeling(state,test.data.vector,phase1fits,resids,dates,automatic=T,plot=T)
+vol.model = do_vol_modeling(state,test.data.vector,phase1fits,resids,dates,automatic=F,plot=T)
 vol.model
+resids2= vol.model$resids
+acf(resids2,lag.max=40)
 
 #Step 5
 #Curve fitting of explanatory variables
-new.curves=curvefit(test.data.vector,plot=T)
+begin_year=1998
+data = grab.data(state,begin_month,begin_year,end_month,end_year,sreturn=F)
+test.data.vector2 = data$test.data.vector
+test.data.vector2 = as.data.frame(test.data.vector2)
+dates = data$dates
+new.curves=curvefit(test.data.vector2,state,plot=F)
+
 
 #Step 6
 #Get forecasts, check forecasts, store, and plot
+driftmodel = robust.lm$robust.lm
+volmodel = vol.model$model
+forecaster(driftmodel, volmodel,independent.variables,new.curves,plot=T,plotindex = T, plot.ses = T)

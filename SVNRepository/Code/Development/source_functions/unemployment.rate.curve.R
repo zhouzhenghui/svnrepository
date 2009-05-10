@@ -1,4 +1,4 @@
-"unemployment.rate.curve"=function(state,data){
+"unemployment.rate.curve"=function(state,data,lag=0){
 
 index=ifelse(state=="KY",80,62)
 
@@ -22,7 +22,7 @@ next.peak = semi.period + trough.location
 #X=c(X,next.peak)
 #Y=c(Y,peak)
 ##last value
-last.location = length(data) + 60
+last.location = length(data) + (59+lag)
 last.location.copy = peak.location + (next.peak-last.location)
 copy.value = data[last.location.copy]
 #X=c(X,last.location)

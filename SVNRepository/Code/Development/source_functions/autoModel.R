@@ -24,9 +24,10 @@ for(k in 1:(length(Para$States))){
     		if(interp==TRUE){
 			current.data = interpolate(current.data,method="linear")
     		}	
-		
-		current.state.data.sreturn = (current.data[2:length(current.data)]-current.data[1:(length(current.data)-1)])/current.data[1:(length(current.data)-1)];   
-		current.data = current.state.data.sreturn 		
+		if(is.null(data)){
+			current.state.data.sreturn = (current.data[2:length(current.data)]-current.data[1:(length(current.data)-1)])/current.data[1:(length(current.data)-1)];   
+			current.data = current.state.data.sreturn 		
+		}
 
     		if (Para$unitroot[i] > 0){
        		current.data = diff(current.data,lag=1,differences=Para$unitroot[i]);
@@ -43,6 +44,7 @@ for(k in 1:(length(Para$States))){
        		current.data = diffseries(as.ts(current.data),d.est);
     		}else{
 	 		current.data = current.data;
+			d.est = 0
 		}
 
 
@@ -91,6 +93,6 @@ for(k in 1:(length(Para$States))){
 
 
 
-   return(structure(list(model=model.temp, model.check=model.check.temp, n=n, data = current.data)));
+   return(structure(list(model=model.temp, model.check=model.check.temp, n=n, data = current.data, d= d.est)));
 }
 

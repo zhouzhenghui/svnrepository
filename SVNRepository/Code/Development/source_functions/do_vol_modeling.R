@@ -10,6 +10,7 @@
 	}else{
 		resid.model.temp=auto.model(current.state.name=state, percentage=1, cut.off=FALSE, interp=FALSE, data=resids)
 		resid.model=resid.model.temp$model
+		d=resid.model.temp$d
 		model.check.temp = resid.model.temp$model.check
 	}
 	if ((class(resid.model)) == "fGARCH"){
@@ -32,5 +33,5 @@
 		plot.actual.fitted(regression.dataframe,state,dates,sreturn=TRUE)
 		eacf(resids)
 	}
-	structure(list(model=resid.model,model.check=model.check.temp, adftest = adf.test,resids=res2))
+	structure(list(model=resid.model,d=d,model.check=model.check.temp, adftest = adf.test,resids=res2))
 }

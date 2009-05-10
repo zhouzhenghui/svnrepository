@@ -1,4 +1,4 @@
-"do_robust_regression"=function(state,test.data.vector,dates,independent.variables,automatic=T,plot=T){
+"do_robust_regression"=function(state,test.data.vector,dates,independent.variables,automatic=T,plot=T, do.rlm=T){
 
 #do a robust regression
 shifted.multivar.test.data.vector = shift.df.multi(test.data.vector,state,independent.variables)
@@ -11,8 +11,13 @@ if(automatic==TRUE){
 predictors = shifted.multivar.test.data.vector
 predictors=as.matrix(predictors[,which(names(predictors)!=state)])
 response = as.matrix(subset(shifted.multivar.test.data.vector, select = state))
-robust.lm = rlm(x=predictors ,y=response)
-summary(robust.lm)
+if(do.rlm){
+	robust.lm = rlm(x=predictors ,y=response)
+	summary(robust.lm)
+}else{
+	robust.lm=lm(response~predictors)
+	summary(robust.lm)
+}
 resids.temp=as.ts(robust.lm$residuals)
 
 

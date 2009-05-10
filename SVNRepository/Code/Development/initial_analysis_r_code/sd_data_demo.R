@@ -389,11 +389,12 @@ qqnorm(as.matrix(fit2$residuals) ,main="Normal Plot of Residuals", datax=TRUE)
 qqline(as.matrix(fit2$residuals), datax=TRUE)
 
 residuals2 = fit2$residuals
+residuals2 = residuals.fracdiff
 
-model.temp = garchFit(formula = ~arma(4,0)+garch(3,1), data=residuals2 , cond.dist = c("QMLE"), include.mean=TRUE, trace=FALSE);
+model.temp = garchFit(formula = ~arma(0,0)+garch(6,1), data=residuals2 , cond.dist = c("QMLE"), include.mean=TRUE, trace=FALSE);
 #standardized residuals here
 sresi=model.temp@residuals/model.temp@sigma.t
-acf(sresi,lag.max=40,main="PACF of ARMA(4,0)+GARCH(3,0) Standardized Residuals")
+acf(sresi,lag.max=40,main="ACF of ARMA(4,0)+GARCH(3,0) Standardized Residuals")
 
 acf(sresi^2,lag.max=40,main="ACF of ARMA(4,0)+GARCH(3,0) Squared Standardized Residuals")
 

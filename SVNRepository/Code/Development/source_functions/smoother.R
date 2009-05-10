@@ -59,11 +59,11 @@ for (i in 1:(split)){
 
 	}
 	
-	if (i==1){
+	#if (i==1){
 		new.total.dataframe = new.temp.dataframe	
-	}else{
-		new.total.dataframe = rbind(new.total.dataframe,new.temp.dataframe)
-	}
+	#}else{
+	#	new.total.dataframe = rbind(new.total.dataframe,new.temp.dataframe)
+	#}
 }
 ts.dataframe=timeSeries(new.total.dataframe)
 new.total.dataframe = timeSeries::na.omit(ts.dataframe, method="ie")

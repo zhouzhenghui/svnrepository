@@ -28,16 +28,16 @@ for (k in 1:(length(names(test.data.vector))-5)){
 
 	if (names(test.data.vector)[k]=="median_income"){
 		data = test.data.vector[,k]
-		curvefit = median.income.curve(state,data)
+		curvefit = median.income.curve(state,data,lag=20)
 	}
 	if (names(test.data.vector)[k]=="ty_cr"){
 		data = test.data.vector[,k]
-		curvefit = ty.cr.curve(state,data)		
+		curvefit = ty.cr.curve(state,data,lag=20)		
 
 	}
 	if (names(test.data.vector)[k]=="mort_orig"){
 		data = test.data.vector[,k]
-		curvefit = mort.orig.curve(state,data)
+		curvefit = mort.orig.curve(state,data,lag=20)
 	}
 	if (names(test.data.vector)[k]=="unemp_rate"){
 		data = test.data.vector[,k]
@@ -45,15 +45,15 @@ for (k in 1:(length(names(test.data.vector))-5)){
 	}
 	if (names(test.data.vector)[k]=="pop_size"){
 		data = test.data.vector[,k]
-		curvefit = population.size.curve(state,data)
+		curvefit = population.size.curve(state,data,lag=20)
 	}
 	if (names(test.data.vector)[k]=="foreclosures"){
 		data = test.data.vector[,k]
-		curvefit = foreclosure.curve(state,data)
+		curvefit = foreclosure.curve(state,data,lag=20)
 	}
 	if (names(test.data.vector)[k]=="building_permits"){
 		data = test.data.vector[,k]
-		curvefit = building.permits.curve(state,data)
+		curvefit = building.permits.curve(state,data,lag=20)
 	}
 
 	plot(as.ts(curvefit$newdata),col="black", main = state, ylab = names(test.data.vector)[k])
