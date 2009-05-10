@@ -46,10 +46,23 @@ if(plot){
 
 	plot.actual.fitted(regression.dataframe, state, dates=dates2,sreturn=T, same.scale=T)
 
-	regression.dataframe = NULL
-	regression.dataframe = as.data.frame(cbind(actual, residuals1))
-	names(regression.dataframe) = c(state,"Residuals 1")
-	plot.actual.fitted(regression.dataframe,state,dates,sreturn=TRUE,same.scale=FALSE)
+	if(plotindex==T){
+		data = grab.data(state,begin_month,begin_year,end_month,end_year,sreturn=F
+		test.data.vector3 = data$test.data.vector
+		test.data.vector3 = as.data.frame(test.data.vector3)
+		statedata= test.data.vector3[,which(names(test.data.vector3)==state)]
+		first.value = statedata[1]
+		original.fit=get.orig.data(first.value,original.fit)
+		total.fit=get.orig.data(first.value,total.fit)
+		errors1=get.orig.data(first.value,errors1)
+		errors2=get.orig.data(first.value,errors2)
+		regression.dataframe = as.data.frame(cbind(original.fit,total.fit) )
+		names(regression.dataframe) = c("Forecast",state)
+		dates2 = dategen(begin_month,begin_year, end_month, end_year+5)  #begin month + 1 because we had to chop off the first month
+	plot.actual.fitted(regression.dataframe, state, dates=dates2,sreturn=T, same.scale=T)
+
+
+	}
 }
 
 }

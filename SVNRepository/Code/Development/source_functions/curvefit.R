@@ -15,6 +15,7 @@ par(mfrow=c(2,4))
 for (k in 1:(length(names(test.data.vector))-5)){
 	
 	lag.to.use = lagranges[,which(names(lagranges)==names(test.data.vector)[k])]
+	lag.to.use = min(na.omit(lag.to.use))
 	lag.to.use = ifelse(is.na(lag.to.use),1,lag.to.use)
 	lag.to.use = ifelse(lag.to.use<0,abs(lag.to.use),1)
 
@@ -65,8 +66,8 @@ if(is.null(curve)){
 	names(curve)[dim(curve)[2]]=names(test.data.vector)[k]
 }
 	if(plot==TRUE){
-		plot(as.ts(curvefit$newdata),col="black", main = state, ylab = names(test.data.vector)[k])
-		lines(as.ts(curvefit$data),col="blue")
+		plot(as.ts(curvefit),col="black", main = state, ylab = names(test.data.vector)[k])
+		lines(as.ts(curvefit),col="blue")
 	}
 	
 
