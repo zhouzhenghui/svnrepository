@@ -33,7 +33,7 @@ errors2 = total.fit-c(rep(NA,length(responses)),total.se)
 
 original.fit = c(responses,rep(NA,length(total.predictions)))
 
-if(plot){
+if(plot==TRUE){
 	if(plot.ses == T){
 		regression.dataframe = as.data.frame(cbind(original.fit,total.fit,errors1,errors2) )
 		names(regression.dataframe) = c("Forecast",state,"+Prediction Inverval","-Prediction Inverval")
