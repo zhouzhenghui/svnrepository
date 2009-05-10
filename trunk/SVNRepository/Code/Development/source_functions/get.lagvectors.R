@@ -7,7 +7,7 @@
 
 	lagrange.table = NULL
 	#i =3
-	for (i in 1:dim(new.table)[2]){
+	for (i in 1:(dim(new.table)[2])){
 		#see if this is a variable to omit entirely
 		if(length(grep("n",as.character(new.table[,i])))>0){
 			lagvector.temp=NA
