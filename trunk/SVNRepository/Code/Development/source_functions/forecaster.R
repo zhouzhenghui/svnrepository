@@ -6,8 +6,16 @@ projections.shifted = as.data.frame(projections.shifted)
 projections.shifted = get.tim.data(projections.shifted)
 new.forecasting.data = projections.shifted[,which(names(projections.shifted)!=state)]
 length = max(dim(new.forecasting.data))
-phase2.predictions = predict(volmodel,n.ahead=60, se.fit=TRUE)$pred;
-phase2.se = 1.96*predict(volmodel,n.ahead=60, se.fit=TRUE)$se;
+nahead = 60
+		 if ((class(volmodel)) == "fGARCH"){
+               phase2.predictions = predict(volmodel,n.ahead=nahead)$meanForecast;
+			  phase2.se = 	predict(volmodel,n.ahead=nahead)$standardDeviation;		
+            }else{
+	             phase2.predictions = predict(volmodel,n.ahead=60, se.fit=TRUE)$pred;
+			phase2.se = 1.96*predict(volmodel,n.ahead=60, se.fit=TRUE)$se;
+            }
+
+
 
 shifted.multivar.test.data.vector = shift.df.multi(test.data.vector,state,independent.variables)
 predictors = shifted.multivar.test.data.vector[,which(names(shifted.multivar.test.data.vector)!=state)]
