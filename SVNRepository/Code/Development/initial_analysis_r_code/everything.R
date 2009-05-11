@@ -42,6 +42,10 @@ do_bic_lars_regressions(state,test.data.vector,independent.variables)
 #Phase 1-robust regression - set automatic or sequential
 robust.lm=do_robust_regression(state,test.data.vector,dates,independent.variables,automatic=T,plot=T)
 robust.lm
+sink("driftmodels.txt",append=T)
+print(state)
+print(robust.lm)
+sink()
 resids = robust.lm$resids
 eacf(resids)
 acf(resids, lag.max=40)
@@ -62,7 +66,8 @@ data = grab.data(state,begin_month,begin_year,end_month,end_year,sreturn=F)
 test.data.vector2 = data$test.data.vector
 test.data.vector2 = as.data.frame(test.data.vector2)
 dates = data$dates
-new.curves=curvefit(test.data.vector2,state,plot=T)
+
+new.curves=curvefit(test.data.vector2,state,plot=T,begin_year,begin_month,end_year,end_month+5)
 shifted.multivar.test.data.vector2 = shift.df.multi(new.curves,state,independent.variables)
 
 plot(as.ts(get.tim.data(shifted.multivar.test.data.vector2)))
