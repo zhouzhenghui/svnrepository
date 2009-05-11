@@ -20,3 +20,4 @@ Cost of Credit,10 Year LIBOR,Bloomberg,Bloomberg,D,National,Monthly,1989-2009,li
 Cost of Credit,20 Year LIBOR,Bloomberg,Bloomberg,D,National,Monthly,1996-2009,libor_20,lb20.csv,Comleted
 Dow Jones Industrial Average,Dow Jones Industrial Average,,Yahoo Finance,NA,National,Monthly,1975-2009,dow,dow.csv,Completed
 S&P 500,S&P 500,,Yahoo Finance,NA,National,Monthly,1975-2009,sp500,sp500.csv,Completed
+Amazon,Amazon,,Yahoo Finance,NA,National,Monthly,1975-2009,amzn,amzn.csv,Completed
