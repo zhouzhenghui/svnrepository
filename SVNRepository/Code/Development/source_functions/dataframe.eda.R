@@ -13,11 +13,7 @@ source("../source_functions/custom.overplot.R")
 		}
 	}
 
-	#all time series plot	
-	if (allTS){	
-			
-			custom.overplot(test.data.vector, state, dates,same.scale)		
-	}
+	
 
 	#all time series plot	
 	if (comparisonTS){
@@ -29,6 +25,11 @@ source("../source_functions/custom.overplot.R")
 		}
 	}
 
+	#all time series plot	
+	if (allTS){	
+			
+			custom.overplot(test.data.vector, state, dates,same.scale)		
+	}
 
 	##Stationarity Tests
 	adf.test = NA
