@@ -35,6 +35,7 @@ ty.cr.curve.R
 get_start_year.R
 curvefit.R
 predictor.R
+get.drift.forecast.error2.R
 forecaster.R
 get.tim.data.R
 get.drift.forecast.error.R

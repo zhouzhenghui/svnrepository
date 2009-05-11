@@ -1,5 +1,6 @@
 "population.size.curve"=function(state,data,lag=0){
-	X=c((length(data)-12):length(data))
+	X=c((length(data)-36):length(data))
+
 	Y=data[X]
 	last.element = data[length(data)]
 	model <- lm(Y ~ X)

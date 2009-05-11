@@ -15,7 +15,7 @@ detach(package:fSeries)
 
 #set your initial state parameters and variables lists
 begin_month=1
-state = "FL" #our dependent variable 
+state = "CA" #our dependent variable 
 begin_year=get_start_year(state)
 end_month = 6
 end_year = 2008
@@ -73,5 +73,6 @@ data = grab.data(state,begin_month,begin_year,end_month,end_year,sreturn=T)
 test.data.vector = data$test.data.vector
 test.data.vector = as.data.frame(test.data.vector)
 dates = data$dates
-projections = forecaster(driftmodel,resids,volmodel,independent.variables,test.data.vector,new.curves,plot=T,plotindex=T, plot.ses = F)
+projections = forecaster(driftmodel,resids,volmodel,independent.variables,test.data.vector,new.curves,plot=T,plotindex=T, plot.ses =T)
 projections$projectedindex 
+projections$projectedreturns

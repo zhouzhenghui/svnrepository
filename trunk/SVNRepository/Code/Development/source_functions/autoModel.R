@@ -77,7 +77,7 @@ for(k in 1:(length(Para$States))){
   
 
    if (Para$alpha.order[i]==0 && Para$beta.order[i]==0 ){ 
-      model.temp = arima(current.data,order = c(Para$AR.order[i],Para$d[i],Para$MA.order[i]),seasonal = list(order=c(Para$Seasonal.AR.Order[i],Para$d.1[i],Para$Seasonal.MA.Order[i])),fix = current.fix)
+      model.temp = arima(current.data,order = c(Para$AR.order[i],0,Para$MA.order[i]),seasonal = list(order=c(Para$Seasonal.AR.Order[i],Para$d.1[i],Para$Seasonal.MA.Order[i])),fix = current.fix)
 	 
 
    }else{

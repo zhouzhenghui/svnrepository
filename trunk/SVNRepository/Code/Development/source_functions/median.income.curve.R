@@ -1,5 +1,5 @@
 "median.income.curve"=function(state,data,lag=0){
-	inflation= -0.017
+	inflation= 0.017
 	middle.element =  mean(data)
 
 	last.element =  data[length(data)]
