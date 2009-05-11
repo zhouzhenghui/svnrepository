@@ -15,7 +15,7 @@ detach(package:fSeries)
 
 #set your initial state parameters and variables lists
 begin_month=1
-state = "AZ" #our dependent variable 
+state = "CA" #our dependent variable 
 begin_year=get_start_year(state)
 end_month = 6
 end_year = 2008
@@ -43,6 +43,7 @@ do_bic_lars_regressions(state,test.data.vector,independent.variables)
 robust.lm=do_robust_regression(state,test.data.vector,dates,independent.variables,automatic=T,plot=T)
 robust.lm
 resids = robust.lm$resids
+eacf(resids)
 acf(resids, lag.max=40)
 phase1fits=robust.lm$robust.lm$fit
 
@@ -52,7 +53,7 @@ phase1fits=robust.lm$robust.lm$fit
 vol.model = do_vol_modeling(state,test.data.vector,phase1fits,resids,dates,automatic=F,plot=T)
 vol.model$d
 resids2= vol.model$resids
-acf(resids2^2,lag.max=40)
+acf(resids2,lag.max=40)
 
 #Step 5
 #Curve fitting of explanatory variables
