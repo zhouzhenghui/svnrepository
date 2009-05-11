@@ -11,8 +11,10 @@
 	#X=c(1:(60+lag))-1
 
 	piece1=rep(lastval,24)
-	model <- lm(Y ~ X + I(X^2) + I(X^2))
+	model <- lm(Y ~ X + I(X^2))
+	model$coeff[3]=abs(model$coeff[3])/2
 	int=as.numeric(model$coeff[1])
+	#piece2 = model$coeff[2]*X + model$coeff[3]*X^2 
 	piece2=as.numeric(model$fit-int)
 	min.where = which(piece2<0)
 	if (length(min.where)==0){
@@ -39,7 +41,8 @@
 	##plot(as.ts(projection ))
 	#sreturn = get.sreturn(newdata )	
 	#sreturn2 = smoother(cbind(sreturn,sreturn),iterations=5)[,1]
-	
+	#plot(as.ts(sreturn))
+	#lines(as.ts(sreturn2))
 	
 	#plot(as.ts(sreturn))
 	#sreturn2 = smoother(cbind(sreturn,sreturn),iterations=2)[,1]
