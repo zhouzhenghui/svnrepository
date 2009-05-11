@@ -29,7 +29,7 @@ resids.forecasts = phase2.predictions
 
 phase1.se = get.drift.forecast.error2(driftmodel,responses,predictors,predictors.forecasts,forecasts,resids,resids.forecasts, alpha)
 phase1.se = 0
-total.predictions = phase1.predictions+phase2.predictions
+total.predictions = phase1.predictions+phase2.predictions-.007
 total.se = phase1.se + phase2.se
 total.se = rm.outlier(total.se,fill=T)
 
