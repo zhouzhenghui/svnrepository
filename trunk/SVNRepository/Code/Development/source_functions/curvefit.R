@@ -1,4 +1,4 @@
-"curvefit"=function(test.data.vector,state,plot=F){
+"curvefit"=function(test.data.vector,state,plot=F,begin_year,begin_month,end_year,end_month){
 curve=NULL
 lagranges = get.lagvectors(state)
 if(length(which(lagranges<0))==0){
@@ -66,8 +66,12 @@ if(is.null(curve)){
 	names(curve)[dim(curve)[2]]=names(test.data.vector)[k]
 }
 	if(plot==TRUE){
-		plot(as.ts(curvefit),col="black", main = state, ylab = names(test.data.vector)[k])
-		lines(as.ts(curvefit),col="blue")
+		title=paste(state,names(test.data.vector)[k])
+		dates3 = dategen(begin_month,begin_year, end_month+max.negative.lag, end_year+5)  #begin month + 1 because we had to chop off the first month
+
+		pretty.ts.graph(curvefit,title,dates=dates3,col="blue") 
+		#plot(as.ts(curvefit),col="black", main = state, ylab = names(test.data.vector)[k])
+		lines(as.ts(data),col="black",lwd=2)
 	}
 	
 

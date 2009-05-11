@@ -15,8 +15,10 @@
 	}
 	if ((class(resid.model)) == "fGARCH"){
                res2 	= as.numeric(resid.model@residuals)/as.numeric(resid.model@sigma.t);		  
+			fit2 = as.numeric(resid.model@fitted)
             }else{
                res2 	= as.numeric(resid.model$residuals);
+			fit2 = resids - res2
 		}
 
 	adf.test = adf.urca.test(res2)
@@ -24,13 +26,13 @@
 	
 	
 		fit1 = phase1fits
-		fit2 = resids - res2
+		
 		residuals1 = resids
 		residuals2 = res2
 		actual = response		
 		regression.dataframe = as.data.frame(cbind(actual, fit1+fit2,residuals2))
 		names(regression.dataframe) = c(state,"Phase 1/2 Fit","Res1/2")
-		plot.actual.fitted(regression.dataframe,state,dates,sreturn=TRUE)
+		plot.actual.fitted(regression.dataframe,state,dates,sreturn=TRUE,same.scale=T)
 		eacf(resids)
 	}
 	structure(list(model=resid.model,d=d,model.check=model.check.temp, adftest = adf.test,resids=res2))
