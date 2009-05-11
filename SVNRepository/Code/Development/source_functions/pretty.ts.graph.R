@@ -2,7 +2,7 @@
 "pretty.ts.graph"=function(data,title,dates,col="black") {
 
 #dev.new()	
-plot(as.ts(data),xaxt="n",xlab="", main=title, lwd = 1,lty=1,col=col,ylab="")
+plot(as.ts(data),xaxt="n",xlab="", main=title, lwd = 2,lty=2,col=col,ylab="")
 x.coords = seq(from=1,to=length(data),by=12)
 tick.coords = seq(from=1,to=length(data), by = 1)
 quarter.coords = seq(from=1,to=length(data), by = 3)
