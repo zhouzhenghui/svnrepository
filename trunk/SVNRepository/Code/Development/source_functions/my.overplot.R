@@ -74,7 +74,9 @@
         mycall$xaxt = "n"
         mycall$yaxt = "n"
         mycall$pch = "."
-        mycall$col = i
+		coltemp=i
+		#coltemp = ifelse(coltemp==3,1,ifelse(coltemp==1,3,coltemp))
+        mycall$col = coltemp
         mycall$lty = 1
         tmp.y <- y[mycall$subset & cond == level]
         min.tmp.y <- min(tmp.y, na.rm = TRUE)
@@ -104,9 +106,9 @@
         usr <- par("usr")
 		if(length(groups)<=2 && i<=2){
 			sidetemp = ifelse(i==1,2,4)
- 		        axis(side = sidetemp , line = 2.5 * (1 - 1), lty = i, col = i, lwd = 2)
+ 		        axis(side = sidetemp , line = 2.5 * (1 - 1), lty = 1, col = i, lwd = 2)
 		}else{
-			axis(side = 2, line = 2.5 * (i - 1), lty = i, col = i, lwd = 2)
+			axis(side = 2, line = 2.5 * (i - 1), lty = 1, col = i, lwd = 2)
 
 		}
 	  

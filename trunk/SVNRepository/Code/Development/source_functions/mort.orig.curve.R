@@ -33,12 +33,32 @@
 	#sreturn = get.sreturn(piece2)	
 	#sreturn2 = smoother(cbind(sreturn,sreturn),iterations=5)[,1]
 	#piece2 = get.orig.data(first.value,sreturn2)
+#	data2 = data[c(1:36),]
 
+	data2 = c(piece1,data[c(1:36)])
+	interpolated_data = as.data.frame(data2)
+	data2 = as.data.frame(data2)
+	names(data2) = "interpolated_data"
+	#polynomial regressions
+	time = c(1:dim(data2)[1])
+	polyfit = loess(interpolated_data ~ time ,data2, degree = 2, control = loess.control(surface = "interpolate"))      
 
-	projection = c(piece1,piece2)
+	
+	#plot(as.ts(as.matrix(interpolated_data)), col="red", lty = 1)
+	#lines(as.ts(polyfit$fitted), col = "blue", lwd = 2)
+	piece3 = as.ts(polyfit$fitted)[1:(60+lag)]
+	height.adjust = piece3[1]-lastval
+	piece3 = piece3-height.adjust
+	piece3= as.numeric(piece3)
+	piece3[which(piece3<0)]=0
+	#projection = c(piece1,piece2)
+	projection = c(piece3)
+
 	newdata = c(data,projection)
-	first.value = newdata [1]
+	#first.value = newdata [1]
 	##plot(as.ts(projection ))
+	##plot(as.ts(newdata ))
+
 	#sreturn = get.sreturn(newdata )	
 	#sreturn2 = smoother(cbind(sreturn,sreturn),iterations=5)[,1]
 	#plot(as.ts(sreturn))
