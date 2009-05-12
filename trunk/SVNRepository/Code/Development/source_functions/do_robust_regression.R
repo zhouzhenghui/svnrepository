@@ -28,6 +28,9 @@ if(min(abs(summary(robust.lm)$coefficients[,3]))<20){
 	drop=""
 }
 adf.test = adf.urca.test(as.matrix(resids.temp))
+box.test.pval = Box.Ljung.test(resids.temp,lag = 12,adj.DF = 12)$p.value
+box.test.statistic = Box.Ljung.test(resids.temp,lag = 12,adj.DF = 12)$statistic
+
 #end robust regression
 if(plot){
 	fit1 = robust.lm$fitted	
@@ -40,6 +43,11 @@ if(plot){
 	regression.dataframe = as.data.frame(cbind(actual, residuals1))
 	names(regression.dataframe) = c(state,"Residuals 1")
 	plot.actual.fitted(regression.dataframe,state,dates,sreturn=TRUE,same.scale=FALSE)
+	regression.dataframe = NULL
+	regression.dataframe = as.data.frame(cbind(actual,fit1, residuals1))
+	names(regression.dataframe) = c(state,"Phase 1 Fit","Residuals 1")
+	plot.actual.fitted(regression.dataframe,state,dates,sreturn=TRUE,same.scale=TRUE)
+
 }
-structure(list(robust.lm=robust.lm,resids=resids.temp,adf.test=adf.test,summary=summary(robust.lm), drop=drop))
+structure(list(robust.lm=robust.lm,resids=resids.temp,adf.test=adf.test,box.test.pval=box.test.pval,box.test.statistic=box.test.statistic,summary=summary(robust.lm), drop=drop))
 }

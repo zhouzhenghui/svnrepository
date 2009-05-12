@@ -42,22 +42,21 @@ do_bic_lars_regressions(state,test.data.vector,independent.variables)
 #Phase 1-robust regression - set automatic or sequential
 robust.lm=do_robust_regression(state,test.data.vector,dates,independent.variables,automatic=T,plot=T)
 robust.lm
-sink("driftmodels.txt",append=T)
-print(state)
-print(robust.lm)
-sink()
 resids = robust.lm$resids
 eacf(resids)
-acf(resids, lag.max=40)
+acf(resids,lag.max=40, main="ACF (Phase 1) Residuals")
+acf(resids^2,lag.max=40, main="ACF (Phase 1) Sq-Residuals")
+fdGPH(resids)
 phase1fits=robust.lm$robust.lm$fit
 
 #Step 4
 #Phase 2-vol modeling 
 
-vol.model = do_vol_modeling(state,test.data.vector,phase1fits,resids,dates,automatic=F,plot=T)
+vol.model = do_vol_modeling(state,test.data.vector,phase1fits,resids,dates,automatic=F,plot=T,useGPH=F)
 vol.model$d
 resids2= vol.model$resids
-acf(resids2,lag.max=40)
+acf(resids2,lag.max=40, main="ACF (Phase 2) Residuals")
+acf(resids2^2,lag.max=40, main="ACF (Phase 2) Sq-Residuals")
 
 #Step 5
 #Curve fitting of explanatory variables
