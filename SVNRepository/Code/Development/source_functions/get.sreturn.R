@@ -8,8 +8,8 @@
 	vector.sreturn[which(vector.sreturn==Inf)]=0
 	vector.sreturn[which(vector.sreturn==-Inf)]=0
 	vector.sreturn[which(is.na(vector.sreturn))]=0
-	vector.sreturn[which(vector.sreturn< -1.1)]=0
-	vector.sreturn[which(vector.sreturn > 1.1)]=0
+	vector.sreturn[which(vector.sreturn< -0.9)]=0
+	vector.sreturn[which(vector.sreturn > 0.9)]=0
 
 	
 	vector.sreturn
