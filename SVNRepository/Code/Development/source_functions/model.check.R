@@ -18,10 +18,13 @@
 
 
 	mean.check.pval = as.numeric(Box.Ljung.test(res,lag = lags.to.use,adj.DF = mean.adj.DF)$p.value);	
+	mean.check.statistic = as.numeric(Box.Ljung.test(res,lag = lags.to.use,adj.DF = mean.adj.DF)$statistic);	
+		
 	vol.check.pval = as.numeric(Box.Ljung.test(res.sq,lag = lags.to.use,adj.DF = vol.adj.DF)$p.value);
+	vol.check.statistic = as.numeric(Box.Ljung.test(res.sq,lag = lags.to.use,adj.DF = vol.adj.DF)$statistic);
 	
 
 
-	structure(list(mean.check.p.value=mean.check.pval,vol.check.p.value=vol.check.pval))
+	structure(list(mean.check.p.value=mean.check.pval,mean.check.statistic =mean.check.statistic,vol.check.p.value=vol.check.pval,vol.check.statistic=vol.check.statistic))
 
 }

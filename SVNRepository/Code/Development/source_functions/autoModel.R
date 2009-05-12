@@ -1,7 +1,7 @@
 
 ##Takes current state name, and derives appropriate model with the first n datapoints
 
-"auto.model" = function(current.state.name, percentage, cut.off=FALSE, interp=FALSE, data=NULL){
+"auto.model" = function(current.state.name, percentage, cut.off=FALSE, interp=FALSE, data=NULL,useGPH=FALSE){
 
 	
 all.data = read.table("../../../Data/States/all.txt");
@@ -39,7 +39,11 @@ for(k in 1:(length(Para$States))){
     		current.data = current.data[1:n];
      
 		if (Para$d[i] > 0){
+			if(useGPH==TRUE){
+				d.est = fdGPH(as.numeric(current.data))$d
+			}else{
 			d.est = whittleFit(as.ts(current.data), order = c(0, 0), subseries = 1, method = c("farma"),trace = TRUE, spec = FALSE, title = NULL, description = NULL)@hurst$H  - 0.5
+			}
 			#d.est = fdSperio(as.ts(current.data))$d
        		current.data = diffseries(as.ts(current.data),d.est);
     		}else{

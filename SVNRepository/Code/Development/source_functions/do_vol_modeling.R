@@ -1,4 +1,4 @@
-"do_vol_modeling"=function(state,test.data.vector,phase1fits,resids,dates,automatic=T,plot=T){
+"do_vol_modeling"=function(state,test.data.vector,phase1fits,resids,dates,automatic=T,plot=T,useGPH=F){
 	shifted.multivar.test.data.vector = shift.df.multi(test.data.vector,state,independent.variables)
 	response = as.matrix(subset(shifted.multivar.test.data.vector, select = state))
 
@@ -8,7 +8,7 @@
 		model.check.temp = model.check(resid.model,mean.equation.params,0,12)
 
 	}else{
-		resid.model.temp=auto.model(current.state.name=state, percentage=1, cut.off=FALSE, interp=FALSE, data=resids)
+		resid.model.temp=auto.model(current.state.name=state, percentage=1, cut.off=FALSE, interp=FALSE, data=resids, useGPH=useGPH)
 		resid.model=resid.model.temp$model
 		d=resid.model.temp$d
 		model.check.temp = resid.model.temp$model.check
