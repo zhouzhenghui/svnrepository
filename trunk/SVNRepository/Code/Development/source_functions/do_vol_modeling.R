@@ -6,7 +6,7 @@
 		resid.model=auto.arima(resids)
 		mean.equation.params = length(resid.model$coef)
 		model.check.temp = model.check(resid.model,mean.equation.params,0,12)
-
+		d=0
 	}else{
 		resid.model.temp=auto.model(current.state.name=state, percentage=1, cut.off=FALSE, interp=FALSE, data=resids, useGPH=useGPH)
 		resid.model=resid.model.temp$model
