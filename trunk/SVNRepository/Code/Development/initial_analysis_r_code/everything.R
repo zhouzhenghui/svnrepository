@@ -53,7 +53,7 @@ phase1fits=robust.lm$robust.lm$fit
 #Step 4
 #Phase 2-vol modeling 
 
-vol.model = do_vol_modeling(state,test.data.vector,phase1fits,resids,dates,automatic=F,plot=T,useGPH=T)
+vol.model = do_vol_modeling(state,test.data.vector,phase1fits,resids,dates,automatic=F,plot=T,useGPH=F)
 vol.model$d
 resids2= vol.model$resids
 pacf(resids2,lag.max=40, main="ACF (Phase 2) Residuals")
