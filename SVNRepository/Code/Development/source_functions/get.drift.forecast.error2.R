@@ -17,6 +17,7 @@ MSj= SSj  / DFj
 
 se= NULL
 forecasts.number = length(as.matrix(forecasts))
+
 for (i in 1:forecasts.number){
 YstarF = as.matrix(forecasts)[i]
 VF = as.matrix(resids.forecasts)[i]
