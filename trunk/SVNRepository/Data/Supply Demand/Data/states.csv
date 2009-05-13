@@ -1,6 +1,6 @@
 States,Seasonal AR Order,AR order,d,MA order,Seasonal MA Order,alpha.order,beta.order,Seasonal AR Order,AR order,d,MA order,Seasonal MA Order,alpha.order,beta.order,unitroot,intercept,comments
 AK,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,
-AL,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,
+AL,0,3,1,0,0,0,0,0,0,0,0,0,1,0,0,1,
 AR,0,1,0,1,0,1,1,0,0,0,0,0,1,0,0,1,
 AZ,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,
 CA,0,1,1,1,0,3,1,0,0,0,0,0,0,0,0,1,

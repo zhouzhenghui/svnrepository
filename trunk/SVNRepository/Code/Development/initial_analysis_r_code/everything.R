@@ -15,7 +15,7 @@ detach(package:fSeries)
 
 #set your initial state parameters and variables lists
 begin_month=1
-state = "AL" #our dependent variable 
+state = "WV" #our dependent variable 
 begin_year=get_start_year(state)
 end_month = 6
 end_year = 2008
@@ -47,15 +47,16 @@ eacf(resids)
 acf(resids,lag.max=40, main="ACF (Phase 1) Residuals")
 acf(resids^2,lag.max=40, main="ACF (Phase 1) Sq-Residuals")
 eacf(diffseries(resids,fdGPH(resids)$d))
+eacf(resids)
 phase1fits=robust.lm$robust.lm$fit
 
 #Step 4
 #Phase 2-vol modeling 
 
-vol.model = do_vol_modeling(state,test.data.vector,phase1fits,resids,dates,automatic=F,plot=T,useGPH=F)
+vol.model = do_vol_modeling(state,test.data.vector,phase1fits,resids,dates,automatic=F,plot=T,useGPH=T)
 vol.model$d
 resids2= vol.model$resids
-acf(resids2,lag.max=40, main="ACF (Phase 2) Residuals")
+pacf(resids2,lag.max=40, main="ACF (Phase 2) Residuals")
 acf(resids2^2,lag.max=40, main="ACF (Phase 2) Sq-Residuals")
 
 #Step 5
