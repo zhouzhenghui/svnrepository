@@ -14,11 +14,12 @@
 		model.check.temp = resid.model.temp$model.check
 	}
 	if ((class(resid.model)) == "fGARCH"){
-               res2 	= as.numeric(resid.model@residuals)
-		#/as.numeric(resid.model@sigma.t);		  
+            	res2 	= as.numeric(resid.model@residuals)
+			sres2 = as.numeric(resid.model@residuals)/as.numeric(resid.model@sigma.t);			#	  
 			fit2 = as.numeric(resid.model@fitted)
             }else{
-               res2 	= as.numeric(resid.model$residuals);
+               	res2 	= as.numeric(resid.model$residuals);
+			sres2 = res2
 			fit2 = resids - res2
 		}
 
@@ -36,5 +37,5 @@
 		plot.actual.fitted(regression.dataframe,state,dates,sreturn=TRUE,same.scale=T)
 		eacf(resids)
 	}
-	structure(list(model=resid.model,d=d,model.check=model.check.temp, adftest = adf.test,resids=res2))
+	structure(list(model=resid.model,d=d,model.check=model.check.temp, adftest = adf.test,resids=res2,sresids = sres2))
 }
