@@ -14,7 +14,8 @@
 		model.check.temp = resid.model.temp$model.check
 	}
 	if ((class(resid.model)) == "fGARCH"){
-               res2 	= as.numeric(resid.model@residuals)#/as.numeric(resid.model@sigma.t);		  
+               res2 	= as.numeric(resid.model@residuals)
+		#/as.numeric(resid.model@sigma.t);		  
 			fit2 = as.numeric(resid.model@fitted)
             }else{
                res2 	= as.numeric(resid.model$residuals);

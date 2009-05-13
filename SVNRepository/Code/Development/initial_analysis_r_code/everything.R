@@ -15,7 +15,7 @@ detach(package:fSeries)
 
 #set your initial state parameters and variables lists
 begin_month=1
-state = "TX" #our dependent variable 
+state = "AL" #our dependent variable 
 begin_year=get_start_year(state)
 end_month = 6
 end_year = 2008
@@ -46,7 +46,7 @@ resids = robust.lm$resids
 eacf(resids)
 acf(resids,lag.max=40, main="ACF (Phase 1) Residuals")
 acf(resids^2,lag.max=40, main="ACF (Phase 1) Sq-Residuals")
-fdGPH(resids)
+eacf(diffseries(resids,fdGPH(resids)$d))
 phase1fits=robust.lm$robust.lm$fit
 
 #Step 4
