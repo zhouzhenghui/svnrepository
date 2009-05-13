@@ -1,5 +1,5 @@
 "forecaster" = function(driftmodel,resids,volmodel,independent.variables,test.data.vector,new.curves,plot=T,plotindex=T, plot.ses = T){
-
+projectedindex = NULL
 alpha = 0.05
 projections.shifted = shift.df.multi(new.curves,state,independent.variables)
 projections.shifted = as.data.frame(projections.shifted)
@@ -100,6 +100,8 @@ if(plot==TRUE){
 		
 
 	}
+	projectedindex = total.fit
+
 }
 structure(list(projectedindex = projectedindex, projectedreturns = projectedreturns))
 }
