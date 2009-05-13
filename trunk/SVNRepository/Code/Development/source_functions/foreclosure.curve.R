@@ -28,7 +28,14 @@ X=c(X,origin+56)
 Y=c(Y,cumulative.2012)
 
 newx = c(1:(origin+60+lag))-1
-#plot(X,Y)
+#dates=dates3
+#dates = dates[c((length(dates)-60):length(dates))]
+
+#x.coords = seq(from=1,to=length(dates),by=12)
+
+#plot(X,Y,xaxt = "n",xlab="Date",ylab="Annual Total Foreclosures",main="Texas Aggregate Foreclosures",sub="Source: CSFB",col="blue",pch=2)
+#axis(side=1,at=x.coords,labels = dates[x.coords], las =2,  tick = TRUE, tck=-.04)
+
 model <- lm(Y ~ X + I(X^2) + I(X^2) + I(X^3))
 
 
