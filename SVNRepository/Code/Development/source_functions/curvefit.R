@@ -8,7 +8,7 @@ max.negative.lag = abs(min(as.numeric(lagranges[which(lagranges<0)]))) + 1
 }
 
 if(plot==TRUE){
-par(mfrow=c(2,4))
+#par(mfrow=c(2,4))
 
 }
 
@@ -66,7 +66,7 @@ if(is.null(curve)){
 	names(curve)[dim(curve)[2]]=names(test.data.vector)[k]
 }
 	if(plot==TRUE){
-		#dev.new()
+		dev.new()
 		title=paste(state,names(test.data.vector)[k])
 		dates3 = dategen(begin_month,begin_year, end_month+max.negative.lag, end_year+5)  #begin month + 1 because we had to chop off the first month
 
