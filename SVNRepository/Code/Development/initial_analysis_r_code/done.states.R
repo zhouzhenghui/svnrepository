@@ -1,4 +1,5 @@
 states.to.use = c("CA", "OH", "SD", "FL", "TX", "KS", "VT", "ID", "MI", "AZ","MS", "KY","AL", "WV","ND","NJ", "GA","MA","NY")
+states.to.use  = "MT"
 states.to.use =sort(states.to.use)
 
 for(i in 1:length(states.to.use)){
@@ -24,7 +25,7 @@ anova = robust.lm$anova
 vol.model = do_vol_modeling(state,test.data.vector,phase1fits,resids,dates,automatic=F,plot=F,useGPH=F)
 volmodel = vol.model$model
 
-sink("aggregate_data.txt",append=T)
+sink("aggregate_data3.txt",append=T)
 print(state)
 print(summary(driftmodel))
 print(anova)
