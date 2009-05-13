@@ -15,7 +15,7 @@ detach(package:fSeries)
 
 #set your initial state parameters and variables lists
 begin_month=1
-state = "WV" #our dependent variable 
+state = "ND" #our dependent variable 
 begin_year=get_start_year(state)
 end_month = 6
 end_year = 2008

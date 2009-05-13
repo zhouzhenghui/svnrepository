@@ -1,4 +1,4 @@
-states = c("CA", "OH", "SD", "FL", "TX", "KS", "NV", "VT", "ID", "MI", "AZ","MS", "KY")
+states = c("CA", "OH", "SD", "FL", "TX", "KS", "NV", "VT", "ID", "MI", "AZ","MS", "KY","AL", "WV")
 
 
-,, AL,WV, ND, NJ,MA, WY, VA, PA
+ ND, NJ,MA, WY, VA, PA
