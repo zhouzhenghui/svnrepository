@@ -1,0 +1,620 @@
+[1] "AL"
+Call:
+rlm(x = predictors, y = response)
+Converged in 6 iterations
+
+Coefficients:
+  median_income-Lag11            ty_cr-Lag8        mort_orig-Lag7 
+        -0.0703674482          0.0010127071          0.0001444661 
+      unemp_rate-Lag4         pop_size-Lag1     foreclosures-Lag6 
+        -0.0139691359          6.8050937968          0.0005198184 
+building_permits-Lag5 
+         0.0004079021 
+
+Degrees of freedom: 114 total; 107 residual
+Scale estimate: 0.00205 
+Analysis of Variance Table
+
+Response: AL
+                         Df     Sum Sq    Mean Sq F value   Pr(>F)   
+`median_income-Lag11`     1 0.00000278 0.00000278  0.5566 0.457269   
+`ty_cr-Lag8`              1 0.00000630 0.00000630  1.2605 0.264095   
+`mort_orig-Lag7`          1 0.00001143 0.00001143  2.2889 0.133276   
+`unemp_rate-Lag4`         1 0.00003898 0.00003898  7.8045 0.006186 **
+`pop_size-Lag1`           1 0.00003821 0.00003821  7.6511 0.006695 **
+`foreclosures-Lag6`       1 0.00000070 0.00000070  0.1392 0.709816   
+`building_permits-Lag5`   1 0.00000001 0.00000001  0.0012 0.972249   
+Residuals               106 0.00052941 0.00000499                    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+[1] ""
+[1] "AZ"
+Call:
+rlm(x = predictors, y = response)
+Converged in 5 iterations
+
+Coefficients:
+   median_income-Lag11             ty_cr-Lag6         mort_orig-Lag2 
+           1.570190587            0.026738465            0.018896280 
+       unemp_rate-Lag9     foreclosures-Lag12 building_permits-Lag13 
+          -0.267698988           -0.004660194            0.017389460 
+
+Degrees of freedom: 52 total; 46 residual
+Scale estimate: 0.0139 
+Analysis of Variance Table
+
+Response: AZ
+                         Df    Sum Sq   Mean Sq F value    Pr(>F)    
+`median_income-Lag11`     1 0.0001908 0.0001908  1.5275    0.2229    
+`ty_cr-Lag6`              1 0.0000445 0.0000445  0.3565    0.5534    
+`mort_orig-Lag2`          1 0.0026754 0.0026754 21.4148 3.143e-05 ***
+`unemp_rate-Lag9`         1 0.0000058 0.0000058  0.0466    0.8301    
+`foreclosures-Lag12`      1 0.0000668 0.0000668  0.5346    0.4685    
+`building_permits-Lag13`  1 0.0000807 0.0000807  0.6459    0.4258    
+Residuals                45 0.0056220 0.0001249                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+[1] ""
+[1] "CA"
+Call:
+rlm(x = predictors, y = response)
+Converged in 12 iterations
+
+Coefficients:
+   median_income-Lag0         pop_size-Lag0            ty_cr-Lag4 
+         -0.009364673         -77.612867197           0.021539023 
+       mort_orig-Lag6       unemp_rate-Lag8        pop_size-Lag12 
+          0.002809867          -0.080338991          81.098463057 
+    foreclosures-Lag6 building_permits-Lag8 
+         -0.009821359          -0.005572552 
+
+Degrees of freedom: 65 total; 57 residual
+Scale estimate: 0.00505 
+Analysis of Variance Table
+
+Response: CA
+                        Df    Sum Sq   Mean Sq  F value    Pr(>F)    
+`median_income-Lag0`     1 0.0000079 0.0000079   0.3391 0.5626992    
+`pop_size-Lag0`          1 0.0000478 0.0000478   2.0446 0.1583011    
+`ty_cr-Lag4`             1 0.0003394 0.0003394  14.5204 0.0003469 ***
+`mort_orig-Lag6`         1 0.0013001 0.0013001  55.6190 6.061e-10 ***
+`unemp_rate-Lag8`        1 0.0020483 0.0020483  87.6268 4.734e-13 ***
+`pop_size-Lag12`         1 0.0061497 0.0061497 263.0876 < 2.2e-16 ***
+`foreclosures-Lag6`      1 0.0000285 0.0000285   1.2189 0.2742965    
+`building_permits-Lag8`  1 0.0000616 0.0000616   2.6334 0.1102515    
+Residuals               56 0.0013090 0.0000234                       
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+[1] ""
+[1] "FL"
+Call:
+rlm(x = predictors, y = response)
+Ran 20 iterations without convergence
+
+Coefficients:
+   median_income-Lag0            ty_cr-Lag3        mort_orig-Lag2 
+          0.392211794           0.003616401           0.007486927 
+      unemp_rate-Lag3         pop_size-Lag3     foreclosures-Lag2 
+         -0.062473717           6.595861961          -0.019984428 
+building_permits-Lag3 
+          0.021188649 
+
+Degrees of freedom: 86 total; 79 residual
+Scale estimate: 0.00576 
+Analysis of Variance Table
+
+Response: FL
+                        Df    Sum Sq   Mean Sq  F value    Pr(>F)    
+`median_income-Lag0`     1 0.0005803 0.0005803  47.6305 1.212e-09 ***
+`ty_cr-Lag3`             1 0.0000679 0.0000679   5.5714  0.020756 *  
+`mort_orig-Lag2`         1 0.0016636 0.0016636 136.5511 < 2.2e-16 ***
+`unemp_rate-Lag3`        1 0.0009423 0.0009423  77.3426 2.704e-13 ***
+`pop_size-Lag3`          1 0.0042811 0.0042811 351.4041 < 2.2e-16 ***
+`foreclosures-Lag2`      1 0.0000044 0.0000044   0.3578  0.551438    
+`building_permits-Lag3`  1 0.0000850 0.0000850   6.9755  0.009979 ** 
+Residuals               78 0.0009503 0.0000122                       
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+[1] ""
+[1] "GA"
+Call:
+rlm(x = predictors, y = response)
+Converged in 12 iterations
+
+Coefficients:
+   median_income-Lag-3       unemp_rate-Lag-4       unemp_rate-Lag-3 
+          3.143185e-02           1.178382e-03          -2.209665e-03 
+      unemp_rate-Lag-2     foreclosures-Lag-3     foreclosures-Lag-2 
+         -4.284259e-03          -9.900538e-05          -3.489289e-04 
+    foreclosures-Lag-1 building_permits-Lag-2     median_income-Lag0 
+         -8.453758e-04           1.502505e-03           5.577605e-02 
+         pop_size-Lag0     median_income-Lag3             ty_cr-Lag1 
+          3.195147e+00           2.982861e-02          -7.735516e-03 
+            ty_cr-Lag2             ty_cr-Lag3         mort_orig-Lag4 
+         -6.045277e-03          -6.790775e-03          -6.289129e-05 
+        mort_orig-Lag5         mort_orig-Lag6          pop_size-Lag6 
+          1.569531e-04           1.531121e-04          -1.173889e+00 
+         pop_size-Lag8  building_permits-Lag2  building_permits-Lag5 
+          3.145359e-01           1.613342e-03           1.897122e-03 
+ building_permits-Lag6 
+          2.428208e-03 
+
+Degrees of freedom: 113 total; 91 residual
+Scale estimate: 0.00101 
+Analysis of Variance Table
+
+Response: GA
+                         Df     Sum Sq    Mean Sq F value   Pr(>F)   
+`median_income-Lag-3`     1 1.8962e-05 1.8962e-05  8.4879 0.004509 **
+`unemp_rate-Lag-4`        1 2.9000e-08 2.9000e-08  0.0129 0.909781   
+`unemp_rate-Lag-3`        1 3.3000e-08 3.3000e-08  0.0146 0.904110   
+`unemp_rate-Lag-2`        1 1.1260e-06 1.1260e-06  0.5042 0.479493   
+`foreclosures-Lag-3`      1 1.0150e-06 1.0150e-06  0.4542 0.502068   
+`foreclosures-Lag-2`      1 1.8000e-08 1.8000e-08  0.0083 0.927777   
+`foreclosures-Lag-1`      1 1.1000e-07 1.1000e-07  0.0491 0.825113   
+`building_permits-Lag-2`  1 4.2740e-06 4.2740e-06  1.9131 0.170036   
+`median_income-Lag0`      1 1.1236e-05 1.1236e-05  5.0294 0.027376 * 
+`pop_size-Lag0`           1 1.9848e-05 1.9848e-05  8.8843 0.003699 **
+`median_income-Lag3`      1 4.5940e-06 4.5940e-06  2.0564 0.155031   
+`ty_cr-Lag1`              1 8.5150e-06 8.5150e-06  3.8115 0.054009 . 
+`ty_cr-Lag2`              1 1.6097e-05 1.6097e-05  7.2054 0.008652 **
+`ty_cr-Lag3`              1 1.0589e-05 1.0589e-05  4.7397 0.032090 * 
+`mort_orig-Lag4`          1 4.4000e-08 4.4000e-08  0.0196 0.888984   
+`mort_orig-Lag5`          1 6.0000e-09 6.0000e-09  0.0027 0.958992   
+`mort_orig-Lag6`          1 3.3100e-07 3.3100e-07  0.1482 0.701216   
+`pop_size-Lag6`           1 3.4410e-06 3.4410e-06  1.5402 0.217819   
+`pop_size-Lag8`           1 3.5180e-06 3.5180e-06  1.5749 0.212744   
+`building_permits-Lag2`   1 3.8190e-06 3.8190e-06  1.7094 0.194390   
+`building_permits-Lag5`   1 1.0020e-06 1.0020e-06  0.4487 0.504684   
+`building_permits-Lag6`   1 7.2100e-06 7.2100e-06  3.2274 0.075770 . 
+Residuals                90 2.0106e-04 2.2340e-06                    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+[1] ""
+[1] "ID"
+Call:
+rlm(x = predictors, y = response)
+Converged in 8 iterations
+
+Coefficients:
+   median_income-Lag0            ty_cr-Lag4        mort_orig-Lag4 
+        -0.2322542298          0.0013213971          0.0006103022 
+      unemp_rate-Lag3         pop_size-Lag4     foreclosures-Lag3 
+        -0.1271457703          2.9485888827         -0.0010007257 
+building_permits-Lag3 
+        -0.0011802505 
+
+Degrees of freedom: 121 total; 114 residual
+Scale estimate: 0.00338 
+Analysis of Variance Table
+
+Response: ID
+                         Df     Sum Sq    Mean Sq F value    Pr(>F)    
+`median_income-Lag0`      1 0.00000494 0.00000494  0.3619  0.548638    
+`ty_cr-Lag4`              1 0.00000536 0.00000536  0.3924  0.532288    
+`mort_orig-Lag4`          1 0.00009748 0.00009748  7.1403  0.008652 ** 
+`unemp_rate-Lag3`         1 0.00072202 0.00072202 52.8877 4.947e-11 ***
+`pop_size-Lag4`           1 0.00061153 0.00061153 44.7942 8.823e-10 ***
+`foreclosures-Lag3`       1 0.00000207 0.00000207  0.1514  0.697920    
+`building_permits-Lag3`   1 0.00000627 0.00000627  0.4592  0.499398    
+Residuals               113 0.00154268 0.00001365                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+[1] ""
+[1] "KS"
+Call:
+rlm(x = predictors, y = response)
+Converged in 6 iterations
+
+Coefficients:
+           ty_cr-Lag0    median_income-Lag6        mort_orig-Lag2 
+        -0.0013595623         -0.1203582941          0.0005934033 
+      unemp_rate-Lag3         pop_size-Lag4     foreclosures-Lag7 
+         0.0041221334          7.3326443280          0.0006974578 
+building_permits-Lag2 
+         0.0013191898 
+
+Degrees of freedom: 118 total; 111 residual
+Scale estimate: 0.00195 
+Analysis of Variance Table
+
+Response: KS
+                         Df     Sum Sq    Mean Sq F value Pr(>F)
+`ty_cr-Lag0`              1 1.0400e-07 1.0400e-07  0.0422 0.8377
+`median_income-Lag6`      1 2.2780e-06 2.2780e-06  0.9277 0.3376
+`mort_orig-Lag2`          1 5.9600e-07 5.9600e-07  0.2427 0.6232
+`unemp_rate-Lag3`         1 7.5200e-07 7.5200e-07  0.3064 0.5810
+`pop_size-Lag4`           1 1.5300e-06 1.5300e-06  0.6228 0.4317
+`foreclosures-Lag7`       1 5.1500e-07 5.1500e-07  0.2095 0.6480
+`building_permits-Lag2`   1 3.6520e-06 3.6520e-06  1.4868 0.2253
+Residuals               110 2.7016e-04 2.4560e-06               
+[1] ""
+[1] "KY"
+Call:
+rlm(x = predictors, y = response)
+Converged in 8 iterations
+
+Coefficients:
+    foreclosures-Lag0    median_income-Lag9            ty_cr-Lag5 
+         0.0009269738         -0.0617200658          0.0014291450 
+      mort_orig-Lag11       unemp_rate-Lag5         pop_size-Lag3 
+         0.0002004193          0.0106083280          5.3446746144 
+building_permits-Lag6 
+         0.0002828780 
+
+Degrees of freedom: 114 total; 107 residual
+Scale estimate: 0.00145 
+Analysis of Variance Table
+
+Response: KY
+                         Df     Sum Sq    Mean Sq F value  Pr(>F)  
+`foreclosures-Lag0`       1 2.0200e-07 2.0200e-07  0.1062 0.74513  
+`median_income-Lag9`      1 5.5160e-06 5.5160e-06  2.9063 0.09116 .
+`ty_cr-Lag5`              1 9.1100e-07 9.1100e-07  0.4801 0.48989  
+`mort_orig-Lag11`         1 3.7150e-06 3.7150e-06  1.9577 0.16468  
+`unemp_rate-Lag5`         1 1.9830e-06 1.9830e-06  1.0451 0.30897  
+`pop_size-Lag3`           1 2.1600e-07 2.1600e-07  0.1138 0.73656  
+`building_permits-Lag6`   1 3.5000e-08 3.5000e-08  0.0184 0.89241  
+Residuals               106 2.0117e-04 1.8980e-06                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+[1] ""
+[1] "MA"
+Call:
+rlm(x = predictors, y = response)
+Converged in 9 iterations
+
+Coefficients:
+  median_income-Lag-3            ty_cr-Lag3        mort_orig-Lag1 
+         0.4031002772          0.0102159222          0.0003469626 
+       pop_size-Lag18     foreclosures-Lag4 building_permits-Lag3 
+        18.1320130076         -0.0004351959          0.0002792699 
+
+Degrees of freedom: 104 total; 98 residual
+Scale estimate: 0.00326 
+Analysis of Variance Table
+
+Response: MA
+                        Df     Sum Sq    Mean Sq  F value  Pr(>F)    
+`median_income-Lag-3`    1 0.00005491 0.00005491   4.0231 0.04767 *  
+`ty_cr-Lag3`             1 0.00001443 0.00001443   1.0570 0.30646    
+`mort_orig-Lag1`         1 0.00003975 0.00003975   2.9124 0.09110 .  
+`pop_size-Lag18`         1 0.00152486 0.00152486 111.7280 < 2e-16 ***
+`foreclosures-Lag4`      1 0.00000722 0.00000722   0.5287 0.46889    
+`building_permits-Lag3`  1 0.00000018 0.00000018   0.0132 0.90862    
+Residuals               97 0.00132385 0.00001365                     
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+[1] ""
+[1] "MI"
+Call:
+rlm(x = predictors, y = response)
+Converged in 5 iterations
+
+Coefficients:
+     unemp_rate-Lag-4 building_permits-Lag0    median_income-Lag8 
+        -0.0025707375          0.0005843510         -0.0360099285 
+           ty_cr-Lag6        mort_orig-Lag2         pop_size-Lag1 
+         0.0015339093         -0.0001653219         12.0540456157 
+    foreclosures-Lag3 
+         0.0003669027 
+
+Degrees of freedom: 113 total; 106 residual
+Scale estimate: 0.00155 
+Analysis of Variance Table
+
+Response: MI
+                         Df     Sum Sq    Mean Sq  F value Pr(>F)    
+`unemp_rate-Lag-4`        1 0.00000758 0.00000758   1.8269 0.1794    
+`building_permits-Lag0`   1 0.00000279 0.00000279   0.6712 0.4145    
+`median_income-Lag8`      1 0.00000257 0.00000257   0.6186 0.4334    
+`ty_cr-Lag6`              1 0.00000003 0.00000003   0.0072 0.9326    
+`mort_orig-Lag2`          1 0.00000171 0.00000171   0.4119 0.5224    
+`pop_size-Lag1`           1 0.00083193 0.00083193 200.4691 <2e-16 ***
+`foreclosures-Lag3`       1 0.00000002 0.00000002   0.0048 0.9448    
+Residuals               105 0.00043574 0.00000415                    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+[1] ""
+[1] "MS"
+Call:
+rlm(x = predictors, y = response)
+Converged in 13 iterations
+
+Coefficients:
+   median_income-Lag3            ty_cr-Lag3        mort_orig-Lag3 
+         -0.099571022          -0.002530360           0.000914942 
+      unemp_rate-Lag3         pop_size-Lag6     foreclosures-Lag5 
+         -0.005891009           5.866676003           0.001585906 
+building_permits-Lag1 
+          0.001369804 
+
+Degrees of freedom: 119 total; 112 residual
+Scale estimate: 0.00257 
+Analysis of Variance Table
+
+Response: MS
+                         Df     Sum Sq    Mean Sq F value  Pr(>F)  
+`median_income-Lag3`      1 0.00001004 0.00001004  1.7636 0.18690  
+`ty_cr-Lag3`              1 0.00000002 0.00000002  0.0034 0.95364  
+`mort_orig-Lag3`          1 0.00002956 0.00002956  5.1946 0.02457 *
+`unemp_rate-Lag3`         1 0.00000071 0.00000071  0.1240 0.72542  
+`pop_size-Lag6`           1 0.00001218 0.00001218  2.1403 0.14630  
+`foreclosures-Lag5`       1 0.00000095 0.00000095  0.1666 0.68397  
+`building_permits-Lag1`   1 0.00000369 0.00000369  0.6482 0.42247  
+Residuals               111 0.00063166 0.00000569                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+[1] ""
+[1] "ND"
+Call:
+rlm(x = predictors, y = response)
+Converged in 8 iterations
+
+Coefficients:
+  median_income-Lag12            ty_cr-Lag8        mort_orig-Lag3 
+         0.4304723865         -0.0086707681          0.0005931965 
+      unemp_rate-Lag9         pop_size-Lag3     foreclosures-Lag2 
+         0.0161895309         -0.1983731428         -0.0040475028 
+building_permits-Lag2 
+        -0.0032198677 
+
+Degrees of freedom: 113 total; 106 residual
+Scale estimate: 0.00463 
+Analysis of Variance Table
+
+Response: ND
+                         Df     Sum Sq    Mean Sq F value    Pr(>F)    
+`median_income-Lag12`     1 0.00000091 0.00000091  0.1099 0.7409303    
+`ty_cr-Lag8`              1 0.00000377 0.00000377  0.4548 0.5015245    
+`mort_orig-Lag3`          1 0.00002881 0.00002881  3.4715 0.0652285 .  
+`unemp_rate-Lag9`         1 0.00000510 0.00000510  0.6146 0.4348246    
+`pop_size-Lag3`           1 0.00013178 0.00013178 15.8802 0.0001248 ***
+`foreclosures-Lag2`       1 0.00001550 0.00001550  1.8681 0.1746104    
+`building_permits-Lag2`   1 0.00000032 0.00000032  0.0383 0.8452418    
+Residuals               105 0.00087136 0.00000830                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+[1] ""
+[1] "NJ"
+Call:
+rlm(x = predictors, y = response)
+Converged in 8 iterations
+
+Coefficients:
+   median_income-Lag3            ty_cr-Lag2        mort_orig-Lag2 
+         0.0286851972          0.0090558924          0.0029730748 
+      unemp_rate-Lag4        pop_size-Lag18     foreclosures-Lag1 
+        -0.0030669714         14.0940879844         -0.0011439003 
+building_permits-Lag4 
+         0.0009955428 
+
+Degrees of freedom: 107 total; 100 residual
+Scale estimate: 0.00312 
+Analysis of Variance Table
+
+Response: NJ
+                        Df     Sum Sq    Mean Sq F value    Pr(>F)    
+`median_income-Lag3`     1 0.00001692 0.00001692  0.8439 0.3605215    
+`ty_cr-Lag2`             1 0.00000134 0.00000134  0.0670 0.7962499    
+`mort_orig-Lag2`         1 0.00031285 0.00031285 15.6036 0.0001464 ***
+`unemp_rate-Lag4`        1 0.00000653 0.00000653  0.3258 0.5694489    
+`pop_size-Lag18`         1 0.00082919 0.00082919 41.3566 4.514e-09 ***
+`foreclosures-Lag1`      1 0.00002688 0.00002688  1.3407 0.2497023    
+`building_permits-Lag4`  1 0.00000849 0.00000849  0.4235 0.5166794    
+Residuals               99 0.00198492 0.00002005                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+[1] ""
+[1] "NV"
+Call:
+rlm(x = predictors, y = response)
+Converged in 15 iterations
+
+Coefficients:
+       pop_size-Lag-3        libor_2-Lag-22     foreclosures-Lag0 
+         3.4243838898          0.3094067899          0.0033923291 
+   median_income-Lag3        mort_orig-Lag3      unemp_rate-Lag12 
+         1.1433618188          0.0008606686         -0.0365190405 
+building_permits-Lag6        libor_10-Lag11 
+         0.0033802156          0.0120480971 
+
+Degrees of freedom: 79 total; 71 residual
+Scale estimate: 0.00402 
+Analysis of Variance Table
+
+Response: NV
+                        Df     Sum Sq    Mean Sq F value    Pr(>F)    
+`pop_size-Lag-3`         1 0.00039879 0.00039879 10.4017  0.001915 ** 
+`libor_2-Lag-22`         1 0.00136703 0.00136703 35.6568 8.802e-08 ***
+`foreclosures-Lag0`      1 0.00000004 0.00000004  0.0010  0.975037    
+`median_income-Lag3`     1 0.00134462 0.00134462 35.0722 1.074e-07 ***
+`mort_orig-Lag3`         1 0.00000820 0.00000820  0.2138  0.645227    
+`unemp_rate-Lag12`       1 0.00001740 0.00001740  0.4540  0.502678    
+`building_permits-Lag6`  1 0.00000618 0.00000618  0.1613  0.689187    
+`libor_10-Lag11`         1 0.00023115 0.00023115  6.0291  0.016558 *  
+Residuals               70 0.00268371 0.00003834                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+[1] ""
+[1] "NY"
+Call:
+rlm(x = predictors, y = response)
+Converged in 7 iterations
+
+Coefficients:
+      unemp_rate-Lag0    median_income-Lag9            ty_cr-Lag3 
+         -0.040393028          -0.079174471           0.006362373 
+       mort_orig-Lag2        pop_size-Lag16     foreclosures-Lag3 
+          0.001850053          19.079393747          -0.002110395 
+building_permits-Lag6 
+          0.002337951 
+
+Degrees of freedom: 109 total; 102 residual
+Scale estimate: 0.00285 
+Analysis of Variance Table
+
+Response: NY
+                         Df     Sum Sq    Mean Sq F value    Pr(>F)    
+`unemp_rate-Lag0`         1 0.00007311 0.00007311  5.6859  0.018969 *  
+`median_income-Lag9`      1 0.00000012 0.00000012  0.0093  0.923408    
+`ty_cr-Lag3`              1 0.00001607 0.00001607  1.2498  0.266248    
+`mort_orig-Lag2`          1 0.00010919 0.00010919  8.4927  0.004391 ** 
+`pop_size-Lag16`          1 0.00047259 0.00047259 36.7562 2.332e-08 ***
+`foreclosures-Lag3`       1 0.00002083 0.00002083  1.6202  0.205983    
+`building_permits-Lag6`   1 0.00005822 0.00005822  4.5279  0.035781 *  
+Residuals               101 0.00129860 0.00001286                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+[1] ""
+[1] "OH"
+Call:
+rlm(x = predictors, y = response)
+Converged in 6 iterations
+
+Coefficients:
+       mort_orig-Lag0    median_income-Lag6            ty_cr-Lag1 
+         0.0003047535         -0.0939417788         -0.0064012342 
+      unemp_rate-Lag3         pop_size-Lag9     foreclosures-Lag2 
+        -0.0196309161         17.2921155017         -0.0002148746 
+building_permits-Lag1 
+        -0.0009138023 
+
+Degrees of freedom: 116 total; 109 residual
+Scale estimate: 0.00136 
+Analysis of Variance Table
+
+Response: OH
+                         Df     Sum Sq    Mean Sq F value    Pr(>F)    
+`mort_orig-Lag0`          1 1.8300e-07 1.8300e-07  0.0761   0.78314    
+`median_income-Lag6`      1 1.3800e-07 1.3800e-07  0.0572   0.81140    
+`ty_cr-Lag1`              1 1.4388e-05 1.4388e-05  5.9739   0.01614 *  
+`unemp_rate-Lag3`         1 1.1616e-05 1.1616e-05  4.8230   0.03022 *  
+`pop_size-Lag9`           1 1.5425e-04 1.5425e-04 64.0433 1.489e-12 ***
+`foreclosures-Lag2`       1 8.0000e-09 8.0000e-09  0.0035   0.95325    
+`building_permits-Lag1`   1 6.3110e-06 6.3110e-06  2.6201   0.10843    
+Residuals               108 2.6012e-04 2.4090e-06                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+[1] ""
+[1] "SD"
+Call:
+rlm(x = predictors, y = response)
+Converged in 6 iterations
+
+Coefficients:
+        pop_size-Lag0    median_income-Lag1            ty_cr-Lag8 
+        -9.2107728726          0.0290721954         -0.0083007746 
+      mort_orig-Lag12      unemp_rate-Lag11         pop_size-Lag2 
+        -0.0004539987          0.0221099548         15.5667445957 
+    foreclosures-Lag7 building_permits-Lag3 
+         0.0002895643          0.0005399309 
+
+Degrees of freedom: 113 total; 105 residual
+Scale estimate: 0.00248 
+Analysis of Variance Table
+
+Response: SD
+                         Df     Sum Sq    Mean Sq F value    Pr(>F)    
+`pop_size-Lag0`           1 0.00000010 0.00000010  0.0258   0.87269    
+`median_income-Lag1`      1 0.00000020 0.00000020  0.0517   0.82055    
+`ty_cr-Lag8`              1 0.00000567 0.00000567  1.4731   0.22761    
+`mort_orig-Lag12`         1 0.00000048 0.00000048  0.1253   0.72405    
+`unemp_rate-Lag11`        1 0.00001201 0.00001201  3.1212   0.08021 .  
+`pop_size-Lag2`           1 0.00007898 0.00007898 20.5175 1.581e-05 ***
+`foreclosures-Lag7`       1 0.00000042 0.00000042  0.1100   0.74076    
+`building_permits-Lag3`   1 0.00000177 0.00000177  0.4589   0.49964    
+Residuals               104 0.00040034 0.00000385                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+[1] ""
+[1] "TX"
+Call:
+rlm(x = predictors, y = response)
+Converged in 7 iterations
+
+Coefficients:
+        pop_size-Lag0   median_income-Lag12            ty_cr-Lag3 
+         2.471897e+00          8.918657e-02         -4.140137e-03 
+       mort_orig-Lag7       unemp_rate-Lag4    foreclosures-Lag10 
+        -8.674227e-06         -3.178383e-02         -1.008462e-03 
+building_permits-Lag3 
+         4.742987e-04 
+
+Degrees of freedom: 113 total; 106 residual
+Scale estimate: 0.00133 
+Analysis of Variance Table
+
+Response: TX
+                         Df     Sum Sq    Mean Sq F value    Pr(>F)    
+`pop_size-Lag0`           1 6.3512e-05 6.3512e-05 27.0185 9.985e-07 ***
+`median_income-Lag12`     1 2.5680e-06 2.5680e-06  1.0926  0.298299    
+`ty_cr-Lag3`              1 3.8670e-06 3.8670e-06  1.6449  0.202476    
+`mort_orig-Lag7`          1 2.0000e-07 2.0000e-07  0.0850  0.771197    
+`unemp_rate-Lag4`         1 2.3605e-05 2.3605e-05 10.0419  0.002005 ** 
+`foreclosures-Lag10`      1 4.8860e-06 4.8860e-06  2.0786  0.152349    
+`building_permits-Lag3`   1 1.0400e-07 1.0400e-07  0.0442  0.833882    
+Residuals               105 2.4682e-04 2.3510e-06                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+[1] ""
+[1] "VT"
+Call:
+rlm(x = predictors, y = response)
+Converged in 8 iterations
+
+Coefficients:
+   median_income-Lag0        mort_orig-Lag0            ty_cr-Lag3 
+        -0.3021460204          0.0005705049          0.0172892850 
+      unemp_rate-Lag9        pop_size-Lag12     foreclosures-Lag5 
+         0.0040045210         14.0266028294         -0.0029902564 
+building_permits-Lag7 
+        -0.0010310707 
+
+Degrees of freedom: 113 total; 106 residual
+Scale estimate: 0.00405 
+Analysis of Variance Table
+
+Response: VT
+                         Df     Sum Sq    Mean Sq F value  Pr(>F)  
+`median_income-Lag0`      1 0.00006400 0.00006400  3.5591 0.06198 .
+`mort_orig-Lag0`          1 0.00002088 0.00002088  1.1613 0.28366  
+`ty_cr-Lag3`              1 0.00006932 0.00006932  3.8548 0.05225 .
+`unemp_rate-Lag9`         1 0.00000001 0.00000001  0.0004 0.98362  
+`pop_size-Lag12`          1 0.00006319 0.00006319  3.5140 0.06363 .
+`foreclosures-Lag5`       1 0.00002175 0.00002175  1.2096 0.27393  
+`building_permits-Lag7`   1 0.00000037 0.00000037  0.0208 0.88556  
+Residuals               105 0.00188814 0.00001798                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+[1] ""
+[1] "WV"
+Call:
+rlm(x = predictors, y = response)
+Converged in 7 iterations
+
+Coefficients:
+   median_income-Lag4            ty_cr-Lag2        mort_orig-Lag1 
+        -0.3420003317         -0.0041842552         -0.0003413056 
+      unemp_rate-Lag1         pop_size-Lag8     foreclosures-Lag2 
+        -0.0476110760         -3.0745270891          0.0001147156 
+building_permits-Lag6 
+         0.0015641521 
+
+Degrees of freedom: 117 total; 110 residual
+Scale estimate: 0.00478 
+Analysis of Variance Table
+
+Response: WV
+                         Df     Sum Sq    Mean Sq F value    Pr(>F)    
+`median_income-Lag4`      1 0.00018273 0.00018273 25.0314 2.177e-06 ***
+`ty_cr-Lag2`              1 0.00000291 0.00000291  0.3985   0.52918    
+`mort_orig-Lag1`          1 0.00001930 0.00001930  2.6438   0.10684    
+`unemp_rate-Lag1`         1 0.00001399 0.00001399  1.9169   0.16903    
+`pop_size-Lag8`           1 0.00002875 0.00002875  3.9379   0.04972 *  
+`foreclosures-Lag2`       1 0.00000004 0.00000004  0.0051   0.94311    
+`building_permits-Lag6`   1 0.00001266 0.00001266  1.7347   0.19057    
+Residuals               109 0.00079572 0.00000730                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+[1] ""
