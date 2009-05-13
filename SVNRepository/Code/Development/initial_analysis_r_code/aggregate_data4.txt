@@ -1,0 +1,676 @@
+[1] "AL"
+Series: current.data 
+ARIMA(3,0,0) with non-zero mean 
+
+Call: arima(x = current.data, order = c(Para$AR.order[i], 0, Para$MA.order[i]), seasonal = list(order = c(sar.order,      Para$d.1[i], sma.order), period = freq)) 
+
+Coefficients:
+         ar1     ar2      ar3  intercept
+      0.1256  0.0509  -0.4054      0e+00
+s.e.  0.0872  0.0877   0.0875      1e-04
+
+sigma^2 estimated as 2.274e-06:  log likelihood = 578.63
+AIC = -1147.25   AICc = -1146.7   BIC = -1133.57
+[1] "d from Whittle"
+[1] 0.677832
+[1] "d from GPH"
+[1] 0.672362
+[1] ""
+[1] ""
+[1] "AZ"
+Series: current.data 
+ARIMA(1,0,1) with non-zero mean 
+
+Call: arima(x = current.data, order = c(Para$AR.order[i], 0, Para$MA.order[i]), seasonal = list(order = c(sar.order,      Para$d.1[i], sma.order), period = freq)) 
+
+Coefficients:
+         ar1      ma1  intercept
+      0.9553  -0.7100     0.0031
+s.e.  0.0539   0.1237     0.0063
+
+sigma^2 estimated as 8.234e-05:  log likelihood = 170.3
+AIC = -332.6   AICc = -331.75   BIC = -324.79
+[1] "d from Whittle"
+[1] 0
+[1] "d from GPH"
+[1] 0
+[1] ""
+[1] ""
+[1] "CA"
+
+Title:
+ GARCH Modelling 
+
+Call:
+ garchFit(formula = garch.formula, data = current.data, cond.dist = c("QMLE"), 
+    include.mean = (Para$intercept[i] == 1), trace = FALSE) 
+
+Mean and Variance Equation:
+ data ~ arma(1, 1) + garch(3, 1)
+ [data = current.data]
+
+Conditional Distribution:
+ QMLE 
+
+Coefficient(s):
+         mu          ar1          ma1        omega       alpha1       alpha2  
+ 1.0643e-04   3.5380e-01  -1.3813e-01   1.0111e-05   1.0000e-08   1.0000e-08  
+     alpha3        beta1  
+ 4.2887e-01   1.0000e-08  
+
+Std. Errors:
+ robust 
+
+Error Analysis:
+         Estimate  Std. Error  t value Pr(>|t|)  
+mu      1.064e-04   4.530e-04    0.235   0.8143  
+ar1     3.538e-01   1.901e-01    1.862   0.0627 .
+ma1    -1.381e-01   1.367e-01   -1.010   0.3123  
+omega   1.011e-05   4.956e-06    2.040   0.0413 *
+alpha1  1.000e-08   2.781e-01 3.60e-08   1.0000  
+alpha2  1.000e-08   5.379e-02 1.86e-07   1.0000  
+alpha3  4.289e-01   1.814e-01    2.364   0.0181 *
+beta1   1.000e-08   1.347e-01 7.43e-08   1.0000  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+
+Log Likelihood:
+ 270.0328    normalized:  4.15435 
+
+Description:
+ Wed May 13 12:32:12 2009 by user: tdr9 
+
+[1] "d from Whittle"
+[1] 0.7132422
+[1] "d from GPH"
+[1] -0.1903093
+[1] ""
+[1] ""
+[1] "FL"
+Series: current.data 
+ARIMA(2,0,0) with non-zero mean 
+
+Call: arima(x = current.data, order = c(Para$AR.order[i], 0, Para$MA.order[i]), seasonal = list(order = c(sar.order,      Para$d.1[i], sma.order), period = freq)) 
+
+Coefficients:
+         ar1     ar2  intercept
+      0.2966  0.2966    -0.0011
+s.e.  0.1027  0.1124     0.0013
+
+sigma^2 estimated as 2.618e-05:  log likelihood = 331.45
+AIC = -654.9   AICc = -654.41   BIC = -645.09
+[1] "d from Whittle"
+[1] 0
+[1] "d from GPH"
+[1] 0
+[1] ""
+[1] ""
+[1] "GA"
+Series: current.data 
+ARIMA(1,0,1) with non-zero mean 
+
+Call: arima(x = current.data, order = c(Para$AR.order[i], 0, Para$MA.order[i]), seasonal = list(order = c(sar.order,      Para$d.1[i], sma.order), period = freq)) 
+
+Coefficients:
+         ar1     ma1  intercept
+      0.5832  0.1198      0e+00
+s.e.  0.1051  0.1166      3e-04
+
+sigma^2 estimated as 1.113e-06:  log likelihood = 581.27
+AIC = -1154.55   AICc = -1154.16   BIC = -1143.86
+[1] "d from Whittle"
+[1] 0
+[1] "d from GPH"
+[1] 0
+[1] ""
+[1] ""
+[1] "ID"
+Series: current.data 
+ARIMA(1,0,1) with non-zero mean 
+
+Call: arima(x = current.data, order = c(Para$AR.order[i], 0, Para$MA.order[i]), seasonal = list(order = c(sar.order,      Para$d.1[i], sma.order), period = freq)) 
+
+Coefficients:
+         ar1      ma1  intercept
+      0.8811  -0.4017    -0.0001
+s.e.  0.0553   0.1103     0.0012
+
+sigma^2 estimated as 7.112e-06:  log likelihood = 545.06
+AIC = -1082.11   AICc = -1081.77   BIC = -1070.93
+[1] "d from Whittle"
+[1] 0
+[1] "d from GPH"
+[1] 0
+[1] ""
+[1] ""
+[1] "KS"
+
+Title:
+ GARCH Modelling 
+
+Call:
+ garchFit(formula = garch.formula, data = current.data, cond.dist = c("QMLE"), 
+    include.mean = (Para$intercept[i] == 1), trace = FALSE) 
+
+Mean and Variance Equation:
+ data ~ arma(1, 1) + garch(1, 1)
+ [data = current.data]
+
+Conditional Distribution:
+ QMLE 
+
+Coefficient(s):
+         mu          ar1          ma1        omega       alpha1        beta1  
+ 9.1626e-05   7.2979e-01  -1.2479e-02   2.5648e-07   6.6940e-02   7.9406e-01  
+
+Std. Errors:
+ robust 
+
+Error Analysis:
+         Estimate  Std. Error  t value Pr(>|t|)    
+mu      9.163e-05   1.821e-04    0.503    0.615    
+ar1     7.298e-01   1.309e-01    5.575 2.47e-08 ***
+ma1    -1.248e-02   9.420e-02   -0.132    0.895    
+omega   2.565e-07   2.862e-07    0.896    0.370    
+alpha1  6.694e-02   1.500e-01    0.446    0.655    
+beta1   7.941e-01   2.035e-01    3.902 9.53e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+
+Log Likelihood:
+ 615.3854    normalized:  5.215131 
+
+Description:
+ Wed May 13 12:32:37 2009 by user: tdr9 
+
+[1] "d from Whittle"
+[1] 0
+[1] "d from GPH"
+[1] 0
+[1] ""
+[1] ""
+[1] "KY"
+
+Title:
+ GARCH Modelling 
+
+Call:
+ garchFit(formula = garch.formula, data = current.data, cond.dist = c("QMLE"), 
+    include.mean = (Para$intercept[i] == 1), trace = FALSE) 
+
+Mean and Variance Equation:
+ data ~ arma(0, 3) + garch(3, 1)
+ [data = current.data]
+
+Conditional Distribution:
+ QMLE 
+
+Coefficient(s):
+         mu          ma1          ma2          ma3        omega       alpha1  
+-3.4423e-05   1.8949e-01   1.9911e-01  -3.6586e-01   3.4895e-07   1.0000e-08  
+     alpha2       alpha3        beta1  
+ 1.0000e-08   8.0286e-01   1.0000e-08  
+
+Std. Errors:
+ robust 
+
+Error Analysis:
+         Estimate  Std. Error  t value Pr(>|t|)    
+mu     -3.442e-05   7.418e-05   -0.464 0.642621    
+ma1     1.895e-01   3.771e-01    0.502 0.615339    
+ma2     1.991e-01   3.055e-01    0.652 0.514620    
+ma3    -3.659e-01   3.536e-01   -1.035 0.300763    
+omega   3.490e-07   2.372e-07    1.471 0.141225    
+alpha1  1.000e-08   2.492e-01 4.01e-08 1.000000    
+alpha2  1.000e-08   8.274e-02 1.21e-07 1.000000    
+alpha3  8.029e-01   2.328e-01    3.449 0.000563 ***
+beta1   1.000e-08   1.336e-01 7.48e-08 1.000000    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+
+Log Likelihood:
+ 645.3515    normalized:  5.660978 
+
+Description:
+ Wed May 13 12:32:43 2009 by user: tdr9 
+
+[1] "d from Whittle"
+[1] 0.6210938
+[1] "d from GPH"
+[1] 0.4183298
+[1] ""
+[1] ""
+[1] "MA"
+
+Title:
+ GARCH Modelling 
+
+Call:
+ garchFit(formula = garch.formula, data = current.data, cond.dist = c("QMLE"), 
+    include.mean = (Para$intercept[i] == 1), trace = FALSE) 
+
+Mean and Variance Equation:
+ data ~ arma(0, 3) + garch(3, 1)
+ [data = current.data]
+
+Conditional Distribution:
+ QMLE 
+
+Coefficient(s):
+         mu          ma1          ma2          ma3        omega       alpha1  
+ 5.3460e-05   1.4236e-01   2.2119e-01  -5.1116e-01   1.4774e-06   1.0000e-08  
+     alpha2       alpha3        beta1  
+ 1.0000e-08   1.0000e+00   1.0000e-08  
+
+Std. Errors:
+ robust 
+
+Error Analysis:
+         Estimate  Std. Error  t value Pr(>|t|)    
+mu      5.346e-05   1.224e-04    0.437 0.662269    
+ma1     1.424e-01   6.180e-02    2.304 0.021245 *  
+ma2     2.212e-01   4.666e-02    4.741 2.13e-06 ***
+ma3    -5.112e-01   8.250e-02   -6.196 5.80e-10 ***
+omega   1.477e-06   6.805e-07    2.171 0.029928 *  
+alpha1  1.000e-08   4.022e-02 2.49e-07 1.000000    
+alpha2  1.000e-08   2.130e-02 4.69e-07 1.000000    
+alpha3  1.000e+00   2.818e-01    3.549 0.000386 ***
+beta1   1.000e-08   4.833e-02 2.07e-07 1.000000    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+
+Log Likelihood:
+ 507.5709    normalized:  4.880489 
+
+Description:
+ Wed May 13 12:32:50 2009 by user: tdr9 
+
+[1] "d from Whittle"
+[1] 0.7630078
+[1] "d from GPH"
+[1] 0.4614325
+[1] ""
+[1] ""
+[1] "MI"
+
+Title:
+ GARCH Modelling 
+
+Call:
+ garchFit(formula = garch.formula, data = current.data, cond.dist = c("QMLE"), 
+    include.mean = (Para$intercept[i] == 1), trace = FALSE) 
+
+Mean and Variance Equation:
+ data ~ arma(1, 0) + garch(3, 1)
+ [data = current.data]
+
+Conditional Distribution:
+ QMLE 
+
+Coefficient(s):
+        mu         ar1       omega      alpha1      alpha2      alpha3  
+7.3174e-05  8.8255e-01  6.4043e-07  1.0000e-08  1.0000e-08  8.0465e-01  
+     beta1  
+1.2112e-02  
+
+Std. Errors:
+ robust 
+
+Error Analysis:
+        Estimate  Std. Error  t value Pr(>|t|)    
+mu     7.317e-05   8.711e-05    0.840  0.40089    
+ar1    8.826e-01   5.157e-02   17.114  < 2e-16 ***
+omega  6.404e-07   2.084e-07    3.073  0.00212 ** 
+alpha1 1.000e-08   1.327e-01 7.53e-08  1.00000    
+alpha2 1.000e-08   2.648e-02 3.78e-07  1.00000    
+alpha3 8.047e-01   2.947e-01    2.730  0.00633 ** 
+beta1  1.211e-02   3.182e-02    0.381  0.70346    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+
+Log Likelihood:
+ 608.4474    normalized:  5.384491 
+
+Description:
+ Wed May 13 12:32:57 2009 by user: tdr9 
+
+[1] "d from Whittle"
+[1] 0
+[1] "d from GPH"
+[1] 0
+[1] ""
+[1] ""
+[1] "MS"
+
+Title:
+ GARCH Modelling 
+
+Call:
+ garchFit(formula = garch.formula, data = current.data, cond.dist = c("QMLE"), 
+    include.mean = (Para$intercept[i] == 1), trace = FALSE) 
+
+Mean and Variance Equation:
+ data ~ arma(0, 1) + garch(1, 1)
+ [data = current.data]
+
+Conditional Distribution:
+ QMLE 
+
+Coefficient(s):
+        mu         ma1       omega      alpha1       beta1  
+7.9391e-04  5.4290e-01  6.3408e-07  4.2661e-01  4.9746e-01  
+
+Std. Errors:
+ robust 
+
+Error Analysis:
+        Estimate  Std. Error  t value Pr(>|t|)    
+mu     7.939e-04   3.513e-04    2.260   0.0238 *  
+ma1    5.429e-01   5.004e-02   10.850  < 2e-16 ***
+omega  6.341e-07   2.664e-07    2.380   0.0173 *  
+alpha1 4.266e-01   1.059e-01    4.030 5.58e-05 ***
+beta1  4.975e-01   6.524e-02    7.625 2.44e-14 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+
+Log Likelihood:
+ 567.6872    normalized:  4.770481 
+
+Description:
+ Wed May 13 12:33:04 2009 by user: tdr9 
+
+[1] "d from Whittle"
+[1] 0
+[1] "d from GPH"
+[1] 0
+[1] ""
+[1] ""
+[1] "MT"
+
+Title:
+ GARCH Modelling 
+
+Call:
+ garchFit(formula = garch.formula, data = current.data, cond.dist = c("QMLE"), 
+    include.mean = (Para$intercept[i] == 1), trace = FALSE) 
+
+Mean and Variance Equation:
+ data ~ arma(3, 0) + garch(1, 1)
+ [data = current.data]
+
+Conditional Distribution:
+ QMLE 
+
+Coefficient(s):
+         mu          ar1          ar2          ar3        omega       alpha1  
+-9.0914e-05   1.2402e-01   6.5147e-03  -3.8895e-01   4.5931e-09   1.0000e-08  
+      beta1  
+ 1.0000e+00  
+
+Std. Errors:
+ robust 
+
+Error Analysis:
+         Estimate  Std. Error  t value Pr(>|t|)    
+mu     -9.091e-05   1.265e-04   -0.719   0.4724    
+ar1     1.240e-01   5.609e-02    2.211   0.0270 *  
+ar2     6.515e-03   5.109e-02    0.128   0.8985    
+ar3    -3.889e-01   9.871e-02   -3.940 8.13e-05 ***
+omega   4.593e-09   5.454e-08    0.084   0.9329    
+alpha1  1.000e-08   5.374e-02 1.86e-07   1.0000    
+beta1   1.000e+00   3.080e-02   32.472  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+
+Log Likelihood:
+ 566.8606    normalized:  5.016465 
+
+Description:
+ Wed May 13 12:33:10 2009 by user: tdr9 
+
+[1] "d from Whittle"
+[1] 0.6459766
+[1] "d from GPH"
+[1] 0.6948833
+[1] ""
+[1] ""
+[1] "ND"
+
+Title:
+ GARCH Modelling 
+
+Call:
+ garchFit(formula = garch.formula, data = current.data, cond.dist = c("QMLE"), 
+    include.mean = (Para$intercept[i] == 1), trace = FALSE) 
+
+Mean and Variance Equation:
+ data ~ arma(3, 0) + garch(3, 1)
+ [data = current.data]
+
+Conditional Distribution:
+ QMLE 
+
+Coefficient(s):
+         mu          ar1          ar2          ar3        omega       alpha1  
+ 9.3606e-05   1.6439e-01  -4.1199e-02  -1.7426e-01   7.8702e-12   1.0000e-08  
+     alpha2       alpha3        beta1  
+ 1.0000e-08   7.6792e-02   9.3940e-01  
+
+Std. Errors:
+ robust 
+
+Error Analysis:
+         Estimate  Std. Error  t value Pr(>|t|)    
+mu      9.361e-05   2.459e-04    0.381    0.703    
+ar1     1.644e-01   2.884e-01    0.570    0.569    
+ar2    -4.120e-02   2.976e-01   -0.138    0.890    
+ar3    -1.743e-01   1.080e-01   -1.613    0.107    
+omega   7.870e-12   3.737e-07 2.11e-05    1.000    
+alpha1  1.000e-08   1.468e+00 6.81e-09    1.000    
+alpha2  1.000e-08   1.653e+00 6.05e-09    1.000    
+alpha3  7.679e-02   4.402e-01    0.174    0.862    
+beta1   9.394e-01   1.674e-01    5.612 2.00e-08 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+
+Log Likelihood:
+ 515.2007    normalized:  4.559298 
+
+Description:
+ Wed May 13 12:33:17 2009 by user: tdr9 
+
+[1] "d from Whittle"
+[1] 0.5353711
+[1] "d from GPH"
+[1] 0.1289815
+[1] ""
+[1] ""
+[1] "NJ"
+
+Title:
+ GARCH Modelling 
+
+Call:
+ garchFit(formula = garch.formula, data = current.data, cond.dist = c("QMLE"), 
+    include.mean = (Para$intercept[i] == 1), trace = FALSE) 
+
+Mean and Variance Equation:
+ data ~ arma(1, 0) + garch(3, 1)
+ [data = current.data]
+
+Conditional Distribution:
+ QMLE 
+
+Coefficient(s):
+         mu          ar1        omega       alpha1       alpha2       alpha3  
+-1.1938e-04   8.3296e-01   1.9433e-07   1.0000e-08   2.0843e-02   4.2208e-01  
+      beta1  
+ 6.1972e-01  
+
+Std. Errors:
+ robust 
+
+Error Analysis:
+         Estimate  Std. Error  t value Pr(>|t|)    
+mu     -1.194e-04   1.564e-04   -0.763   0.4453    
+ar1     8.330e-01   4.526e-02   18.405  < 2e-16 ***
+omega   1.943e-07   7.578e-07    0.256   0.7976    
+alpha1  1.000e-08   1.268e-01 7.89e-08   1.0000    
+alpha2  2.084e-02   9.258e-02    0.225   0.8219    
+alpha3  4.221e-01   2.098e-01    2.012   0.0443 *  
+beta1   6.197e-01   1.314e-01    4.716 2.41e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+
+Log Likelihood:
+ 493.9935    normalized:  4.616761 
+
+Description:
+ Wed May 13 12:33:24 2009 by user: tdr9 
+
+[1] "d from Whittle"
+[1] 0
+[1] "d from GPH"
+[1] 0
+[1] ""
+[1] ""
+[1] "NY"
+Series: current.data 
+ARIMA(0,0,0) with non-zero mean 
+
+Call: arima(x = current.data, order = c(Para$AR.order[i], 0, Para$MA.order[i]), seasonal = list(order = c(sar.order,      Para$d.1[i], sma.order), period = freq)) 
+
+Coefficients:
+      intercept
+         -1e-04
+s.e.      3e-04
+
+sigma^2 estimated as 6.834e-06:  log likelihood = 493.54
+AIC = -983.08   AICc = -982.97   BIC = -977.7
+[1] "d from Whittle"
+[1] 0.5639453
+[1] "d from GPH"
+[1] 0.5508443
+[1] ""
+[1] ""
+[1] "OH"
+Series: current.data 
+ARIMA(1,0,0) with non-zero mean 
+
+Call: arima(x = current.data, order = c(Para$AR.order[i], 0, Para$MA.order[i]), seasonal = list(order = c(sar.order,      Para$d.1[i], sma.order), period = freq)) 
+
+Coefficients:
+         ar1  intercept
+      0.6820     -2e-04
+s.e.  0.0718      3e-04
+
+sigma^2 estimated as 1.283e-06:  log likelihood = 621.95
+AIC = -1237.9   AICc = -1237.69   BIC = -1229.64
+[1] "d from Whittle"
+[1] 0
+[1] "d from GPH"
+[1] 0
+[1] ""
+[1] ""
+[1] "SD"
+Series: current.data 
+ARIMA(1,0,0) with non-zero mean 
+
+Call: arima(x = current.data, order = c(Para$AR.order[i], 0, Para$MA.order[i]), seasonal = list(order = c(sar.order,      Para$d.1[i], sma.order), period = freq)) 
+
+Coefficients:
+         ar1  intercept
+      0.6395      3e-04
+s.e.  0.0782      4e-04
+
+sigma^2 estimated as 2.805e-06:  log likelihood = 561.69
+AIC = -1117.39   AICc = -1117.17   BIC = -1109.2
+[1] "d from Whittle"
+[1] 0
+[1] "d from GPH"
+[1] 0
+[1] ""
+[1] ""
+[1] "TX"
+Series: current.data 
+ARIMA(1,0,0) with non-zero mean 
+
+Call: arima(x = current.data, order = c(Para$AR.order[i], 0, Para$MA.order[i]), seasonal = list(order = c(sar.order,      Para$d.1[i], sma.order), period = freq)) 
+
+Coefficients:
+         ar1  intercept
+      0.6386      0e+00
+s.e.  0.0721      3e-04
+
+sigma^2 estimated as 1.33e-06:  log likelihood = 603.86
+AIC = -1201.72   AICc = -1201.5   BIC = -1193.54
+[1] "d from Whittle"
+[1] 0
+[1] "d from GPH"
+[1] 0
+[1] ""
+[1] ""
+[1] "VT"
+
+Title:
+ GARCH Modelling 
+
+Call:
+ garchFit(formula = garch.formula, data = current.data, cond.dist = c("QMLE"), 
+    include.mean = (Para$intercept[i] == 1), trace = FALSE) 
+
+Mean and Variance Equation:
+ data ~ arma(1, 0) + garch(2, 1)
+ [data = current.data]
+
+Conditional Distribution:
+ QMLE 
+
+Coefficient(s):
+       ar1       omega      alpha1      alpha2       beta1  
+4.2287e-02  2.1390e-06  2.0034e-02  2.8713e-01  5.3052e-01  
+
+Std. Errors:
+ robust 
+
+Error Analysis:
+        Estimate  Std. Error  t value Pr(>|t|)  
+ar1    4.229e-02   4.759e-01    0.089   0.9292  
+omega  2.139e-06   1.444e-06    1.481   0.1386  
+alpha1 2.003e-02   3.134e-01    0.064   0.9490  
+alpha2 2.871e-01   6.387e-01    0.450   0.6530  
+beta1  5.305e-01   2.912e-01    1.822   0.0685 .
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+
+Log Likelihood:
+ 382.3766    normalized:  4.345188 
+
+Description:
+ Wed May 13 12:33:54 2009 by user: tdr9 
+
+[1] "d from Whittle"
+[1] 0.6201367
+[1] "d from GPH"
+[1] 0.389213
+[1] ""
+[1] ""
+[1] "WV"
+Series: current.data 
+ARIMA(0,0,0) with non-zero mean 
+
+Call: arima(x = current.data, order = c(Para$AR.order[i], 0, Para$MA.order[i]), seasonal = list(order = c(sar.order,      Para$d.1[i], sma.order), period = freq)) 
+
+Coefficients:
+      intercept
+          0e+00
+s.e.      2e-04
+
+sigma^2 estimated as 5.848e-06:  log likelihood = 538.88
+AIC = -1073.76   AICc = -1073.65   BIC = -1068.23
+[1] "d from Whittle"
+[1] 0.4734375
+[1] "d from GPH"
+[1] 0.4027208
+[1] ""
+[1] ""
