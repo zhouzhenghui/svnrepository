@@ -1,0 +1,874 @@
+[1] "AL"
+
+Call: rlm(x = predictors, y = response)
+Residuals:
+               AL
+Min    -0.0041506
+1Q     -0.0010454
+Median  0.0002964
+3Q      0.0019853
+Max     0.0092189
+
+Coefficients:
+                      Value   Std. Error t value
+median_income-Lag11   -0.0704  0.0587    -1.1978
+ty_cr-Lag8             0.0010  0.0057     0.1786
+mort_orig-Lag7         0.0001  0.0007     0.2218
+unemp_rate-Lag4       -0.0140  0.0086    -1.6243
+pop_size-Lag1          6.8051  0.4535    15.0063
+foreclosures-Lag6      0.0005  0.0011     0.4735
+building_permits-Lag5  0.0004  0.0014     0.2840
+
+Residual standard error: 0.002053 on 107 degrees of freedom
+Analysis of Variance Table
+
+Response: AL
+                         Df     Sum Sq    Mean Sq F value   Pr(>F)   
+`median_income-Lag11`     1 0.00000278 0.00000278  0.5566 0.457269   
+`ty_cr-Lag8`              1 0.00000630 0.00000630  1.2605 0.264095   
+`mort_orig-Lag7`          1 0.00001143 0.00001143  2.2889 0.133276   
+`unemp_rate-Lag4`         1 0.00003898 0.00003898  7.8045 0.006186 **
+`pop_size-Lag1`           1 0.00003821 0.00003821  7.6511 0.006695 **
+`foreclosures-Lag6`       1 0.00000070 0.00000070  0.1392 0.709816   
+`building_permits-Lag5`   1 0.00000001 0.00000001  0.0012 0.972249   
+Residuals               106 0.00052941 0.00000499                    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+[1] "1 to 5 year year on year % changes"
+[1] 0.05097627
+[1] 0.06125722
+[1] 0.06199562
+[1] 0.0620177
+[1] 0.06214756
+[1] ""
+[1] ""
+[1] "AZ"
+
+Call: rlm(x = predictors, y = response)
+Residuals:
+              AZ
+Min    -0.019277
+1Q     -0.002876
+Median  0.007046
+3Q      0.012116
+Max     0.036768
+
+Coefficients:
+                       Value   Std. Error t value
+median_income-Lag11     1.5702  0.5598     2.8051
+ty_cr-Lag6              0.0267  0.0550     0.4859
+mort_orig-Lag2          0.0189  0.0068     2.7786
+unemp_rate-Lag9        -0.2677  0.0999    -2.6804
+foreclosures-Lag12     -0.0047  0.0094    -0.4931
+building_permits-Lag13  0.0174  0.0133     1.3049
+
+Residual standard error: 0.01388 on 46 degrees of freedom
+Analysis of Variance Table
+
+Response: AZ
+                         Df    Sum Sq   Mean Sq F value    Pr(>F)    
+`median_income-Lag11`     1 0.0001908 0.0001908  1.5275    0.2229    
+`ty_cr-Lag6`              1 0.0000445 0.0000445  0.3565    0.5534    
+`mort_orig-Lag2`          1 0.0026754 0.0026754 21.4148 3.143e-05 ***
+`unemp_rate-Lag9`         1 0.0000058 0.0000058  0.0466    0.8301    
+`foreclosures-Lag12`      1 0.0000668 0.0000668  0.5346    0.4685    
+`building_permits-Lag13`  1 0.0000807 0.0000807  0.6459    0.4258    
+Residuals                45 0.0056220 0.0001249                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+[1] "1 to 5 year year on year % changes"
+[1] -0.1490632
+[1] -0.0004545416
+[1] 0.06420993
+[1] 0.05847807
+[1] 0.07173329
+[1] ""
+[1] ""
+[1] "CA"
+
+Call: rlm(x = predictors, y = response)
+Residuals:
+              CA
+Min    -0.007577
+1Q     -0.003500
+Median -0.001421
+3Q      0.003098
+Max     0.013007
+
+Coefficients:
+                      Value    Std. Error t value 
+median_income-Lag0     -0.0094   0.3945    -0.0237
+pop_size-Lag0         -77.6129   8.0194    -9.6782
+ty_cr-Lag4              0.0215   0.0164     1.3121
+mort_orig-Lag6          0.0028   0.0032     0.8764
+unemp_rate-Lag8        -0.0803   0.0595    -1.3497
+pop_size-Lag12         81.0985   7.4325    10.9113
+foreclosures-Lag6      -0.0098   0.0042    -2.3495
+building_permits-Lag8  -0.0056   0.0051    -1.0825
+
+Residual standard error: 0.005055 on 57 degrees of freedom
+Analysis of Variance Table
+
+Response: CA
+                        Df    Sum Sq   Mean Sq  F value    Pr(>F)    
+`median_income-Lag0`     1 0.0000079 0.0000079   0.3391 0.5626992    
+`pop_size-Lag0`          1 0.0000478 0.0000478   2.0446 0.1583011    
+`ty_cr-Lag4`             1 0.0003394 0.0003394  14.5204 0.0003469 ***
+`mort_orig-Lag6`         1 0.0013001 0.0013001  55.6190 6.061e-10 ***
+`unemp_rate-Lag8`        1 0.0020483 0.0020483  87.6268 4.734e-13 ***
+`pop_size-Lag12`         1 0.0061497 0.0061497 263.0876 < 2.2e-16 ***
+`foreclosures-Lag6`      1 0.0000285 0.0000285   1.2189 0.2742965    
+`building_permits-Lag8`  1 0.0000616 0.0000616   2.6334 0.1102515    
+Residuals               56 0.0013090 0.0000234                       
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+[1] "1 to 5 year year on year % changes"
+[1] 0.1081384
+[1] -0.01935248
+[1] 0.04154605
+[1] 0.03503521
+[1] 0.03444432
+[1] ""
+[1] ""
+[1] "FL"
+
+Call: rlm(x = predictors, y = response)
+Residuals:
+               FL
+Min    -0.0220595
+1Q     -0.0043092
+Median -0.0004570
+3Q      0.0033504
+Max     0.0180481
+
+Coefficients:
+                      Value   Std. Error t value
+median_income-Lag0     0.3922  0.2136     1.8362
+ty_cr-Lag3             0.0036  0.0136     0.2655
+mort_orig-Lag2         0.0075  0.0020     3.7104
+unemp_rate-Lag3       -0.0625  0.0164    -3.8019
+pop_size-Lag3          6.5959  0.4276    15.4252
+foreclosures-Lag2     -0.0200  0.0048    -4.1254
+building_permits-Lag3  0.0212  0.0048     4.3902
+
+Residual standard error: 0.00576 on 79 degrees of freedom
+Analysis of Variance Table
+
+Response: FL
+                        Df    Sum Sq   Mean Sq  F value    Pr(>F)    
+`median_income-Lag0`     1 0.0005803 0.0005803  47.6305 1.212e-09 ***
+`ty_cr-Lag3`             1 0.0000679 0.0000679   5.5714  0.020756 *  
+`mort_orig-Lag2`         1 0.0016636 0.0016636 136.5511 < 2.2e-16 ***
+`unemp_rate-Lag3`        1 0.0009423 0.0009423  77.3426 2.704e-13 ***
+`pop_size-Lag3`          1 0.0042811 0.0042811 351.4041 < 2.2e-16 ***
+`foreclosures-Lag2`      1 0.0000044 0.0000044   0.3578  0.551438    
+`building_permits-Lag3`  1 0.0000850 0.0000850   6.9755  0.009979 ** 
+Residuals               78 0.0009503 0.0000122                       
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+[1] "1 to 5 year year on year % changes"
+[1] 0.02846805
+[1] 0.08722772
+[1] 0.1048157
+[1] 0.09284014
+[1] 0.09814315
+[1] ""
+[1] ""
+[1] "GA"
+
+Call: rlm(x = predictors, y = response)
+Residuals:
+               GA
+Min    -0.0044812
+1Q     -0.0007584
+Median  0.0001279
+3Q      0.0007322
+Max     0.0048341
+
+Coefficients:
+                      Value   Std. Error t value
+pop_size-Lag-6         2.3532  0.0673    34.9763
+median_income-Lag1     0.0735  0.0344     2.1344
+ty_cr-Lag1            -0.0077  0.0027    -2.8032
+mort_orig-Lag5         0.0001  0.0003     0.1787
+unemp_rate-Lag12      -0.0119  0.0062    -1.9113
+foreclosures-Lag12    -0.0007  0.0007    -0.9606
+building_permits-Lag7  0.0018  0.0009     2.1608
+
+Residual standard error: 0.001104 on 100 degrees of freedom
+Analysis of Variance Table
+
+Response: GA
+                        Df     Sum Sq    Mean Sq F value    Pr(>F)    
+`pop_size-Lag-6`         1 5.3090e-05 5.3090e-05 25.3420 2.154e-06 ***
+`median_income-Lag1`     1 3.0500e-06 3.0500e-06  1.4560  0.230446    
+`ty_cr-Lag1`             1 2.1757e-05 2.1757e-05 10.3856  0.001720 ** 
+`mort_orig-Lag5`         1 1.2460e-06 1.2460e-06  0.5948  0.442423    
+`unemp_rate-Lag12`       1 5.3300e-06 5.3300e-06  2.5444  0.113876    
+`foreclosures-Lag12`     1 1.9100e-06 1.9100e-06  0.9116  0.342027    
+`building_permits-Lag7`  1 6.1180e-06 6.1180e-06  2.9205  0.090596 .  
+Residuals               99 2.0740e-04 2.0950e-06                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+[1] "1 to 5 year year on year % changes"
+[1] 0.04537157
+[1] 0.0508928
+[1] 0.04969893
+[1] 0.04954587
+[1] 0.04961524
+[1] ""
+[1] ""
+[1] "ID"
+
+Call: rlm(x = predictors, y = response)
+Residuals:
+               ID
+Min    -0.0102496
+1Q     -0.0023988
+Median -0.0003628
+3Q      0.0020558
+Max     0.0107065
+
+Coefficients:
+                      Value   Std. Error t value
+median_income-Lag0    -0.2323  0.0928    -2.5021
+ty_cr-Lag4             0.0013  0.0081     0.1623
+mort_orig-Lag4         0.0006  0.0010     0.5860
+unemp_rate-Lag3       -0.1271  0.0190    -6.6942
+pop_size-Lag4          2.9486  0.2042    14.4401
+foreclosures-Lag3     -0.0010  0.0012    -0.8114
+building_permits-Lag3 -0.0012  0.0015    -0.8029
+
+Residual standard error: 0.00338 on 114 degrees of freedom
+Analysis of Variance Table
+
+Response: ID
+                         Df     Sum Sq    Mean Sq F value    Pr(>F)    
+`median_income-Lag0`      1 0.00000494 0.00000494  0.3619  0.548638    
+`ty_cr-Lag4`              1 0.00000536 0.00000536  0.3924  0.532288    
+`mort_orig-Lag4`          1 0.00009748 0.00009748  7.1403  0.008652 ** 
+`unemp_rate-Lag3`         1 0.00072202 0.00072202 52.8877 4.947e-11 ***
+`pop_size-Lag4`           1 0.00061153 0.00061153 44.7942 8.823e-10 ***
+`foreclosures-Lag3`       1 0.00000207 0.00000207  0.1514  0.697920    
+`building_permits-Lag3`   1 0.00000627 0.00000627  0.4592  0.499398    
+Residuals               113 0.00154268 0.00001365                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+[1] "1 to 5 year year on year % changes"
+[1] 0.02713998
+[1] 0.05528607
+[1] 0.06233364
+[1] 0.06529905
+[1] 0.07043232
+[1] ""
+[1] ""
+[1] "KS"
+
+Call: rlm(x = predictors, y = response)
+Residuals:
+               KS
+Min    -0.0057749
+1Q     -0.0007410
+Median  0.0005484
+3Q      0.0015255
+Max     0.0048761
+
+Coefficients:
+                      Value   Std. Error t value
+ty_cr-Lag0            -0.0014  0.0045    -0.3031
+median_income-Lag6    -0.1204  0.0526    -2.2898
+mort_orig-Lag2         0.0006  0.0005     1.1769
+unemp_rate-Lag3        0.0041  0.0078     0.5289
+pop_size-Lag4          7.3326  0.4219    17.3813
+foreclosures-Lag7      0.0007  0.0010     0.6813
+building_permits-Lag2  0.0013  0.0008     1.6493
+
+Residual standard error: 0.001949 on 111 degrees of freedom
+Analysis of Variance Table
+
+Response: KS
+                         Df     Sum Sq    Mean Sq F value Pr(>F)
+`ty_cr-Lag0`              1 1.0400e-07 1.0400e-07  0.0422 0.8377
+`median_income-Lag6`      1 2.2780e-06 2.2780e-06  0.9277 0.3376
+`mort_orig-Lag2`          1 5.9600e-07 5.9600e-07  0.2427 0.6232
+`unemp_rate-Lag3`         1 7.5200e-07 7.5200e-07  0.3064 0.5810
+`pop_size-Lag4`           1 1.5300e-06 1.5300e-06  0.6228 0.4317
+`foreclosures-Lag7`       1 5.1500e-07 5.1500e-07  0.2095 0.6480
+`building_permits-Lag2`   1 3.6520e-06 3.6520e-06  1.4868 0.2253
+Residuals               110 2.7016e-04 2.4560e-06               
+[1] "1 to 5 year year on year % changes"
+[1] 0.03262872
+[1] 0.04659303
+[1] 0.04822802
+[1] 0.0460984
+[1] 0.04504527
+[1] ""
+[1] ""
+[1] "KY"
+
+Call: rlm(x = predictors, y = response)
+Residuals:
+               KY
+Min    -0.0031011
+1Q     -0.0007814
+Median  0.0002793
+3Q      0.0010899
+Max     0.0040440
+
+Coefficients:
+                      Value   Std. Error t value
+foreclosures-Lag0      0.0009  0.0008     1.2248
+median_income-Lag9    -0.0617  0.0365    -1.6929
+ty_cr-Lag5             0.0014  0.0035     0.4038
+mort_orig-Lag11        0.0002  0.0005     0.4425
+unemp_rate-Lag5        0.0106  0.0065     1.6294
+pop_size-Lag3          5.3447  0.2624    20.3683
+building_permits-Lag6  0.0003  0.0008     0.3437
+
+Residual standard error: 0.001455 on 107 degrees of freedom
+Analysis of Variance Table
+
+Response: KY
+                         Df     Sum Sq    Mean Sq F value  Pr(>F)  
+`foreclosures-Lag0`       1 2.0200e-07 2.0200e-07  0.1062 0.74513  
+`median_income-Lag9`      1 5.5160e-06 5.5160e-06  2.9063 0.09116 .
+`ty_cr-Lag5`              1 9.1100e-07 9.1100e-07  0.4801 0.48989  
+`mort_orig-Lag11`         1 3.7150e-06 3.7150e-06  1.9577 0.16468  
+`unemp_rate-Lag5`         1 1.9830e-06 1.9830e-06  1.0451 0.30897  
+`pop_size-Lag3`           1 2.1600e-07 2.1600e-07  0.1138 0.73656  
+`building_permits-Lag6`   1 3.5000e-08 3.5000e-08  0.0184 0.89241  
+Residuals               106 2.0117e-04 1.8980e-06                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+[1] "1 to 5 year year on year % changes"
+[1] 0.03759091
+[1] 0.04258545
+[1] 0.04248426
+[1] 0.04222222
+[1] 0.0407948
+[1] ""
+[1] ""
+[1] "MA"
+
+Call: rlm(x = predictors, y = response)
+Residuals:
+               MA
+Min    -0.0083115
+1Q     -0.0017819
+Median  0.0002197
+3Q      0.0028289
+Max     0.0111892
+
+Coefficients:
+                      Value   Std. Error t value
+median_income-Lag-3    0.4031  0.1101     3.6614
+ty_cr-Lag3             0.0102  0.0088     1.1674
+mort_orig-Lag1         0.0003  0.0011     0.3030
+pop_size-Lag18        18.1320  0.9390    19.3101
+foreclosures-Lag4     -0.0004  0.0013    -0.3476
+building_permits-Lag3  0.0003  0.0021     0.1352
+
+Residual standard error: 0.003259 on 98 degrees of freedom
+Analysis of Variance Table
+
+Response: MA
+                        Df     Sum Sq    Mean Sq  F value  Pr(>F)    
+`median_income-Lag-3`    1 0.00005491 0.00005491   4.0231 0.04767 *  
+`ty_cr-Lag3`             1 0.00001443 0.00001443   1.0570 0.30646    
+`mort_orig-Lag1`         1 0.00003975 0.00003975   2.9124 0.09110 .  
+`pop_size-Lag18`         1 0.00152486 0.00152486 111.7280 < 2e-16 ***
+`foreclosures-Lag4`      1 0.00000722 0.00000722   0.5287 0.46889    
+`building_permits-Lag3`  1 0.00000018 0.00000018   0.0132 0.90862    
+Residuals               97 0.00132385 0.00001365                     
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+[1] "1 to 5 year year on year % changes"
+[1] 0.07073728
+[1] 0.06961891
+[1] 0.05483604
+[1] 0.053559
+[1] 0.05253328
+[1] ""
+[1] ""
+[1] "MI"
+
+Call: rlm(x = predictors, y = response)
+Residuals:
+               MI
+Min    -0.0053973
+1Q     -0.0008340
+Median -0.0000893
+3Q      0.0016703
+Max     0.0058466
+
+Coefficients:
+                      Value   Std. Error t value
+unemp_rate-Lag-4      -0.0026  0.0065    -0.3950
+building_permits-Lag0  0.0006  0.0008     0.7729
+median_income-Lag8    -0.0360  0.0382    -0.9425
+ty_cr-Lag6             0.0015  0.0044     0.3491
+mort_orig-Lag2        -0.0002  0.0006    -0.2863
+pop_size-Lag1         12.0540  0.5982    20.1511
+foreclosures-Lag3      0.0004  0.0008     0.4488
+
+Residual standard error: 0.001553 on 106 degrees of freedom
+Analysis of Variance Table
+
+Response: MI
+                         Df     Sum Sq    Mean Sq  F value Pr(>F)    
+`unemp_rate-Lag-4`        1 0.00000758 0.00000758   1.8269 0.1794    
+`building_permits-Lag0`   1 0.00000279 0.00000279   0.6712 0.4145    
+`median_income-Lag8`      1 0.00000257 0.00000257   0.6186 0.4334    
+`ty_cr-Lag6`              1 0.00000003 0.00000003   0.0072 0.9326    
+`mort_orig-Lag2`          1 0.00000171 0.00000171   0.4119 0.5224    
+`pop_size-Lag1`           1 0.00083193 0.00083193 200.4691 <2e-16 ***
+`foreclosures-Lag3`       1 0.00000002 0.00000002   0.0048 0.9448    
+Residuals               105 0.00043574 0.00000415                    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+[1] "1 to 5 year year on year % changes"
+[1] 0.01177202
+[1] -0.01708035
+[1] -0.02385631
+[1] -0.02503177
+[1] -0.02549458
+[1] ""
+[1] ""
+[1] "MS"
+
+Call: rlm(x = predictors, y = response)
+Residuals:
+               MS
+Min    -0.0042283
+1Q     -0.0009841
+Median  0.0008712
+3Q      0.0030170
+Max     0.0082323
+
+Coefficients:
+                      Value   Std. Error t value
+median_income-Lag3    -0.0996  0.0723    -1.3765
+ty_cr-Lag3            -0.0025  0.0072    -0.3525
+mort_orig-Lag3         0.0009  0.0008     1.0924
+unemp_rate-Lag3       -0.0059  0.0054    -1.0811
+pop_size-Lag6          5.8667  0.6131     9.5684
+foreclosures-Lag5      0.0016  0.0012     1.3517
+building_permits-Lag1  0.0014  0.0013     1.0397
+
+Residual standard error: 0.002571 on 112 degrees of freedom
+Analysis of Variance Table
+
+Response: MS
+                         Df     Sum Sq    Mean Sq F value  Pr(>F)  
+`median_income-Lag3`      1 0.00001004 0.00001004  1.7636 0.18690  
+`ty_cr-Lag3`              1 0.00000002 0.00000002  0.0034 0.95364  
+`mort_orig-Lag3`          1 0.00002956 0.00002956  5.1946 0.02457 *
+`unemp_rate-Lag3`         1 0.00000071 0.00000071  0.1240 0.72542  
+`pop_size-Lag6`           1 0.00001218 0.00001218  2.1403 0.14630  
+`foreclosures-Lag5`       1 0.00000095 0.00000095  0.1666 0.68397  
+`building_permits-Lag1`   1 0.00000369 0.00000369  0.6482 0.42247  
+Residuals               111 0.00063166 0.00000569                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+[1] "1 to 5 year year on year % changes"
+[1] 0.02951795
+[1] 0.0319061
+[1] 0.03414179
+[1] 0.03330404
+[1] 0.03337798
+[1] ""
+[1] ""
+[1] "ND"
+
+Call: rlm(x = predictors, y = response)
+Residuals:
+              ND
+Min    -0.003017
+1Q      0.000724
+Median  0.003120
+3Q      0.006043
+Max     0.012558
+
+Coefficients:
+                      Value   Std. Error t value
+median_income-Lag12    0.4305  0.2107     2.0431
+ty_cr-Lag8            -0.0087  0.0128    -0.6765
+mort_orig-Lag3         0.0006  0.0014     0.4245
+unemp_rate-Lag9        0.0162  0.0136     1.1930
+pop_size-Lag3         -0.1984  1.5476    -0.1282
+foreclosures-Lag2     -0.0040  0.0019    -2.1490
+building_permits-Lag2 -0.0032  0.0016    -1.9930
+
+Residual standard error: 0.004626 on 106 degrees of freedom
+Analysis of Variance Table
+
+Response: ND
+                         Df     Sum Sq    Mean Sq F value    Pr(>F)    
+`median_income-Lag12`     1 0.00000091 0.00000091  0.1099 0.7409303    
+`ty_cr-Lag8`              1 0.00000377 0.00000377  0.4548 0.5015245    
+`mort_orig-Lag3`          1 0.00002881 0.00002881  3.4715 0.0652285 .  
+`unemp_rate-Lag9`         1 0.00000510 0.00000510  0.6146 0.4348246    
+`pop_size-Lag3`           1 0.00013178 0.00013178 15.8802 0.0001248 ***
+`foreclosures-Lag2`       1 0.00001550 0.00001550  1.8681 0.1746104    
+`building_permits-Lag2`   1 0.00000032 0.00000032  0.0383 0.8452418    
+Residuals               105 0.00087136 0.00000830                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+[1] "1 to 5 year year on year % changes"
+[1] -0.0001432546
+[1] 0.008361119
+[1] 0.0097614
+[1] 0.007065155
+[1] 0.002865943
+[1] ""
+[1] ""
+[1] "NJ"
+
+Call: rlm(x = predictors, y = response)
+Residuals:
+               NJ
+Min    -8.560e-03
+1Q     -1.943e-03
+Median  7.502e-07
+3Q      2.685e-03
+Max     1.513e-02
+
+Coefficients:
+                      Value   Std. Error t value
+median_income-Lag3     0.0287  0.0819     0.3504
+ty_cr-Lag2             0.0091  0.0087     1.0359
+mort_orig-Lag2         0.0030  0.0012     2.4350
+unemp_rate-Lag4       -0.0031  0.0169    -0.1817
+pop_size-Lag18        14.0941  0.7244    19.4554
+foreclosures-Lag1     -0.0011  0.0015    -0.7643
+building_permits-Lag4  0.0010  0.0021     0.4759
+
+Residual standard error: 0.00312 on 100 degrees of freedom
+Analysis of Variance Table
+
+Response: NJ
+                        Df     Sum Sq    Mean Sq F value    Pr(>F)    
+`median_income-Lag3`     1 0.00001692 0.00001692  0.8439 0.3605215    
+`ty_cr-Lag2`             1 0.00000134 0.00000134  0.0670 0.7962499    
+`mort_orig-Lag2`         1 0.00031285 0.00031285 15.6036 0.0001464 ***
+`unemp_rate-Lag4`        1 0.00000653 0.00000653  0.3258 0.5694489    
+`pop_size-Lag18`         1 0.00082919 0.00082919 41.3566 4.514e-09 ***
+`foreclosures-Lag1`      1 0.00002688 0.00002688  1.3407 0.2497023    
+`building_permits-Lag4`  1 0.00000849 0.00000849  0.4235 0.5166794    
+Residuals               99 0.00198492 0.00002005                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+[1] "1 to 5 year year on year % changes"
+[1] -0.01900115
+[1] 0.02737223
+[1] 0.02480830
+[1] 0.01978602
+[1] 0.01916218
+[1] ""
+[1] ""
+[1] "NY"
+
+Call: rlm(x = predictors, y = response)
+Residuals:
+              NY
+Min    -0.007310
+1Q     -0.001504
+Median  0.000507
+3Q      0.001954
+Max     0.011467
+
+Coefficients:
+                      Value   Std. Error t value
+unemp_rate-Lag0       -0.0404  0.0140    -2.8851
+median_income-Lag9    -0.0792  0.0626    -1.2648
+ty_cr-Lag3             0.0064  0.0074     0.8648
+mort_orig-Lag2         0.0019  0.0010     1.8162
+pop_size-Lag16        19.0794  0.9053    21.0744
+foreclosures-Lag3     -0.0021  0.0018    -1.1957
+building_permits-Lag6  0.0023  0.0015     1.5439
+
+Residual standard error: 0.002854 on 102 degrees of freedom
+Analysis of Variance Table
+
+Response: NY
+                         Df     Sum Sq    Mean Sq F value    Pr(>F)    
+`unemp_rate-Lag0`         1 0.00007311 0.00007311  5.6859  0.018969 *  
+`median_income-Lag9`      1 0.00000012 0.00000012  0.0093  0.923408    
+`ty_cr-Lag3`              1 0.00001607 0.00001607  1.2498  0.266248    
+`mort_orig-Lag2`          1 0.00010919 0.00010919  8.4927  0.004391 ** 
+`pop_size-Lag16`          1 0.00047259 0.00047259 36.7562 2.332e-08 ***
+`foreclosures-Lag3`       1 0.00002083 0.00002083  1.6202  0.205983    
+`building_permits-Lag6`   1 0.00005822 0.00005822  4.5279  0.035781 *  
+Residuals               101 0.00129860 0.00001286                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+[1] "1 to 5 year year on year % changes"
+[1] 0.0514349
+[1] 0.0423003
+[1] 0.05098776
+[1] 0.04981974
+[1] 0.05408015
+[1] ""
+[1] ""
+[1] "OH"
+
+Call: rlm(x = predictors, y = response)
+Residuals:
+               OH
+Min    -0.0058894
+1Q     -0.0008437
+Median -0.0001052
+3Q      0.0009884
+Max     0.0033242
+
+Coefficients:
+                      Value   Std. Error t value
+mort_orig-Lag0         0.0003  0.0004     0.7755
+median_income-Lag6    -0.0939  0.0487    -1.9286
+ty_cr-Lag1            -0.0064  0.0031    -2.0969
+unemp_rate-Lag3       -0.0196  0.0065    -3.0118
+pop_size-Lag9         17.2921  0.8643    20.0062
+foreclosures-Lag2     -0.0002  0.0007    -0.3030
+building_permits-Lag1 -0.0009  0.0006    -1.5426
+
+Residual standard error: 0.001365 on 109 degrees of freedom
+Analysis of Variance Table
+
+Response: OH
+                         Df     Sum Sq    Mean Sq F value    Pr(>F)    
+`mort_orig-Lag0`          1 1.8300e-07 1.8300e-07  0.0761   0.78314    
+`median_income-Lag6`      1 1.3800e-07 1.3800e-07  0.0572   0.81140    
+`ty_cr-Lag1`              1 1.4388e-05 1.4388e-05  5.9739   0.01614 *  
+`unemp_rate-Lag3`         1 1.1616e-05 1.1616e-05  4.8230   0.03022 *  
+`pop_size-Lag9`           1 1.5425e-04 1.5425e-04 64.0433 1.489e-12 ***
+`foreclosures-Lag2`       1 8.0000e-09 8.0000e-09  0.0035   0.95325    
+`building_permits-Lag1`   1 6.3110e-06 6.3110e-06  2.6201   0.10843    
+Residuals               108 2.6012e-04 2.4090e-06                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+[1] "1 to 5 year year on year % changes"
+[1] 0.001984895
+[1] 0.01433003
+[1] 0.01466902
+[1] 0.01460198
+[1] 0.01505368
+[1] ""
+[1] ""
+[1] "SD"
+
+Call: rlm(x = predictors, y = response)
+Residuals:
+               SD
+Min    -0.0047873
+1Q     -0.0012776
+Median  0.0003784
+3Q      0.0018590
+Max     0.0058331
+
+Coefficients:
+                      Value   Std. Error t value
+pop_size-Lag0         -9.2108  3.0817    -2.9889
+median_income-Lag1     0.0291  0.0726     0.4006
+ty_cr-Lag8            -0.0083  0.0053    -1.5805
+mort_orig-Lag12       -0.0005  0.0006    -0.8254
+unemp_rate-Lag11       0.0221  0.0074     3.0076
+pop_size-Lag2         15.5667  3.1261     4.9797
+foreclosures-Lag7      0.0003  0.0008     0.3585
+building_permits-Lag3  0.0005  0.0009     0.6246
+
+Residual standard error: 0.002476 on 105 degrees of freedom
+Analysis of Variance Table
+
+Response: SD
+                         Df     Sum Sq    Mean Sq F value    Pr(>F)    
+`pop_size-Lag0`           1 0.00000010 0.00000010  0.0258   0.87269    
+`median_income-Lag1`      1 0.00000020 0.00000020  0.0517   0.82055    
+`ty_cr-Lag8`              1 0.00000567 0.00000567  1.4731   0.22761    
+`mort_orig-Lag12`         1 0.00000048 0.00000048  0.1253   0.72405    
+`unemp_rate-Lag11`        1 0.00001201 0.00001201  3.1212   0.08021 .  
+`pop_size-Lag2`           1 0.00007898 0.00007898 20.5175 1.581e-05 ***
+`foreclosures-Lag7`       1 0.00000042 0.00000042  0.1100   0.74076    
+`building_permits-Lag3`   1 0.00000177 0.00000177  0.4589   0.49964    
+Residuals               104 0.00040034 0.00000385                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+[1] "1 to 5 year year on year % changes"
+[1] 0.0432767
+[1] 0.0738328
+[1] 0.06983518
+[1] 0.06616441
+[1] 0.06566215
+[1] ""
+[1] ""
+[1] "TX"
+
+Call: rlm(x = predictors, y = response)
+Residuals:
+               TX
+Min    -2.523e-03
+1Q     -1.011e-03
+Median  8.267e-05
+3Q      8.364e-04
+Max     6.216e-03
+
+Coefficients:
+                      Value   Std. Error t value
+pop_size-Lag0          2.4719  0.0838    29.5000
+median_income-Lag12    0.0892  0.0465     1.9181
+ty_cr-Lag3            -0.0041  0.0030    -1.3595
+mort_orig-Lag7         0.0000  0.0004    -0.0243
+unemp_rate-Lag4       -0.0318  0.0086    -3.6782
+foreclosures-Lag10    -0.0010  0.0007    -1.5017
+building_permits-Lag3  0.0005  0.0009     0.5232
+
+Residual standard error: 0.001329 on 106 degrees of freedom
+Analysis of Variance Table
+
+Response: TX
+                         Df     Sum Sq    Mean Sq F value    Pr(>F)    
+`pop_size-Lag0`           1 6.3512e-05 6.3512e-05 27.0185 9.985e-07 ***
+`median_income-Lag12`     1 2.5680e-06 2.5680e-06  1.0926  0.298299    
+`ty_cr-Lag3`              1 3.8670e-06 3.8670e-06  1.6449  0.202476    
+`mort_orig-Lag7`          1 2.0000e-07 2.0000e-07  0.0850  0.771197    
+`unemp_rate-Lag4`         1 2.3605e-05 2.3605e-05 10.0419  0.002005 ** 
+`foreclosures-Lag10`      1 4.8860e-06 4.8860e-06  2.0786  0.152349    
+`building_permits-Lag3`   1 1.0400e-07 1.0400e-07  0.0442  0.833882    
+Residuals               105 2.4682e-04 2.3510e-06                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+[1] "1 to 5 year year on year % changes"
+[1] 0.03834516
+[1] 0.04726808
+[1] 0.04924995
+[1] 0.05138686
+[1] 0.0539255
+[1] ""
+[1] ""
+[1] "VT"
+
+Call: rlm(x = predictors, y = response)
+Residuals:
+               VT
+Min    -0.0107845
+1Q     -0.0017533
+Median  0.0007798
+3Q      0.0040870
+Max     0.0149883
+
+Coefficients:
+                       Value   Std. Error t value
+mort_orig-Lag0          0.0010  0.0015     0.6831
+ty_cr-Lag7             -0.0057  0.0113    -0.5001
+unemp_rate-Lag5        -0.0235  0.0157    -1.4957
+pop_size-Lag3          23.4582  2.1353    10.9861
+foreclosures-Lag12     -0.0030  0.0018    -1.6866
+building_permits-Lag13  0.0005  0.0019     0.2670
+
+Residual standard error: 0.004451 on 82 degrees of freedom
+Analysis of Variance Table
+
+Response: VT
+                         Df     Sum Sq    Mean Sq F value  Pr(>F)  
+`mort_orig-Lag0`          1 0.00004617 0.00004617  2.1557 0.14591  
+`ty_cr-Lag7`              1 0.00003755 0.00003755  1.7533 0.18919  
+`unemp_rate-Lag5`         1 0.00010587 0.00010587  4.9428 0.02898 *
+`pop_size-Lag3`           1 0.00004445 0.00004445  2.0752 0.15357  
+`foreclosures-Lag12`      1 0.00001542 0.00001542  0.7199 0.39869  
+`building_permits-Lag13`  1 0.00000317 0.00000317  0.1482 0.70127  
+Residuals                81 0.00173486 0.00002142                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+[1] "1 to 5 year year on year % changes"
+[1] 0.02077036
+[1] 0.03116356
+[1] 0.03056326
+[1] 0.03040066
+[1] 0.03186846
+[1] ""
+[1] ""
+[1] "VT"
+
+Call: rlm(x = predictors, y = response)
+Residuals:
+               VT
+Min    -0.0107845
+1Q     -0.0017533
+Median  0.0007798
+3Q      0.0040870
+Max     0.0149883
+
+Coefficients:
+                       Value   Std. Error t value
+mort_orig-Lag0          0.0010  0.0015     0.6831
+ty_cr-Lag7             -0.0057  0.0113    -0.5001
+unemp_rate-Lag5        -0.0235  0.0157    -1.4957
+pop_size-Lag3          23.4582  2.1353    10.9861
+foreclosures-Lag12     -0.0030  0.0018    -1.6866
+building_permits-Lag13  0.0005  0.0019     0.2670
+
+Residual standard error: 0.004451 on 82 degrees of freedom
+Analysis of Variance Table
+
+Response: VT
+                         Df     Sum Sq    Mean Sq F value  Pr(>F)  
+`mort_orig-Lag0`          1 0.00004617 0.00004617  2.1557 0.14591  
+`ty_cr-Lag7`              1 0.00003755 0.00003755  1.7533 0.18919  
+`unemp_rate-Lag5`         1 0.00010587 0.00010587  4.9428 0.02898 *
+`pop_size-Lag3`           1 0.00004445 0.00004445  2.0752 0.15357  
+`foreclosures-Lag12`      1 0.00001542 0.00001542  0.7199 0.39869  
+`building_permits-Lag13`  1 0.00000317 0.00000317  0.1482 0.70127  
+Residuals                81 0.00173486 0.00002142                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+[1] "1 to 5 year year on year % changes"
+[1] 0.02077036
+[1] 0.03116356
+[1] 0.03056326
+[1] 0.03040066
+[1] 0.03186846
+[1] ""
+[1] ""
+[1] "WV"
+
+Call: rlm(x = predictors, y = response)
+Residuals:
+              WV
+Min    -0.002943
+1Q      0.001495
+Median  0.003223
+3Q      0.004665
+Max     0.013685
+
+Coefficients:
+                      Value   Std. Error t value
+median_income-Lag4    -0.3420  0.0918    -3.7254
+ty_cr-Lag2            -0.0042  0.0102    -0.4104
+mort_orig-Lag1        -0.0003  0.0011    -0.3119
+unemp_rate-Lag1       -0.0476  0.0167    -2.8590
+pop_size-Lag8         -3.0745  2.4010    -1.2805
+foreclosures-Lag2      0.0001  0.0014     0.0830
+building_permits-Lag6  0.0016  0.0021     0.7511
+
+Residual standard error: 0.004779 on 110 degrees of freedom
+Analysis of Variance Table
+
+Response: WV
+                         Df     Sum Sq    Mean Sq F value    Pr(>F)    
+`median_income-Lag4`      1 0.00018273 0.00018273 25.0314 2.177e-06 ***
+`ty_cr-Lag2`              1 0.00000291 0.00000291  0.3985   0.52918    
+`mort_orig-Lag1`          1 0.00001930 0.00001930  2.6438   0.10684    
+`unemp_rate-Lag1`         1 0.00001399 0.00001399  1.9169   0.16903    
+`pop_size-Lag8`           1 0.00002875 0.00002875  3.9379   0.04972 *  
+`foreclosures-Lag2`       1 0.00000004 0.00000004  0.0051   0.94311    
+`building_permits-Lag6`   1 0.00001266 0.00001266  1.7347   0.19057    
+Residuals               109 0.00079572 0.00000730                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+[1] "1 to 5 year year on year % changes"
+[1] -0.01611125
+[1] -0.01606674
+[1] -0.01383239
+[1] -0.009528763
+[1] -0.005769346
+[1] ""
+[1] ""
