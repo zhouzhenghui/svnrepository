@@ -10,12 +10,12 @@
 #install/source all the packages used in this project (this will take a minute)
 source("../source_functions/source.all.R")
 source.all()
-install.all.packages(install=T)
+install.all.packages(install=F)
 detach(package:fSeries)
 
 #set your initial state parameters and variables lists
 begin_month=1
-state = "NJ" #our dependent variable 
+state = "MA" #our dependent variable 
 begin_year=get_start_year(state)
 end_month = 6
 end_year = 2008
@@ -55,7 +55,7 @@ phase1fits=robust.lm$robust.lm$fit
 #Step 4
 #Phase 2-vol modeling 
 
-vol.model = do_vol_modeling(state,test.data.vector,phase1fits,resids,dates,automatic=F,plot=T,useGPH=F)
+vol.model = do_vol_modeling(state,test.data.vector,phase1fits,resids,dates,automatic=F,plot=T,useGPH=T)
 vol.model$d
 resids2= vol.model$sresids
 acf(resids2,lag.max=40, main="ACF (Phase 2) Residuals")
