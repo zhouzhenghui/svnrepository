@@ -15,7 +15,7 @@ detach(package:fSeries)
 
 #set your initial state parameters and variables lists
 begin_month=1
-state = "ND" #our dependent variable 
+state = "NJ" #our dependent variable 
 begin_year=get_start_year(state)
 end_month = 6
 end_year = 2008
@@ -40,7 +40,9 @@ do_bic_lars_regressions(state,test.data.vector,independent.variables)
 
 #Step 3
 #Phase 1-robust regression - set automatic or sequential
-robust.lm=do_robust_regression(state,test.data.vector,dates,independent.variables,automatic=T,plot=T)
+robust.lm=do_robust_regression(state,test.data.vector,dates,independent.variables,automatic=T,plot=T, compute.anova = T)
+robust.lm
+anova = robust.lm$anova
 robust.lm
 resids = robust.lm$resids
 eacf(resids)
@@ -55,9 +57,10 @@ phase1fits=robust.lm$robust.lm$fit
 
 vol.model = do_vol_modeling(state,test.data.vector,phase1fits,resids,dates,automatic=F,plot=T,useGPH=F)
 vol.model$d
-resids2= vol.model$resids
-pacf(resids2,lag.max=40, main="ACF (Phase 2) Residuals")
+resids2= vol.model$sresids
+acf(resids2,lag.max=40, main="ACF (Phase 2) Residuals")
 acf(resids2^2,lag.max=40, main="ACF (Phase 2) Sq-Residuals")
+vol.check.pval = as.numeric(Box.Ljung.test(resids2^2,lag = 12,adj.DF = 11)$p.value);
 
 #Step 5
 #Curve fitting of explanatory variables

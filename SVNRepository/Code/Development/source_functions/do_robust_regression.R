@@ -1,4 +1,4 @@
-"do_robust_regression"=function(state,test.data.vector,dates,independent.variables,automatic=T,plot=T, do.rlm=T){
+"do_robust_regression"=function(state,test.data.vector,dates,independent.variables,automatic=T,plot=T, do.rlm=T, compute.anova = T){
 
 #do a robust regression
 shifted.multivar.test.data.vector = shift.df.multi(test.data.vector,state,independent.variables)
@@ -49,5 +49,11 @@ if(plot){
 	plot.actual.fitted(regression.dataframe,state,dates,sreturn=TRUE,same.scale=TRUE)
 
 }
-structure(list(robust.lm=robust.lm,resids=resids.temp,adf.test=adf.test,box.test.pval=box.test.pval,box.test.statistic=box.test.statistic,summary=summary(robust.lm), drop=drop))
+if(compute.anova){
+	form = as.formula(paste(state,"~.",sep=""))
+	plain.lm = lm(form,data=shifted.multivar.test.data.vector)
+	anova = anova(plain.lm)
+}
+
+structure(list(robust.lm=robust.lm,resids=resids.temp,adf.test=adf.test,box.test.pval=box.test.pval,box.test.statistic=box.test.statistic,summary=summary(robust.lm), drop=drop, anova = anova))
 }
