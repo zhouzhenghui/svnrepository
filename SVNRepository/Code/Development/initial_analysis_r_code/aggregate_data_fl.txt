@@ -1,0 +1,39 @@
+[1] "FL"
+Series: current.data 
+ARIMA(2,0,0) with non-zero mean 
+
+Call: arima(x = current.data, order = c(Para$AR.order[i], 0, Para$MA.order[i]), seasonal = list(order = c(sar.order,      Para$d.1[i], sma.order), period = freq)) 
+
+Coefficients:
+         ar1     ar2  intercept
+      0.2966  0.2966    -0.0011
+s.e.  0.1027  0.1124     0.0013
+
+sigma^2 estimated as 2.618e-05:  log likelihood = 331.45
+AIC = -654.9   AICc = -654.41   BIC = -645.09
+[1] "d from Whittle"
+[1] 0
+[1] "d from GPH"
+[1] 0
+Analysis of Variance Table
+
+Response: FL
+                        Df    Sum Sq   Mean Sq  F value    Pr(>F)    
+`median_income-Lag0`     1 0.0005803 0.0005803  47.6305 1.212e-09 ***
+`ty_cr-Lag3`             1 0.0000679 0.0000679   5.5714  0.020756 *  
+`mort_orig-Lag2`         1 0.0016636 0.0016636 136.5511 < 2.2e-16 ***
+`unemp_rate-Lag3`        1 0.0009423 0.0009423  77.3426 2.704e-13 ***
+`pop_size-Lag3`          1 0.0042811 0.0042811 351.4041 < 2.2e-16 ***
+`foreclosures-Lag2`      1 0.0000044 0.0000044   0.3578  0.551438    
+`building_permits-Lag3`  1 0.0000850 0.0000850   6.9755  0.009979 ** 
+Residuals               78 0.0009503 0.0000122                       
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+[1] "1 to 5 year year on year % changes"
+[1] -0.04782266
+[1] -7.695714e-05
+[1] 0.01621289
+[1] 0.005121134
+[1] 0.01003270
+[1] ""
+[1] ""

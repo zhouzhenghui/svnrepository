@@ -674,3 +674,72 @@ AIC = -1073.76   AICc = -1073.65   BIC = -1068.23
 [1] 0.4027208
 [1] ""
 [1] ""
+[1] "CA"
+
+Title:
+ GARCH Modelling 
+
+Call:
+ garchFit(formula = garch.formula, data = current.data, cond.dist = c("QMLE"), 
+    include.mean = (Para$intercept[i] == 1), trace = FALSE) 
+
+Mean and Variance Equation:
+ data ~ arma(1, 1) + garch(3, 1)
+ [data = current.data]
+
+Conditional Distribution:
+ QMLE 
+
+Coefficient(s):
+         mu          ar1          ma1        omega       alpha1       alpha2  
+-1.2140e-03  -3.8848e-01   1.4110e-01   3.5641e-07   1.0000e-08   1.0000e-08  
+     alpha3        beta1  
+ 1.0000e-08   9.9092e-01  
+
+Std. Errors:
+ robust 
+
+Error Analysis:
+         Estimate  Std. Error  t value Pr(>|t|)   
+mu     -1.214e-03   1.493e-03   -0.813  0.41621   
+ar1    -3.885e-01   1.238e+00   -0.314  0.75377   
+ma1     1.411e-01   1.125e+00    0.125  0.90023   
+omega   3.564e-07   5.397e-06    0.066  0.94735   
+alpha1  1.000e-08   4.201e-01 2.38e-08  1.00000   
+alpha2  1.000e-08   1.077e+00 9.29e-09  1.00000   
+alpha3  1.000e-08   1.285e+00 7.78e-09  1.00000   
+beta1   9.909e-01   3.073e-01    3.224  0.00126 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+
+Log Likelihood:
+ 238.8761    normalized:  3.461972 
+
+Description:
+ Thu May 14 03:57:46 2009 by user: tim 
+
+[1] "d from Whittle"
+[1] 0.3842969
+[1] "d from GPH"
+[1] 0.5078791
+Analysis of Variance Table
+
+Response: CA
+                        Df    Sum Sq   Mean Sq F value    Pr(>F)    
+`median_income-Lag0`     1 0.0000038 0.0000038  0.0354 0.8513885    
+`ty_cr-Lag4`             1 0.0002742 0.0002742  2.5620 0.1145470    
+`mort_orig-Lag6`         1 0.0010676 0.0010676  9.9752 0.0024518 ** 
+`unemp_rate-Lag8`        1 0.0016720 0.0016720 15.6226 0.0002009 ***
+`foreclosures-Lag6`      1 0.0016880 0.0016880 15.7721 0.0001886 ***
+`building_permits-Lag8`  1 1.962e-08 1.962e-08  0.0002 0.9892400    
+Residuals               62 0.0066355 0.0001070                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+[1] "1 to 5 year year on year % changes"
+[1] -0.1279199
+[1] -0.01128441
+[1] 0.03058734
+[1] -0.0001312443
+[1] -0.0005357746
+[1] ""
+[1] ""

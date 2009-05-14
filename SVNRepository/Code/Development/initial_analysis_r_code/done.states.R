@@ -1,5 +1,5 @@
 states.to.use = c("CA", "OH", "SD", "FL", "TX", "KS", "VT", "ID", "MI", "AZ","MS", "KY","AL", "WV","ND","NJ", "GA","MA","NY","MT")
-
+#states.to.use=c("FL")
 states.to.use =sort(states.to.use)
 
 for(i in 1:length(states.to.use)){
@@ -25,7 +25,7 @@ anova = robust.lm$anova
 vol.model = do_vol_modeling(state,test.data.vector,phase1fits,resids,dates,automatic=F,plot=F,useGPH=F)
 volmodel = vol.model$model
 
-sink("aggregate_data4.txt",append=T)
+sink("aggregate_data_fl.txt",append=T)
 print(state)
 print(volmodel)
 print("d from Whittle")
@@ -35,7 +35,7 @@ vol.model = do_vol_modeling(state,test.data.vector,phase1fits,resids,dates,autom
 print("d from GPH")
 print(vol.model$d)
 
-#print(anova)
+print(anova)
 
 
 
@@ -69,12 +69,12 @@ fouryrchange = (index_forecasts[48]-index_forecasts[36])/index_forecasts[36]
 fiveyrchange = (index_forecasts[60]-index_forecasts[48])/index_forecasts[48]
 
 
-#print("1 to 5 year year on year % changes")
-#print(oneyrchange)
-#print(twoyrchange)
-#print(threeyrchange)
-#print(fouryrchange)
-#print(fiveyrchange)
+print("1 to 5 year year on year % changes")
+print(oneyrchange)
+print(twoyrchange)
+print(threeyrchange)
+print(fouryrchange)
+print(fiveyrchange)
 
 print("")
 print("")
