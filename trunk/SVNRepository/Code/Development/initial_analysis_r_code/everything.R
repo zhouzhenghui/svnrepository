@@ -10,7 +10,8 @@
 #install/source all the packages used in this project (this will take a minute)
 source("../source_functions/source.all.R")
 source.all()
-install.all.packages(install=F)
+install.all.packages(install=T)
+source.all()
 detach(package:fSeries)
 
 #set your initial state parameters and variables lists
