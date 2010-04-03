@@ -10,13 +10,13 @@
 #install/source all the packages used in this project (this will take a minute)
 source("../source_functions/source.all.R")
 source.all()
-install.all.packages(install=T)
+install.all.packages(install=F)
 source.all()
 detach(package:fSeries)
 
 #set your initial state parameters and variables lists
 begin_month=1
-state = "FL" #our dependent variable 
+state = "CO" #our dependent variable 
 begin_year=get_start_year(state)
 end_month = 6
 end_year = 2008
